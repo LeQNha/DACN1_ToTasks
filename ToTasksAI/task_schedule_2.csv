@@ -1,0 +1,1801 @@
+TaskID,TaskName,Type,Duration,Importance,DayOfWeek,StartTime,EndTime
+1,Meeting with client,Work,60,Very Important,Monday,9:00,10:00
+2,Go to the supermarket,Personal,30,Normal,Tuesday,16:00,16:30
+3,Exercise,Personal,45,Less Important,Wednesday,6:30,7:15
+4,Write report,Work,90,Important,Thursday,10:30,12:00
+5,Read a book,Personal,60,Normal,Friday,20:00,21:00
+6,Hang out with friends,Personal,120,Normal,Saturday,18:00,20:00
+7,Teamwork,Work,120,Very Important,Sunday,14:00,16:00
+8,Plan for the new week,Work,45,Important,Monday,8:00,8:45
+9,Jogging,Personal,30,Less Important,Tuesday,7:30,8:00
+10,Cooking,Personal,60,Normal,Wednesday,12:00,13:00
+11,Learn programming,Education,90,Very Important,Thursday,19:00,20:30
+12,Yoga practice,Personal,30,Normal,Friday,6:00,6:30
+13,Check email,Work,15,Normal,Saturday,8:45,9:00
+14,Learn English,Education,60,Important,Sunday,15:00,16:00
+15,Watch a movie,Personal,120,Less Important,Monday,21:00,23:00
+16,Work group meeting,Work,60,Very Important,Tuesday,11:00,12:00
+17,Write a diary,Personal,30,Normal,Wednesday,22:30,23:00
+18,Prepare lecture,Work,90,Important,Thursday,13:30,15:00
+19,Clean the house,Personal,60,Normal,Friday,9:00,10:00
+20,Listen to podcast,Personal,30,Normal,Saturday,20:30,21:00
+21,Go to the supermarket,Personal,30,Normal,Sunday,16:15,16:45
+22,Exercise,Personal,45,Less Important,Monday,6:45,7:30
+23,Write report,Work,90,Important,Tuesday,10:45,12:15
+24,Read a book,Personal,60,Normal,Wednesday,20:15,21:15
+25,Hang out with friends,Personal,120,Normal,Thursday,18:15,20:15
+26,Teamwork,Work,120,Very Important,Friday,14:15,16:15
+27,Plan for the new week,Work,45,Important,Saturday,8:00,8:15
+28,Jogging,Personal,30,Less Important,Sunday,7:45,8:15
+29,Cooking,Personal,60,Normal,Monday,12:15,13:15
+30,Learn programming,Education,90,Very Important,Tuesday,19:15,20:45
+31,Yoga practice,Personal,30,Normal,Wednesday,6:15,6:45
+32,Check email,Work,15,Normal,Thursday,8:00,9:15
+33,Learn English,Education,60,Important,Friday,15:15,16:15
+34,Watch a movie,Personal,120,Less Important,Saturday,21:15,23:15
+35,Work group meeting,Work,60,Very Important,Sunday,11:15,12:15
+36,Write a diary,Personal,30,Normal,Monday,22:45,23:15
+37,Prepare lecture,Work,90,Important,Tuesday,13:45,15:15
+38,Clean the house,Personal,60,Normal,Wednesday,9:15,10:15
+39,Listen to podcast,Personal,30,Normal,Thursday,20:45,21:15
+40,Meeting with client,Work,60,Very Important,Friday,9:15,10:15
+41,Go to the supermarket,Personal,30,Normal,Saturday,16:15,16:45
+42,Exercise,Personal,45,Less Important,Sunday,6:45,7:30
+43,Write report,Work,90,Important,Monday,10:45,12:15
+44,Read a book,Personal,60,Normal,Tuesday,20:15,21:15
+45,Hang out with friends,Personal,120,Normal,Wednesday,18:15,20:15
+46,Teamwork,Work,120,Very Important,Thursday,14:15,16:15
+47,Plan for the new week,Work,45,Important,Friday,8:15,8:00
+48,Jogging,Personal,30,Less Important,Saturday,7:45,8:15
+49,Cooking,Personal,60,Normal,Sunday,12:15,13:15
+50,Learn programming,Education,90,Very Important,Monday,19:15,20:45
+51,Meditation,Personal,20,Normal,Monday,6:00,6:20
+52,Team brainstorming session,Work,90,Very Important,Tuesday,10:00,11:30
+53,Gardening,Personal,45,Normal,Wednesday,7:30,8:15
+54,Online workshop,Education,120,Important,Thursday,15:00,17:00
+55,Family dinner,Personal,90,Important,Friday,19:00,20:30
+56,Coding Session,Personal,100,Normal,Sunday,20:00,21:40
+57,Email Responses,Personal,69,Very Important,Monday,14:00,15:09
+58,Yoga,Work,46,Very Important,Tuesday,19:00,19:46
+59,Coding Session,Personal,68,Normal,Wednesday,7:00,8:08
+60,Reading,Personal,24,Less Important,Thursday,20:00,20:24
+61,Grocery Shopping,Personal,15,Very Important,Friday,22:00,22:15
+62,Meeting,Personal,61,Important,Saturday,6:00,7:01
+63,Yoga,Personal,22,Important,Sunday,13:00,13:22
+64,Coding Session,Personal,89,Very Important,Monday,7:00,8:29
+65,Writing,Personal,79,Very Important,Tuesday,2:00,3:19
+66,Writing,Personal,21,Very Important,Wednesday,2:00,2:21
+67,Yoga,Personal,63,Very Important,Thursday,10:00,11:03
+68,Email Responses,Personal,111,Normal,Friday,7:00,8:51
+69,Reading,Personal,82,Less Important,Saturday,5:00,6:22
+70,Grocery Shopping,Personal,35,Important,Sunday,21:00,21:35
+71,Writing,Work,70,Less Important,Monday,18:00,19:10
+72,Yoga,Work,16,Important,Tuesday,20:00,20:16
+73,Grocery Shopping,Personal,66,Important,Wednesday,1:00,2:06
+74,Email Responses,Personal,83,Normal,Thursday,23:00,0:23
+75,Grocery Shopping,Work,43,Very Important,Friday,7:00,7:43
+76,Reading,Personal,64,Normal,Saturday,10:00,11:04
+77,Meeting,Personal,67,Important,Sunday,12:00,13:07
+78,Grocery Shopping,Work,65,Very Important,Monday,18:00,19:05
+79,Meeting,Work,102,Normal,Tuesday,11:00,12:42
+80,Meeting,Work,95,Normal,Wednesday,16:00,17:35
+81,Yoga,Personal,87,Less Important,Thursday,21:00,22:27
+82,Meeting,Work,86,Less Important,Friday,4:00,5:26
+83,Yoga,Personal,112,Important,Saturday,21:00,22:52
+84,Email Responses,Personal,23,Less Important,Sunday,16:00,16:23
+85,Reading,Personal,104,Very Important,Monday,15:00,16:44
+86,Coding Session,Work,116,Very Important,Tuesday,9:00,10:56
+87,Writing,Work,18,Important,Wednesday,9:00,9:18
+88,Reading,Personal,81,Normal,Thursday,13:00,14:21
+89,Coding Session,Work,15,Important,Friday,18:00,18:15
+90,Coding Session,Personal,16,Normal,Saturday,16:00,16:16
+91,Grocery Shopping,Personal,101,Important,Sunday,6:00,7:41
+92,Grocery Shopping,Work,41,Very Important,Monday,14:00,14:41
+93,Coding Session,Personal,108,Very Important,Tuesday,7:00,8:48
+94,Reading,Work,103,Important,Wednesday,0:00,1:43
+95,Meeting,Work,82,Very Important,Thursday,20:00,21:22
+96,Meeting,Personal,51,Less Important,Friday,21:00,21:51
+97,Grocery Shopping,Personal,101,Important,Saturday,9:00,10:41
+98,Grocery Shopping,Personal,50,Important,Sunday,1:00,1:50
+99,Meeting,Work,95,Normal,Monday,23:00,0:35
+100,Take an online quiz,Education,30,Normal,Monday,17:30,18:00
+101,Volunteer at a shelter,Personal,120,Important,Sunday,10:00,12:00
+102,Attend a seminar on technology trends,Education,120,Very Important,Monday,14:00,16:00
+103,Prepare slides for a presentation,Work,90,Important,Tuesday,9:00,10:30
+104,Virtual networking event,Work,90,Normal,Wednesday,19:00,20:30
+105,Take a long walk,Personal,45,Less Important,Thursday,7:30,8:15
+106,Create a new recipe,Personal,90,Normal,Friday,18:00,19:30
+107,Attend a book club meeting,Personal,90,Important,Saturday,17:00,18:30
+108,Host a movie night,Personal,150,Normal,Sunday,20:00,22:30
+109,Clean out old files,Work,60,Normal,Monday,16:30,17:30
+110,Research new skills to learn,Education,90,Important,Tuesday,14:00,15:30
+111,Morning journaling,Personal,30,Normal,Wednesday,6:30,7:00
+112,Water the garden,Personal,30,Less Important,Thursday,8:00,8:30
+113,Team status update,Work,60,Very Important,Friday,11:00,12:00
+114,Weekend getaway planning,Personal,90,Normal,Saturday,15:00,16:30
+115,Watch a TED Talk,Education,30,Normal,Sunday,19:00,19:30
+116,Learn new software,Education,120,Important,Monday,9:00,11:00
+117,Donate old clothes,Personal,60,Normal,Tuesday,16:00,17:00
+118,Organize a photo album,Personal,60,Normal,Wednesday,20:00,21:00
+119,Online fitness class,Personal,45,Less Important,Thursday,18:30,19:15
+120,Meal prep for the week,Personal,90,Normal,Friday,17:30,19:00
+121,Call a relative,Personal,30,Normal,Saturday,10:30,11:00
+122,Sketch a design,Personal,90,Normal,Sunday,14:00,15:30
+123,Research a topic of interest,Education,90,Important,Monday,15:00,16:30
+124,Organize workspace,Work,60,Important,Tuesday,13:00,14:00
+125,Meditation session,Personal,20,Less Important,Wednesday,6:00,6:20
+126,Plan a team outing,Work,60,Important,Thursday,17:00,18:00
+127,Attend a yoga retreat,Personal,120,Important,Friday,8:00,10:00
+128,Write a short story,Personal,90,Normal,Saturday,19:00,20:30
+129,Practice a musical instrument,Personal,60,Normal,Sunday,17:30,18:30
+130,Learn a new language,Education,60,Important,Monday,20:00,21:00
+131,Morning stretch,Personal,15,Less Important,Tuesday,6:30,6:45
+132,Review monthly budget,Personal,45,Important,Wednesday,19:30,20:15
+133,Visit a museum,Personal,120,Normal,Thursday,10:00,12:00
+134,Host a podcast episode,Personal,60,Normal,Friday,20:00,21:00
+135,Back up important data,Work,30,Important,Saturday,9:00,9:30
+136,Update LinkedIn profile,Work,45,Important,Sunday,12:00,12:45
+137,Paint a canvas,Personal,90,Normal,Monday,17:00,18:30
+138,Research healthy recipes,Personal,60,Normal,Tuesday,11:00,12:00
+139,Weekly team sync-up,Work,60,Very Important,Wednesday,15:00,16:00
+140,Attend a coding hackathon,Education,240,Very Important,Thursday,14:00,18:00
+141,Play board games with family,Personal,90,Normal,Friday,19:30,21:00
+142,Walk a pet,Personal,30,Normal,Saturday,8:00,8:30
+143,Visit the library,Education,60,Normal,Sunday,14:30,15:30
+144,Complete a crossword puzzle,Personal,30,Normal,Monday,21:00,21:30
+145,Join a webinar on AI,Education,120,Very Important,Tuesday,10:00,12:00
+146,Plan a creative project,Personal,60,Normal,Wednesday,18:00,19:00
+147,Organize email inbox,Work,30,Normal,Thursday,9:00,9:30
+148,Relax with an audiobook,Personal,60,Normal,Friday,21:00,22:00
+149,Brush teeth,Personal,5,Normal,Monday,7:00,7:05
+150,Take a shower,Personal,20,Normal,Monday,7:05,7:25
+151,Make breakfast,Personal,30,Normal,Monday,7:30,8:00
+152,Check social media,Personal,15,Normal,Monday,8:15,8:30
+153,Go to work,Work,60,Very Important,Monday,8:30,9:30
+154,Drive to work,Work,30,Normal,Saturday,9:30,10:00
+155,Morning coffee break,Personal,15,Normal,Saturday,10:00,10:15
+156,Organize desk,Work,10,Normal,Monday,10:15,10:25
+157,Take a short walk,Personal,10,Less Important,Monday,12:00,12:10
+158,Have lunch,Personal,45,Normal,Monday,12:15,13:00
+159,Check and reply to messages,Work,15,Normal,Monday,13:00,13:15
+160,Call a friend,Personal,20,Normal,Monday,13:30,13:50
+161,Check work emails,Work,20,Normal,Monday,14:00,14:20
+162,Do the laundry,Personal,30,Normal,Monday,14:30,15:00
+163,Cook dinner,Personal,45,Normal,Monday,18:00,18:45
+164,Eat dinner,Personal,30,Normal,Monday,18:45,19:15
+165,Wash dishes,Personal,15,Normal,Monday,19:30,19:45
+166,Watch TV,Personal,60,Normal,Monday,20:00,21:00
+167,Take a walk after dinner,Personal,20,Less Important,Monday,21:15,21:35
+168,Meditate,Personal,10,Less Important,Monday,21:40,21:50
+169,Read the news,Personal,20,Normal,Tuesday,7:00,7:20
+170,Make a to-do list for the day,Personal,10,Normal,Saturday,7:20,7:30
+171,Water the plants,Personal,10,Normal,Saturday,7:30,7:40
+172,Drop kids off at school,Personal,30,Normal,Tuesday,8:00,8:30
+173,Drive to work,Work,30,Normal,Tuesday,8:30,9:00
+174,Grocery shopping,Personal,60,Normal,Sunday,10:00,11:00
+175,Respond to customer queries,Work,30,Normal,Monday,11:00,11:30
+176,Take a quick break,Personal,10,Normal,Tuesday,15:00,15:10
+177,Pick up kids from school,Personal,30,Normal,Wednesday,16:00,16:30
+178,Check bank statements,Personal,15,Normal,Tuesday,16:30,16:45
+179,Clean the kitchen,Personal,30,Normal,Tuesday,17:00,17:30
+180,Clean the bathroom,Personal,30,Normal,Tuesday,18:00,18:30
+181,Call family members,Personal,15,Normal,Tuesday,19:00,19:15
+182,Check work updates,Work,20,Normal,Tuesday,20:00,20:20
+183,Plan a weekend trip,Personal,30,Normal,Tuesday,20:30,21:00
+184,Have a cup of tea,Personal,15,Normal,Wednesday,7:00,7:15
+185,Read a book,Personal,30,Normal,Wednesday,7:15,7:45
+186,Clean the living room,Personal,30,Normal,Wednesday,10:00,10:30
+187,Listen to music,Personal,30,Normal,Wednesday,12:00,12:30
+188,Call a colleague for a quick check-in,Work,10,Normal,Wednesday,14:00,14:10
+189,Make a list of groceries,Personal,10,Normal,Wednesday,16:00,16:10
+190,Take a nap,Personal,30,Less Important,Wednesday,16:30,17:00
+191,Organize the wardrobe,Personal,30,Normal,Wednesday,17:30,18:00
+192,Try a new recipe,Personal,45,Normal,Wednesday,18:30,19:15
+193,Reply to personal messages,Personal,15,Normal,Wednesday,19:30,19:45
+194,Take a hot bath,Personal,30,Normal,Wednesday,20:00,20:30
+195,Do some light stretching,Personal,10,Normal,Thursday,6:30,6:40
+196,Take a morning walk,Personal,20,Normal,Thursday,7:00,7:20
+197,Pack lunch,Personal,15,Normal,Thursday,7:30,7:45
+198,Make phone calls for work,Work,30,Normal,Thursday,9:00,9:30
+199,Have breakfast,Personal,30,Normal,Tuesday,7:00,7:30
+200,Drink coffee,Personal,15,Normal,Tuesday,7:30,7:45
+201,Browse social media,Personal,15,Less Important,Tuesday,7:45,8:00
+202,Check emails,Work,15,Normal,Wednesday,8:00,8:15
+203,Read the news,Personal,20,Normal,Wednesday,8:15,8:35
+204,Exercise,Personal,45,Important,Wednesday,8:35,9:20
+205,Go to work,Work,60,Very Important,Wednesday,9:30,10:30
+206,Meet friends,Personal,90,Normal,Wednesday,17:00,18:30
+207,Go shopping,Personal,60,Normal,Thursday,16:00,17:00
+208,Do housework,Personal,45,Normal,Thursday,18:00,18:45
+209,Cook,Personal,60,Normal,Thursday,18:45,19:45
+210,Have lunch,Personal,60,Normal,Thursday,12:00,13:00
+211,Rest,Personal,30,Less Important,Tuesday,13:00,13:30
+212,Take a shower,Personal,20,Normal,Wednesday,13:30,13:50
+213,Watch a movie,Personal,120,Normal,Thursday,20:00,22:00
+214,Listen to music,Personal,30,Less Important,Friday,13:50,14:20
+215,Go for a walk,Personal,30,Normal,Monday,14:20,14:50
+216,Play games,Personal,60,Less Important,Monday,19:50,20:50
+217,Read a book,Personal,60,Normal,Monday,22:00,23:00
+218,Write a journal,Personal,20,Normal,Monday,23:00,23:20
+219,Send a message,Personal,10,Less Important,Monday,23:20,23:30
+220,Make a phone call,Personal,20,Normal,Saturday,15:00,15:20
+221,Organize work,Work,60,Important,Sunday,10:30,11:30
+222,Clean the room,Personal,30,Normal,Monday,11:30,12:00
+223,Plan for tomorrow,Work,20,Important,Tuesday,22:00,22:20
+224,Sunbathe,Personal,30,Less Important,Wednesday,16:00,16:30
+225,Play sports,Personal,60,Normal,Thursday,17:30,18:30
+226,Garden,Personal,60,Normal,Friday,16:30,17:30
+227,Take care of plants,Personal,30,Normal,Saturday,14:00,14:30
+228,Cook dinner,Personal,60,Normal,Sunday,19:45,20:45
+229,Clean the kitchen,Personal,30,Normal,Monday,20:45,21:15
+230,Tidy up the house,Personal,30,Normal,Monday,21:15,21:45
+231,Go to bed early,Personal,60,Very Important,Sunday,23:30,24:30:00
+232,Study online,Education,60,Very Important,Sunday,14:30,15:30
+233,Post on a blog,Personal,30,Less Important,Sunday,14:30,15:00
+234,Do crafts,Personal,60,Less Important,Sunday,16:30,17:30
+235,Repair things,Personal,60,Normal,Sunday,15:00,16:00
+236,Take photos,Personal,30,Less Important,Sunday,17:00,17:30
+237,Compose music,Personal,60,Normal,Sunday,15:30,16:30
+238,Visit family,Personal,120,Normal,Sunday,14:00,16:00
+239,Play with pets,Personal,30,Normal,Saturday,14:50,15:20
+240,Work in a team,Work,120,Very Important,Saturday,10:30,12:30
+241,Play outdoor sports,Personal,90,Normal,Sunday,16:00,17:30
+242,Attend a party,Social,180,Less Important,Saturday,18:30,21:30
+243,Practice yoga,Personal,30,Normal,Saturday,6:00,6:30
+244,Go jogging,Personal,30,Normal,Wednesday,6:30,7:00
+245,Do homework,Education,60,Important,Wednesday,18:00,19:00
+246,Attend a seminar,Education,120,Very Important,Thursday,9:00,11:00
+247,Update personal profiles,Personal,15,Less Important,Thursday,13:00,13:15
+248,Handle paperwork,Work,30,Normal,Friday,13:15,13:45
+249,Shop online,Personal,60,Normal,Saturday,12:00,13:00
+250,Learn a new skill,Education,60,Important,Sunday,16:30,17:30
+251,Watch a livestream,Personal,60,Less Important,Monday,19:00,20:00
+252,Wake up,Personal,15,Very Important,Monday,6:00,6:15
+253,Stretch,Personal,10,Normal,Sunday,6:15,6:25
+254,Make bed,Personal,10,Normal,Sunday,6:25,6:35
+255,Water plants,Personal,15,Normal,Saturday,6:35,6:50
+256,Brush teeth,Personal,5,Normal,Saturday,6:50,6:55
+257,Pack bag,Personal,10,Normal,Friday,7:00,7:10
+258,Take vitamins,Personal,5,Normal,Saturday,7:10,7:15
+259,Make lunch,Personal,30,Normal,Sunday,12:00,12:30
+260,Check weather,Personal,5,Less Important,Monday,6:00,6:05
+261,Organize desk,Work,15,Normal,Tuesday,8:30,8:45
+262,Take a break,Personal,10,Less Important,Wednesday,9:45,9:55
+263,Walk to the bus stop,Personal,10,Normal,Thursday,7:30,7:40
+264,Reply to messages,Personal,15,Normal,Friday,15:00,15:15
+265,Buy groceries,Personal,60,Normal,Saturday,10:00,11:00
+266,Do laundry,Personal,60,Normal,Sunday,15:00,16:00
+267,Take a nap,Personal,20,Less Important,Monday,13:00,13:20
+268,Drink water,Personal,5,Normal,Tuesday,10:00,10:05
+269,Talk to family,Personal,20,Normal,Wednesday,17:30,17:50
+270,Check social media,Personal,10,Less Important,Thursday,15:30,15:40
+271,Clear notifications,Personal,5,Less Important,Friday,15:40,15:45
+272,Walk the dog,Personal,30,Normal,Saturday,16:00,16:30
+273,Make smoothie,Personal,10,Less Important,Thursday,8:00,8:10
+274,Check calendar,Work,10,Normal,Friday,8:15,8:25
+275,Meditate,Personal,15,Normal,Saturday,6:40,6:55
+276,Write to-do list,Work,10,Normal,Sunday,8:45,8:55
+277,Pick up mail,Personal,10,Less Important,Monday,17:00,17:10
+278,Read a blog,Personal,15,Less Important,Tuesday,10:15,10:30
+279,Call a friend,Personal,20,Normal,Wednesday,18:00,18:20
+280,Go for a bike ride,Personal,30,Less Important,Thursday,17:00,17:30
+281,Watch TV series,Personal,60,Normal,Friday,21:00,22:00
+282,Do a puzzle,Personal,30,Less Important,Saturday,16:30,17:00
+283,Write a letter,Personal,30,Less Important,Sunday,18:30,19:00
+284,Wash dishes,Personal,20,Normal,Monday,19:45,20:05
+285,Set alarms,Personal,5,Normal,Tuesday,22:30,22:35
+286,Organize photos,Personal,30,Less Important,Wednesday,14:00,14:30
+287,Take a power nap,Personal,20,Less Important,Thursday,14:00,14:20
+288,Send postcards,Personal,20,Less Important,Monday,12:30,12:50
+289,Meet new people,Social,60,Normal,Tuesday,15:00,16:00
+290,Attend a webinar,Education,60,Important,Wednesday,19:00,20:00
+291,Plan a trip,Personal,90,Important,Thursday,14:00,15:30
+292,Organize documents,Work,30,Normal,Friday,11:00,11:30
+293,Read a magazine,Personal,20,Less Important,Saturday,15:00,15:20
+294,Have a meeting,Work,60,Very Important,Thursday,9:00,10:00
+295,Pay bills,Personal,30,Important,Friday,18:00,18:30
+296,Go to a fitness class,Personal,60,Normal,Saturday,19:00,20:00
+297,Write a poem,Personal,30,Less Important,Sunday,18:30,19:00
+298,Take a coffee break,Personal,10,Normal,Monday,10:30,10:40
+299,Take a deep breath,Personal,5,Normal,Tuesday,8:40,8:45
+300,Research a topic,Education,30,Important,Monday,15:30,16:00
+301,Meeting with client,Work,60,Very Important,Monday,9:00,10:00
+302,Go to the supermarket,Personal,30,Normal,Tuesday,16:00,16:30
+303,Exercise,Personal,45,Less Important,Wednesday,6:30,7:15
+304,Write report,Work,90,Important,Thursday,10:30,12:00
+305,Read a book,Personal,60,Normal,Friday,20:00,21:00
+306,Hang out with friends,Personal,120,Normal,Saturday,18:00,20:00
+307,Teamwork,Work,120,Very Important,Sunday,14:00,16:00
+308,Plan for the new week,Work,45,Important,Monday,8:00,8:45
+309,Jogging,Personal,30,Less Important,Tuesday,7:30,8:00
+310,Cooking,Personal,60,Normal,Wednesday,12:00,13:00
+311,Learn programming,Education,90,Very Important,Thursday,19:00,20:30
+312,Yoga practice,Personal,30,Normal,Friday,6:00,6:30
+313,Check email,Work,15,Normal,Saturday,8:45,9:00
+314,Learn English,Education,60,Important,Sunday,15:00,16:00
+315,Watch a movie,Personal,120,Less Important,Monday,21:00,23:00
+316,Work group meeting,Work,60,Very Important,Tuesday,11:00,12:00
+317,Write a diary,Personal,30,Normal,Wednesday,22:30,23:00
+318,Prepare lecture,Work,90,Important,Thursday,13:30,15:00
+319,Clean the house,Personal,60,Normal,Friday,9:00,10:00
+320,Listen to podcast,Personal,30,Normal,Saturday,20:30,21:00
+321,Go to the supermarket,Personal,30,Normal,Sunday,16:15,16:45
+322,Exercise,Personal,45,Less Important,Monday,6:45,7:30
+323,Write report,Work,90,Important,Tuesday,10:45,12:15
+324,Read a book,Personal,60,Normal,Wednesday,20:15,21:15
+325,Hang out with friends,Personal,120,Normal,Thursday,18:15,20:15
+326,Teamwork,Work,120,Very Important,Friday,14:15,16:15
+327,Plan for the new week,Work,45,Important,Saturday,8:00,8:15
+328,Jogging,Personal,30,Less Important,Sunday,7:45,8:15
+329,Cooking,Personal,60,Normal,Monday,12:15,13:15
+330,Learn programming,Education,90,Very Important,Tuesday,19:15,20:45
+331,Yoga practice,Personal,30,Normal,Wednesday,6:15,6:45
+332,Check email,Work,15,Normal,Thursday,8:00,9:15
+333,Learn English,Education,60,Important,Friday,15:15,16:15
+334,Watch a movie,Personal,120,Less Important,Saturday,21:15,23:15
+335,Work group meeting,Work,60,Very Important,Sunday,11:15,12:15
+336,Write a diary,Personal,30,Normal,Monday,22:45,23:15
+337,Prepare lecture,Work,90,Important,Tuesday,13:45,15:15
+338,Clean the house,Personal,60,Normal,Wednesday,9:15,10:15
+339,Listen to podcast,Personal,30,Normal,Thursday,20:45,21:15
+340,Meeting with client,Work,60,Very Important,Friday,9:15,10:15
+341,Go to the supermarket,Personal,30,Normal,Saturday,16:15,16:45
+342,Exercise,Personal,45,Less Important,Sunday,6:45,7:30
+343,Write report,Work,90,Important,Monday,10:45,12:15
+344,Read a book,Personal,60,Normal,Tuesday,20:15,21:15
+345,Hang out with friends,Personal,120,Normal,Wednesday,18:15,20:15
+346,Teamwork,Work,120,Very Important,Thursday,14:15,16:15
+347,Plan for the new week,Work,45,Important,Friday,8:15,8:00
+348,Jogging,Personal,30,Less Important,Saturday,7:45,8:15
+349,Cooking,Personal,60,Normal,Sunday,12:15,13:15
+350,Learn programming,Education,90,Very Important,Monday,19:15,20:45
+351,Meditation,Personal,20,Normal,Monday,6:00,6:20
+352,Team brainstorming session,Work,90,Very Important,Tuesday,10:00,11:30
+353,Gardening,Personal,45,Normal,Wednesday,7:30,8:15
+354,Online workshop,Education,120,Important,Thursday,15:00,17:00
+355,Family dinner,Personal,90,Important,Friday,19:00,20:30
+356,Coding Session,Personal,100,Normal,Sunday,20:00,21:40
+357,Email Responses,Personal,69,Very Important,Monday,14:00,15:09
+358,Yoga,Work,46,Very Important,Tuesday,19:00,19:46
+359,Coding Session,Personal,68,Normal,Wednesday,7:00,8:08
+360,Reading,Personal,24,Less Important,Thursday,20:00,20:24
+361,Grocery Shopping,Personal,15,Very Important,Friday,22:00,22:15
+362,Meeting,Personal,61,Important,Saturday,6:00,7:01
+363,Yoga,Personal,22,Important,Sunday,13:00,13:22
+364,Coding Session,Personal,89,Very Important,Monday,7:00,8:29
+365,Writing,Personal,79,Very Important,Tuesday,2:00,3:19
+366,Writing,Personal,21,Very Important,Wednesday,2:00,2:21
+367,Yoga,Personal,63,Very Important,Thursday,10:00,11:03
+368,Email Responses,Personal,111,Normal,Friday,7:00,8:51
+369,Reading,Personal,82,Less Important,Saturday,5:00,6:22
+370,Grocery Shopping,Personal,35,Important,Sunday,21:00,21:35
+371,Writing,Work,70,Less Important,Monday,18:00,19:10
+372,Yoga,Work,16,Important,Tuesday,20:00,20:16
+373,Grocery Shopping,Personal,66,Important,Wednesday,1:00,2:06
+374,Email Responses,Personal,83,Normal,Thursday,23:00,0:23
+375,Grocery Shopping,Work,43,Very Important,Friday,7:00,7:43
+376,Reading,Personal,64,Normal,Saturday,10:00,11:04
+377,Meeting,Personal,67,Important,Sunday,12:00,13:07
+378,Grocery Shopping,Work,65,Very Important,Monday,18:00,19:05
+379,Meeting,Work,102,Normal,Tuesday,11:00,12:42
+380,Meeting,Work,95,Normal,Wednesday,16:00,17:35
+381,Yoga,Personal,87,Less Important,Thursday,21:00,22:27
+382,Meeting,Work,86,Less Important,Friday,4:00,5:26
+383,Yoga,Personal,112,Important,Saturday,21:00,22:52
+384,Email Responses,Personal,23,Less Important,Sunday,16:00,16:23
+385,Reading,Personal,104,Very Important,Monday,15:00,16:44
+386,Coding Session,Work,116,Very Important,Tuesday,9:00,10:56
+387,Writing,Work,18,Important,Wednesday,9:00,9:18
+388,Reading,Personal,81,Normal,Thursday,13:00,14:21
+389,Coding Session,Work,15,Important,Friday,18:00,18:15
+390,Coding Session,Personal,16,Normal,Saturday,16:00,16:16
+391,Grocery Shopping,Personal,101,Important,Sunday,6:00,7:41
+392,Grocery Shopping,Work,41,Very Important,Monday,14:00,14:41
+393,Coding Session,Personal,108,Very Important,Tuesday,7:00,8:48
+394,Reading,Work,103,Important,Wednesday,0:00,1:43
+395,Meeting,Work,82,Very Important,Thursday,20:00,21:22
+396,Meeting,Personal,51,Less Important,Friday,21:00,21:51
+397,Grocery Shopping,Personal,101,Important,Saturday,9:00,10:41
+398,Grocery Shopping,Personal,50,Important,Sunday,1:00,1:50
+399,Meeting,Work,95,Normal,Monday,23:00,0:35
+400,Take an online quiz,Education,30,Normal,Monday,17:30,18:00
+401,Volunteer at a shelter,Personal,120,Important,Sunday,10:00,12:00
+402,Attend a seminar on technology trends,Education,120,Very Important,Monday,14:00,16:00
+403,Prepare slides for a presentation,Work,90,Important,Tuesday,9:00,10:30
+404,Virtual networking event,Work,90,Normal,Wednesday,19:00,20:30
+405,Take a long walk,Personal,45,Less Important,Thursday,7:30,8:15
+406,Create a new recipe,Personal,90,Normal,Friday,18:00,19:30
+407,Attend a book club meeting,Personal,90,Important,Saturday,17:00,18:30
+408,Host a movie night,Personal,150,Normal,Sunday,20:00,22:30
+409,Clean out old files,Work,60,Normal,Monday,16:30,17:30
+410,Research new skills to learn,Education,90,Important,Tuesday,14:00,15:30
+411,Morning journaling,Personal,30,Normal,Wednesday,6:30,7:00
+412,Water the garden,Personal,30,Less Important,Thursday,8:00,8:30
+413,Team status update,Work,60,Very Important,Friday,11:00,12:00
+414,Weekend getaway planning,Personal,90,Normal,Saturday,15:00,16:30
+415,Watch a TED Talk,Education,30,Normal,Sunday,19:00,19:30
+416,Learn new software,Education,120,Important,Monday,9:00,11:00
+417,Donate old clothes,Personal,60,Normal,Tuesday,16:00,17:00
+418,Organize a photo album,Personal,60,Normal,Wednesday,20:00,21:00
+419,Online fitness class,Personal,45,Less Important,Thursday,18:30,19:15
+420,Meal prep for the week,Personal,90,Normal,Friday,17:30,19:00
+421,Call a relative,Personal,30,Normal,Saturday,10:30,11:00
+422,Sketch a design,Personal,90,Normal,Sunday,14:00,15:30
+423,Research a topic of interest,Education,90,Important,Monday,15:00,16:30
+424,Organize workspace,Work,60,Important,Tuesday,13:00,14:00
+425,Meditation session,Personal,20,Less Important,Wednesday,6:00,6:20
+426,Plan a team outing,Work,60,Important,Thursday,17:00,18:00
+427,Attend a yoga retreat,Personal,120,Important,Friday,8:00,10:00
+428,Write a short story,Personal,90,Normal,Saturday,19:00,20:30
+429,Practice a musical instrument,Personal,60,Normal,Sunday,17:30,18:30
+430,Learn a new language,Education,60,Important,Monday,20:00,21:00
+431,Morning stretch,Personal,15,Less Important,Tuesday,6:30,6:45
+432,Review monthly budget,Personal,45,Important,Wednesday,19:30,20:15
+433,Visit a museum,Personal,120,Normal,Thursday,10:00,12:00
+434,Host a podcast episode,Personal,60,Normal,Friday,20:00,21:00
+435,Back up important data,Work,30,Important,Saturday,9:00,9:30
+436,Update LinkedIn profile,Work,45,Important,Sunday,12:00,12:45
+437,Paint a canvas,Personal,90,Normal,Monday,17:00,18:30
+438,Research healthy recipes,Personal,60,Normal,Tuesday,11:00,12:00
+439,Weekly team sync-up,Work,60,Very Important,Wednesday,15:00,16:00
+440,Attend a coding hackathon,Education,240,Very Important,Thursday,14:00,18:00
+441,Play board games with family,Personal,90,Normal,Friday,19:30,21:00
+442,Walk a pet,Personal,30,Normal,Saturday,8:00,8:30
+443,Visit the library,Education,60,Normal,Sunday,14:30,15:30
+444,Complete a crossword puzzle,Personal,30,Normal,Monday,21:00,21:30
+445,Join a webinar on AI,Education,120,Very Important,Tuesday,10:00,12:00
+446,Plan a creative project,Personal,60,Normal,Wednesday,18:00,19:00
+447,Organize email inbox,Work,30,Normal,Thursday,9:00,9:30
+448,Relax with an audiobook,Personal,60,Normal,Friday,21:00,22:00
+449,Brush teeth,Personal,5,Normal,Monday,7:00,7:05
+450,Take a shower,Personal,20,Normal,Monday,7:05,7:25
+451,Make breakfast,Personal,30,Normal,Monday,7:30,8:00
+452,Check social media,Personal,15,Normal,Monday,8:15,8:30
+453,Go to work,Work,60,Very Important,Monday,8:30,9:30
+454,Drive to work,Work,30,Normal,Saturday,9:30,10:00
+455,Morning coffee break,Personal,15,Normal,Saturday,10:00,10:15
+456,Organize desk,Work,10,Normal,Monday,10:15,10:25
+457,Take a short walk,Personal,10,Less Important,Monday,12:00,12:10
+458,Have lunch,Personal,45,Normal,Monday,12:15,13:00
+459,Check and reply to messages,Work,15,Normal,Monday,13:00,13:15
+460,Call a friend,Personal,20,Normal,Monday,13:30,13:50
+461,Check work emails,Work,20,Normal,Monday,14:00,14:20
+462,Do the laundry,Personal,30,Normal,Monday,14:30,15:00
+463,Cook dinner,Personal,45,Normal,Monday,18:00,18:45
+464,Eat dinner,Personal,30,Normal,Monday,18:45,19:15
+465,Wash dishes,Personal,15,Normal,Monday,19:30,19:45
+466,Watch TV,Personal,60,Normal,Monday,20:00,21:00
+467,Take a walk after dinner,Personal,20,Less Important,Monday,21:15,21:35
+468,Meditate,Personal,10,Less Important,Monday,21:40,21:50
+469,Read the news,Personal,20,Normal,Tuesday,7:00,7:20
+470,Make a to-do list for the day,Personal,10,Normal,Saturday,7:20,7:30
+471,Water the plants,Personal,10,Normal,Saturday,7:30,7:40
+472,Drop kids off at school,Personal,30,Normal,Tuesday,8:00,8:30
+473,Drive to work,Work,30,Normal,Tuesday,8:30,9:00
+474,Grocery shopping,Personal,60,Normal,Sunday,10:00,11:00
+475,Respond to customer queries,Work,30,Normal,Monday,11:00,11:30
+476,Take a quick break,Personal,10,Normal,Tuesday,15:00,15:10
+477,Pick up kids from school,Personal,30,Normal,Wednesday,16:00,16:30
+478,Check bank statements,Personal,15,Normal,Tuesday,16:30,16:45
+479,Clean the kitchen,Personal,30,Normal,Tuesday,17:00,17:30
+480,Clean the bathroom,Personal,30,Normal,Tuesday,18:00,18:30
+481,Call family members,Personal,15,Normal,Tuesday,19:00,19:15
+482,Check work updates,Work,20,Normal,Tuesday,20:00,20:20
+483,Plan a weekend trip,Personal,30,Normal,Tuesday,20:30,21:00
+484,Have a cup of tea,Personal,15,Normal,Wednesday,7:00,7:15
+485,Read a book,Personal,30,Normal,Wednesday,7:15,7:45
+486,Clean the living room,Personal,30,Normal,Wednesday,10:00,10:30
+487,Listen to music,Personal,30,Normal,Wednesday,12:00,12:30
+488,Call a colleague for a quick check-in,Work,10,Normal,Wednesday,14:00,14:10
+489,Make a list of groceries,Personal,10,Normal,Wednesday,16:00,16:10
+490,Take a nap,Personal,30,Less Important,Wednesday,16:30,17:00
+491,Organize the wardrobe,Personal,30,Normal,Wednesday,17:30,18:00
+492,Try a new recipe,Personal,45,Normal,Wednesday,18:30,19:15
+493,Reply to personal messages,Personal,15,Normal,Wednesday,19:30,19:45
+494,Take a hot bath,Personal,30,Normal,Wednesday,20:00,20:30
+495,Do some light stretching,Personal,10,Normal,Thursday,6:30,6:40
+496,Take a morning walk,Personal,20,Normal,Thursday,7:00,7:20
+497,Pack lunch,Personal,15,Normal,Thursday,7:30,7:45
+498,Make phone calls for work,Work,30,Normal,Thursday,9:00,9:30
+499,Have breakfast,Personal,30,Normal,Tuesday,7:00,7:30
+500,Drink coffee,Personal,15,Normal,Tuesday,7:30,7:45
+501,Browse social media,Personal,15,Less Important,Tuesday,7:45,8:00
+502,Check emails,Work,15,Normal,Wednesday,8:00,8:15
+503,Read the news,Personal,20,Normal,Wednesday,8:15,8:35
+504,Exercise,Personal,45,Important,Wednesday,8:35,9:20
+505,Go to work,Work,60,Very Important,Wednesday,9:30,10:30
+506,Meet friends,Personal,90,Normal,Wednesday,17:00,18:30
+507,Go shopping,Personal,60,Normal,Thursday,16:00,17:00
+508,Do housework,Personal,45,Normal,Thursday,18:00,18:45
+509,Cook,Personal,60,Normal,Thursday,18:45,19:45
+510,Have lunch,Personal,60,Normal,Thursday,12:00,13:00
+511,Rest,Personal,30,Less Important,Tuesday,13:00,13:30
+512,Take a shower,Personal,20,Normal,Wednesday,13:30,13:50
+513,Watch a movie,Personal,120,Normal,Thursday,20:00,22:00
+514,Listen to music,Personal,30,Less Important,Friday,13:50,14:20
+515,Go for a walk,Personal,30,Normal,Monday,14:20,14:50
+516,Play games,Personal,60,Less Important,Monday,19:50,20:50
+517,Read a book,Personal,60,Normal,Monday,22:00,23:00
+518,Write a journal,Personal,20,Normal,Monday,23:00,23:20
+519,Send a message,Personal,10,Less Important,Monday,23:20,23:30
+520,Make a phone call,Personal,20,Normal,Saturday,15:00,15:20
+521,Organize work,Work,60,Important,Sunday,10:30,11:30
+522,Clean the room,Personal,30,Normal,Monday,11:30,12:00
+523,Plan for tomorrow,Work,20,Important,Tuesday,22:00,22:20
+524,Sunbathe,Personal,30,Less Important,Wednesday,16:00,16:30
+525,Play sports,Personal,60,Normal,Thursday,17:30,18:30
+526,Garden,Personal,60,Normal,Friday,16:30,17:30
+527,Take care of plants,Personal,30,Normal,Saturday,14:00,14:30
+528,Cook dinner,Personal,60,Normal,Sunday,19:45,20:45
+529,Clean the kitchen,Personal,30,Normal,Monday,20:45,21:15
+530,Tidy up the house,Personal,30,Normal,Monday,21:15,21:45
+531,Go to bed early,Personal,60,Very Important,Sunday,23:30,24:30:00
+532,Study online,Education,60,Very Important,Sunday,14:30,15:30
+533,Post on a blog,Personal,30,Less Important,Sunday,14:30,15:00
+534,Do crafts,Personal,60,Less Important,Sunday,16:30,17:30
+535,Repair things,Personal,60,Normal,Sunday,15:00,16:00
+536,Take photos,Personal,30,Less Important,Sunday,17:00,17:30
+537,Compose music,Personal,60,Normal,Sunday,15:30,16:30
+538,Visit family,Personal,120,Normal,Sunday,14:00,16:00
+539,Play with pets,Personal,30,Normal,Saturday,14:50,15:20
+540,Work in a team,Work,120,Very Important,Saturday,10:30,12:30
+541,Play outdoor sports,Personal,90,Normal,Sunday,16:00,17:30
+542,Attend a party,Social,180,Less Important,Saturday,18:30,21:30
+543,Practice yoga,Personal,30,Normal,Saturday,6:00,6:30
+544,Go jogging,Personal,30,Normal,Wednesday,6:30,7:00
+545,Do homework,Education,60,Important,Wednesday,18:00,19:00
+546,Attend a seminar,Education,120,Very Important,Thursday,9:00,11:00
+547,Update personal profiles,Personal,15,Less Important,Thursday,13:00,13:15
+548,Handle paperwork,Work,30,Normal,Friday,13:15,13:45
+549,Shop online,Personal,60,Normal,Saturday,12:00,13:00
+550,Learn a new skill,Education,60,Important,Sunday,16:30,17:30
+551,Watch a livestream,Personal,60,Less Important,Monday,19:00,20:00
+552,Wake up,Personal,15,Very Important,Monday,6:00,6:15
+553,Stretch,Personal,10,Normal,Sunday,6:15,6:25
+554,Make bed,Personal,10,Normal,Sunday,6:25,6:35
+555,Water plants,Personal,15,Normal,Saturday,6:35,6:50
+556,Brush teeth,Personal,5,Normal,Saturday,6:50,6:55
+557,Pack bag,Personal,10,Normal,Friday,7:00,7:10
+558,Take vitamins,Personal,5,Normal,Saturday,7:10,7:15
+559,Make lunch,Personal,30,Normal,Sunday,12:00,12:30
+560,Check weather,Personal,5,Less Important,Monday,6:00,6:05
+561,Organize desk,Work,15,Normal,Tuesday,8:30,8:45
+562,Take a break,Personal,10,Less Important,Wednesday,9:45,9:55
+563,Walk to the bus stop,Personal,10,Normal,Thursday,7:30,7:40
+564,Reply to messages,Personal,15,Normal,Friday,15:00,15:15
+565,Buy groceries,Personal,60,Normal,Saturday,10:00,11:00
+566,Do laundry,Personal,60,Normal,Sunday,15:00,16:00
+567,Take a nap,Personal,20,Less Important,Monday,13:00,13:20
+568,Drink water,Personal,5,Normal,Tuesday,10:00,10:05
+569,Talk to family,Personal,20,Normal,Wednesday,17:30,17:50
+570,Check social media,Personal,10,Less Important,Thursday,15:30,15:40
+571,Clear notifications,Personal,5,Less Important,Friday,15:40,15:45
+572,Walk the dog,Personal,30,Normal,Saturday,16:00,16:30
+573,Make smoothie,Personal,10,Less Important,Thursday,8:00,8:10
+574,Check calendar,Work,10,Normal,Friday,8:15,8:25
+575,Meditate,Personal,15,Normal,Saturday,6:40,6:55
+576,Write to-do list,Work,10,Normal,Sunday,8:45,8:55
+577,Pick up mail,Personal,10,Less Important,Monday,17:00,17:10
+578,Read a blog,Personal,15,Less Important,Tuesday,10:15,10:30
+579,Call a friend,Personal,20,Normal,Wednesday,18:00,18:20
+580,Go for a bike ride,Personal,30,Less Important,Thursday,17:00,17:30
+581,Watch TV series,Personal,60,Normal,Friday,21:00,22:00
+582,Do a puzzle,Personal,30,Less Important,Saturday,16:30,17:00
+583,Write a letter,Personal,30,Less Important,Sunday,18:30,19:00
+584,Wash dishes,Personal,20,Normal,Monday,19:45,20:05
+585,Set alarms,Personal,5,Normal,Tuesday,22:30,22:35
+586,Organize photos,Personal,30,Less Important,Wednesday,14:00,14:30
+587,Take a power nap,Personal,20,Less Important,Thursday,14:00,14:20
+588,Send postcards,Personal,20,Less Important,Monday,12:30,12:50
+589,Meet new people,Social,60,Normal,Tuesday,15:00,16:00
+590,Attend a webinar,Education,60,Important,Wednesday,19:00,20:00
+591,Plan a trip,Personal,90,Important,Thursday,14:00,15:30
+592,Organize documents,Work,30,Normal,Friday,11:00,11:30
+593,Read a magazine,Personal,20,Less Important,Saturday,15:00,15:20
+594,Have a meeting,Work,60,Very Important,Thursday,9:00,10:00
+595,Pay bills,Personal,30,Important,Friday,18:00,18:30
+596,Go to a fitness class,Personal,60,Normal,Saturday,19:00,20:00
+597,Write a poem,Personal,30,Less Important,Sunday,18:30,19:00
+598,Take a coffee break,Personal,10,Normal,Monday,10:30,10:40
+599,Take a deep breath,Personal,5,Normal,Tuesday,8:40,8:45
+600,Research a topic,Education,30,Important,Monday,15:30,16:00
+601,Meeting with client,Work,60,Very Important,Monday,9:00,10:00
+602,Go to the supermarket,Personal,30,Normal,Tuesday,16:00,16:30
+603,Exercise,Personal,45,Less Important,Wednesday,6:30,7:15
+604,Write report,Work,90,Important,Thursday,10:30,12:00
+605,Read a book,Personal,60,Normal,Friday,20:00,21:00
+606,Hang out with friends,Personal,120,Normal,Saturday,18:00,20:00
+607,Teamwork,Work,120,Very Important,Sunday,14:00,16:00
+608,Plan for the new week,Work,45,Important,Monday,8:00,8:45
+609,Jogging,Personal,30,Less Important,Tuesday,7:30,8:00
+610,Cooking,Personal,60,Normal,Wednesday,12:00,13:00
+611,Learn programming,Education,90,Very Important,Thursday,19:00,20:30
+612,Yoga practice,Personal,30,Normal,Friday,6:00,6:30
+613,Check email,Work,15,Normal,Saturday,8:45,9:00
+614,Learn English,Education,60,Important,Sunday,15:00,16:00
+615,Watch a movie,Personal,120,Less Important,Monday,21:00,23:00
+616,Work group meeting,Work,60,Very Important,Tuesday,11:00,12:00
+617,Write a diary,Personal,30,Normal,Wednesday,22:30,23:00
+618,Prepare lecture,Work,90,Important,Thursday,13:30,15:00
+619,Clean the house,Personal,60,Normal,Friday,9:00,10:00
+620,Listen to podcast,Personal,30,Normal,Saturday,20:30,21:00
+621,Go to the supermarket,Personal,30,Normal,Sunday,16:15,16:45
+622,Exercise,Personal,45,Less Important,Monday,6:45,7:30
+623,Write report,Work,90,Important,Tuesday,10:45,12:15
+624,Read a book,Personal,60,Normal,Wednesday,20:15,21:15
+625,Hang out with friends,Personal,120,Normal,Thursday,18:15,20:15
+626,Teamwork,Work,120,Very Important,Friday,14:15,16:15
+627,Plan for the new week,Work,45,Important,Saturday,8:00,8:15
+628,Jogging,Personal,30,Less Important,Sunday,7:45,8:15
+629,Cooking,Personal,60,Normal,Monday,12:15,13:15
+630,Learn programming,Education,90,Very Important,Tuesday,19:15,20:45
+631,Yoga practice,Personal,30,Normal,Wednesday,6:15,6:45
+632,Check email,Work,15,Normal,Thursday,8:00,9:15
+633,Learn English,Education,60,Important,Friday,15:15,16:15
+634,Watch a movie,Personal,120,Less Important,Saturday,21:15,23:15
+635,Work group meeting,Work,60,Very Important,Sunday,11:15,12:15
+636,Write a diary,Personal,30,Normal,Monday,22:45,23:15
+637,Prepare lecture,Work,90,Important,Tuesday,13:45,15:15
+638,Clean the house,Personal,60,Normal,Wednesday,9:15,10:15
+639,Listen to podcast,Personal,30,Normal,Thursday,20:45,21:15
+640,Meeting with client,Work,60,Very Important,Friday,9:15,10:15
+641,Go to the supermarket,Personal,30,Normal,Saturday,16:15,16:45
+642,Exercise,Personal,45,Less Important,Sunday,6:45,7:30
+643,Write report,Work,90,Important,Monday,10:45,12:15
+644,Read a book,Personal,60,Normal,Tuesday,20:15,21:15
+645,Hang out with friends,Personal,120,Normal,Wednesday,18:15,20:15
+646,Teamwork,Work,120,Very Important,Thursday,14:15,16:15
+647,Plan for the new week,Work,45,Important,Friday,8:15,8:00
+648,Jogging,Personal,30,Less Important,Saturday,7:45,8:15
+649,Cooking,Personal,60,Normal,Sunday,12:15,13:15
+650,Learn programming,Education,90,Very Important,Monday,19:15,20:45
+651,Meditation,Personal,20,Normal,Monday,6:00,6:20
+652,Team brainstorming session,Work,90,Very Important,Tuesday,10:00,11:30
+653,Gardening,Personal,45,Normal,Wednesday,7:30,8:15
+654,Online workshop,Education,120,Important,Thursday,15:00,17:00
+655,Family dinner,Personal,90,Important,Friday,19:00,20:30
+656,Coding Session,Personal,100,Normal,Sunday,20:00,21:40
+657,Email Responses,Personal,69,Very Important,Monday,14:00,15:09
+658,Yoga,Work,46,Very Important,Tuesday,19:00,19:46
+659,Coding Session,Personal,68,Normal,Wednesday,7:00,8:08
+660,Reading,Personal,24,Less Important,Thursday,20:00,20:24
+661,Grocery Shopping,Personal,15,Very Important,Friday,22:00,22:15
+662,Meeting,Personal,61,Important,Saturday,6:00,7:01
+663,Yoga,Personal,22,Important,Sunday,13:00,13:22
+664,Coding Session,Personal,89,Very Important,Monday,7:00,8:29
+665,Writing,Personal,79,Very Important,Tuesday,2:00,3:19
+666,Writing,Personal,21,Very Important,Wednesday,2:00,2:21
+667,Yoga,Personal,63,Very Important,Thursday,10:00,11:03
+668,Email Responses,Personal,111,Normal,Friday,7:00,8:51
+669,Reading,Personal,82,Less Important,Saturday,5:00,6:22
+670,Grocery Shopping,Personal,35,Important,Sunday,21:00,21:35
+671,Writing,Work,70,Less Important,Monday,18:00,19:10
+672,Yoga,Work,16,Important,Tuesday,20:00,20:16
+673,Grocery Shopping,Personal,66,Important,Wednesday,1:00,2:06
+674,Email Responses,Personal,83,Normal,Thursday,23:00,0:23
+675,Grocery Shopping,Work,43,Very Important,Friday,7:00,7:43
+676,Reading,Personal,64,Normal,Saturday,10:00,11:04
+677,Meeting,Personal,67,Important,Sunday,12:00,13:07
+678,Grocery Shopping,Work,65,Very Important,Monday,18:00,19:05
+679,Meeting,Work,102,Normal,Tuesday,11:00,12:42
+680,Meeting,Work,95,Normal,Wednesday,16:00,17:35
+681,Yoga,Personal,87,Less Important,Thursday,21:00,22:27
+682,Meeting,Work,86,Less Important,Friday,4:00,5:26
+683,Yoga,Personal,112,Important,Saturday,21:00,22:52
+684,Email Responses,Personal,23,Less Important,Sunday,16:00,16:23
+685,Reading,Personal,104,Very Important,Monday,15:00,16:44
+686,Coding Session,Work,116,Very Important,Tuesday,9:00,10:56
+687,Writing,Work,18,Important,Wednesday,9:00,9:18
+688,Reading,Personal,81,Normal,Thursday,13:00,14:21
+689,Coding Session,Work,15,Important,Friday,18:00,18:15
+690,Coding Session,Personal,16,Normal,Saturday,16:00,16:16
+691,Grocery Shopping,Personal,101,Important,Sunday,6:00,7:41
+692,Grocery Shopping,Work,41,Very Important,Monday,14:00,14:41
+693,Coding Session,Personal,108,Very Important,Tuesday,7:00,8:48
+694,Reading,Work,103,Important,Wednesday,0:00,1:43
+695,Meeting,Work,82,Very Important,Thursday,20:00,21:22
+696,Meeting,Personal,51,Less Important,Friday,21:00,21:51
+697,Grocery Shopping,Personal,101,Important,Saturday,9:00,10:41
+698,Grocery Shopping,Personal,50,Important,Sunday,1:00,1:50
+699,Meeting,Work,95,Normal,Monday,23:00,0:35
+700,Take an online quiz,Education,30,Normal,Monday,17:30,18:00
+701,Volunteer at a shelter,Personal,120,Important,Sunday,10:00,12:00
+702,Attend a seminar on technology trends,Education,120,Very Important,Monday,14:00,16:00
+703,Prepare slides for a presentation,Work,90,Important,Tuesday,9:00,10:30
+704,Virtual networking event,Work,90,Normal,Wednesday,19:00,20:30
+705,Take a long walk,Personal,45,Less Important,Thursday,7:30,8:15
+706,Create a new recipe,Personal,90,Normal,Friday,18:00,19:30
+707,Attend a book club meeting,Personal,90,Important,Saturday,17:00,18:30
+708,Host a movie night,Personal,150,Normal,Sunday,20:00,22:30
+709,Clean out old files,Work,60,Normal,Monday,16:30,17:30
+710,Research new skills to learn,Education,90,Important,Tuesday,14:00,15:30
+711,Morning journaling,Personal,30,Normal,Wednesday,6:30,7:00
+712,Water the garden,Personal,30,Less Important,Thursday,8:00,8:30
+713,Team status update,Work,60,Very Important,Friday,11:00,12:00
+714,Weekend getaway planning,Personal,90,Normal,Saturday,15:00,16:30
+715,Watch a TED Talk,Education,30,Normal,Sunday,19:00,19:30
+716,Learn new software,Education,120,Important,Monday,9:00,11:00
+717,Donate old clothes,Personal,60,Normal,Tuesday,16:00,17:00
+718,Organize a photo album,Personal,60,Normal,Wednesday,20:00,21:00
+719,Online fitness class,Personal,45,Less Important,Thursday,18:30,19:15
+720,Meal prep for the week,Personal,90,Normal,Friday,17:30,19:00
+721,Call a relative,Personal,30,Normal,Saturday,10:30,11:00
+722,Sketch a design,Personal,90,Normal,Sunday,14:00,15:30
+723,Research a topic of interest,Education,90,Important,Monday,15:00,16:30
+724,Organize workspace,Work,60,Important,Tuesday,13:00,14:00
+725,Meditation session,Personal,20,Less Important,Wednesday,6:00,6:20
+726,Plan a team outing,Work,60,Important,Thursday,17:00,18:00
+727,Attend a yoga retreat,Personal,120,Important,Friday,8:00,10:00
+728,Write a short story,Personal,90,Normal,Saturday,19:00,20:30
+729,Practice a musical instrument,Personal,60,Normal,Sunday,17:30,18:30
+730,Learn a new language,Education,60,Important,Monday,20:00,21:00
+731,Morning stretch,Personal,15,Less Important,Tuesday,6:30,6:45
+732,Review monthly budget,Personal,45,Important,Wednesday,19:30,20:15
+733,Visit a museum,Personal,120,Normal,Thursday,10:00,12:00
+734,Host a podcast episode,Personal,60,Normal,Friday,20:00,21:00
+735,Back up important data,Work,30,Important,Saturday,9:00,9:30
+736,Update LinkedIn profile,Work,45,Important,Sunday,12:00,12:45
+737,Paint a canvas,Personal,90,Normal,Monday,17:00,18:30
+738,Research healthy recipes,Personal,60,Normal,Tuesday,11:00,12:00
+739,Weekly team sync-up,Work,60,Very Important,Wednesday,15:00,16:00
+740,Attend a coding hackathon,Education,240,Very Important,Thursday,14:00,18:00
+741,Play board games with family,Personal,90,Normal,Friday,19:30,21:00
+742,Walk a pet,Personal,30,Normal,Saturday,8:00,8:30
+743,Visit the library,Education,60,Normal,Sunday,14:30,15:30
+744,Complete a crossword puzzle,Personal,30,Normal,Monday,21:00,21:30
+745,Join a webinar on AI,Education,120,Very Important,Tuesday,10:00,12:00
+746,Plan a creative project,Personal,60,Normal,Wednesday,18:00,19:00
+747,Organize email inbox,Work,30,Normal,Thursday,9:00,9:30
+748,Relax with an audiobook,Personal,60,Normal,Friday,21:00,22:00
+749,Brush teeth,Personal,5,Normal,Monday,7:00,7:05
+750,Take a shower,Personal,20,Normal,Monday,7:05,7:25
+751,Make breakfast,Personal,30,Normal,Monday,7:30,8:00
+752,Check social media,Personal,15,Normal,Monday,8:15,8:30
+753,Go to work,Work,60,Very Important,Monday,8:30,9:30
+754,Drive to work,Work,30,Normal,Saturday,9:30,10:00
+755,Morning coffee break,Personal,15,Normal,Saturday,10:00,10:15
+756,Organize desk,Work,10,Normal,Monday,10:15,10:25
+757,Take a short walk,Personal,10,Less Important,Monday,12:00,12:10
+758,Have lunch,Personal,45,Normal,Monday,12:15,13:00
+759,Check and reply to messages,Work,15,Normal,Monday,13:00,13:15
+760,Call a friend,Personal,20,Normal,Monday,13:30,13:50
+761,Check work emails,Work,20,Normal,Monday,14:00,14:20
+762,Do the laundry,Personal,30,Normal,Monday,14:30,15:00
+763,Cook dinner,Personal,45,Normal,Monday,18:00,18:45
+764,Eat dinner,Personal,30,Normal,Monday,18:45,19:15
+765,Wash dishes,Personal,15,Normal,Monday,19:30,19:45
+766,Watch TV,Personal,60,Normal,Monday,20:00,21:00
+767,Take a walk after dinner,Personal,20,Less Important,Monday,21:15,21:35
+768,Meditate,Personal,10,Less Important,Monday,21:40,21:50
+769,Read the news,Personal,20,Normal,Tuesday,7:00,7:20
+770,Make a to-do list for the day,Personal,10,Normal,Saturday,7:20,7:30
+771,Water the plants,Personal,10,Normal,Saturday,7:30,7:40
+772,Drop kids off at school,Personal,30,Normal,Tuesday,8:00,8:30
+773,Drive to work,Work,30,Normal,Tuesday,8:30,9:00
+774,Grocery shopping,Personal,60,Normal,Sunday,10:00,11:00
+775,Respond to customer queries,Work,30,Normal,Monday,11:00,11:30
+776,Take a quick break,Personal,10,Normal,Tuesday,15:00,15:10
+777,Pick up kids from school,Personal,30,Normal,Wednesday,16:00,16:30
+778,Check bank statements,Personal,15,Normal,Tuesday,16:30,16:45
+779,Clean the kitchen,Personal,30,Normal,Tuesday,17:00,17:30
+780,Clean the bathroom,Personal,30,Normal,Tuesday,18:00,18:30
+781,Call family members,Personal,15,Normal,Tuesday,19:00,19:15
+782,Check work updates,Work,20,Normal,Tuesday,20:00,20:20
+783,Plan a weekend trip,Personal,30,Normal,Tuesday,20:30,21:00
+784,Have a cup of tea,Personal,15,Normal,Wednesday,7:00,7:15
+785,Read a book,Personal,30,Normal,Wednesday,7:15,7:45
+786,Clean the living room,Personal,30,Normal,Wednesday,10:00,10:30
+787,Listen to music,Personal,30,Normal,Wednesday,12:00,12:30
+788,Call a colleague for a quick check-in,Work,10,Normal,Wednesday,14:00,14:10
+789,Make a list of groceries,Personal,10,Normal,Wednesday,16:00,16:10
+790,Take a nap,Personal,30,Less Important,Wednesday,16:30,17:00
+791,Organize the wardrobe,Personal,30,Normal,Wednesday,17:30,18:00
+792,Try a new recipe,Personal,45,Normal,Wednesday,18:30,19:15
+793,Reply to personal messages,Personal,15,Normal,Wednesday,19:30,19:45
+794,Take a hot bath,Personal,30,Normal,Wednesday,20:00,20:30
+795,Do some light stretching,Personal,10,Normal,Thursday,6:30,6:40
+796,Take a morning walk,Personal,20,Normal,Thursday,7:00,7:20
+797,Pack lunch,Personal,15,Normal,Thursday,7:30,7:45
+798,Make phone calls for work,Work,30,Normal,Thursday,9:00,9:30
+799,Have breakfast,Personal,30,Normal,Tuesday,7:00,7:30
+800,Drink coffee,Personal,15,Normal,Tuesday,7:30,7:45
+801,Browse social media,Personal,15,Less Important,Tuesday,7:45,8:00
+802,Check emails,Work,15,Normal,Wednesday,8:00,8:15
+803,Read the news,Personal,20,Normal,Wednesday,8:15,8:35
+804,Exercise,Personal,45,Important,Wednesday,8:35,9:20
+805,Go to work,Work,60,Very Important,Wednesday,9:30,10:30
+806,Meet friends,Personal,90,Normal,Wednesday,17:00,18:30
+807,Go shopping,Personal,60,Normal,Thursday,16:00,17:00
+808,Do housework,Personal,45,Normal,Thursday,18:00,18:45
+809,Cook,Personal,60,Normal,Thursday,18:45,19:45
+810,Have lunch,Personal,60,Normal,Thursday,12:00,13:00
+811,Rest,Personal,30,Less Important,Tuesday,13:00,13:30
+812,Take a shower,Personal,20,Normal,Wednesday,13:30,13:50
+813,Watch a movie,Personal,120,Normal,Thursday,20:00,22:00
+814,Listen to music,Personal,30,Less Important,Friday,13:50,14:20
+815,Go for a walk,Personal,30,Normal,Monday,14:20,14:50
+816,Play games,Personal,60,Less Important,Monday,19:50,20:50
+817,Read a book,Personal,60,Normal,Monday,22:00,23:00
+818,Write a journal,Personal,20,Normal,Monday,23:00,23:20
+819,Send a message,Personal,10,Less Important,Monday,23:20,23:30
+820,Make a phone call,Personal,20,Normal,Saturday,15:00,15:20
+821,Organize work,Work,60,Important,Sunday,10:30,11:30
+822,Clean the room,Personal,30,Normal,Monday,11:30,12:00
+823,Plan for tomorrow,Work,20,Important,Tuesday,22:00,22:20
+824,Sunbathe,Personal,30,Less Important,Wednesday,16:00,16:30
+825,Play sports,Personal,60,Normal,Thursday,17:30,18:30
+826,Garden,Personal,60,Normal,Friday,16:30,17:30
+827,Take care of plants,Personal,30,Normal,Saturday,14:00,14:30
+828,Cook dinner,Personal,60,Normal,Sunday,19:45,20:45
+829,Clean the kitchen,Personal,30,Normal,Monday,20:45,21:15
+830,Tidy up the house,Personal,30,Normal,Monday,21:15,21:45
+831,Go to bed early,Personal,60,Very Important,Sunday,23:30,24:30:00
+832,Study online,Education,60,Very Important,Sunday,14:30,15:30
+833,Post on a blog,Personal,30,Less Important,Sunday,14:30,15:00
+834,Do crafts,Personal,60,Less Important,Sunday,16:30,17:30
+835,Repair things,Personal,60,Normal,Sunday,15:00,16:00
+836,Take photos,Personal,30,Less Important,Sunday,17:00,17:30
+837,Compose music,Personal,60,Normal,Sunday,15:30,16:30
+838,Visit family,Personal,120,Normal,Sunday,14:00,16:00
+839,Play with pets,Personal,30,Normal,Saturday,14:50,15:20
+840,Work in a team,Work,120,Very Important,Saturday,10:30,12:30
+841,Play outdoor sports,Personal,90,Normal,Sunday,16:00,17:30
+842,Attend a party,Social,180,Less Important,Saturday,18:30,21:30
+843,Practice yoga,Personal,30,Normal,Saturday,6:00,6:30
+844,Go jogging,Personal,30,Normal,Wednesday,6:30,7:00
+845,Do homework,Education,60,Important,Wednesday,18:00,19:00
+846,Attend a seminar,Education,120,Very Important,Thursday,9:00,11:00
+847,Update personal profiles,Personal,15,Less Important,Thursday,13:00,13:15
+848,Handle paperwork,Work,30,Normal,Friday,13:15,13:45
+849,Shop online,Personal,60,Normal,Saturday,12:00,13:00
+850,Learn a new skill,Education,60,Important,Sunday,16:30,17:30
+851,Watch a livestream,Personal,60,Less Important,Monday,19:00,20:00
+852,Wake up,Personal,15,Very Important,Monday,6:00,6:15
+853,Stretch,Personal,10,Normal,Sunday,6:15,6:25
+854,Make bed,Personal,10,Normal,Sunday,6:25,6:35
+855,Water plants,Personal,15,Normal,Saturday,6:35,6:50
+856,Brush teeth,Personal,5,Normal,Saturday,6:50,6:55
+857,Pack bag,Personal,10,Normal,Friday,7:00,7:10
+858,Take vitamins,Personal,5,Normal,Saturday,7:10,7:15
+859,Make lunch,Personal,30,Normal,Sunday,12:00,12:30
+860,Check weather,Personal,5,Less Important,Monday,6:00,6:05
+861,Organize desk,Work,15,Normal,Tuesday,8:30,8:45
+862,Take a break,Personal,10,Less Important,Wednesday,9:45,9:55
+863,Walk to the bus stop,Personal,10,Normal,Thursday,7:30,7:40
+864,Reply to messages,Personal,15,Normal,Friday,15:00,15:15
+865,Buy groceries,Personal,60,Normal,Saturday,10:00,11:00
+866,Do laundry,Personal,60,Normal,Sunday,15:00,16:00
+867,Take a nap,Personal,20,Less Important,Monday,13:00,13:20
+868,Drink water,Personal,5,Normal,Tuesday,10:00,10:05
+869,Talk to family,Personal,20,Normal,Wednesday,17:30,17:50
+870,Check social media,Personal,10,Less Important,Thursday,15:30,15:40
+871,Clear notifications,Personal,5,Less Important,Friday,15:40,15:45
+872,Walk the dog,Personal,30,Normal,Saturday,16:00,16:30
+873,Make smoothie,Personal,10,Less Important,Thursday,8:00,8:10
+874,Check calendar,Work,10,Normal,Friday,8:15,8:25
+875,Meditate,Personal,15,Normal,Saturday,6:40,6:55
+876,Write to-do list,Work,10,Normal,Sunday,8:45,8:55
+877,Pick up mail,Personal,10,Less Important,Monday,17:00,17:10
+878,Read a blog,Personal,15,Less Important,Tuesday,10:15,10:30
+879,Call a friend,Personal,20,Normal,Wednesday,18:00,18:20
+880,Go for a bike ride,Personal,30,Less Important,Thursday,17:00,17:30
+881,Watch TV series,Personal,60,Normal,Friday,21:00,22:00
+882,Do a puzzle,Personal,30,Less Important,Saturday,16:30,17:00
+883,Write a letter,Personal,30,Less Important,Sunday,18:30,19:00
+884,Wash dishes,Personal,20,Normal,Monday,19:45,20:05
+885,Set alarms,Personal,5,Normal,Tuesday,22:30,22:35
+886,Organize photos,Personal,30,Less Important,Wednesday,14:00,14:30
+887,Take a power nap,Personal,20,Less Important,Thursday,14:00,14:20
+888,Send postcards,Personal,20,Less Important,Monday,12:30,12:50
+889,Meet new people,Social,60,Normal,Tuesday,15:00,16:00
+890,Attend a webinar,Education,60,Important,Wednesday,19:00,20:00
+891,Plan a trip,Personal,90,Important,Thursday,14:00,15:30
+892,Organize documents,Work,30,Normal,Friday,11:00,11:30
+893,Read a magazine,Personal,20,Less Important,Saturday,15:00,15:20
+894,Have a meeting,Work,60,Very Important,Thursday,9:00,10:00
+895,Pay bills,Personal,30,Important,Friday,18:00,18:30
+896,Go to a fitness class,Personal,60,Normal,Saturday,19:00,20:00
+897,Write a poem,Personal,30,Less Important,Sunday,18:30,19:00
+898,Take a coffee break,Personal,10,Normal,Monday,10:30,10:40
+899,Take a deep breath,Personal,5,Normal,Tuesday,8:40,8:45
+900,Research a topic,Education,30,Important,Monday,15:30,16:00
+901,Meeting with client,Work,60,Very Important,Monday,9:00,10:00
+902,Go to the supermarket,Personal,30,Normal,Tuesday,16:00,16:30
+903,Exercise,Personal,45,Less Important,Wednesday,6:30,7:15
+904,Write report,Work,90,Important,Thursday,10:30,12:00
+905,Read a book,Personal,60,Normal,Friday,20:00,21:00
+906,Hang out with friends,Personal,120,Normal,Saturday,18:00,20:00
+907,Teamwork,Work,120,Very Important,Sunday,14:00,16:00
+908,Plan for the new week,Work,45,Important,Monday,8:00,8:45
+909,Jogging,Personal,30,Less Important,Tuesday,7:30,8:00
+910,Cooking,Personal,60,Normal,Wednesday,12:00,13:00
+911,Learn programming,Education,90,Very Important,Thursday,19:00,20:30
+912,Yoga practice,Personal,30,Normal,Friday,6:00,6:30
+913,Check email,Work,15,Normal,Saturday,8:45,9:00
+914,Learn English,Education,60,Important,Sunday,15:00,16:00
+915,Watch a movie,Personal,120,Less Important,Monday,21:00,23:00
+916,Work group meeting,Work,60,Very Important,Tuesday,11:00,12:00
+917,Write a diary,Personal,30,Normal,Wednesday,22:30,23:00
+918,Prepare lecture,Work,90,Important,Thursday,13:30,15:00
+919,Clean the house,Personal,60,Normal,Friday,9:00,10:00
+920,Listen to podcast,Personal,30,Normal,Saturday,20:30,21:00
+921,Go to the supermarket,Personal,30,Normal,Sunday,16:15,16:45
+922,Exercise,Personal,45,Less Important,Monday,6:45,7:30
+923,Write report,Work,90,Important,Tuesday,10:45,12:15
+924,Read a book,Personal,60,Normal,Wednesday,20:15,21:15
+925,Hang out with friends,Personal,120,Normal,Thursday,18:15,20:15
+926,Teamwork,Work,120,Very Important,Friday,14:15,16:15
+927,Plan for the new week,Work,45,Important,Saturday,8:00,8:15
+928,Jogging,Personal,30,Less Important,Sunday,7:45,8:15
+929,Cooking,Personal,60,Normal,Monday,12:15,13:15
+930,Learn programming,Education,90,Very Important,Tuesday,19:15,20:45
+931,Yoga practice,Personal,30,Normal,Wednesday,6:15,6:45
+932,Check email,Work,15,Normal,Thursday,8:00,9:15
+933,Learn English,Education,60,Important,Friday,15:15,16:15
+934,Watch a movie,Personal,120,Less Important,Saturday,21:15,23:15
+935,Work group meeting,Work,60,Very Important,Sunday,11:15,12:15
+936,Write a diary,Personal,30,Normal,Monday,22:45,23:15
+937,Prepare lecture,Work,90,Important,Tuesday,13:45,15:15
+938,Clean the house,Personal,60,Normal,Wednesday,9:15,10:15
+939,Listen to podcast,Personal,30,Normal,Thursday,20:45,21:15
+940,Meeting with client,Work,60,Very Important,Friday,9:15,10:15
+941,Go to the supermarket,Personal,30,Normal,Saturday,16:15,16:45
+942,Exercise,Personal,45,Less Important,Sunday,6:45,7:30
+943,Write report,Work,90,Important,Monday,10:45,12:15
+944,Read a book,Personal,60,Normal,Tuesday,20:15,21:15
+945,Hang out with friends,Personal,120,Normal,Wednesday,18:15,20:15
+946,Teamwork,Work,120,Very Important,Thursday,14:15,16:15
+947,Plan for the new week,Work,45,Important,Friday,8:15,8:00
+948,Jogging,Personal,30,Less Important,Saturday,7:45,8:15
+949,Cooking,Personal,60,Normal,Sunday,12:15,13:15
+950,Learn programming,Education,90,Very Important,Monday,19:15,20:45
+951,Meditation,Personal,20,Normal,Monday,6:00,6:20
+952,Team brainstorming session,Work,90,Very Important,Tuesday,10:00,11:30
+953,Gardening,Personal,45,Normal,Wednesday,7:30,8:15
+954,Online workshop,Education,120,Important,Thursday,15:00,17:00
+955,Family dinner,Personal,90,Important,Friday,19:00,20:30
+956,Coding Session,Personal,100,Normal,Sunday,20:00,21:40
+957,Email Responses,Personal,69,Very Important,Monday,14:00,15:09
+958,Yoga,Work,46,Very Important,Tuesday,19:00,19:46
+959,Coding Session,Personal,68,Normal,Wednesday,7:00,8:08
+960,Reading,Personal,24,Less Important,Thursday,20:00,20:24
+961,Grocery Shopping,Personal,15,Very Important,Friday,22:00,22:15
+962,Meeting,Personal,61,Important,Saturday,6:00,7:01
+963,Yoga,Personal,22,Important,Sunday,13:00,13:22
+964,Coding Session,Personal,89,Very Important,Monday,7:00,8:29
+965,Writing,Personal,79,Very Important,Tuesday,2:00,3:19
+966,Writing,Personal,21,Very Important,Wednesday,2:00,2:21
+967,Yoga,Personal,63,Very Important,Thursday,10:00,11:03
+968,Email Responses,Personal,111,Normal,Friday,7:00,8:51
+969,Reading,Personal,82,Less Important,Saturday,5:00,6:22
+970,Grocery Shopping,Personal,35,Important,Sunday,21:00,21:35
+971,Writing,Work,70,Less Important,Monday,18:00,19:10
+972,Yoga,Work,16,Important,Tuesday,20:00,20:16
+973,Grocery Shopping,Personal,66,Important,Wednesday,1:00,2:06
+974,Email Responses,Personal,83,Normal,Thursday,23:00,0:23
+975,Grocery Shopping,Work,43,Very Important,Friday,7:00,7:43
+976,Reading,Personal,64,Normal,Saturday,10:00,11:04
+977,Meeting,Personal,67,Important,Sunday,12:00,13:07
+978,Grocery Shopping,Work,65,Very Important,Monday,18:00,19:05
+979,Meeting,Work,102,Normal,Tuesday,11:00,12:42
+980,Meeting,Work,95,Normal,Wednesday,16:00,17:35
+981,Yoga,Personal,87,Less Important,Thursday,21:00,22:27
+982,Meeting,Work,86,Less Important,Friday,4:00,5:26
+983,Yoga,Personal,112,Important,Saturday,21:00,22:52
+984,Email Responses,Personal,23,Less Important,Sunday,16:00,16:23
+985,Reading,Personal,104,Very Important,Monday,15:00,16:44
+986,Coding Session,Work,116,Very Important,Tuesday,9:00,10:56
+987,Writing,Work,18,Important,Wednesday,9:00,9:18
+988,Reading,Personal,81,Normal,Thursday,13:00,14:21
+989,Coding Session,Work,15,Important,Friday,18:00,18:15
+990,Coding Session,Personal,16,Normal,Saturday,16:00,16:16
+991,Grocery Shopping,Personal,101,Important,Sunday,6:00,7:41
+992,Grocery Shopping,Work,41,Very Important,Monday,14:00,14:41
+993,Coding Session,Personal,108,Very Important,Tuesday,7:00,8:48
+994,Reading,Work,103,Important,Wednesday,0:00,1:43
+995,Meeting,Work,82,Very Important,Thursday,20:00,21:22
+996,Meeting,Personal,51,Less Important,Friday,21:00,21:51
+997,Grocery Shopping,Personal,101,Important,Saturday,9:00,10:41
+998,Grocery Shopping,Personal,50,Important,Sunday,1:00,1:50
+999,Meeting,Work,95,Normal,Monday,23:00,0:35
+1000,Take an online quiz,Education,30,Normal,Monday,17:30,18:00
+1001,Volunteer at a shelter,Personal,120,Important,Sunday,10:00,12:00
+1002,Attend a seminar on technology trends,Education,120,Very Important,Monday,14:00,16:00
+1003,Prepare slides for a presentation,Work,90,Important,Tuesday,9:00,10:30
+1004,Virtual networking event,Work,90,Normal,Wednesday,19:00,20:30
+1005,Take a long walk,Personal,45,Less Important,Thursday,7:30,8:15
+1006,Create a new recipe,Personal,90,Normal,Friday,18:00,19:30
+1007,Attend a book club meeting,Personal,90,Important,Saturday,17:00,18:30
+1008,Host a movie night,Personal,150,Normal,Sunday,20:00,22:30
+1009,Clean out old files,Work,60,Normal,Monday,16:30,17:30
+1010,Research new skills to learn,Education,90,Important,Tuesday,14:00,15:30
+1011,Morning journaling,Personal,30,Normal,Wednesday,6:30,7:00
+1012,Water the garden,Personal,30,Less Important,Thursday,8:00,8:30
+1013,Team status update,Work,60,Very Important,Friday,11:00,12:00
+1014,Weekend getaway planning,Personal,90,Normal,Saturday,15:00,16:30
+1015,Watch a TED Talk,Education,30,Normal,Sunday,19:00,19:30
+1016,Learn new software,Education,120,Important,Monday,9:00,11:00
+1017,Donate old clothes,Personal,60,Normal,Tuesday,16:00,17:00
+1018,Organize a photo album,Personal,60,Normal,Wednesday,20:00,21:00
+1019,Online fitness class,Personal,45,Less Important,Thursday,18:30,19:15
+1020,Meal prep for the week,Personal,90,Normal,Friday,17:30,19:00
+1021,Call a relative,Personal,30,Normal,Saturday,10:30,11:00
+1022,Sketch a design,Personal,90,Normal,Sunday,14:00,15:30
+1023,Research a topic of interest,Education,90,Important,Monday,15:00,16:30
+1024,Organize workspace,Work,60,Important,Tuesday,13:00,14:00
+1025,Meditation session,Personal,20,Less Important,Wednesday,6:00,6:20
+1026,Plan a team outing,Work,60,Important,Thursday,17:00,18:00
+1027,Attend a yoga retreat,Personal,120,Important,Friday,8:00,10:00
+1028,Write a short story,Personal,90,Normal,Saturday,19:00,20:30
+1029,Practice a musical instrument,Personal,60,Normal,Sunday,17:30,18:30
+1030,Learn a new language,Education,60,Important,Monday,20:00,21:00
+1031,Morning stretch,Personal,15,Less Important,Tuesday,6:30,6:45
+1032,Review monthly budget,Personal,45,Important,Wednesday,19:30,20:15
+1033,Visit a museum,Personal,120,Normal,Thursday,10:00,12:00
+1034,Host a podcast episode,Personal,60,Normal,Friday,20:00,21:00
+1035,Back up important data,Work,30,Important,Saturday,9:00,9:30
+1036,Update LinkedIn profile,Work,45,Important,Sunday,12:00,12:45
+1037,Paint a canvas,Personal,90,Normal,Monday,17:00,18:30
+1038,Research healthy recipes,Personal,60,Normal,Tuesday,11:00,12:00
+1039,Weekly team sync-up,Work,60,Very Important,Wednesday,15:00,16:00
+1040,Attend a coding hackathon,Education,240,Very Important,Thursday,14:00,18:00
+1041,Play board games with family,Personal,90,Normal,Friday,19:30,21:00
+1042,Walk a pet,Personal,30,Normal,Saturday,8:00,8:30
+1043,Visit the library,Education,60,Normal,Sunday,14:30,15:30
+1044,Complete a crossword puzzle,Personal,30,Normal,Monday,21:00,21:30
+1045,Join a webinar on AI,Education,120,Very Important,Tuesday,10:00,12:00
+1046,Plan a creative project,Personal,60,Normal,Wednesday,18:00,19:00
+1047,Organize email inbox,Work,30,Normal,Thursday,9:00,9:30
+1048,Relax with an audiobook,Personal,60,Normal,Friday,21:00,22:00
+1049,Brush teeth,Personal,5,Normal,Monday,7:00,7:05
+1050,Take a shower,Personal,20,Normal,Monday,7:05,7:25
+1051,Make breakfast,Personal,30,Normal,Monday,7:30,8:00
+1052,Check social media,Personal,15,Normal,Monday,8:15,8:30
+1053,Go to work,Work,60,Very Important,Monday,8:30,9:30
+1054,Drive to work,Work,30,Normal,Saturday,9:30,10:00
+1055,Morning coffee break,Personal,15,Normal,Saturday,10:00,10:15
+1056,Organize desk,Work,10,Normal,Monday,10:15,10:25
+1057,Take a short walk,Personal,10,Less Important,Monday,12:00,12:10
+1058,Have lunch,Personal,45,Normal,Monday,12:15,13:00
+1059,Check and reply to messages,Work,15,Normal,Monday,13:00,13:15
+1060,Call a friend,Personal,20,Normal,Monday,13:30,13:50
+1061,Check work emails,Work,20,Normal,Monday,14:00,14:20
+1062,Do the laundry,Personal,30,Normal,Monday,14:30,15:00
+1063,Cook dinner,Personal,45,Normal,Monday,18:00,18:45
+1064,Eat dinner,Personal,30,Normal,Monday,18:45,19:15
+1065,Wash dishes,Personal,15,Normal,Monday,19:30,19:45
+1066,Watch TV,Personal,60,Normal,Monday,20:00,21:00
+1067,Take a walk after dinner,Personal,20,Less Important,Monday,21:15,21:35
+1068,Meditate,Personal,10,Less Important,Monday,21:40,21:50
+1069,Read the news,Personal,20,Normal,Tuesday,7:00,7:20
+1070,Make a to-do list for the day,Personal,10,Normal,Saturday,7:20,7:30
+1071,Water the plants,Personal,10,Normal,Saturday,7:30,7:40
+1072,Drop kids off at school,Personal,30,Normal,Tuesday,8:00,8:30
+1073,Drive to work,Work,30,Normal,Tuesday,8:30,9:00
+1074,Grocery shopping,Personal,60,Normal,Sunday,10:00,11:00
+1075,Respond to customer queries,Work,30,Normal,Monday,11:00,11:30
+1076,Take a quick break,Personal,10,Normal,Tuesday,15:00,15:10
+1077,Pick up kids from school,Personal,30,Normal,Wednesday,16:00,16:30
+1078,Check bank statements,Personal,15,Normal,Tuesday,16:30,16:45
+1079,Clean the kitchen,Personal,30,Normal,Tuesday,17:00,17:30
+1080,Clean the bathroom,Personal,30,Normal,Tuesday,18:00,18:30
+1081,Call family members,Personal,15,Normal,Tuesday,19:00,19:15
+1082,Check work updates,Work,20,Normal,Tuesday,20:00,20:20
+1083,Plan a weekend trip,Personal,30,Normal,Tuesday,20:30,21:00
+1084,Have a cup of tea,Personal,15,Normal,Wednesday,7:00,7:15
+1085,Read a book,Personal,30,Normal,Wednesday,7:15,7:45
+1086,Clean the living room,Personal,30,Normal,Wednesday,10:00,10:30
+1087,Listen to music,Personal,30,Normal,Wednesday,12:00,12:30
+1088,Call a colleague for a quick check-in,Work,10,Normal,Wednesday,14:00,14:10
+1089,Make a list of groceries,Personal,10,Normal,Wednesday,16:00,16:10
+1090,Take a nap,Personal,30,Less Important,Wednesday,16:30,17:00
+1091,Organize the wardrobe,Personal,30,Normal,Wednesday,17:30,18:00
+1092,Try a new recipe,Personal,45,Normal,Wednesday,18:30,19:15
+1093,Reply to personal messages,Personal,15,Normal,Wednesday,19:30,19:45
+1094,Take a hot bath,Personal,30,Normal,Wednesday,20:00,20:30
+1095,Do some light stretching,Personal,10,Normal,Thursday,6:30,6:40
+1096,Take a morning walk,Personal,20,Normal,Thursday,7:00,7:20
+1097,Pack lunch,Personal,15,Normal,Thursday,7:30,7:45
+1098,Make phone calls for work,Work,30,Normal,Thursday,9:00,9:30
+1099,Have breakfast,Personal,30,Normal,Tuesday,7:00,7:30
+1100,Drink coffee,Personal,15,Normal,Tuesday,7:30,7:45
+1101,Browse social media,Personal,15,Less Important,Tuesday,7:45,8:00
+1102,Check emails,Work,15,Normal,Wednesday,8:00,8:15
+1103,Read the news,Personal,20,Normal,Wednesday,8:15,8:35
+1104,Exercise,Personal,45,Important,Wednesday,8:35,9:20
+1105,Go to work,Work,60,Very Important,Wednesday,9:30,10:30
+1106,Meet friends,Personal,90,Normal,Wednesday,17:00,18:30
+1107,Go shopping,Personal,60,Normal,Thursday,16:00,17:00
+1108,Do housework,Personal,45,Normal,Thursday,18:00,18:45
+1109,Cook,Personal,60,Normal,Thursday,18:45,19:45
+1110,Have lunch,Personal,60,Normal,Thursday,12:00,13:00
+1111,Rest,Personal,30,Less Important,Tuesday,13:00,13:30
+1112,Take a shower,Personal,20,Normal,Wednesday,13:30,13:50
+1113,Watch a movie,Personal,120,Normal,Thursday,20:00,22:00
+1114,Listen to music,Personal,30,Less Important,Friday,13:50,14:20
+1115,Go for a walk,Personal,30,Normal,Monday,14:20,14:50
+1116,Play games,Personal,60,Less Important,Monday,19:50,20:50
+1117,Read a book,Personal,60,Normal,Monday,22:00,23:00
+1118,Write a journal,Personal,20,Normal,Monday,23:00,23:20
+1119,Send a message,Personal,10,Less Important,Monday,23:20,23:30
+1120,Make a phone call,Personal,20,Normal,Saturday,15:00,15:20
+1121,Organize work,Work,60,Important,Sunday,10:30,11:30
+1122,Clean the room,Personal,30,Normal,Monday,11:30,12:00
+1123,Plan for tomorrow,Work,20,Important,Tuesday,22:00,22:20
+1124,Sunbathe,Personal,30,Less Important,Wednesday,16:00,16:30
+1125,Play sports,Personal,60,Normal,Thursday,17:30,18:30
+1126,Garden,Personal,60,Normal,Friday,16:30,17:30
+1127,Take care of plants,Personal,30,Normal,Saturday,14:00,14:30
+1128,Cook dinner,Personal,60,Normal,Sunday,19:45,20:45
+1129,Clean the kitchen,Personal,30,Normal,Monday,20:45,21:15
+1130,Tidy up the house,Personal,30,Normal,Monday,21:15,21:45
+1131,Go to bed early,Personal,60,Very Important,Sunday,23:30,24:30:00
+1132,Study online,Education,60,Very Important,Sunday,14:30,15:30
+1133,Post on a blog,Personal,30,Less Important,Sunday,14:30,15:00
+1134,Do crafts,Personal,60,Less Important,Sunday,16:30,17:30
+1135,Repair things,Personal,60,Normal,Sunday,15:00,16:00
+1136,Take photos,Personal,30,Less Important,Sunday,17:00,17:30
+1137,Compose music,Personal,60,Normal,Sunday,15:30,16:30
+1138,Visit family,Personal,120,Normal,Sunday,14:00,16:00
+1139,Play with pets,Personal,30,Normal,Saturday,14:50,15:20
+1140,Work in a team,Work,120,Very Important,Saturday,10:30,12:30
+1141,Play outdoor sports,Personal,90,Normal,Sunday,16:00,17:30
+1142,Attend a party,Social,180,Less Important,Saturday,18:30,21:30
+1143,Practice yoga,Personal,30,Normal,Saturday,6:00,6:30
+1144,Go jogging,Personal,30,Normal,Wednesday,6:30,7:00
+1145,Do homework,Education,60,Important,Wednesday,18:00,19:00
+1146,Attend a seminar,Education,120,Very Important,Thursday,9:00,11:00
+1147,Update personal profiles,Personal,15,Less Important,Thursday,13:00,13:15
+1148,Handle paperwork,Work,30,Normal,Friday,13:15,13:45
+1149,Shop online,Personal,60,Normal,Saturday,12:00,13:00
+1150,Learn a new skill,Education,60,Important,Sunday,16:30,17:30
+1151,Watch a livestream,Personal,60,Less Important,Monday,19:00,20:00
+1152,Wake up,Personal,15,Very Important,Monday,6:00,6:15
+1153,Stretch,Personal,10,Normal,Sunday,6:15,6:25
+1154,Make bed,Personal,10,Normal,Sunday,6:25,6:35
+1155,Water plants,Personal,15,Normal,Saturday,6:35,6:50
+1156,Brush teeth,Personal,5,Normal,Saturday,6:50,6:55
+1157,Pack bag,Personal,10,Normal,Friday,7:00,7:10
+1158,Take vitamins,Personal,5,Normal,Saturday,7:10,7:15
+1159,Make lunch,Personal,30,Normal,Sunday,12:00,12:30
+1160,Check weather,Personal,5,Less Important,Monday,6:00,6:05
+1161,Organize desk,Work,15,Normal,Tuesday,8:30,8:45
+1162,Take a break,Personal,10,Less Important,Wednesday,9:45,9:55
+1163,Walk to the bus stop,Personal,10,Normal,Thursday,7:30,7:40
+1164,Reply to messages,Personal,15,Normal,Friday,15:00,15:15
+1165,Buy groceries,Personal,60,Normal,Saturday,10:00,11:00
+1166,Do laundry,Personal,60,Normal,Sunday,15:00,16:00
+1167,Take a nap,Personal,20,Less Important,Monday,13:00,13:20
+1168,Drink water,Personal,5,Normal,Tuesday,10:00,10:05
+1169,Talk to family,Personal,20,Normal,Wednesday,17:30,17:50
+1170,Check social media,Personal,10,Less Important,Thursday,15:30,15:40
+1171,Clear notifications,Personal,5,Less Important,Friday,15:40,15:45
+1172,Walk the dog,Personal,30,Normal,Saturday,16:00,16:30
+1173,Make smoothie,Personal,10,Less Important,Thursday,8:00,8:10
+1174,Check calendar,Work,10,Normal,Friday,8:15,8:25
+1175,Meditate,Personal,15,Normal,Saturday,6:40,6:55
+1176,Write to-do list,Work,10,Normal,Sunday,8:45,8:55
+1177,Pick up mail,Personal,10,Less Important,Monday,17:00,17:10
+1178,Read a blog,Personal,15,Less Important,Tuesday,10:15,10:30
+1179,Call a friend,Personal,20,Normal,Wednesday,18:00,18:20
+1180,Go for a bike ride,Personal,30,Less Important,Thursday,17:00,17:30
+1181,Watch TV series,Personal,60,Normal,Friday,21:00,22:00
+1182,Do a puzzle,Personal,30,Less Important,Saturday,16:30,17:00
+1183,Write a letter,Personal,30,Less Important,Sunday,18:30,19:00
+1184,Wash dishes,Personal,20,Normal,Monday,19:45,20:05
+1185,Set alarms,Personal,5,Normal,Tuesday,22:30,22:35
+1186,Organize photos,Personal,30,Less Important,Wednesday,14:00,14:30
+1187,Take a power nap,Personal,20,Less Important,Thursday,14:00,14:20
+1188,Send postcards,Personal,20,Less Important,Monday,12:30,12:50
+1189,Meet new people,Social,60,Normal,Tuesday,15:00,16:00
+1190,Attend a webinar,Education,60,Important,Wednesday,19:00,20:00
+1191,Plan a trip,Personal,90,Important,Thursday,14:00,15:30
+1192,Organize documents,Work,30,Normal,Friday,11:00,11:30
+1193,Read a magazine,Personal,20,Less Important,Saturday,15:00,15:20
+1194,Have a meeting,Work,60,Very Important,Thursday,9:00,10:00
+1195,Pay bills,Personal,30,Important,Friday,18:00,18:30
+1196,Go to a fitness class,Personal,60,Normal,Saturday,19:00,20:00
+1197,Write a poem,Personal,30,Less Important,Sunday,18:30,19:00
+1198,Take a coffee break,Personal,10,Normal,Monday,10:30,10:40
+1199,Take a deep breath,Personal,5,Normal,Tuesday,8:40,8:45
+1200,Research a topic,Education,30,Important,Monday,15:30,16:00
+1201,Meeting with client,Work,60,Very Important,Monday,9:00,10:00
+1202,Go to the supermarket,Personal,30,Normal,Tuesday,16:00,16:30
+1203,Exercise,Personal,45,Less Important,Wednesday,6:30,7:15
+1204,Write report,Work,90,Important,Thursday,10:30,12:00
+1205,Read a book,Personal,60,Normal,Friday,20:00,21:00
+1206,Hang out with friends,Personal,120,Normal,Saturday,18:00,20:00
+1207,Teamwork,Work,120,Very Important,Sunday,14:00,16:00
+1208,Plan for the new week,Work,45,Important,Monday,8:00,8:45
+1209,Jogging,Personal,30,Less Important,Tuesday,7:30,8:00
+1210,Cooking,Personal,60,Normal,Wednesday,12:00,13:00
+1211,Learn programming,Education,90,Very Important,Thursday,19:00,20:30
+1212,Yoga practice,Personal,30,Normal,Friday,6:00,6:30
+1213,Check email,Work,15,Normal,Saturday,8:45,9:00
+1214,Learn English,Education,60,Important,Sunday,15:00,16:00
+1215,Watch a movie,Personal,120,Less Important,Monday,21:00,23:00
+1216,Work group meeting,Work,60,Very Important,Tuesday,11:00,12:00
+1217,Write a diary,Personal,30,Normal,Wednesday,22:30,23:00
+1218,Prepare lecture,Work,90,Important,Thursday,13:30,15:00
+1219,Clean the house,Personal,60,Normal,Friday,9:00,10:00
+1220,Listen to podcast,Personal,30,Normal,Saturday,20:30,21:00
+1221,Go to the supermarket,Personal,30,Normal,Sunday,16:15,16:45
+1222,Exercise,Personal,45,Less Important,Monday,6:45,7:30
+1223,Write report,Work,90,Important,Tuesday,10:45,12:15
+1224,Read a book,Personal,60,Normal,Wednesday,20:15,21:15
+1225,Hang out with friends,Personal,120,Normal,Thursday,18:15,20:15
+1226,Teamwork,Work,120,Very Important,Friday,14:15,16:15
+1227,Plan for the new week,Work,45,Important,Saturday,8:00,8:15
+1228,Jogging,Personal,30,Less Important,Sunday,7:45,8:15
+1229,Cooking,Personal,60,Normal,Monday,12:15,13:15
+1230,Learn programming,Education,90,Very Important,Tuesday,19:15,20:45
+1231,Yoga practice,Personal,30,Normal,Wednesday,6:15,6:45
+1232,Check email,Work,15,Normal,Thursday,8:00,9:15
+1233,Learn English,Education,60,Important,Friday,15:15,16:15
+1234,Watch a movie,Personal,120,Less Important,Saturday,21:15,23:15
+1235,Work group meeting,Work,60,Very Important,Sunday,11:15,12:15
+1236,Write a diary,Personal,30,Normal,Monday,22:45,23:15
+1237,Prepare lecture,Work,90,Important,Tuesday,13:45,15:15
+1238,Clean the house,Personal,60,Normal,Wednesday,9:15,10:15
+1239,Listen to podcast,Personal,30,Normal,Thursday,20:45,21:15
+1240,Meeting with client,Work,60,Very Important,Friday,9:15,10:15
+1241,Go to the supermarket,Personal,30,Normal,Saturday,16:15,16:45
+1242,Exercise,Personal,45,Less Important,Sunday,6:45,7:30
+1243,Write report,Work,90,Important,Monday,10:45,12:15
+1244,Read a book,Personal,60,Normal,Tuesday,20:15,21:15
+1245,Hang out with friends,Personal,120,Normal,Wednesday,18:15,20:15
+1246,Teamwork,Work,120,Very Important,Thursday,14:15,16:15
+1247,Plan for the new week,Work,45,Important,Friday,8:15,8:00
+1248,Jogging,Personal,30,Less Important,Saturday,7:45,8:15
+1249,Cooking,Personal,60,Normal,Sunday,12:15,13:15
+1250,Learn programming,Education,90,Very Important,Monday,19:15,20:45
+1251,Meditation,Personal,20,Normal,Monday,6:00,6:20
+1252,Team brainstorming session,Work,90,Very Important,Tuesday,10:00,11:30
+1253,Gardening,Personal,45,Normal,Wednesday,7:30,8:15
+1254,Online workshop,Education,120,Important,Thursday,15:00,17:00
+1255,Family dinner,Personal,90,Important,Friday,19:00,20:30
+1256,Coding Session,Personal,100,Normal,Sunday,20:00,21:40
+1257,Email Responses,Personal,69,Very Important,Monday,14:00,15:09
+1258,Yoga,Work,46,Very Important,Tuesday,19:00,19:46
+1259,Coding Session,Personal,68,Normal,Wednesday,7:00,8:08
+1260,Reading,Personal,24,Less Important,Thursday,20:00,20:24
+1261,Grocery Shopping,Personal,15,Very Important,Friday,22:00,22:15
+1262,Meeting,Personal,61,Important,Saturday,6:00,7:01
+1263,Yoga,Personal,22,Important,Sunday,13:00,13:22
+1264,Coding Session,Personal,89,Very Important,Monday,7:00,8:29
+1265,Writing,Personal,79,Very Important,Tuesday,2:00,3:19
+1266,Writing,Personal,21,Very Important,Wednesday,2:00,2:21
+1267,Yoga,Personal,63,Very Important,Thursday,10:00,11:03
+1268,Email Responses,Personal,111,Normal,Friday,7:00,8:51
+1269,Reading,Personal,82,Less Important,Saturday,5:00,6:22
+1270,Grocery Shopping,Personal,35,Important,Sunday,21:00,21:35
+1271,Writing,Work,70,Less Important,Monday,18:00,19:10
+1272,Yoga,Work,16,Important,Tuesday,20:00,20:16
+1273,Grocery Shopping,Personal,66,Important,Wednesday,1:00,2:06
+1274,Email Responses,Personal,83,Normal,Thursday,23:00,0:23
+1275,Grocery Shopping,Work,43,Very Important,Friday,7:00,7:43
+1276,Reading,Personal,64,Normal,Saturday,10:00,11:04
+1277,Meeting,Personal,67,Important,Sunday,12:00,13:07
+1278,Grocery Shopping,Work,65,Very Important,Monday,18:00,19:05
+1279,Meeting,Work,102,Normal,Tuesday,11:00,12:42
+1280,Meeting,Work,95,Normal,Wednesday,16:00,17:35
+1281,Yoga,Personal,87,Less Important,Thursday,21:00,22:27
+1282,Meeting,Work,86,Less Important,Friday,4:00,5:26
+1283,Yoga,Personal,112,Important,Saturday,21:00,22:52
+1284,Email Responses,Personal,23,Less Important,Sunday,16:00,16:23
+1285,Reading,Personal,104,Very Important,Monday,15:00,16:44
+1286,Coding Session,Work,116,Very Important,Tuesday,9:00,10:56
+1287,Writing,Work,18,Important,Wednesday,9:00,9:18
+1288,Reading,Personal,81,Normal,Thursday,13:00,14:21
+1289,Coding Session,Work,15,Important,Friday,18:00,18:15
+1290,Coding Session,Personal,16,Normal,Saturday,16:00,16:16
+1291,Grocery Shopping,Personal,101,Important,Sunday,6:00,7:41
+1292,Grocery Shopping,Work,41,Very Important,Monday,14:00,14:41
+1293,Coding Session,Personal,108,Very Important,Tuesday,7:00,8:48
+1294,Reading,Work,103,Important,Wednesday,0:00,1:43
+1295,Meeting,Work,82,Very Important,Thursday,20:00,21:22
+1296,Meeting,Personal,51,Less Important,Friday,21:00,21:51
+1297,Grocery Shopping,Personal,101,Important,Saturday,9:00,10:41
+1298,Grocery Shopping,Personal,50,Important,Sunday,1:00,1:50
+1299,Meeting,Work,95,Normal,Monday,23:00,0:35
+1300,Take an online quiz,Education,30,Normal,Monday,17:30,18:00
+1301,Volunteer at a shelter,Personal,120,Important,Sunday,10:00,12:00
+1302,Attend a seminar on technology trends,Education,120,Very Important,Monday,14:00,16:00
+1303,Prepare slides for a presentation,Work,90,Important,Tuesday,9:00,10:30
+1304,Virtual networking event,Work,90,Normal,Wednesday,19:00,20:30
+1305,Take a long walk,Personal,45,Less Important,Thursday,7:30,8:15
+1306,Create a new recipe,Personal,90,Normal,Friday,18:00,19:30
+1307,Attend a book club meeting,Personal,90,Important,Saturday,17:00,18:30
+1308,Host a movie night,Personal,150,Normal,Sunday,20:00,22:30
+1309,Clean out old files,Work,60,Normal,Monday,16:30,17:30
+1310,Research new skills to learn,Education,90,Important,Tuesday,14:00,15:30
+1311,Morning journaling,Personal,30,Normal,Wednesday,6:30,7:00
+1312,Water the garden,Personal,30,Less Important,Thursday,8:00,8:30
+1313,Team status update,Work,60,Very Important,Friday,11:00,12:00
+1314,Weekend getaway planning,Personal,90,Normal,Saturday,15:00,16:30
+1315,Watch a TED Talk,Education,30,Normal,Sunday,19:00,19:30
+1316,Learn new software,Education,120,Important,Monday,9:00,11:00
+1317,Donate old clothes,Personal,60,Normal,Tuesday,16:00,17:00
+1318,Organize a photo album,Personal,60,Normal,Wednesday,20:00,21:00
+1319,Online fitness class,Personal,45,Less Important,Thursday,18:30,19:15
+1320,Meal prep for the week,Personal,90,Normal,Friday,17:30,19:00
+1321,Call a relative,Personal,30,Normal,Saturday,10:30,11:00
+1322,Sketch a design,Personal,90,Normal,Sunday,14:00,15:30
+1323,Research a topic of interest,Education,90,Important,Monday,15:00,16:30
+1324,Organize workspace,Work,60,Important,Tuesday,13:00,14:00
+1325,Meditation session,Personal,20,Less Important,Wednesday,6:00,6:20
+1326,Plan a team outing,Work,60,Important,Thursday,17:00,18:00
+1327,Attend a yoga retreat,Personal,120,Important,Friday,8:00,10:00
+1328,Write a short story,Personal,90,Normal,Saturday,19:00,20:30
+1329,Practice a musical instrument,Personal,60,Normal,Sunday,17:30,18:30
+1330,Learn a new language,Education,60,Important,Monday,20:00,21:00
+1331,Morning stretch,Personal,15,Less Important,Tuesday,6:30,6:45
+1332,Review monthly budget,Personal,45,Important,Wednesday,19:30,20:15
+1333,Visit a museum,Personal,120,Normal,Thursday,10:00,12:00
+1334,Host a podcast episode,Personal,60,Normal,Friday,20:00,21:00
+1335,Back up important data,Work,30,Important,Saturday,9:00,9:30
+1336,Update LinkedIn profile,Work,45,Important,Sunday,12:00,12:45
+1337,Paint a canvas,Personal,90,Normal,Monday,17:00,18:30
+1338,Research healthy recipes,Personal,60,Normal,Tuesday,11:00,12:00
+1339,Weekly team sync-up,Work,60,Very Important,Wednesday,15:00,16:00
+1340,Attend a coding hackathon,Education,240,Very Important,Thursday,14:00,18:00
+1341,Play board games with family,Personal,90,Normal,Friday,19:30,21:00
+1342,Walk a pet,Personal,30,Normal,Saturday,8:00,8:30
+1343,Visit the library,Education,60,Normal,Sunday,14:30,15:30
+1344,Complete a crossword puzzle,Personal,30,Normal,Monday,21:00,21:30
+1345,Join a webinar on AI,Education,120,Very Important,Tuesday,10:00,12:00
+1346,Plan a creative project,Personal,60,Normal,Wednesday,18:00,19:00
+1347,Organize email inbox,Work,30,Normal,Thursday,9:00,9:30
+1348,Relax with an audiobook,Personal,60,Normal,Friday,21:00,22:00
+1349,Brush teeth,Personal,5,Normal,Monday,7:00,7:05
+1350,Take a shower,Personal,20,Normal,Monday,7:05,7:25
+1351,Make breakfast,Personal,30,Normal,Monday,7:30,8:00
+1352,Check social media,Personal,15,Normal,Monday,8:15,8:30
+1353,Go to work,Work,60,Very Important,Monday,8:30,9:30
+1354,Drive to work,Work,30,Normal,Saturday,9:30,10:00
+1355,Morning coffee break,Personal,15,Normal,Saturday,10:00,10:15
+1356,Organize desk,Work,10,Normal,Monday,10:15,10:25
+1357,Take a short walk,Personal,10,Less Important,Monday,12:00,12:10
+1358,Have lunch,Personal,45,Normal,Monday,12:15,13:00
+1359,Check and reply to messages,Work,15,Normal,Monday,13:00,13:15
+1360,Call a friend,Personal,20,Normal,Monday,13:30,13:50
+1361,Check work emails,Work,20,Normal,Monday,14:00,14:20
+1362,Do the laundry,Personal,30,Normal,Monday,14:30,15:00
+1363,Cook dinner,Personal,45,Normal,Monday,18:00,18:45
+1364,Eat dinner,Personal,30,Normal,Monday,18:45,19:15
+1365,Wash dishes,Personal,15,Normal,Monday,19:30,19:45
+1366,Watch TV,Personal,60,Normal,Monday,20:00,21:00
+1367,Take a walk after dinner,Personal,20,Less Important,Monday,21:15,21:35
+1368,Meditate,Personal,10,Less Important,Monday,21:40,21:50
+1369,Read the news,Personal,20,Normal,Tuesday,7:00,7:20
+1370,Make a to-do list for the day,Personal,10,Normal,Saturday,7:20,7:30
+1371,Water the plants,Personal,10,Normal,Saturday,7:30,7:40
+1372,Drop kids off at school,Personal,30,Normal,Tuesday,8:00,8:30
+1373,Drive to work,Work,30,Normal,Tuesday,8:30,9:00
+1374,Grocery shopping,Personal,60,Normal,Sunday,10:00,11:00
+1375,Respond to customer queries,Work,30,Normal,Monday,11:00,11:30
+1376,Take a quick break,Personal,10,Normal,Tuesday,15:00,15:10
+1377,Pick up kids from school,Personal,30,Normal,Wednesday,16:00,16:30
+1378,Check bank statements,Personal,15,Normal,Tuesday,16:30,16:45
+1379,Clean the kitchen,Personal,30,Normal,Tuesday,17:00,17:30
+1380,Clean the bathroom,Personal,30,Normal,Tuesday,18:00,18:30
+1381,Call family members,Personal,15,Normal,Tuesday,19:00,19:15
+1382,Check work updates,Work,20,Normal,Tuesday,20:00,20:20
+1383,Plan a weekend trip,Personal,30,Normal,Tuesday,20:30,21:00
+1384,Have a cup of tea,Personal,15,Normal,Wednesday,7:00,7:15
+1385,Read a book,Personal,30,Normal,Wednesday,7:15,7:45
+1386,Clean the living room,Personal,30,Normal,Wednesday,10:00,10:30
+1387,Listen to music,Personal,30,Normal,Wednesday,12:00,12:30
+1388,Call a colleague for a quick check-in,Work,10,Normal,Wednesday,14:00,14:10
+1389,Make a list of groceries,Personal,10,Normal,Wednesday,16:00,16:10
+1390,Take a nap,Personal,30,Less Important,Wednesday,16:30,17:00
+1391,Organize the wardrobe,Personal,30,Normal,Wednesday,17:30,18:00
+1392,Try a new recipe,Personal,45,Normal,Wednesday,18:30,19:15
+1393,Reply to personal messages,Personal,15,Normal,Wednesday,19:30,19:45
+1394,Take a hot bath,Personal,30,Normal,Wednesday,20:00,20:30
+1395,Do some light stretching,Personal,10,Normal,Thursday,6:30,6:40
+1396,Take a morning walk,Personal,20,Normal,Thursday,7:00,7:20
+1397,Pack lunch,Personal,15,Normal,Thursday,7:30,7:45
+1398,Make phone calls for work,Work,30,Normal,Thursday,9:00,9:30
+1399,Have breakfast,Personal,30,Normal,Tuesday,7:00,7:30
+1400,Drink coffee,Personal,15,Normal,Tuesday,7:30,7:45
+1401,Browse social media,Personal,15,Less Important,Tuesday,7:45,8:00
+1402,Check emails,Work,15,Normal,Wednesday,8:00,8:15
+1403,Read the news,Personal,20,Normal,Wednesday,8:15,8:35
+1404,Exercise,Personal,45,Important,Wednesday,8:35,9:20
+1405,Go to work,Work,60,Very Important,Wednesday,9:30,10:30
+1406,Meet friends,Personal,90,Normal,Wednesday,17:00,18:30
+1407,Go shopping,Personal,60,Normal,Thursday,16:00,17:00
+1408,Do housework,Personal,45,Normal,Thursday,18:00,18:45
+1409,Cook,Personal,60,Normal,Thursday,18:45,19:45
+1410,Have lunch,Personal,60,Normal,Thursday,12:00,13:00
+1411,Rest,Personal,30,Less Important,Tuesday,13:00,13:30
+1412,Take a shower,Personal,20,Normal,Wednesday,13:30,13:50
+1413,Watch a movie,Personal,120,Normal,Thursday,20:00,22:00
+1414,Listen to music,Personal,30,Less Important,Friday,13:50,14:20
+1415,Go for a walk,Personal,30,Normal,Monday,14:20,14:50
+1416,Play games,Personal,60,Less Important,Monday,19:50,20:50
+1417,Read a book,Personal,60,Normal,Monday,22:00,23:00
+1418,Write a journal,Personal,20,Normal,Monday,23:00,23:20
+1419,Send a message,Personal,10,Less Important,Monday,23:20,23:30
+1420,Make a phone call,Personal,20,Normal,Saturday,15:00,15:20
+1421,Organize work,Work,60,Important,Sunday,10:30,11:30
+1422,Clean the room,Personal,30,Normal,Monday,11:30,12:00
+1423,Plan for tomorrow,Work,20,Important,Tuesday,22:00,22:20
+1424,Sunbathe,Personal,30,Less Important,Wednesday,16:00,16:30
+1425,Play sports,Personal,60,Normal,Thursday,17:30,18:30
+1426,Garden,Personal,60,Normal,Friday,16:30,17:30
+1427,Take care of plants,Personal,30,Normal,Saturday,14:00,14:30
+1428,Cook dinner,Personal,60,Normal,Sunday,19:45,20:45
+1429,Clean the kitchen,Personal,30,Normal,Monday,20:45,21:15
+1430,Tidy up the house,Personal,30,Normal,Monday,21:15,21:45
+1431,Go to bed early,Personal,60,Very Important,Sunday,23:30,24:30:00
+1432,Study online,Education,60,Very Important,Sunday,14:30,15:30
+1433,Post on a blog,Personal,30,Less Important,Sunday,14:30,15:00
+1434,Do crafts,Personal,60,Less Important,Sunday,16:30,17:30
+1435,Repair things,Personal,60,Normal,Sunday,15:00,16:00
+1436,Take photos,Personal,30,Less Important,Sunday,17:00,17:30
+1437,Compose music,Personal,60,Normal,Sunday,15:30,16:30
+1438,Visit family,Personal,120,Normal,Sunday,14:00,16:00
+1439,Play with pets,Personal,30,Normal,Saturday,14:50,15:20
+1440,Work in a team,Work,120,Very Important,Saturday,10:30,12:30
+1441,Play outdoor sports,Personal,90,Normal,Sunday,16:00,17:30
+1442,Attend a party,Social,180,Less Important,Saturday,18:30,21:30
+1443,Practice yoga,Personal,30,Normal,Saturday,6:00,6:30
+1444,Go jogging,Personal,30,Normal,Wednesday,6:30,7:00
+1445,Do homework,Education,60,Important,Wednesday,18:00,19:00
+1446,Attend a seminar,Education,120,Very Important,Thursday,9:00,11:00
+1447,Update personal profiles,Personal,15,Less Important,Thursday,13:00,13:15
+1448,Handle paperwork,Work,30,Normal,Friday,13:15,13:45
+1449,Shop online,Personal,60,Normal,Saturday,12:00,13:00
+1450,Learn a new skill,Education,60,Important,Sunday,16:30,17:30
+1451,Watch a livestream,Personal,60,Less Important,Monday,19:00,20:00
+1452,Wake up,Personal,15,Very Important,Monday,6:00,6:15
+1453,Stretch,Personal,10,Normal,Sunday,6:15,6:25
+1454,Make bed,Personal,10,Normal,Sunday,6:25,6:35
+1455,Water plants,Personal,15,Normal,Saturday,6:35,6:50
+1456,Brush teeth,Personal,5,Normal,Saturday,6:50,6:55
+1457,Pack bag,Personal,10,Normal,Friday,7:00,7:10
+1458,Take vitamins,Personal,5,Normal,Saturday,7:10,7:15
+1459,Make lunch,Personal,30,Normal,Sunday,12:00,12:30
+1460,Check weather,Personal,5,Less Important,Monday,6:00,6:05
+1461,Organize desk,Work,15,Normal,Tuesday,8:30,8:45
+1462,Take a break,Personal,10,Less Important,Wednesday,9:45,9:55
+1463,Walk to the bus stop,Personal,10,Normal,Thursday,7:30,7:40
+1464,Reply to messages,Personal,15,Normal,Friday,15:00,15:15
+1465,Buy groceries,Personal,60,Normal,Saturday,10:00,11:00
+1466,Do laundry,Personal,60,Normal,Sunday,15:00,16:00
+1467,Take a nap,Personal,20,Less Important,Monday,13:00,13:20
+1468,Drink water,Personal,5,Normal,Tuesday,10:00,10:05
+1469,Talk to family,Personal,20,Normal,Wednesday,17:30,17:50
+1470,Check social media,Personal,10,Less Important,Thursday,15:30,15:40
+1471,Clear notifications,Personal,5,Less Important,Friday,15:40,15:45
+1472,Walk the dog,Personal,30,Normal,Saturday,16:00,16:30
+1473,Make smoothie,Personal,10,Less Important,Thursday,8:00,8:10
+1474,Check calendar,Work,10,Normal,Friday,8:15,8:25
+1475,Meditate,Personal,15,Normal,Saturday,6:40,6:55
+1476,Write to-do list,Work,10,Normal,Sunday,8:45,8:55
+1477,Pick up mail,Personal,10,Less Important,Monday,17:00,17:10
+1478,Read a blog,Personal,15,Less Important,Tuesday,10:15,10:30
+1479,Call a friend,Personal,20,Normal,Wednesday,18:00,18:20
+1480,Go for a bike ride,Personal,30,Less Important,Thursday,17:00,17:30
+1481,Watch TV series,Personal,60,Normal,Friday,21:00,22:00
+1482,Do a puzzle,Personal,30,Less Important,Saturday,16:30,17:00
+1483,Write a letter,Personal,30,Less Important,Sunday,18:30,19:00
+1484,Wash dishes,Personal,20,Normal,Monday,19:45,20:05
+1485,Set alarms,Personal,5,Normal,Tuesday,22:30,22:35
+1486,Organize photos,Personal,30,Less Important,Wednesday,14:00,14:30
+1487,Take a power nap,Personal,20,Less Important,Thursday,14:00,14:20
+1488,Send postcards,Personal,20,Less Important,Monday,12:30,12:50
+1489,Meet new people,Social,60,Normal,Tuesday,15:00,16:00
+1490,Attend a webinar,Education,60,Important,Wednesday,19:00,20:00
+1491,Plan a trip,Personal,90,Important,Thursday,14:00,15:30
+1492,Organize documents,Work,30,Normal,Friday,11:00,11:30
+1493,Read a magazine,Personal,20,Less Important,Saturday,15:00,15:20
+1494,Have a meeting,Work,60,Very Important,Thursday,9:00,10:00
+1495,Pay bills,Personal,30,Important,Friday,18:00,18:30
+1496,Go to a fitness class,Personal,60,Normal,Saturday,19:00,20:00
+1497,Write a poem,Personal,30,Less Important,Sunday,18:30,19:00
+1498,Take a coffee break,Personal,10,Normal,Monday,10:30,10:40
+1499,Take a deep breath,Personal,5,Normal,Tuesday,8:40,8:45
+1500,Research a topic,Education,30,Important,Monday,15:30,16:00
+1501,Meeting with client,Work,60,Very Important,Monday,9:00,10:00
+1502,Go to the supermarket,Personal,30,Normal,Tuesday,16:00,16:30
+1503,Exercise,Personal,45,Less Important,Wednesday,6:30,7:15
+1504,Write report,Work,90,Important,Thursday,10:30,12:00
+1505,Read a book,Personal,60,Normal,Friday,20:00,21:00
+1506,Hang out with friends,Personal,120,Normal,Saturday,18:00,20:00
+1507,Teamwork,Work,120,Very Important,Sunday,14:00,16:00
+1508,Plan for the new week,Work,45,Important,Monday,8:00,8:45
+1509,Jogging,Personal,30,Less Important,Tuesday,7:30,8:00
+1510,Cooking,Personal,60,Normal,Wednesday,12:00,13:00
+1511,Learn programming,Education,90,Very Important,Thursday,19:00,20:30
+1512,Yoga practice,Personal,30,Normal,Friday,6:00,6:30
+1513,Check email,Work,15,Normal,Saturday,8:45,9:00
+1514,Learn English,Education,60,Important,Sunday,15:00,16:00
+1515,Watch a movie,Personal,120,Less Important,Monday,21:00,23:00
+1516,Work group meeting,Work,60,Very Important,Tuesday,11:00,12:00
+1517,Write a diary,Personal,30,Normal,Wednesday,22:30,23:00
+1518,Prepare lecture,Work,90,Important,Thursday,13:30,15:00
+1519,Clean the house,Personal,60,Normal,Friday,9:00,10:00
+1520,Listen to podcast,Personal,30,Normal,Saturday,20:30,21:00
+1521,Go to the supermarket,Personal,30,Normal,Sunday,16:15,16:45
+1522,Exercise,Personal,45,Less Important,Monday,6:45,7:30
+1523,Write report,Work,90,Important,Tuesday,10:45,12:15
+1524,Read a book,Personal,60,Normal,Wednesday,20:15,21:15
+1525,Hang out with friends,Personal,120,Normal,Thursday,18:15,20:15
+1526,Teamwork,Work,120,Very Important,Friday,14:15,16:15
+1527,Plan for the new week,Work,45,Important,Saturday,8:00,8:15
+1528,Jogging,Personal,30,Less Important,Sunday,7:45,8:15
+1529,Cooking,Personal,60,Normal,Monday,12:15,13:15
+1530,Learn programming,Education,90,Very Important,Tuesday,19:15,20:45
+1531,Yoga practice,Personal,30,Normal,Wednesday,6:15,6:45
+1532,Check email,Work,15,Normal,Thursday,8:00,9:15
+1533,Learn English,Education,60,Important,Friday,15:15,16:15
+1534,Watch a movie,Personal,120,Less Important,Saturday,21:15,23:15
+1535,Work group meeting,Work,60,Very Important,Sunday,11:15,12:15
+1536,Write a diary,Personal,30,Normal,Monday,22:45,23:15
+1537,Prepare lecture,Work,90,Important,Tuesday,13:45,15:15
+1538,Clean the house,Personal,60,Normal,Wednesday,9:15,10:15
+1539,Listen to podcast,Personal,30,Normal,Thursday,20:45,21:15
+1540,Meeting with client,Work,60,Very Important,Friday,9:15,10:15
+1541,Go to the supermarket,Personal,30,Normal,Saturday,16:15,16:45
+1542,Exercise,Personal,45,Less Important,Sunday,6:45,7:30
+1543,Write report,Work,90,Important,Monday,10:45,12:15
+1544,Read a book,Personal,60,Normal,Tuesday,20:15,21:15
+1545,Hang out with friends,Personal,120,Normal,Wednesday,18:15,20:15
+1546,Teamwork,Work,120,Very Important,Thursday,14:15,16:15
+1547,Plan for the new week,Work,45,Important,Friday,8:15,8:00
+1548,Jogging,Personal,30,Less Important,Saturday,7:45,8:15
+1549,Cooking,Personal,60,Normal,Sunday,12:15,13:15
+1550,Learn programming,Education,90,Very Important,Monday,19:15,20:45
+1551,Meditation,Personal,20,Normal,Monday,6:00,6:20
+1552,Team brainstorming session,Work,90,Very Important,Tuesday,10:00,11:30
+1553,Gardening,Personal,45,Normal,Wednesday,7:30,8:15
+1554,Online workshop,Education,120,Important,Thursday,15:00,17:00
+1555,Family dinner,Personal,90,Important,Friday,19:00,20:30
+1556,Coding Session,Personal,100,Normal,Sunday,20:00,21:40
+1557,Email Responses,Personal,69,Very Important,Monday,14:00,15:09
+1558,Yoga,Work,46,Very Important,Tuesday,19:00,19:46
+1559,Coding Session,Personal,68,Normal,Wednesday,7:00,8:08
+1560,Reading,Personal,24,Less Important,Thursday,20:00,20:24
+1561,Grocery Shopping,Personal,15,Very Important,Friday,22:00,22:15
+1562,Meeting,Personal,61,Important,Saturday,6:00,7:01
+1563,Yoga,Personal,22,Important,Sunday,13:00,13:22
+1564,Coding Session,Personal,89,Very Important,Monday,7:00,8:29
+1565,Writing,Personal,79,Very Important,Tuesday,2:00,3:19
+1566,Writing,Personal,21,Very Important,Wednesday,2:00,2:21
+1567,Yoga,Personal,63,Very Important,Thursday,10:00,11:03
+1568,Email Responses,Personal,111,Normal,Friday,7:00,8:51
+1569,Reading,Personal,82,Less Important,Saturday,5:00,6:22
+1570,Grocery Shopping,Personal,35,Important,Sunday,21:00,21:35
+1571,Writing,Work,70,Less Important,Monday,18:00,19:10
+1572,Yoga,Work,16,Important,Tuesday,20:00,20:16
+1573,Grocery Shopping,Personal,66,Important,Wednesday,1:00,2:06
+1574,Email Responses,Personal,83,Normal,Thursday,23:00,0:23
+1575,Grocery Shopping,Work,43,Very Important,Friday,7:00,7:43
+1576,Reading,Personal,64,Normal,Saturday,10:00,11:04
+1577,Meeting,Personal,67,Important,Sunday,12:00,13:07
+1578,Grocery Shopping,Work,65,Very Important,Monday,18:00,19:05
+1579,Meeting,Work,102,Normal,Tuesday,11:00,12:42
+1580,Meeting,Work,95,Normal,Wednesday,16:00,17:35
+1581,Yoga,Personal,87,Less Important,Thursday,21:00,22:27
+1582,Meeting,Work,86,Less Important,Friday,4:00,5:26
+1583,Yoga,Personal,112,Important,Saturday,21:00,22:52
+1584,Email Responses,Personal,23,Less Important,Sunday,16:00,16:23
+1585,Reading,Personal,104,Very Important,Monday,15:00,16:44
+1586,Coding Session,Work,116,Very Important,Tuesday,9:00,10:56
+1587,Writing,Work,18,Important,Wednesday,9:00,9:18
+1588,Reading,Personal,81,Normal,Thursday,13:00,14:21
+1589,Coding Session,Work,15,Important,Friday,18:00,18:15
+1590,Coding Session,Personal,16,Normal,Saturday,16:00,16:16
+1591,Grocery Shopping,Personal,101,Important,Sunday,6:00,7:41
+1592,Grocery Shopping,Work,41,Very Important,Monday,14:00,14:41
+1593,Coding Session,Personal,108,Very Important,Tuesday,7:00,8:48
+1594,Reading,Work,103,Important,Wednesday,0:00,1:43
+1595,Meeting,Work,82,Very Important,Thursday,20:00,21:22
+1596,Meeting,Personal,51,Less Important,Friday,21:00,21:51
+1597,Grocery Shopping,Personal,101,Important,Saturday,9:00,10:41
+1598,Grocery Shopping,Personal,50,Important,Sunday,1:00,1:50
+1599,Meeting,Work,95,Normal,Monday,23:00,0:35
+1600,Take an online quiz,Education,30,Normal,Monday,17:30,18:00
+1601,Volunteer at a shelter,Personal,120,Important,Sunday,10:00,12:00
+1602,Attend a seminar on technology trends,Education,120,Very Important,Monday,14:00,16:00
+1603,Prepare slides for a presentation,Work,90,Important,Tuesday,9:00,10:30
+1604,Virtual networking event,Work,90,Normal,Wednesday,19:00,20:30
+1605,Take a long walk,Personal,45,Less Important,Thursday,7:30,8:15
+1606,Create a new recipe,Personal,90,Normal,Friday,18:00,19:30
+1607,Attend a book club meeting,Personal,90,Important,Saturday,17:00,18:30
+1608,Host a movie night,Personal,150,Normal,Sunday,20:00,22:30
+1609,Clean out old files,Work,60,Normal,Monday,16:30,17:30
+1610,Research new skills to learn,Education,90,Important,Tuesday,14:00,15:30
+1611,Morning journaling,Personal,30,Normal,Wednesday,6:30,7:00
+1612,Water the garden,Personal,30,Less Important,Thursday,8:00,8:30
+1613,Team status update,Work,60,Very Important,Friday,11:00,12:00
+1614,Weekend getaway planning,Personal,90,Normal,Saturday,15:00,16:30
+1615,Watch a TED Talk,Education,30,Normal,Sunday,19:00,19:30
+1616,Learn new software,Education,120,Important,Monday,9:00,11:00
+1617,Donate old clothes,Personal,60,Normal,Tuesday,16:00,17:00
+1618,Organize a photo album,Personal,60,Normal,Wednesday,20:00,21:00
+1619,Online fitness class,Personal,45,Less Important,Thursday,18:30,19:15
+1620,Meal prep for the week,Personal,90,Normal,Friday,17:30,19:00
+1621,Call a relative,Personal,30,Normal,Saturday,10:30,11:00
+1622,Sketch a design,Personal,90,Normal,Sunday,14:00,15:30
+1623,Research a topic of interest,Education,90,Important,Monday,15:00,16:30
+1624,Organize workspace,Work,60,Important,Tuesday,13:00,14:00
+1625,Meditation session,Personal,20,Less Important,Wednesday,6:00,6:20
+1626,Plan a team outing,Work,60,Important,Thursday,17:00,18:00
+1627,Attend a yoga retreat,Personal,120,Important,Friday,8:00,10:00
+1628,Write a short story,Personal,90,Normal,Saturday,19:00,20:30
+1629,Practice a musical instrument,Personal,60,Normal,Sunday,17:30,18:30
+1630,Learn a new language,Education,60,Important,Monday,20:00,21:00
+1631,Morning stretch,Personal,15,Less Important,Tuesday,6:30,6:45
+1632,Review monthly budget,Personal,45,Important,Wednesday,19:30,20:15
+1633,Visit a museum,Personal,120,Normal,Thursday,10:00,12:00
+1634,Host a podcast episode,Personal,60,Normal,Friday,20:00,21:00
+1635,Back up important data,Work,30,Important,Saturday,9:00,9:30
+1636,Update LinkedIn profile,Work,45,Important,Sunday,12:00,12:45
+1637,Paint a canvas,Personal,90,Normal,Monday,17:00,18:30
+1638,Research healthy recipes,Personal,60,Normal,Tuesday,11:00,12:00
+1639,Weekly team sync-up,Work,60,Very Important,Wednesday,15:00,16:00
+1640,Attend a coding hackathon,Education,240,Very Important,Thursday,14:00,18:00
+1641,Play board games with family,Personal,90,Normal,Friday,19:30,21:00
+1642,Walk a pet,Personal,30,Normal,Saturday,8:00,8:30
+1643,Visit the library,Education,60,Normal,Sunday,14:30,15:30
+1644,Complete a crossword puzzle,Personal,30,Normal,Monday,21:00,21:30
+1645,Join a webinar on AI,Education,120,Very Important,Tuesday,10:00,12:00
+1646,Plan a creative project,Personal,60,Normal,Wednesday,18:00,19:00
+1647,Organize email inbox,Work,30,Normal,Thursday,9:00,9:30
+1648,Relax with an audiobook,Personal,60,Normal,Friday,21:00,22:00
+1649,Brush teeth,Personal,5,Normal,Monday,7:00,7:05
+1650,Take a shower,Personal,20,Normal,Monday,7:05,7:25
+1651,Make breakfast,Personal,30,Normal,Monday,7:30,8:00
+1652,Check social media,Personal,15,Normal,Monday,8:15,8:30
+1653,Go to work,Work,60,Very Important,Monday,8:30,9:30
+1654,Drive to work,Work,30,Normal,Saturday,9:30,10:00
+1655,Morning coffee break,Personal,15,Normal,Saturday,10:00,10:15
+1656,Organize desk,Work,10,Normal,Monday,10:15,10:25
+1657,Take a short walk,Personal,10,Less Important,Monday,12:00,12:10
+1658,Have lunch,Personal,45,Normal,Monday,12:15,13:00
+1659,Check and reply to messages,Work,15,Normal,Monday,13:00,13:15
+1660,Call a friend,Personal,20,Normal,Monday,13:30,13:50
+1661,Check work emails,Work,20,Normal,Monday,14:00,14:20
+1662,Do the laundry,Personal,30,Normal,Monday,14:30,15:00
+1663,Cook dinner,Personal,45,Normal,Monday,18:00,18:45
+1664,Eat dinner,Personal,30,Normal,Monday,18:45,19:15
+1665,Wash dishes,Personal,15,Normal,Monday,19:30,19:45
+1666,Watch TV,Personal,60,Normal,Monday,20:00,21:00
+1667,Take a walk after dinner,Personal,20,Less Important,Monday,21:15,21:35
+1668,Meditate,Personal,10,Less Important,Monday,21:40,21:50
+1669,Read the news,Personal,20,Normal,Tuesday,7:00,7:20
+1670,Make a to-do list for the day,Personal,10,Normal,Saturday,7:20,7:30
+1671,Water the plants,Personal,10,Normal,Saturday,7:30,7:40
+1672,Drop kids off at school,Personal,30,Normal,Tuesday,8:00,8:30
+1673,Drive to work,Work,30,Normal,Tuesday,8:30,9:00
+1674,Grocery shopping,Personal,60,Normal,Sunday,10:00,11:00
+1675,Respond to customer queries,Work,30,Normal,Monday,11:00,11:30
+1676,Take a quick break,Personal,10,Normal,Tuesday,15:00,15:10
+1677,Pick up kids from school,Personal,30,Normal,Wednesday,16:00,16:30
+1678,Check bank statements,Personal,15,Normal,Tuesday,16:30,16:45
+1679,Clean the kitchen,Personal,30,Normal,Tuesday,17:00,17:30
+1680,Clean the bathroom,Personal,30,Normal,Tuesday,18:00,18:30
+1681,Call family members,Personal,15,Normal,Tuesday,19:00,19:15
+1682,Check work updates,Work,20,Normal,Tuesday,20:00,20:20
+1683,Plan a weekend trip,Personal,30,Normal,Tuesday,20:30,21:00
+1684,Have a cup of tea,Personal,15,Normal,Wednesday,7:00,7:15
+1685,Read a book,Personal,30,Normal,Wednesday,7:15,7:45
+1686,Clean the living room,Personal,30,Normal,Wednesday,10:00,10:30
+1687,Listen to music,Personal,30,Normal,Wednesday,12:00,12:30
+1688,Call a colleague for a quick check-in,Work,10,Normal,Wednesday,14:00,14:10
+1689,Make a list of groceries,Personal,10,Normal,Wednesday,16:00,16:10
+1690,Take a nap,Personal,30,Less Important,Wednesday,16:30,17:00
+1691,Organize the wardrobe,Personal,30,Normal,Wednesday,17:30,18:00
+1692,Try a new recipe,Personal,45,Normal,Wednesday,18:30,19:15
+1693,Reply to personal messages,Personal,15,Normal,Wednesday,19:30,19:45
+1694,Take a hot bath,Personal,30,Normal,Wednesday,20:00,20:30
+1695,Do some light stretching,Personal,10,Normal,Thursday,6:30,6:40
+1696,Take a morning walk,Personal,20,Normal,Thursday,7:00,7:20
+1697,Pack lunch,Personal,15,Normal,Thursday,7:30,7:45
+1698,Make phone calls for work,Work,30,Normal,Thursday,9:00,9:30
+1699,Have breakfast,Personal,30,Normal,Tuesday,7:00,7:30
+1700,Drink coffee,Personal,15,Normal,Tuesday,7:30,7:45
+1701,Browse social media,Personal,15,Less Important,Tuesday,7:45,8:00
+1702,Check emails,Work,15,Normal,Wednesday,8:00,8:15
+1703,Read the news,Personal,20,Normal,Wednesday,8:15,8:35
+1704,Exercise,Personal,45,Important,Wednesday,8:35,9:20
+1705,Go to work,Work,60,Very Important,Wednesday,9:30,10:30
+1706,Meet friends,Personal,90,Normal,Wednesday,17:00,18:30
+1707,Go shopping,Personal,60,Normal,Thursday,16:00,17:00
+1708,Do housework,Personal,45,Normal,Thursday,18:00,18:45
+1709,Cook,Personal,60,Normal,Thursday,18:45,19:45
+1710,Have lunch,Personal,60,Normal,Thursday,12:00,13:00
+1711,Rest,Personal,30,Less Important,Tuesday,13:00,13:30
+1712,Take a shower,Personal,20,Normal,Wednesday,13:30,13:50
+1713,Watch a movie,Personal,120,Normal,Thursday,20:00,22:00
+1714,Listen to music,Personal,30,Less Important,Friday,13:50,14:20
+1715,Go for a walk,Personal,30,Normal,Monday,14:20,14:50
+1716,Play games,Personal,60,Less Important,Monday,19:50,20:50
+1717,Read a book,Personal,60,Normal,Monday,22:00,23:00
+1718,Write a journal,Personal,20,Normal,Monday,23:00,23:20
+1719,Send a message,Personal,10,Less Important,Monday,23:20,23:30
+1720,Make a phone call,Personal,20,Normal,Saturday,15:00,15:20
+1721,Organize work,Work,60,Important,Sunday,10:30,11:30
+1722,Clean the room,Personal,30,Normal,Monday,11:30,12:00
+1723,Plan for tomorrow,Work,20,Important,Tuesday,22:00,22:20
+1724,Sunbathe,Personal,30,Less Important,Wednesday,16:00,16:30
+1725,Play sports,Personal,60,Normal,Thursday,17:30,18:30
+1726,Garden,Personal,60,Normal,Friday,16:30,17:30
+1727,Take care of plants,Personal,30,Normal,Saturday,14:00,14:30
+1728,Cook dinner,Personal,60,Normal,Sunday,19:45,20:45
+1729,Clean the kitchen,Personal,30,Normal,Monday,20:45,21:15
+1730,Tidy up the house,Personal,30,Normal,Monday,21:15,21:45
+1731,Go to bed early,Personal,60,Very Important,Sunday,23:30,24:30:00
+1732,Study online,Education,60,Very Important,Sunday,14:30,15:30
+1733,Post on a blog,Personal,30,Less Important,Sunday,14:30,15:00
+1734,Do crafts,Personal,60,Less Important,Sunday,16:30,17:30
+1735,Repair things,Personal,60,Normal,Sunday,15:00,16:00
+1736,Take photos,Personal,30,Less Important,Sunday,17:00,17:30
+1737,Compose music,Personal,60,Normal,Sunday,15:30,16:30
+1738,Visit family,Personal,120,Normal,Sunday,14:00,16:00
+1739,Play with pets,Personal,30,Normal,Saturday,14:50,15:20
+1740,Work in a team,Work,120,Very Important,Saturday,10:30,12:30
+1741,Play outdoor sports,Personal,90,Normal,Sunday,16:00,17:30
+1742,Attend a party,Social,180,Less Important,Saturday,18:30,21:30
+1743,Practice yoga,Personal,30,Normal,Saturday,6:00,6:30
+1744,Go jogging,Personal,30,Normal,Wednesday,6:30,7:00
+1745,Do homework,Education,60,Important,Wednesday,18:00,19:00
+1746,Attend a seminar,Education,120,Very Important,Thursday,9:00,11:00
+1747,Update personal profiles,Personal,15,Less Important,Thursday,13:00,13:15
+1748,Handle paperwork,Work,30,Normal,Friday,13:15,13:45
+1749,Shop online,Personal,60,Normal,Saturday,12:00,13:00
+1750,Learn a new skill,Education,60,Important,Sunday,16:30,17:30
+1751,Watch a livestream,Personal,60,Less Important,Monday,19:00,20:00
+1752,Wake up,Personal,15,Very Important,Monday,6:00,6:15
+1753,Stretch,Personal,10,Normal,Sunday,6:15,6:25
+1754,Make bed,Personal,10,Normal,Sunday,6:25,6:35
+1755,Water plants,Personal,15,Normal,Saturday,6:35,6:50
+1756,Brush teeth,Personal,5,Normal,Saturday,6:50,6:55
+1757,Pack bag,Personal,10,Normal,Friday,7:00,7:10
+1758,Take vitamins,Personal,5,Normal,Saturday,7:10,7:15
+1759,Make lunch,Personal,30,Normal,Sunday,12:00,12:30
+1760,Check weather,Personal,5,Less Important,Monday,6:00,6:05
+1761,Organize desk,Work,15,Normal,Tuesday,8:30,8:45
+1762,Take a break,Personal,10,Less Important,Wednesday,9:45,9:55
+1763,Walk to the bus stop,Personal,10,Normal,Thursday,7:30,7:40
+1764,Reply to messages,Personal,15,Normal,Friday,15:00,15:15
+1765,Buy groceries,Personal,60,Normal,Saturday,10:00,11:00
+1766,Do laundry,Personal,60,Normal,Sunday,15:00,16:00
+1767,Take a nap,Personal,20,Less Important,Monday,13:00,13:20
+1768,Drink water,Personal,5,Normal,Tuesday,10:00,10:05
+1769,Talk to family,Personal,20,Normal,Wednesday,17:30,17:50
+1770,Check social media,Personal,10,Less Important,Thursday,15:30,15:40
+1771,Clear notifications,Personal,5,Less Important,Friday,15:40,15:45
+1772,Walk the dog,Personal,30,Normal,Saturday,16:00,16:30
+1773,Make smoothie,Personal,10,Less Important,Thursday,8:00,8:10
+1774,Check calendar,Work,10,Normal,Friday,8:15,8:25
+1775,Meditate,Personal,15,Normal,Saturday,6:40,6:55
+1776,Write to-do list,Work,10,Normal,Sunday,8:45,8:55
+1777,Pick up mail,Personal,10,Less Important,Monday,17:00,17:10
+1778,Read a blog,Personal,15,Less Important,Tuesday,10:15,10:30
+1779,Call a friend,Personal,20,Normal,Wednesday,18:00,18:20
+1780,Go for a bike ride,Personal,30,Less Important,Thursday,17:00,17:30
+1781,Watch TV series,Personal,60,Normal,Friday,21:00,22:00
+1782,Do a puzzle,Personal,30,Less Important,Saturday,16:30,17:00
+1783,Write a letter,Personal,30,Less Important,Sunday,18:30,19:00
+1784,Wash dishes,Personal,20,Normal,Monday,19:45,20:05
+1785,Set alarms,Personal,5,Normal,Tuesday,22:30,22:35
+1786,Organize photos,Personal,30,Less Important,Wednesday,14:00,14:30
+1787,Take a power nap,Personal,20,Less Important,Thursday,14:00,14:20
+1788,Send postcards,Personal,20,Less Important,Monday,12:30,12:50
+1789,Meet new people,Social,60,Normal,Tuesday,15:00,16:00
+1790,Attend a webinar,Education,60,Important,Wednesday,19:00,20:00
+1791,Plan a trip,Personal,90,Important,Thursday,14:00,15:30
+1792,Organize documents,Work,30,Normal,Friday,11:00,11:30
+1793,Read a magazine,Personal,20,Less Important,Saturday,15:00,15:20
+1794,Have a meeting,Work,60,Very Important,Thursday,9:00,10:00
+1795,Pay bills,Personal,30,Important,Friday,18:00,18:30
+1796,Go to a fitness class,Personal,60,Normal,Saturday,19:00,20:00
+1797,Write a poem,Personal,30,Less Important,Sunday,18:30,19:00
+1798,Take a coffee break,Personal,10,Normal,Monday,10:30,10:40
+1799,Take a deep breath,Personal,5,Normal,Tuesday,8:40,8:45
+1800,Research a topic,Education,30,Important,Monday,15:30,16:00
