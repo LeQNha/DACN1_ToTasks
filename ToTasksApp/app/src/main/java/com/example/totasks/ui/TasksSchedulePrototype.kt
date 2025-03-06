@@ -68,6 +68,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
             println("___click on item")
             val intent = Intent(this, TaskDetailsActivity::class.java).apply {
                 putExtra("task", it)
+                putExtra("selectedDateId", selectedDateId)
             }
             startActivity(intent)
         }

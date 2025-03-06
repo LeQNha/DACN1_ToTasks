@@ -26,6 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/deleteTaskBtn"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:src="@drawable/ic_delete"

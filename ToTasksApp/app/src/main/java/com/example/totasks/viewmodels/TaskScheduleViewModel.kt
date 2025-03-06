@@ -25,6 +25,10 @@ class TaskScheduleViewModel(val taskScheduleRepository: TaskScheduleRepository) 
         }
     }
 
+    fun deleteTask(dateId: String, taskId: String){
+        taskScheduleRepository.deleteTask(dateId, taskId)
+    }
+
     class TaskScheduleViewModelProviderFactory(val taskScheduleRepository: TaskScheduleRepository) :
         ViewModelProvider.Factory {
         override fun <T : ViewModel> create(modelClass: Class<T>): T {

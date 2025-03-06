@@ -21,7 +21,7 @@ class TaskScheduleRepository {
             }
     }
 
-    fun deleteAllTasks(dateId: String){
+    fun deleteAllTasks(dateId: String) {
         val taskCollectionRef = dateCollectionRef.document(dateId).collection("tasks")
 
         taskCollectionRef.get()
@@ -68,4 +68,15 @@ class TaskScheduleRepository {
         listener(emptyList())
     }
 
+    fun deleteTask(dateId: String, taskId: String) {
+        val taskCollectionRef = dateCollectionRef.document(dateId).collection("tasks")
+        taskCollectionRef.document(taskId)
+            .delete()
+            .addOnSuccessListener {
+                println("✅ Task deleted successfully!")
+            }
+            .addOnFailureListener { e ->
+                println("❌ Error deleting task: ${e.message}")
+            }
+    }
 }
