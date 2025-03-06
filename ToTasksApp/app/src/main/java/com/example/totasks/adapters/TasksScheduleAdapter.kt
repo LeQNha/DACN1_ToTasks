@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.totasks.R
+import com.example.totasks.interfaces.TaskItemClickListener
 import nha.kc.kotlincode.models.Task
 
 class TasksScheduleAdapter : RecyclerView.Adapter<TasksScheduleAdapter.TaskScheduleViewHolder>() {
@@ -66,9 +67,21 @@ class TasksScheduleAdapter : RecyclerView.Adapter<TasksScheduleAdapter.TaskSched
                 }
             )
         }
+
+        holder.itemView.setOnClickListener{
+            onItemClickListener?.let {
+                it(currentTask)
+            }
+        }
     }
 
     override fun getItemCount(): Int {
         return differ.currentList.size
+    }
+
+    private var onItemClickListener: ((Task) -> Unit)? = null
+
+    fun setOnItemClickListener(listener: (Task) -> Unit){
+        onItemClickListener = listener
     }
 }

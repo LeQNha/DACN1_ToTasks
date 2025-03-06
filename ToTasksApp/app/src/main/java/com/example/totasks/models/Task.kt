@@ -1,7 +1,10 @@
 package nha.kc.kotlincode.models
 
 import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
+
+@Parcelize
 data class Task (
 //    var TaskId: String = "",
 //    var TaskName: String,
@@ -24,7 +27,7 @@ data class Task (
     var StartTime: String = "",
     var EndTimeInMinute: Int = 0,
     var EndTime: String = ""
-)
+):Parcelable
 //{
 
 //// Constructor mặc định (không tham số) để Firestore có thể deserialize

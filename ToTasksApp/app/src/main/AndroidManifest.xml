@@ -19,6 +19,9 @@
             android:name=".ui.activities.BaseActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.activities.TaskDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.TasksSchedulePrototype"
             android:exported="true">
             <intent-filter>
