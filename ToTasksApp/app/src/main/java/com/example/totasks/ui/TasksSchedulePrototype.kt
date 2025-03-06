@@ -25,8 +25,12 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
     lateinit var taskArrayList: ArrayList<Task>
 
     lateinit var selectedDate: Date
-    lateinit var selectedDateId: String
+//    lateinit var selectedDateId: String
     lateinit var selectedDayOfWeek: String
+    companion object{
+        var selectedDateId: String = ""
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +47,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
     }
 
     fun taskScheduleRvSetUp() {
-        tasksScheduleAdapter = TasksScheduleAdapter()
+        tasksScheduleAdapter = TasksScheduleAdapter(taskScheduleViewModel)
 
         binding.taskScheduleRv.apply {
             layoutManager = LinearLayoutManager(this.context)

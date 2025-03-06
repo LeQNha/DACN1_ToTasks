@@ -79,4 +79,16 @@ class TaskScheduleRepository {
                 println("❌ Error deleting task: ${e.message}")
             }
     }
+
+    fun doneStatusUpdate(dateId: String, task: Task) {
+        val taskCollectionRef = dateCollectionRef.document(dateId).collection("tasks")
+        taskCollectionRef.document(task.TaskId)
+            .update("Done", task.Done)
+            .addOnSuccessListener {
+                println("✅ Task updated successfully: Done = ${task.Done}")
+            }
+            .addOnFailureListener { e ->
+                println("❌ Error updating task: ${e.message}")
+            }
+    }
 }

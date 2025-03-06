@@ -3,20 +3,8 @@ package nha.kc.kotlincode.models
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
-
 @Parcelize
 data class Task (
-//    var TaskId: String = "",
-//    var TaskName: String,
-//    var Type: String,
-//    var Importance: String,
-//    var DayOfWeek: String,
-//    var Duration: Int,
-//    var StartTimeInMinute: Int,
-//    var StartTime: String,
-//    var EndTimeInMinute: Int,
-//    var EndTime: String
-
     var TaskId: String = "",
     var TaskName: String = "",
     var Type: String = "",
@@ -26,7 +14,8 @@ data class Task (
     var StartTimeInMinute: Int = 0,
     var StartTime: String = "",
     var EndTimeInMinute: Int = 0,
-    var EndTime: String = ""
+    var EndTime: String = "",
+    var Done: Boolean = false
 ):Parcelable
 //{
 
