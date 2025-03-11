@@ -44,8 +44,6 @@ class TaskScheduleRepository {
     fun getTasks(dateId: String, listener: (List<Task>) -> Unit) {
         val taskCollectionRef = dateCollectionRef.document(dateId).collection("tasks")
 
-        Log.d("Firestore", "___GETTTTTTTT TASKS ${dateId}")
-
         taskCollectionRef
             .addSnapshotListener { snapshot, error ->
                 if (error != null) {
@@ -58,12 +56,35 @@ class TaskScheduleRepository {
                         }
                         Log.w("Firestore", "Get tasks", error)
                         Log.d("Firestore", "Snapshot updated with ${snapshot?.size()} tasks")
-//                        println("___GET TASKS ${dateId}")
-                        Log.d("Firestore", "___GET TASKS ${dateId}")
                         listener(taskList)
                     }
                 }
             }
+        // Trả về list rỗng nếu dateId đó không tồn tại
+        listener(emptyList())
+    }
+
+    fun getTasksByType(dateId: String, taskType: String, listener: (List<Task>) -> Unit){
+        val taskCollectionRef = dateCollectionRef.document(dateId).collection("tasks")
+
+        taskCollectionRef
+            .whereEqualTo("type", taskType)
+            .get()
+            .addOnSuccessListener { documents ->
+//                for (document in documents) {
+//
+//                    Log.d("Firestore", "${document.id} => ${document.data}")
+//                }
+                val taskList = documents.mapNotNull { queryDocumentSnapshot ->
+                    queryDocumentSnapshot.toObject(Task::class.java)
+                }
+
+                listener(taskList)
+            }
+            .addOnFailureListener { exception ->
+                Log.w("Firestore", "Error getting documents: ", exception)
+            }
+
         // Trả về list rỗng nếu dateId đó không tồn tại
         listener(emptyList())
     }

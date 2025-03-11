@@ -25,6 +25,12 @@ class TaskScheduleViewModel(val taskScheduleRepository: TaskScheduleRepository) 
         }
     }
 
+    fun getTasksByType(dateId: String, taskType: String){
+        taskScheduleRepository.getTasksByType(dateId, taskType){
+            _tasks.postValue(it)
+        }
+    }
+
     fun deleteTask(dateId: String, taskId: String){
         taskScheduleRepository.deleteTask(dateId, taskId)
     }

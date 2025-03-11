@@ -71,6 +71,9 @@ class TasksScheduleAdapter(private val taskScheduleViewModel: TaskScheduleViewMo
                 }
             )
 
+            // Xóa listener cũ trước khi cập nhật trạng thái mới
+            checkBox.setOnCheckedChangeListener(null)
+
             // Cập nhật trạng thái gạch ngang nếu task đã hoàn thành
             if (currentTask.Done) {
                 taskNameTxtView.paintFlags = taskNameTxtView.paintFlags or android.graphics.Paint.STRIKE_THRU_TEXT_FLAG
@@ -83,9 +86,12 @@ class TasksScheduleAdapter(private val taskScheduleViewModel: TaskScheduleViewMo
             }
 
             // Xử lý sự kiện khi CheckBox được tick
+
             checkBox.setOnCheckedChangeListener { _, isChecked ->
                 currentTask.Done = isChecked
                 taskScheduleViewModel.doneStatusUpdate(TasksSchedulePrototype.selectedDateId, currentTask) // Cập nhật lên Firestore
+
+                println("___kich hoat check + ${currentTask.TaskName}")
 
                 // Cập nhật UI
                 if (isChecked) {
@@ -95,6 +101,9 @@ class TasksScheduleAdapter(private val taskScheduleViewModel: TaskScheduleViewMo
                     taskNameTxtView.paintFlags = taskNameTxtView.paintFlags and android.graphics.Paint.STRIKE_THRU_TEXT_FLAG.inv()
                     taskTimeTxtView.paintFlags = taskTimeTxtView.paintFlags and android.graphics.Paint.STRIKE_THRU_TEXT_FLAG.inv()
                 }
+
+                // Xóa listener cũ trước khi cập nhật trạng thái mới
+                checkBox.setOnCheckedChangeListener(null)
             }
         }
 

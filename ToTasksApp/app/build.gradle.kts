@@ -6,6 +6,8 @@ plugins {
     // Add the Google services Gradle plugin
     id("com.google.gms.google-services")
     id("kotlin-parcelize")
+    id("kotlin-kapt") // Bật Kapt
+
 
 }
 
@@ -80,5 +82,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
 
 //    implementation ("com.google.firebase:firebase-auth:22.1.1")
+
+    implementation("com.airbnb.android:epoxy:5.1.3")
+    kapt("com.airbnb.android:epoxy-processor:5.1.3")
 
 }

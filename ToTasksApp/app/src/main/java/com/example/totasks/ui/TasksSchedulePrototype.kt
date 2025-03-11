@@ -3,6 +3,7 @@ package com.example.totasks.ui
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.totasks.adapters.TasksScheduleAdapter
 import com.example.totasks.databinding.ActivityTasksSchedulePrototypeBinding
@@ -25,11 +26,15 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
     lateinit var taskArrayList: ArrayList<Task>
 
     lateinit var selectedDate: Date
-//    lateinit var selectedDateId: String
     lateinit var selectedDayOfWeek: String
     companion object{
         var selectedDateId: String = ""
     }
+
+    lateinit var filterAllBtn: TextView
+    lateinit var filterWorkBtn: TextView
+    lateinit var filterPersonalBtn: TextView
+    lateinit var filterEducationBtn: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,10 +46,12 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
         predictedTaskArrayList = arrayListOf()
 
         dateSetUp()
+        filterButtonsSetUp()
         taskScheduleRvSetUp()
         taskScheduleRvUpdate()
         onClickListennerSetUp()
     }
+
 
     fun taskScheduleRvSetUp() {
         tasksScheduleAdapter = TasksScheduleAdapter(taskScheduleViewModel)
@@ -88,7 +95,6 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
 
         binding.predictTaskScheduleBtn.setOnClickListener {
 
-//            taskViewModel.deleteTasks()
             taskScheduleViewModel.deleteAllTasks(selectedDateId)
             for (task in taskArrayList) {
                 taskViewModel.predictTaskSchedule(task)
@@ -101,18 +107,59 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
         binding.openCalendarBtn.setOnClickListener {
             showDatePickerDialog()
         }
+
+        val filters = listOf(filterAllBtn, filterWorkBtn, filterPersonalBtn, filterEducationBtn)
+
+        // Mặc định chọn "All"
+        filterAllBtn.isSelected = true
+
+        filters.forEach { filter ->
+            filter.setOnClickListener {
+                // Đặt tất cả về trạng thái không được chọn
+                filters.forEach { it.isSelected = false }
+                // Chỉ đặt filter được nhấn là được chọn
+                filter.isSelected = true
+
+                if(filter.text == "All"){
+                    taskScheduleViewModel.getTasks(selectedDateId)
+                }else{
+                    taskScheduleViewModel.getTasksByType(selectedDateId, filter.text.toString().trim())
+                }
+            }
+        }
+
+//        filterAllBtn.setOnClickListener {
+//            taskScheduleViewModel.getTasks(selectedDateId)
+//            filterAllBtn.isSelected = true
+//            filterWorkBtn.isSelected = false
+//            filterPersonalBtn.isSelected = false
+//            filterEducationBtn.isSelected = false
+//        }
+//        filterWorkBtn.setOnClickListener {
+//            taskScheduleViewModel.getTasksByType(selectedDateId, "Work")
+//            filterAllBtn.isSelected = false
+//            filterWorkBtn.isSelected = true
+//            filterPersonalBtn.isSelected = false
+//            filterEducationBtn.isSelected = false
+//        }
+//        filterPersonalBtn.setOnClickListener {
+//            taskScheduleViewModel.getTasksByType(selectedDateId, "Personal")
+//            filterAllBtn.isSelected = false
+//            filterWorkBtn.isSelected = false
+//            filterPersonalBtn.isSelected = true
+//            filterEducationBtn.isSelected = false
+//        }
+//        filterEducationBtn.setOnClickListener {
+//            taskScheduleViewModel.getTasksByType(selectedDateId, "Education")
+//            filterAllBtn.isSelected = false
+//            filterWorkBtn.isSelected = false
+//            filterPersonalBtn.isSelected = false
+//            filterEducationBtn.isSelected = true
+//        }
+
     }
 
     fun taskScheduleRvUpdate() {
-//        taskViewModel._predictedTask.observe(this){ predictedTask ->
-//            predictedTaskArrayList.add(predictedTask)
-//            predictedTaskArrayList.sortBy {
-//                it.StartTimeInMinute
-//            }
-//            tasksScheduleAdapter.differ.submitList(predictedTaskArrayList.toList()) // Cập nhật danh sách
-//            tasksScheduleAdapter.notifyDataSetChanged()
-//        }
-
 
         var predictedTask: Task? = null
         taskViewModel._predictedTask.observe(this) { it ->
@@ -139,6 +186,13 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
         tasksScheduleAdapter.notifyDataSetChanged()
 
 //        taskViewModel.addTask(task)
+    }
+
+    private fun filterButtonsSetUp(){
+        filterAllBtn = binding.filterAll
+        filterWorkBtn = binding.filterWork
+        filterPersonalBtn = binding.filterPersonal
+        filterEducationBtn = binding.filterEducation
     }
 
     private fun dateSetUp() {

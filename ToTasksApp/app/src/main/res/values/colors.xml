@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="purple_50">#ede3eb</color>
+    <color name="purple_200">#b98eb1</color>
+    <color name="purple_500">#831f76</color>
+
+    <color name="purple_dark">#6A1B9A</color> <!-- Tím đậm -->
+    <color name="purple_light">#D1C4E9</color> <!-- Tím nhạt -->
 </resources>
