@@ -42,9 +42,22 @@ class TaskDetailsActivity : BaseActivity() {
     }
 
     private fun taskDetailsSetUp(){
-        binding.taskTitleTxtView.text = task.TaskName
-        binding.taskPriorityTxtView.text = task.Importance
-        binding.taskTypeTxtView.text = task.Type
+        binding.taskTitleTxtView.text = task.TaskName.ifEmpty { "Untitled Task" }
+
+        binding.taskPriorityTxtView.apply {
+            text = task.Importance.ifEmpty { "No Priority" }
+            setBackgroundColor(
+                when (task.Importance) {
+                    "Very Important" -> android.graphics.Color.parseColor("#D32F2F") // Red
+                    "Important" -> android.graphics.Color.parseColor("#FF9800") // Orange
+                    "Normal" -> android.graphics.Color.parseColor("#2196F3") // Blue
+                    "Less Important" -> android.graphics.Color.parseColor("#4CAF50") // Green
+                    else -> android.graphics.Color.GRAY // Default
+                }
+            )
+        }
+
+        binding.taskTypeTxtView.text = task.Type.ifEmpty { "No Type" }
     }
 
     private fun showDeleteConfirmationDialog() {
