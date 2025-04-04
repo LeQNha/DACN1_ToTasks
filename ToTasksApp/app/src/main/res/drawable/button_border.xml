@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Màu nền của nút -->
+    <solid android:color="@color/button_background_color" />
+
+    <!-- Bo góc của nút -->
+    <corners android:radius="6dp" /> <!-- Tùy chỉnh độ cong của góc -->
+</shape>
