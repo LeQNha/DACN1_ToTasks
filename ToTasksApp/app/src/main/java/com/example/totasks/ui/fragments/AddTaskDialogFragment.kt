@@ -1,6 +1,8 @@
 package com.example.totasks.ui.fragments
 
 import android.content.Context
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,10 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
+import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
 import com.example.totasks.R
 import com.example.totasks.databinding.FragmentAddTaskDialogBinding
 import com.example.totasks.interfaces.TaskDialogListener
+import com.google.android.material.button.MaterialButton
 import nha.kc.kotlincode.models.Task
 
 class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
@@ -19,7 +25,7 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
     private var _binding: FragmentAddTaskDialogBinding? = null
     private val binding get() = _binding!!
     private var listener: TaskDialogListener? = null
-
+    private var selectedTaskType: String = "Personal"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,13 +67,17 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
         binding.taskDayEditText.text = selectedDayOfWeek
 
         setupSpinners()
+        setupTaskTypeButtons()// mới
         onClickListenerSetUp()
     }
 
     fun onClickListenerSetUp() {
         binding.addTaskButton.setOnClickListener {
             val name = binding.taskNameEditText.text.toString()
-            val type = binding.taskTypeSpinner.selectedItem.toString() // Lấy giá trị từ Spinner
+            // mới
+            val type = selectedTaskType
+            // cũ
+//            val type = binding.taskTypeSpinner.selectedItem.toString() // Lấy giá trị từ Spinner
             val importance = binding.taskImportanceSpinner.selectedItem.toString() // Lấy giá trị từ Spinner
 //            val day = binding.taskDayEditText.text.toString()
             val day = selectedDayOfWeek
@@ -104,11 +114,12 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
 
     private fun setupSpinners() {
         // Danh sách loại công việc
-        val taskTypes = listOf("", "Personal", "Education", "Work")
-        val typeAdapter =
-            ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, taskTypes)
-        typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.taskTypeSpinner.adapter = typeAdapter
+        //cũ
+//        val taskTypes = listOf("", "Personal", "Education", "Work")
+//        val typeAdapter =
+//            ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, taskTypes)
+//        typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+//        binding.taskTypeSpinner.adapter = typeAdapter
 
         // Danh sách mức độ quan trọng
         val importanceLevels = listOf("", "Less Important", "Normal", "Important", "Very Important")
@@ -116,6 +127,47 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
             ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, importanceLevels)
         importanceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.taskImportanceSpinner.adapter = importanceAdapter
+    }
+    // Mới
+    private fun setupTaskTypeButtons() {
+        val btnPersonal = binding.btnPersonal
+        val btnWork = binding.btnWork
+        val btnEducation = binding.btnEducation
+
+        val buttons = listOf(btnPersonal, btnWork, btnEducation)
+
+        fun updateSelectedButton(selectedButton: View) {
+            for (btn in buttons) {
+                if (btn == selectedButton) {
+                    // Cập nhật màu nền và màu chữ
+                    btn.setBackgroundColor(resources.getColor(R.color.button_background_color))
+                    (btn as Button).setTextColor(resources.getColor(android.R.color.white))
+
+                    // Cập nhật màu của icon khi nút được chọn
+                    (btn as MaterialButton).iconTint = ContextCompat.getColorStateList(requireContext(), android.R.color.white)
+
+                    // Lưu loại task đã chọn
+                    selectedTaskType = btn.text.toString()
+                } else {
+                    // Cập nhật màu nền và màu chữ cho nút không được chọn
+                    btn.setBackgroundColor(Color.parseColor("#F0F0F0"))
+                    (btn as Button).setTextColor(Color.parseColor("#808080"))
+
+                    // Đổi màu icon của nút không được chọn
+                    (btn as MaterialButton).iconTint = ColorStateList.valueOf(Color.parseColor("#808080"))
+                }
+            }
+        }
+
+
+
+
+        // Mặc định chọn "Personal"
+        updateSelectedButton(btnPersonal)
+
+        btnPersonal.setOnClickListener { updateSelectedButton(it) }
+        btnWork.setOnClickListener { updateSelectedButton(it) }
+        btnEducation.setOnClickListener { updateSelectedButton(it) }
     }
 
 //    interface TaskDialogListener {

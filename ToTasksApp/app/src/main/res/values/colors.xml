@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="black1">#80000000</color>
     <color name="white">#FFFFFFFF</color>
-
+    <color name="button_background_color">#2196F3</color>
 
     <color name="purple_50">#ede3eb</color>
     <color name="purple_200">#b98eb1</color>
@@ -10,4 +11,8 @@
 
     <color name="purple_dark">#6A1B9A</color> <!-- Tím đậm -->
     <color name="purple_light">#D1C4E9</color> <!-- Tím nhạt -->
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
 </resources>

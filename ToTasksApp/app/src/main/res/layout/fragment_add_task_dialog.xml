@@ -1,93 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/rounded_corner_background"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="89dp">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="New task"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/addTaskButton"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_border"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:tint="#808080" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Title task"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
         android:id="@+id/taskNameEditText"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter Task Name"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_border"
+        android:hint="Add task name"
         android:inputType="text"
+        android:padding="10dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
-    <Spinner
-        android:id="@+id/taskTypeSpinner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskNameEditText"
-        android:background="@android:drawable/btn_dropdown" />
-
-    <Spinner
-        android:id="@+id/taskImportanceSpinner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskTypeSpinner"
-        android:background="@android:drawable/btn_dropdown" />
+<!--    <EditText-->
+<!--        android:id="@+id/taskEndTimeEditText"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:hint="Enter End Time (e.g. 07:30)"-->
+<!--        android:inputType="time"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/taskDayEditText" />-->
 
     <TextView
-        android:id="@+id/taskDayEditText"
+        android:id="@+id/startTime"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Enter Day"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Start time"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/endTime"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskImportanceSpinner" />
-
-    <EditText
-        android:id="@+id/taskDurationEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Enter Duration (minutes)"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskDayEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/taskImportanceSpinner" />
 
     <EditText
         android:id="@+id/taskStartTimeEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Enter Start Time (e.g. 07:00)"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_border"
+        android:hint="hh:mm"
+        android:drawableStart="@drawable/time_five"
+        android:drawablePadding="8dp"
         android:inputType="time"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/taskEndTimeEditText"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskDurationEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/startTime" />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:text="End time"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startTime"
+
+        app:layout_constraintTop_toBottomOf="@+id/taskDayEditText" />
 
     <EditText
         android:id="@+id/taskEndTimeEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Enter End Time (e.g. 07:30)"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_border"
+        android:drawableStart="@drawable/time_five"
+        android:drawablePadding="8dp"
+        android:hint="hh:mm"
         android:inputType="time"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskStartTimeEditText" />
+        app:layout_constraintStart_toEndOf="@+id/taskStartTimeEditText"
+        app:layout_constraintTop_toBottomOf="@+id/endTime" />
 
-    <Button
-        android:id="@+id/addTaskButton"
+    <TextView
+        android:id="@+id/dateTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Add Task"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Date"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskEndTimeEditText" />
+        app:layout_constraintStart_toEndOf="@+id/priorityTitle"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScroll"
+        app:layout_constraintWidth_percent="0.35" />
 
+    <!--    <TextView-->
+<!--        android:id="@+id/taskDayEditText"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:hint="Enter Day"-->
+<!--        android:inputType="text"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/taskImportanceSpinner" />-->
+
+    <TextView
+        android:id="@+id/taskDayEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_border"
+        android:clickable="false"
+        android:drawableStart="@drawable/calendar_1"
+        android:drawablePadding="8dp"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Disabled"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/taskImportanceSpinner"
+        app:layout_constraintTop_toBottomOf="@id/dateTitle"
+        app:layout_constraintWidth_percent="0.35" />
+
+    <EditText
+        android:id="@+id/taskDurationEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="212dp"
+        android:hint="Enter Duration (minutes)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskDayEditText" />
+
+    <TextView
+        android:id="@+id/priorityTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Priority"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScroll"
+        app:layout_constraintEnd_toStartOf="@id/dateTitle"
+        app:layout_constraintWidth_percent="0.63"/>
+
+    <Spinner
+        android:id="@+id/taskImportanceSpinner"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:background="@drawable/rounded_border"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/priorityTitle"
+        app:layout_constraintEnd_toStartOf="@id/taskDayEditText"
+        app:layout_constraintWidth_percent="0.63"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/arrow_down_1"
+        app:layout_constraintBottom_toBottomOf="@+id/taskImportanceSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/taskImportanceSpinner"
+        app:layout_constraintTop_toTopOf="@+id/taskImportanceSpinner" />
+
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Category"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskNameEditText" />
+
+    <android.widget.HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_border1"
+        android:scrollbars="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Personal"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:backgroundTint="@color/button_background_color"
+                app:cornerRadius="6dp"
+                app:icon="@drawable/user_1" />
+
+            <!-- Education button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:fontFamily="sans-serif"
+                android:text="Education"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:backgroundTint="@color/button_background_color"
+                app:cornerRadius="6dp"
+                app:icon="@drawable/education_1" />
+
+            <!-- Work button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWork"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="8dp"
+                android:fontFamily="sans-serif"
+                android:text="Work"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:backgroundTint="@color/button_background_color"
+                app:cornerRadius="6dp"
+                app:icon="@drawable/bag_1" />
+
+        </LinearLayout>
+    </android.widget.HorizontalScrollView>
+
+    <Spinner
+        android:id="@+id/taskTypeSpinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskEndTimeEditText" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
