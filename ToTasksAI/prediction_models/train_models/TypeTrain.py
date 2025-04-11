@@ -1,3 +1,5 @@
+import numpy as np
+from scipy.sparse import hstack
 import joblib
 from utils.ModelEvaluation import accuracy_score_calculate
 from utils.ToolsPreparation import tfidf_vectorizer, le_type
@@ -10,7 +12,7 @@ from sklearn.model_selection import train_test_split
 # le_day = joblib.load("le_day.pkl")
 # tfidf_vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
-def train_type_prediction_model(task_name_vectorized, used_data_type):
+def train_type_prediction_model(task_name_vectorized, used_data_type, used_data_userid):
     """
     Huấn luyện mô hình dự đoán loại nhiệm vụ và lưu vào file.
     """
@@ -18,7 +20,8 @@ def train_type_prediction_model(task_name_vectorized, used_data_type):
     type_random_forest_classifier_model = RandomForestClassifier(random_state=42)
 
     # Chia dữ liệu
-    X = task_name_vectorized
+    # X = task_name_vectorized
+    X = hstack([task_name_vectorized, np.array(used_data_userid).reshape(-1, 1)])
     y = used_data_type
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 

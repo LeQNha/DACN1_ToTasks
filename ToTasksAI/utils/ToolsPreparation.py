@@ -5,6 +5,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 le_type = LabelEncoder()
 le_importance = LabelEncoder()
 le_day = LabelEncoder()
+le_userid = LabelEncoder()
 
 tfidf_vectorizer = TfidfVectorizer()
 
