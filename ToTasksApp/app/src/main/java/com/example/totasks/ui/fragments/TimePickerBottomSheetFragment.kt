@@ -10,7 +10,8 @@ import androidx.fragment.app.Fragment
 import com.example.totasks.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class TimePickerBottomSheetFragment : BottomSheetDialogFragment() {
+class TimePickerBottomSheetFragment( // mới
+private val onTimeSelected: (hour: Int, minute: Int) -> Unit) : BottomSheetDialogFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,11 +48,12 @@ class TimePickerBottomSheetFragment : BottomSheetDialogFragment() {
             dismiss() // Đóng bottom sheet khi nhấn Cancel
         }
 
-        btnSave.setOnClickListener {
+        btnSave.setOnClickListener {// mới
             val selectedHour = numberPickerHour.value
             val selectedMinute = numberPickerMin.value
 
-            dismiss() // Đóng bottom sheet sau khi chọn
+            onTimeSelected(selectedHour, selectedMinute)
+            dismiss()
         }
 
 
