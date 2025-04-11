@@ -73,6 +73,7 @@ class TaskDetailsActivity : BaseActivity() {
 
         updatePriorityStars(task.Importance)
 
+
     }
 
     private fun updatePriorityStars(priority: String) {
@@ -108,8 +109,7 @@ class TaskDetailsActivity : BaseActivity() {
             starLayout.addView(emptyStar)
         }
   }
-
-
+    
     private fun showDeleteConfirmationDialog() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Delete Task")
