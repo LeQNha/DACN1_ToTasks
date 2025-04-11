@@ -3,75 +3,93 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/rounded_corner_background"
-    android:padding="16dp"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="89dp">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/toggleGroup"
+    <!-- LinearLayout cha không có padding -->
+    <LinearLayout
+        android:id="@+id/timePickerLayout1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="10dp"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/rounded_border"
-        app:singleSelection="true">
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+        app:layout_constraintStart_toEndOf=""
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnPersonal"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="8dp"
-        android:text="Personal"
-        android:textSize="14sp"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@color/button_background_color"
-        app:cornerRadius="6dp"
-        app:icon="@drawable/calendar_1"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleGroup"
-        app:layout_constraintEnd_toStartOf="@+id/btnEducation"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toggleGroup" />
+        <!-- LinearLayout con có padding -->
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnEducation"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:text="Education"
-        android:textSize="14sp"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@color/button_background_color"
-        app:cornerRadius="6dp"
-        app:icon="@drawable/calendar_1"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleGroup"
-        app:layout_constraintEnd_toStartOf="@id/btnWork"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/btnPersonal"
-        app:layout_constraintTop_toTopOf="@+id/toggleGroup" />
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="#FFA500" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnWork"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="8dp"
-        android:text="Work"
-        android:textSize="14sp"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@color/button_background_color"
-        app:cornerRadius="6dp"
-        app:icon="@drawable/calendar_1"
-        app:layout_constraintBottom_toBottomOf="@+id/toggleGroup"
-        app:layout_constraintEnd_toEndOf="@+id/toggleGroup"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/btnEducation"
-        app:layout_constraintTop_toTopOf="@+id/toggleGroup" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
 
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="#FFA500" />
+        </LinearLayout>
+
+        <!-- View line separator không có padding -->
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F0F0"
+            android:layout_marginTop="0dp" />
+
+        <!-- TimePicker với padding -->
+        <LinearLayout
+            android:id="@+id/timePickerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="linear1"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <NumberPicker
+                android:id="@+id/numberPickerHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:selectionDividerHeight="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="28sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="10dp"
+                />
+
+            <NumberPicker
+                android:id="@+id/numberPickerMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+
+                android:selectionDividerHeight="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
