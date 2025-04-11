@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- White background -->
+            <stroke
+                android:width="2dp"
+                android:color="#8B4513"/> <!-- Brown border -->
+            <corners android:radius="5dp"/> <!-- Rounded corners (optional) -->
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#DEE1E4"/> <!-- Light red background when pressed -->
+            <stroke android:width="2dp" android:color="#8B4513"/> <!-- Brown border -->
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#DEE1E4"/> <!-- Light green background when focused -->
+            <stroke android:width="2dp" android:color="#8B4513"/> <!-- Brown border -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#DEE1E4"/> <!-- White background for default state -->
+            <stroke android:width="2dp" android:color="#8B4513"/> <!-- Brown border -->
+        </shape>
+    </item>
+</selector>

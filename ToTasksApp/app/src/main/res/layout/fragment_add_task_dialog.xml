@@ -115,8 +115,10 @@
         android:hint="hh:mm"
         android:drawableStart="@drawable/time_five"
         android:drawablePadding="8dp"
+
         android:inputType="none"
         android:focusable="false"
+
         android:padding="10dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/taskEndTimeEditText"
@@ -148,8 +150,10 @@
         android:drawableStart="@drawable/time_five"
         android:drawablePadding="8dp"
         android:hint="hh:mm"
+
         android:inputType="none"
         android:focusable="false"
+
         android:padding="10dp"
         android:textColorHint="#808080"
         android:textSize="14sp"

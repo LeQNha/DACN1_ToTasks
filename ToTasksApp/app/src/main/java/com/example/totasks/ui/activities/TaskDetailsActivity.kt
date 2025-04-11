@@ -73,7 +73,9 @@ class TaskDetailsActivity : BaseActivity() {
 
         updatePriorityStars(task.Importance)
 
+
     }
+
     private fun updatePriorityStars(priority: String) {
         val starLayout = binding.priorityStarsLayout
         starLayout.removeAllViews()
@@ -106,9 +108,8 @@ class TaskDetailsActivity : BaseActivity() {
             emptyStar.layoutParams = params
             starLayout.addView(emptyStar)
         }
-    }
-
-
+  }
+    
     private fun showDeleteConfirmationDialog() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Delete Task")

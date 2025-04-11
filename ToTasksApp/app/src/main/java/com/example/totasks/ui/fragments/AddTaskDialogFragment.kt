@@ -67,7 +67,9 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
         binding.taskDayEditText.text = selectedDayOfWeek
 
         setupSpinners()
+        
         setupTimePickers()// mới
+
         setupTaskTypeButtons()// mới
         onClickListenerSetUp()
     }
@@ -170,6 +172,7 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
         btnWork.setOnClickListener { updateSelectedButton(it) }
         btnEducation.setOnClickListener { updateSelectedButton(it) }
     }
+
     private fun setupTimePickers() { // mới
         binding.taskStartTimeEditText.setOnClickListener {
             val timePicker = TimePickerBottomSheetFragment { hour, minute ->

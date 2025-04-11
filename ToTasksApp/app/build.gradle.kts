@@ -56,6 +56,11 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.firestore)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation(libs.googleid)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -85,5 +90,10 @@ dependencies {
 
     implementation("com.airbnb.android:epoxy:5.1.3")
     kapt("com.airbnb.android:epoxy-processor:5.1.3")
+
+    //Navigation
+    val nav_version = "2.7.3"
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
 }
