@@ -90,7 +90,7 @@
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
-        android:background="@drawable/login_button_background"
+        android:paddingVertical="16dp"
         android:backgroundTint="@android:color/black"
         android:text="Register"
         android:textColor="@android:color/white"
