@@ -15,7 +15,8 @@ data class Task (
     var StartTime: String = "",
     var EndTimeInMinute: Int = 0,
     var EndTime: String = "",
-    var Done: Boolean = false
+    var Done: Boolean = false,
+    var UserId: String = ""
 ):Parcelable
 //{
 

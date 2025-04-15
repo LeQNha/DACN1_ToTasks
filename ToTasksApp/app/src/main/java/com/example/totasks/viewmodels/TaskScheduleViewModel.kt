@@ -39,6 +39,18 @@ class TaskScheduleViewModel(val taskScheduleRepository: TaskScheduleRepository) 
         taskScheduleRepository.doneStatusUpdate(dateId, task)
     }
 
+    fun updateTask(dateId: String, task: Task, updates: Map<String, Any>){
+        taskScheduleRepository.updateTask(dateId, task, updates)
+    }
+
+    fun addTaskToDataSet(task: Task){
+        taskScheduleRepository.addTaskToDataset(task)
+    }
+
+    fun updateTaskInDataset(task: Task, updates: Map<String, Any>){
+        taskScheduleRepository.updateTaskInDataset(task, updates)
+    }
+
     class TaskScheduleViewModelProviderFactory(val taskScheduleRepository: TaskScheduleRepository) :
         ViewModelProvider.Factory {
         override fun <T : ViewModel> create(modelClass: Class<T>): T {

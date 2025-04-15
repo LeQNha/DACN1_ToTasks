@@ -13,6 +13,7 @@ import com.example.totasks.ui.activities.BaseActivity
 import com.example.totasks.ui.activities.TaskDetailsActivity
 import com.example.totasks.ui.fragments.AddTaskDialogFragment
 import nha.kc.kotlincode.models.Task
+import nha.tu.tup.firebase.FirebaseInstance
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -27,7 +28,8 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
 
     lateinit var selectedDate: Date
     lateinit var selectedDayOfWeek: String
-    companion object{
+
+    companion object {
         var selectedDateId: String = ""
     }
 
@@ -67,10 +69,14 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
             predictedTaskArrayList.clear()
             for (t in tasks) {
                 predictedTaskArrayList.add(t)
+
+                //add to dataset
+                taskScheduleViewModel.addTaskToDataSet(t)
             }
-            taskArrayList.sortBy {
-                it.StartTimeInMinute
-            }
+
+            taskArrayList.sortBy { it.StartTimeInMinute }
+            predictedTaskArrayList.sortBy { it.StartTimeInMinute }
+
             tasksScheduleAdapter.differ.submitList(predictedTaskArrayList.toList()) // Cập nhật danh sách
             tasksScheduleAdapter.notifyDataSetChanged()
         }
@@ -120,43 +126,16 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
                 // Chỉ đặt filter được nhấn là được chọn
                 filter.isSelected = true
 
-                if(filter.text == "All"){
+                if (filter.text == "All") {
                     taskScheduleViewModel.getTasks(selectedDateId)
-                }else{
-                    taskScheduleViewModel.getTasksByType(selectedDateId, filter.text.toString().trim())
+                } else {
+                    taskScheduleViewModel.getTasksByType(
+                        selectedDateId,
+                        filter.text.toString().trim()
+                    )
                 }
             }
         }
-
-//        filterAllBtn.setOnClickListener {
-//            taskScheduleViewModel.getTasks(selectedDateId)
-//            filterAllBtn.isSelected = true
-//            filterWorkBtn.isSelected = false
-//            filterPersonalBtn.isSelected = false
-//            filterEducationBtn.isSelected = false
-//        }
-//        filterWorkBtn.setOnClickListener {
-//            taskScheduleViewModel.getTasksByType(selectedDateId, "Work")
-//            filterAllBtn.isSelected = false
-//            filterWorkBtn.isSelected = true
-//            filterPersonalBtn.isSelected = false
-//            filterEducationBtn.isSelected = false
-//        }
-//        filterPersonalBtn.setOnClickListener {
-//            taskScheduleViewModel.getTasksByType(selectedDateId, "Personal")
-//            filterAllBtn.isSelected = false
-//            filterWorkBtn.isSelected = false
-//            filterPersonalBtn.isSelected = true
-//            filterEducationBtn.isSelected = false
-//        }
-//        filterEducationBtn.setOnClickListener {
-//            taskScheduleViewModel.getTasksByType(selectedDateId, "Education")
-//            filterAllBtn.isSelected = false
-//            filterWorkBtn.isSelected = false
-//            filterPersonalBtn.isSelected = false
-//            filterEducationBtn.isSelected = true
-//        }
-
     }
 
     fun taskScheduleRvUpdate() {
@@ -170,8 +149,13 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
 
     fun addTaskToDatabase(predictedTask: Task?) {
         predictedTask?.let {
-//            taskViewModel.addTask(it)
-            taskScheduleViewModel.addTask(selectedDateId, it)
+            val auth = FirebaseInstance.auth
+            var currentUserAuth = auth.currentUser
+
+            currentUserAuth?.let { user ->
+                it.UserId = user.uid
+                taskScheduleViewModel.addTask(selectedDateId, it)
+            }
         }
 
     }
@@ -188,7 +172,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
 //        taskViewModel.addTask(task)
     }
 
-    private fun filterButtonsSetUp(){
+    private fun filterButtonsSetUp() {
         filterAllBtn = binding.filterAll
         filterWorkBtn = binding.filterWork
         filterPersonalBtn = binding.filterPersonal
@@ -251,8 +235,6 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
 
                 taskScheduleViewModel.getTasks(selectedDateId)
 
-                println("___GET " + selectedDateId)
-                println("date: $")
 //        }, year, month, day)
             }, selectedDate.year, selectedDate.month, selectedDate.day)
 
