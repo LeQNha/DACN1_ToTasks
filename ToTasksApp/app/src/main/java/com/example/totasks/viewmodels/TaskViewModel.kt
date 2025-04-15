@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class TaskViewModel(val taskRepository: TaskRepository) : ViewModel() {
 
-    val _predictedTask = MutableLiveData<Task>()
+    val _predictedTask = MutableLiveData<Task?>()
     var _tasks: MutableLiveData<List<Task>> = MutableLiveData()
 
     fun predictTaskSchedule(task: Task) = viewModelScope.launch {

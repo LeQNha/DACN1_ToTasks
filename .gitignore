@@ -1,1 +1,9 @@
 ToTasksAI/serviceAccountKey.json
+# ========== Android & IntelliJ ==========
+
+# Ignore all .idea files except a few safe ones
+.idea/
+!.idea/compiler.xml
+!.idea/gradle.xml
+!.idea/misc.xml
+.idea/workspace.xml

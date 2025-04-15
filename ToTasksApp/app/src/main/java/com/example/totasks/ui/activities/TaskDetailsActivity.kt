@@ -23,7 +23,6 @@ class TaskDetailsActivity : BaseActivity() {
         getExtraTask()
         taskDetailsSetUp()
         onClickListenerSetUp()
-        getSupportActionBar()!!.hide()
     }
 
     private fun getExtraTask(){
@@ -46,6 +45,13 @@ class TaskDetailsActivity : BaseActivity() {
             showEditTextDialog("Edit Title", task.TaskName) { newTitle ->
                 task.TaskName = newTitle
                 binding.taskTitleTxtView.text = newTitle.ifEmpty { "Untitled Task" }
+
+                //Update in firestore
+                val updates = mapOf(
+                    "taskName" to newTitle
+                )
+                taskScheduleViewModel.updateTask(dateId, task, updates)
+                taskScheduleViewModel.updateTaskInDataset(task, updates)
             }
         }
 
@@ -53,6 +59,13 @@ class TaskDetailsActivity : BaseActivity() {
             showSelectionDialog("Edit Priority", task.Importance, listOf("Very Important", "Important", "Normal", "Less Important")) { newPriority ->
                 task.Importance = newPriority
                 updatePriorityStars(newPriority)
+
+                //Update in firestore
+                val updates = mapOf(
+                    "importance" to newPriority
+                )
+                taskScheduleViewModel.updateTask(dateId, task, updates)
+                taskScheduleViewModel.updateTaskInDataset(task, updates)
             }
         }
 
@@ -60,6 +73,13 @@ class TaskDetailsActivity : BaseActivity() {
             showSelectionDialog("Edit Type", task.Type, listOf("Work", "Personal", "Education")) { newType ->
                 task.Type = newType
                 binding.taskTypeTxtView.text = newType.ifEmpty { "No Type" }
+
+                //Update in firestore
+                val updates = mapOf(
+                    "type" to newType
+                )
+                taskScheduleViewModel.updateTask(dateId, task, updates)
+                taskScheduleViewModel.updateTaskInDataset(task, updates)
             }
         }
     }
@@ -72,7 +92,6 @@ class TaskDetailsActivity : BaseActivity() {
         binding.taskEndTimeText.text = task.EndTime
 
         updatePriorityStars(task.Importance)
-
 
     }
 

@@ -207,18 +207,6 @@
         app:layout_constraintTop_toBottomOf="@id/dateTitle"
         app:layout_constraintWidth_percent="0.35" />
 
-    <EditText
-        android:id="@+id/taskDurationEditText"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="212dp"
-        android:hint="Enter Duration (minutes)"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/taskDayEditText" />
-
     <TextView
         android:id="@+id/priorityTitle"
         android:layout_width="0dp"
@@ -334,17 +322,6 @@
 
         </LinearLayout>
     </android.widget.HorizontalScrollView>
-
-    <Spinner
-        android:id="@+id/taskTypeSpinner"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/rounded_border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taskEndTimeEditText" />
 
     <View
         android:id="@+id/view"

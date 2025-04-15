@@ -67,7 +67,7 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
         binding.taskDayEditText.text = selectedDayOfWeek
 
         setupSpinners()
-        
+
         setupTimePickers()// mới
 
         setupTaskTypeButtons()// mới
@@ -81,20 +81,32 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
             val type = selectedTaskType
             // cũ
 //            val type = binding.taskTypeSpinner.selectedItem.toString() // Lấy giá trị từ Spinner
-            val importance = binding.taskImportanceSpinner.selectedItem.toString() // Lấy giá trị từ Spinner
+            val importance =
+                binding.taskImportanceSpinner.selectedItem.toString() // Lấy giá trị từ Spinner
 //            val day = binding.taskDayEditText.text.toString()
             val day = selectedDayOfWeek
             // Chuyển đổi duration từ String thành Int an toàn
-            val durationText = binding.taskDurationEditText.text.toString()
-            val duration: Int = if (durationText.isNotEmpty()) durationText.toInt() else 0
             val startTime = binding.taskStartTimeEditText.text.toString()
             val endTime = binding.taskEndTimeEditText.text.toString()
 
+
             var startTimeInMinute = 0
+            var endTimeInMinute = 0
             if (startTime.isNotEmpty()) {
-                val hm = startTime.split(":")
-                startTimeInMinute = (hm[0].toInt()) * 60 + hm[1].toInt()
+                startTimeInMinute = convertTimeToMinutes(startTime)
             }
+            if(endTime.isNotEmpty()){
+                endTimeInMinute = convertTimeToMinutes(endTime)
+            }
+            val duration = if (endTimeInMinute > startTimeInMinute) {
+                endTimeInMinute - startTimeInMinute
+            } else {
+                0
+            }
+
+//            val startTimeInMinute = convertTimeToMinutes(startTime)
+//            val endTimeInMinute = convertTimeToMinutes(endTime)
+
 
             if (name.isNotEmpty() && day.isNotEmpty()) {
                 val newTask = Task(
@@ -131,6 +143,7 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
         importanceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.taskImportanceSpinner.adapter = importanceAdapter
     }
+
     // Mới
     private fun setupTaskTypeButtons() {
         val btnPersonal = binding.btnPersonal
@@ -147,7 +160,8 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
                     (btn as Button).setTextColor(resources.getColor(android.R.color.white))
 
                     // Cập nhật màu của icon khi nút được chọn
-                    (btn as MaterialButton).iconTint = ContextCompat.getColorStateList(requireContext(), android.R.color.white)
+                    (btn as MaterialButton).iconTint =
+                        ContextCompat.getColorStateList(requireContext(), android.R.color.white)
 
                     // Lưu loại task đã chọn
                     selectedTaskType = btn.text.toString()
@@ -157,12 +171,11 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
                     (btn as Button).setTextColor(Color.parseColor("#808080"))
 
                     // Đổi màu icon của nút không được chọn
-                    (btn as MaterialButton).iconTint = ColorStateList.valueOf(Color.parseColor("#808080"))
+                    (btn as MaterialButton).iconTint =
+                        ColorStateList.valueOf(Color.parseColor("#808080"))
                 }
             }
         }
-
-
 
 
         // Mặc định chọn "Personal"
@@ -188,6 +201,15 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
                 binding.taskEndTimeEditText.setText(timeStr)
             }
             timePicker.show(parentFragmentManager, "endTimePicker")
+        }
+    }
+
+    private fun convertTimeToMinutes(time: String): Int {
+        return if (time.isNotEmpty()) {
+            val parts = time.split(":")
+            parts[0].toInt() * 60 + parts[1].toInt()
+        } else {
+            0
         }
     }
 
