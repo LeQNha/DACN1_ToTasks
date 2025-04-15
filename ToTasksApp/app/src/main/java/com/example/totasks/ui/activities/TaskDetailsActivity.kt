@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Spinner
 import com.example.totasks.databinding.ActivityTaskDetailsBinding
+import com.example.totasks.ui.fragments.TimePickerBottomSheetFragment
 import nha.kc.kotlincode.models.Task
 
 class TaskDetailsActivity : BaseActivity() {
@@ -23,6 +24,26 @@ class TaskDetailsActivity : BaseActivity() {
         getExtraTask()
         taskDetailsSetUp()
         onClickListenerSetUp()
+
+        setupTimePickers()
+    }
+
+    private fun setupTimePickers() { // mới
+        binding.taskStartTimeText.setOnClickListener {
+            val timePicker = TimePickerBottomSheetFragment { hour, minute ->
+                val timeStr = String.format("%02d:%02d", hour, minute)
+                binding.taskStartTimeText.setText(timeStr)
+            }
+            timePicker.show(supportFragmentManager, "startTimePicker")
+        }
+
+        binding.taskEndTimeText.setOnClickListener {
+            val timePicker = TimePickerBottomSheetFragment { hour, minute ->
+                val timeStr = String.format("%02d:%02d", hour, minute)
+                binding.taskEndTimeText.setText(timeStr)
+            }
+            timePicker.show(supportFragmentManager, "endTimePicker")
+        }
     }
 
     private fun getExtraTask(){
@@ -88,8 +109,8 @@ class TaskDetailsActivity : BaseActivity() {
         binding.taskTitleTxtView.text = task.TaskName.ifEmpty { "Untitled Task" }
 
         binding.taskTypeTxtView.text = task.Type.ifEmpty { "No Type" }
-        binding.taskStartTimeText.text = task.StartTime
-        binding.taskEndTimeText.text = task.EndTime
+        binding.taskStartTimeText.setText(task.StartTime)
+        binding.taskEndTimeText.setText(task.EndTime)
 
         updatePriorityStars(task.Importance)
 

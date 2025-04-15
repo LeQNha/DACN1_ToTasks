@@ -196,19 +196,21 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/taskTypeTxtView" />
 
-                <TextView
+                <EditText
                     android:id="@+id/taskStartTimeText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:background="@drawable/rounded_border"
+                    android:hint="hh:mm"
                     android:drawableStart="@drawable/time_five"
-                    android:text="hh::mm"
                     android:drawablePadding="8dp"
-                    android:padding="10dp"
-                    android:textSize="16sp"
-                    android:gravity="center_vertical"
 
+                    android:inputType="none"
+                    android:focusable="false"
+
+                    android:padding="10dp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toStartOf="@+id/taskEndTimeText"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -228,7 +230,7 @@
 
                     app:layout_constraintTop_toBottomOf="@+id/taskTypeTxtView" />
 
-                <TextView
+                <EditText
                     android:id="@+id/taskEndTimeText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -237,14 +239,18 @@
                     android:background="@drawable/rounded_border"
                     android:drawableStart="@drawable/time_five"
                     android:drawablePadding="8dp"
+                    android:hint="hh:mm"
+
+                    android:inputType="none"
+                    android:focusable="false"
+
                     android:padding="10dp"
                     android:textColorHint="#808080"
-                    android:textSize="16sp"
-                    android:text="hh::mm"
+                    android:textSize="14sp"
                     android:gravity="center_vertical"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/taskStartTimeText"
-                    app:layout_constraintTop_toBottomOf="@+id/endTime" />
+                    app:layout_constraintTop_toBottomOf="@+id/endTime"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
     </ScrollView>
