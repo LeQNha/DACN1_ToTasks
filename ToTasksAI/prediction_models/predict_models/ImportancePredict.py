@@ -10,15 +10,18 @@ def predict_importance(task_name, task_type):
     tfidf_vectorizer = joblib.load("tfidf_vectorizer.pkl")
     le_type = joblib.load("le_type.pkl")
     le_importance = joblib.load("le_importance.pkl")
+    # le_user = joblib.load("le_userid.pkl")
 
     # Vector hóa TaskName
     task_name_vector = tfidf_vectorizer.transform([task_name])
 
     # Mã hóa Type
     task_type_encoded = le_type.transform([task_type])
+    # user_id_encoded = le_user.transform([user_id])
 
     # Kết hợp
-    task_vector = hstack([task_name_vector, np.array(task_type_encoded).reshape(-1, 1)])
+    # task_vector = hstack([task_name_vector, np.array([task_type_encoded[0], user_id_encoded[0]]).reshape(-1, 1)])
+    task_vector = hstack([task_name_vector, np.array([task_type_encoded[0]]).reshape(-1, 1)])
 
     # Dự đoán và giải mã kết quả
     prediction_encoded = importance_random_forest_classifier_model.predict(task_vector)[0]

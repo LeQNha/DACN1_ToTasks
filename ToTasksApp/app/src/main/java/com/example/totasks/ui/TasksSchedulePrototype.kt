@@ -74,7 +74,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
                 taskScheduleViewModel.addTaskToDataSet(t)
             }
 
-            taskArrayList.sortBy { it.StartTimeInMinute }
+//            taskArrayList.sortBy { it.StartTimeInMinute }
             predictedTaskArrayList.sortBy { it.StartTimeInMinute }
 
             tasksScheduleAdapter.differ.submitList(predictedTaskArrayList.toList()) // Cập nhật danh sách
@@ -156,20 +156,25 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
                 it.UserId = user.uid
                 taskScheduleViewModel.addTask(selectedDateId, it)
             }
-        }
 
+//            println("___addTaskToDatabase: ${predictedTask}")
+//            taskScheduleViewModel.addTask(selectedDateId, it)
+        }
     }
 
     override fun onTaskAdded(task: Task) {
-        taskArrayList = predictedTaskArrayList
-        taskArrayList.add(task)
-        binding.taskNumberTxtView.text =
-            (binding.taskNumberTxtView.text.toString().toInt() + 1).toString()
+//        taskArrayList = predictedTaskArrayList
+//        taskArrayList.add(task)
+//        binding.taskNumberTxtView.text =
+//            (binding.taskNumberTxtView.text.toString().toInt() + 1).toString()
+//
+//        tasksScheduleAdapter.differ.submitList(taskArrayList.toList()) // Cập nhật danh sách
+//        tasksScheduleAdapter.notifyDataSetChanged()
 
-        tasksScheduleAdapter.differ.submitList(taskArrayList.toList()) // Cập nhật danh sách
-        tasksScheduleAdapter.notifyDataSetChanged()
+//        taskScheduleViewModel.addTask(selectedDateId, task)
 
-//        taskViewModel.addTask(task)
+        println("___onTaskAdded: ${task}")
+        taskViewModel.predictTaskSchedule(task)
     }
 
     private fun filterButtonsSetUp() {
