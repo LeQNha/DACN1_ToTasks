@@ -74,11 +74,40 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
                 taskScheduleViewModel.addTaskToDataSet(t)
             }
 
-            taskArrayList.sortBy { it.StartTimeInMinute }
+//            taskArrayList.sortBy { it.StartTimeInMinute }
             predictedTaskArrayList.sortBy { it.StartTimeInMinute }
 
             tasksScheduleAdapter.differ.submitList(predictedTaskArrayList.toList()) // Cập nhật danh sách
             tasksScheduleAdapter.notifyDataSetChanged()
+        }
+
+        taskScheduleViewModel._optimizedTasks.observe(this) { tasks ->
+            tasks?.let {
+                predictedTaskArrayList.clear()
+                for (t in tasks) {
+                    predictedTaskArrayList.add(t)
+
+                    //update task
+                    val updates = mapOf(
+                        "duration" to t.Duration,
+                        "startTime" to t.StartTime,
+                        "endTime" to t.EndTime,
+                        "startTimeInMinute" to t.StartTimeInMinute,
+                        "endTimeInMinute" to t.EndTimeInMinute
+                    )
+                    taskScheduleViewModel.updateTask(selectedDateId, t, updates)
+                    taskScheduleViewModel.updateTaskInDataset(t, updates)
+
+                    //add to dataset
+                    taskScheduleViewModel.addTaskToDataSet(t)
+                }
+
+                //            taskArrayList.sortBy { it.StartTimeInMinute }
+                predictedTaskArrayList.sortBy { it.StartTimeInMinute }
+
+                tasksScheduleAdapter.differ.submitList(predictedTaskArrayList.toList()) // Cập nhật danh sách
+                tasksScheduleAdapter.notifyDataSetChanged()
+            }
         }
 
         tasksScheduleAdapter.setOnItemClickListener {
@@ -101,12 +130,17 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
 
         binding.predictTaskScheduleBtn.setOnClickListener {
 
-            taskScheduleViewModel.deleteAllTasks(selectedDateId)
-            for (task in taskArrayList) {
-                taskViewModel.predictTaskSchedule(task)
+//            taskScheduleViewModel.deleteAllTasks(selectedDateId)
+//            for (task in taskArrayList) {
+//                taskViewModel.predictTaskSchedule(task)
+//            }
+//            binding.taskNumberTxtView.text = "0"
+//            predictedTaskArrayList.clear()
+
+            for(t in predictedTaskArrayList){
+                println("=== ${t}")
             }
-            binding.taskNumberTxtView.text = "0"
-            predictedTaskArrayList.clear()
+            taskScheduleViewModel.optimizeTasks(predictedTaskArrayList)
 
         }
 
@@ -156,20 +190,25 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
                 it.UserId = user.uid
                 taskScheduleViewModel.addTask(selectedDateId, it)
             }
-        }
 
+//            println("___addTaskToDatabase: ${predictedTask}")
+//            taskScheduleViewModel.addTask(selectedDateId, it)
+        }
     }
 
     override fun onTaskAdded(task: Task) {
-        taskArrayList = predictedTaskArrayList
-        taskArrayList.add(task)
-        binding.taskNumberTxtView.text =
-            (binding.taskNumberTxtView.text.toString().toInt() + 1).toString()
+//        taskArrayList = predictedTaskArrayList
+//        taskArrayList.add(task)
+//        binding.taskNumberTxtView.text =
+//            (binding.taskNumberTxtView.text.toString().toInt() + 1).toString()
+//
+//        tasksScheduleAdapter.differ.submitList(taskArrayList.toList()) // Cập nhật danh sách
+//        tasksScheduleAdapter.notifyDataSetChanged()
 
-        tasksScheduleAdapter.differ.submitList(taskArrayList.toList()) // Cập nhật danh sách
-        tasksScheduleAdapter.notifyDataSetChanged()
+//        taskScheduleViewModel.addTask(selectedDateId, task)
 
-//        taskViewModel.addTask(task)
+        println("___onTaskAdded: ${task}")
+        taskViewModel.predictTaskSchedule(task)
     }
 
     private fun filterButtonsSetUp() {

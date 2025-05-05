@@ -1,6 +1,7 @@
 package com.example.totasks.repositories
 
 import android.util.Log
+import nha.kc.kotlincode.api.RetrofitInstance
 import nha.kc.kotlincode.models.Task
 import nha.tu.tup.firebase.FirebaseInstance
 
@@ -11,6 +12,25 @@ class TaskScheduleRepository {
 
     val dateCollectionRef = FirebaseInstance.firebaseFirestoreInstance.collection("dates")
     val datasetCollectionRef = FirebaseInstance.firebaseFirestoreInstance.collection("dataset")
+
+    suspend fun predictTaskSchedule(task: Task): Task? {
+        return try {
+            RetrofitInstance.taskApi.predictTasks(task) // ✅ Gọi API trong coroutine
+        } catch (e: Exception) {
+            Log.e("API_ERROR", "Error fetching task: ${e.message}")
+            null
+        }
+    }
+
+    suspend fun optimizeTasks(currentDayTaskList: List<Task>): List<Task>? {
+        return try {
+            RetrofitInstance.taskApi.optimizeTasks(currentDayTaskList) // ✅ Gọi API trong coroutine
+        } catch (e: Exception) {
+            Log.e("API_ERROR", "Error fetching tasks: ${e.message}")
+            null
+        }
+    }
+
 
     fun addTask(dateId: String, task: Task) {
         val taskCollectionRef = dateCollectionRef.document(dateId).collection("tasks")

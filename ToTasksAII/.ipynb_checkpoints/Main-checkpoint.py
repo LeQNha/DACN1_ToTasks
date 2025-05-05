@@ -97,3 +97,20 @@ async def predict_task(task: Task):
     print(f"___{new_task}")
 
     return new_task
+
+@app.post("/optimize_schedule")
+async def optimize_schedule(tasks: List[Task]):
+    task_list = [task.dict() for task in tasks]
+
+    print("=== Danh sách task đầu vào ===")
+    for i, task in enumerate(task_list):
+        print(f"Task {i + 1}: {task}")
+    
+    optimized = task_optimize(task_list)
+
+    # In ra danh sách sau tối ưu
+    print("\n=== Danh sách task sau tối ưu ===")
+    for i, task in enumerate(optimized):
+        print(f"Task {i+1}: {task}")
+    
+    return optimized

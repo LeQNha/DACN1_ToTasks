@@ -19,6 +19,15 @@ class TaskRepository {
         }
     }
 
+    suspend fun optimizeTasks(currentDayTaskList: List<Task>): List<Task>? {
+        return try {
+            RetrofitInstance.taskApi.optimizeTasks(currentDayTaskList) // ✅ Gọi API trong coroutine
+        } catch (e: Exception) {
+            Log.e("API_ERROR", "Error fetching tasks: ${e.message}")
+            null
+        }
+    }
+
     fun addTask(task: Task) {
         val taskId = taskCollectionRef.document().id
         task.TaskId = taskId

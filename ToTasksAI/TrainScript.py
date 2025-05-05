@@ -33,11 +33,14 @@ joblib.dump(le_userid, "le_userid.pkl")
 
 # Huấn luyện và lưu mô hình
 # TRAIN TYPE PREDICTION MODEL
-train_type_prediction_model(task_name_vectorized, used_data_type=used_data['Type'], used_data_userid=used_data['UserID'])
+# train_type_prediction_model(task_name_vectorized, used_data_type=used_data['Type'], used_data_userid=used_data['UserID'])
+train_type_prediction_model(task_name_vectorized, used_data_type=used_data['Type'])
 
 # TRAIN IMPORTANCE PREDICTION MODEL
+# train_importance_prediction_model(task_name_vectorized, used_data_type=used_data['Type'],
+#                                   used_data_importance=used_data['Importance'], used_data_userid=used_data['UserID'])
 train_importance_prediction_model(task_name_vectorized, used_data_type=used_data['Type'],
-                                  used_data_importance=used_data['Importance'], used_data_userid=used_data['UserID'])
+                                  used_data_importance=used_data['Importance'])
 
 # TRAIN DURATION PREDICTION MODEL
 train_duration_prediction_model(task_name_vectorized, used_data_type=used_data['Type'],
@@ -65,6 +68,6 @@ def time_to_minutes(start_time):
 
 used_data['StartTimeMinutes'] = used_data['StartTime'].apply(time_to_minutes)
 
-required_columns = used_data[['Type', 'Importance', 'DayOfWeek', 'UserID']]
+required_columns = used_data[['Type', 'Importance', 'DayOfWeek']]
 train_start_time_prediction_model_2(task_name_vectorized, required_columns=required_columns,
                                   start_time_minutes=used_data['StartTimeMinutes'])

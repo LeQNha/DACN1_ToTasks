@@ -4,16 +4,21 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from utils.ModelEvaluation import mean_r2_calculate
 
-def train_duration_prediction_model(task_name_vectorized, used_data_type, used_data_day_of_week, used_data_importance, used_data_userid, used_data_duration):
+# def train_duration_prediction_model(task_name_vectorized, used_data_type, used_data_day_of_week, used_data_importance, used_data_userid, used_data_duration):
+def train_duration_prediction_model(task_name_vectorized, used_data_type, used_data_day_of_week, used_data_importance, used_data_duration):
     """
     Huấn luyện mô hình dự đoán thời lượng và lưu vào file.
     """
     duration_random_forest_regressor_model = RandomForestRegressor(random_state=42)
 
     # Tạo tập dữ liệu đầu vào (X) và đầu ra (y)
+    # X = np.hstack([
+    #     task_name_vectorized.toarray(),
+    #     np.column_stack((used_data_type, used_data_day_of_week, used_data_importance, used_data_userid))
+    # ])
     X = np.hstack([
         task_name_vectorized.toarray(),
-        np.column_stack((used_data_type, used_data_day_of_week, used_data_importance, used_data_userid))
+        np.column_stack((used_data_type, used_data_day_of_week, used_data_importance))
     ])
     y = used_data_duration
 

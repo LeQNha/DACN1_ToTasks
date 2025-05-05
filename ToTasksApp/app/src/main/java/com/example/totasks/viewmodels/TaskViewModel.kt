@@ -1,5 +1,6 @@
 package com.example.totasks.viewmodels
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -21,6 +22,16 @@ class TaskViewModel(val taskRepository: TaskRepository) : ViewModel() {
         } catch (e: Exception) {
             println("Error: ${e.message}")
             _predictedTask.value = null
+        }
+    }
+
+    fun optimizeTasks(currentDayTaskList: List<Task>) = viewModelScope.launch {
+        try {
+            val optimizedTasks = taskRepository.optimizeTasks(currentDayTaskList)
+            // Cập nhật UI với danh sách mới
+            _tasks.postValue(optimizedTasks)
+        } catch (e: Exception) {
+            Log.e("API", "Lỗi khi tối ưu task: ${e.message}")
         }
     }
 

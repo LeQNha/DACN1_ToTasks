@@ -100,3 +100,91 @@ def task_predict(new_task):
 
     print(f"\n {new_task}")
     return new_task
+
+# OPTIMIZATION
+importance_map = {'Very Important': 3, 'Important': 2, 'Normal': 1, 'Less Important': 0}
+
+
+def is_overlap(a, b):
+    return not (a['EndTimeInMinute'] <= b['StartTimeInMinute'] or a['StartTimeInMinute'] >= b['EndTimeInMinute'])
+
+def task_optimize(task_list):
+    # Bước 1: Sắp xếp theo độ ưu tiên giảm dần, sau đó theo thời gian bắt đầu
+    task_list.sort(key=lambda x: (-importance_map.get(x['Importance'], 0), x['StartTimeInMinute']))
+
+    placed_tasks = []
+
+    for task in task_list:
+        has_conflict = False
+
+        for placed in placed_tasks:
+            if is_overlap(task, placed):
+                has_conflict = True
+                overlap_start = max(task['StartTimeInMinute'], placed['StartTimeInMinute'])
+                overlap_end = min(task['EndTimeInMinute'], placed['EndTimeInMinute'])
+                overlap_duration = overlap_end - overlap_start
+
+                task_priority = importance_map.get(task['Importance'], 0)
+                placed_priority = importance_map.get(placed['Importance'], 0)
+
+                if task_priority < placed_priority:
+                    # Bị trùng - task này thấp hơn, xử lý
+                    if overlap_duration <= task['Duration'] / 4:
+                        # Chỉ cắt bớt phần bị trùng
+                        task['Duration'] -= overlap_duration
+                        task['EndTimeInMinute'] = task['StartTimeInMinute'] + task['Duration']
+                        task['EndTime'] = format_time(task['EndTimeInMinute'])
+                    else:
+                        # Dời task
+                        task = move_to_free_slot(task, placed_tasks)
+                elif task_priority == placed_priority:
+                    # Nếu cùng độ ưu tiên, dời task hiện tại
+                    task = move_to_free_slot(task, placed_tasks)
+                else:
+                    # Task này cao hơn → giữ nguyên
+                    pass
+
+                break  # xử lý xong xung đột với 1 task là đủ
+
+        if not has_conflict:
+            # Không có xung đột, giữ nguyên
+            pass
+
+        placed_tasks.append(task)
+
+    return placed_tasks
+
+def move_to_free_slot(task, placed_tasks):
+    # Giả lập: tìm khoảng trống từ 8:00 đến 20:00
+    work_start = 7 * 60
+    work_end = 21 * 60
+
+    occupied = sorted(placed_tasks, key=lambda x: x['StartTimeInMinute'])
+
+    candidate_start = work_start
+
+    for t in occupied:
+        if candidate_start + task['Duration'] <= t['StartTimeInMinute']:
+            # Có khoảng trống đủ
+            return set_task_time(task, candidate_start)
+        else:
+            candidate_start = max(candidate_start, t['EndTimeInMinute'])
+
+    # Nếu không có chỗ → cho vào cuối cùng nếu còn thời gian
+    if candidate_start + task['Duration'] <= work_end:
+        return set_task_time(task, candidate_start)
+    else:
+        # Không còn chỗ → giữ nguyên (hoặc có thể đánh dấu là không thể xếp)
+        return task
+
+def set_task_time(task, start_minute):
+    task['StartTimeInMinute'] = start_minute
+    task['StartTime'] = format_time(start_minute)
+    task['EndTimeInMinute'] = start_minute + task['Duration']
+    task['EndTime'] = format_time(task['EndTimeInMinute'])
+    return task
+
+def format_time(minute):
+    hour = minute // 60
+    min_part = minute % 60
+    return f"{hour:02d}:{min_part:02d}"
