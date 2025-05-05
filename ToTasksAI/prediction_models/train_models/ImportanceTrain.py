@@ -7,12 +7,15 @@ import joblib
 from utils.ModelEvaluation import accuracy_score_calculate
 from utils.ToolsPreparation import tfidf_vectorizer, le_importance, le_type
 
-def train_importance_prediction_model(task_name_vectorized, used_data_type, used_data_userid, used_data_importance):
+# def train_importance_prediction_model(task_name_vectorized, used_data_type, used_data_userid, used_data_importance):
+def train_importance_prediction_model(task_name_vectorized, used_data_type, used_data_importance):
     # Tạo mô hình
     importance_random_forest_classifier_model = RandomForestClassifier(random_state=42)
 
     # Kết hợp TaskName vectorized và Type_Encoded
-    X = hstack([task_name_vectorized, np.array(used_data_type).reshape(-1, 1), np.array(used_data_userid).reshape(-1, 1)])
+    # X = hstack([task_name_vectorized, np.array(used_data_type).reshape(-1, 1), np.array(used_data_userid).reshape(-1, 1)])
+    X = hstack(
+        [task_name_vectorized, np.array(used_data_type).reshape(-1, 1)])
     y = used_data_importance
 
     # Chia tập dữ liệu

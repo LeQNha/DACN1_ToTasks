@@ -81,6 +81,35 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
             tasksScheduleAdapter.notifyDataSetChanged()
         }
 
+        taskScheduleViewModel._optimizedTasks.observe(this) { tasks ->
+            tasks?.let {
+                predictedTaskArrayList.clear()
+                for (t in tasks) {
+                    predictedTaskArrayList.add(t)
+
+                    //update task
+                    val updates = mapOf(
+                        "duration" to t.Duration,
+                        "startTime" to t.StartTime,
+                        "endTime" to t.EndTime,
+                        "startTimeInMinute" to t.StartTimeInMinute,
+                        "endTimeInMinute" to t.EndTimeInMinute
+                    )
+                    taskScheduleViewModel.updateTask(selectedDateId, t, updates)
+                    taskScheduleViewModel.updateTaskInDataset(t, updates)
+
+                    //add to dataset
+                    taskScheduleViewModel.addTaskToDataSet(t)
+                }
+
+                //            taskArrayList.sortBy { it.StartTimeInMinute }
+                predictedTaskArrayList.sortBy { it.StartTimeInMinute }
+
+                tasksScheduleAdapter.differ.submitList(predictedTaskArrayList.toList()) // Cập nhật danh sách
+                tasksScheduleAdapter.notifyDataSetChanged()
+            }
+        }
+
         tasksScheduleAdapter.setOnItemClickListener {
             println("___click on item")
             val intent = Intent(this, TaskDetailsActivity::class.java).apply {
@@ -101,12 +130,17 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
 
         binding.predictTaskScheduleBtn.setOnClickListener {
 
-            taskScheduleViewModel.deleteAllTasks(selectedDateId)
-            for (task in taskArrayList) {
-                taskViewModel.predictTaskSchedule(task)
+//            taskScheduleViewModel.deleteAllTasks(selectedDateId)
+//            for (task in taskArrayList) {
+//                taskViewModel.predictTaskSchedule(task)
+//            }
+//            binding.taskNumberTxtView.text = "0"
+//            predictedTaskArrayList.clear()
+
+            for(t in predictedTaskArrayList){
+                println("=== ${t}")
             }
-            binding.taskNumberTxtView.text = "0"
-            predictedTaskArrayList.clear()
+            taskScheduleViewModel.optimizeTasks(predictedTaskArrayList)
 
         }
 

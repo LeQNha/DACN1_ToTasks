@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import List
 
 from TaskPredict import task_predict
+from TaskPredict import task_optimize
 
 # Tạo một instance của FastAPI
 app = FastAPI()
@@ -95,3 +97,19 @@ async def predict_task(task: Task):
     print(f"___{new_task}")
 
     return new_task
+
+@app.post("/optimize_schedule")
+async def optimize_schedule(tasks: List[Task]):
+    task_list = [task.dict() for task in tasks]
+
+    print("=== Danh sách task đầu vào ===")
+    for i, task in enumerate(task_list):
+        print(f"Task {i + 1}: {task}")
+
+    optimized = task_optimize(task_list)
+
+    # In ra danh sách sau tối ưu
+    print("\n=== Danh sách task sau tối ưu ===")
+    for i, task in enumerate(optimised_tasks):
+        print(f"Task {i + 1}: {task}")
+    return optimized

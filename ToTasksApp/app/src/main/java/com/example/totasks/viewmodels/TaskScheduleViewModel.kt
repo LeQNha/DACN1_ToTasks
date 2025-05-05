@@ -1,15 +1,45 @@
 package com.example.totasks.viewmodels
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewModelScope
 import com.example.totasks.repositories.TaskRepository
 import com.example.totasks.repositories.TaskScheduleRepository
+import kotlinx.coroutines.launch
 import nha.kc.kotlincode.models.Task
 
 class TaskScheduleViewModel(val taskScheduleRepository: TaskScheduleRepository) : ViewModel() {
 
     var _tasks: MutableLiveData<List<Task>> = MutableLiveData()
+
+    val _predictedTask = MutableLiveData<Task?>()
+
+    var _optimizedTasks : MutableLiveData<List<Task>?> = MutableLiveData()
+
+    fun predictTaskSchedule(task: Task) = viewModelScope.launch {
+        try {
+            val result = taskScheduleRepository.predictTaskSchedule(task)
+            _predictedTask.value = result // Cập nhật dữ liệu vào LiveData
+            print("___${result}")
+        } catch (e: Exception) {
+            println("Error: ${e.message}")
+            _predictedTask.value = null
+        }
+    }
+
+    fun optimizeTasks(currentDayTaskList: List<Task>) = viewModelScope.launch {
+        try {
+            val optimizedTasks = taskScheduleRepository.optimizeTasks(currentDayTaskList)
+            // Cập nhật UI với danh sách mới
+            _optimizedTasks.postValue(optimizedTasks)
+//            _tasks.postValue(optimizedTasks)
+        } catch (e: Exception) {
+            Log.e("API", "Lỗi khi tối ưu task: ${e.message}")
+        }
+    }
+
 
     fun addTask(dateId: String,task: Task) {
         taskScheduleRepository.addTask(dateId,task)
