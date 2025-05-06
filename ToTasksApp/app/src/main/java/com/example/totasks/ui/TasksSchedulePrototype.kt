@@ -95,8 +95,13 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
                         "startTimeInMinute" to t.StartTimeInMinute,
                         "endTimeInMinute" to t.EndTimeInMinute
                     )
+                    val datasetUpdates = mapOf(
+                        "Duration" to t.Duration,
+                        "StartTime" to t.StartTime,
+                        "EndTime" to t.EndTime
+                    )
                     taskScheduleViewModel.updateTask(selectedDateId, t, updates)
-                    taskScheduleViewModel.updateTaskInDataset(t, updates)
+                    taskScheduleViewModel.updateTaskInDataset(t, datasetUpdates)
 
                     //add to dataset
                     taskScheduleViewModel.addTaskToDataSet(t)

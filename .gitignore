@@ -4,8 +4,12 @@ ToTasksAII/serviceAccountKey.json
 
 # Ignore all .idea files except a few safe ones
 .idea/
-**/.idea/
-# !.idea/compiler.xml
-# !.idea/gradle.xml
-# !.idea/misc.xml
-# .idea/workspace.xml
+
+!.idea/compiler.xml
+!.idea/gradle.xml
+!.idea/misc.xml
+.idea/workspace.xml
+
+# Ignore Constants and network_security_config
+ToTasksApp/app/src/main/java/com/example/totasks/utils/Constants.kt
+ToTasksApp/app/src/main/res/xml/network_security_config.xml
