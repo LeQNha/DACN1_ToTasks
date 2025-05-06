@@ -35,10 +35,12 @@ class TaskScheduleRepository {
     fun addTask(dateId: String, task: Task) {
         val taskCollectionRef = dateCollectionRef.document(dateId).collection("tasks")
 
-        val taskId = taskCollectionRef.document().id
-        task.TaskId = taskId
+        if(task.TaskId.isEmpty()) {
+            val taskId = taskCollectionRef.document().id
+            task.TaskId = taskId
+        }
         taskCollectionRef
-            .document(taskId)
+            .document(task.TaskId)
             .set(task)
             .addOnSuccessListener {
                 Log.d("Firestore", "Add Successfully")
@@ -84,6 +86,7 @@ class TaskScheduleRepository {
         }
 
         taskCollectionRef
+//            .orderBy("startTimeInMinute")
             .whereEqualTo("userId", currentUserId)
             .addSnapshotListener { snapshot, error ->
                 if (error != null) {
