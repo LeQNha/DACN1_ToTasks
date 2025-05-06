@@ -13,9 +13,13 @@ import com.example.totasks.ui.fragments.TimePickerBottomSheetFragment
 import nha.kc.kotlincode.models.Task
 
 class TaskDetailsActivity : BaseActivity() {
-    private lateinit var binding : ActivityTaskDetailsBinding
+    private lateinit var binding: ActivityTaskDetailsBinding
     lateinit var task: Task
     lateinit var dateId: String
+
+    var newStartTime = ""
+    var newEndTime = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTaskDetailsBinding.inflate(layoutInflater)
@@ -29,10 +33,29 @@ class TaskDetailsActivity : BaseActivity() {
     }
 
     private fun setupTimePickers() { // mới
+
         binding.taskStartTimeText.setOnClickListener {
             val timePicker = TimePickerBottomSheetFragment { hour, minute ->
                 val timeStr = String.format("%02d:%02d", hour, minute)
                 binding.taskStartTimeText.setText(timeStr)
+                newStartTime = timeStr
+
+                var startTimeInMinute = 0
+                if (newStartTime.isNotEmpty()) {
+                    startTimeInMinute = convertTimeToMinutes(newStartTime)
+                }
+
+                val updates = mapOf(
+                    "startTime" to newStartTime,
+                    "startTimeInMinute" to startTimeInMinute
+                )
+                val datasetUpdates = mapOf(
+                    "StartTime" to timeStr
+                )
+                taskScheduleViewModel.updateTask(dateId, task, updates)
+                taskScheduleViewModel.updateTaskInDataset(task, datasetUpdates)
+
+                updateNewDuration(newStartTime, newEndTime)
             }
             timePicker.show(supportFragmentManager, "startTimePicker")
         }
@@ -41,14 +64,70 @@ class TaskDetailsActivity : BaseActivity() {
             val timePicker = TimePickerBottomSheetFragment { hour, minute ->
                 val timeStr = String.format("%02d:%02d", hour, minute)
                 binding.taskEndTimeText.setText(timeStr)
+                newEndTime = timeStr
+
+                var endTimeInMinute = 0
+                if(newEndTime.isNotEmpty()){
+                    endTimeInMinute = convertTimeToMinutes(newEndTime)
+                }
+
+                val updates = mapOf(
+                    "endTime" to newEndTime,
+                    "endTimeInMinute" to endTimeInMinute
+                )
+                val datasetUpdates = mapOf(
+                    "EndTime" to timeStr
+                )
+                taskScheduleViewModel.updateTask(dateId, task, updates)
+                taskScheduleViewModel.updateTaskInDataset(task, datasetUpdates)
+
+                updateNewDuration(newStartTime, newEndTime)
             }
             timePicker.show(supportFragmentManager, "endTimePicker")
         }
     }
 
-    private fun getExtraTask(){
+    private fun updateNewDuration(newStartTime: String, newEndTime : String){
+
+        var startTimeInMinute = 0
+        var endTimeInMinute = 0
+        if (newStartTime.isNotEmpty()) {
+            startTimeInMinute = convertTimeToMinutes(newStartTime)
+        }
+        if(newEndTime.isNotEmpty()){
+            endTimeInMinute = convertTimeToMinutes(newEndTime)
+        }
+        val newDuration = if (endTimeInMinute > startTimeInMinute) {
+            endTimeInMinute - startTimeInMinute
+        } else {
+            0
+        }
+
+        val updates = mapOf(
+            "duration" to newDuration,
+            "startTimeInMinute" to startTimeInMinute,
+            "endTimeInMinute" to endTimeInMinute
+        )
+        val datasetUpdates = mapOf(
+            "Duration" to newDuration
+
+        )
+        taskScheduleViewModel.updateTask(dateId, task, updates)
+        taskScheduleViewModel.updateTaskInDataset(task, datasetUpdates)
+    }
+
+    private fun convertTimeToMinutes(time: String): Int {
+        return if (time.isNotEmpty()) {
+            val parts = time.split(":")
+            parts[0].toInt() * 60 + parts[1].toInt()
+        } else {
+            0
+        }
+    }
+
+    private fun getExtraTask() {
         val parcelTask = intent.getParcelableExtra<Task>("task")
-        parcelTask?.let{
+        parcelTask?.let {
             task = it
         }
         val extraDateId = intent.getStringExtra("selectedDateId")
@@ -57,7 +136,7 @@ class TaskDetailsActivity : BaseActivity() {
         }
     }
 
-    private fun onClickListenerSetUp(){
+    private fun onClickListenerSetUp() {
         binding.deleteTaskBtn.setOnClickListener {
             showDeleteConfirmationDialog()
         }
@@ -71,13 +150,20 @@ class TaskDetailsActivity : BaseActivity() {
                 val updates = mapOf(
                     "taskName" to newTitle
                 )
+                val datasetUpdates = mapOf(
+                    "TaskName" to newTitle
+                )
                 taskScheduleViewModel.updateTask(dateId, task, updates)
-                taskScheduleViewModel.updateTaskInDataset(task, updates)
+                taskScheduleViewModel.updateTaskInDataset(task, datasetUpdates)
             }
         }
 
         binding.priorityEditBtn.setOnClickListener {
-            showSelectionDialog("Edit Priority", task.Importance, listOf("Very Important", "Important", "Normal", "Less Important")) { newPriority ->
+            showSelectionDialog(
+                "Edit Priority",
+                task.Importance,
+                listOf("Very Important", "Important", "Normal", "Less Important")
+            ) { newPriority ->
                 task.Importance = newPriority
                 updatePriorityStars(newPriority)
 
@@ -85,13 +171,20 @@ class TaskDetailsActivity : BaseActivity() {
                 val updates = mapOf(
                     "importance" to newPriority
                 )
+                val datasetUpdates = mapOf(
+                    "Importance" to newPriority
+                )
                 taskScheduleViewModel.updateTask(dateId, task, updates)
-                taskScheduleViewModel.updateTaskInDataset(task, updates)
+                taskScheduleViewModel.updateTaskInDataset(task, datasetUpdates)
             }
         }
 
         binding.typeEditBtn.setOnClickListener {
-            showSelectionDialog("Edit Type", task.Type, listOf("Work", "Personal", "Education")) { newType ->
+            showSelectionDialog(
+                "Edit Type",
+                task.Type,
+                listOf("Work", "Personal", "Education")
+            ) { newType ->
                 task.Type = newType
                 binding.taskTypeTxtView.text = newType.ifEmpty { "No Type" }
 
@@ -99,13 +192,16 @@ class TaskDetailsActivity : BaseActivity() {
                 val updates = mapOf(
                     "type" to newType
                 )
+                val datasetUpdates = mapOf(
+                    "Type" to newType
+                )
                 taskScheduleViewModel.updateTask(dateId, task, updates)
-                taskScheduleViewModel.updateTaskInDataset(task, updates)
+                taskScheduleViewModel.updateTaskInDataset(task, datasetUpdates)
             }
         }
     }
 
-    private fun taskDetailsSetUp(){
+    private fun taskDetailsSetUp() {
         binding.taskTitleTxtView.text = task.TaskName.ifEmpty { "Untitled Task" }
 
         binding.taskTypeTxtView.text = task.Type.ifEmpty { "No Type" }
@@ -148,8 +244,8 @@ class TaskDetailsActivity : BaseActivity() {
             emptyStar.layoutParams = params
             starLayout.addView(emptyStar)
         }
-  }
-    
+    }
+
     private fun showDeleteConfirmationDialog() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Delete Task")
@@ -171,7 +267,7 @@ class TaskDetailsActivity : BaseActivity() {
         alertDialog.show()
     }
 
-    fun deleteTask(){
+    fun deleteTask() {
         taskScheduleViewModel.deleteTask(dateId, task.TaskId)
         finish()
     }
@@ -197,7 +293,12 @@ class TaskDetailsActivity : BaseActivity() {
         builder.create().show()
     }
 
-    private fun showSelectionDialog(title: String, currentValue: String, options: List<String>, onSave: (String) -> Unit) {
+    private fun showSelectionDialog(
+        title: String,
+        currentValue: String,
+        options: List<String>,
+        onSave: (String) -> Unit
+    ) {
         val builder = AlertDialog.Builder(this)
         builder.setTitle(title)
 

@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import List, Optional, Dict, Tuple
 
 from TaskPredict import task_predict
+from TaskPredict import task_optimize
 
 # Tạo một instance của FastAPI
 app = FastAPI()
