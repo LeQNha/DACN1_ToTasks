@@ -1,9 +1,15 @@
 package com.example.totasks.repositories
 
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
 import android.util.Log
+import com.example.totasks.utils.TaskNotificationReceiver
 import nha.kc.kotlincode.api.RetrofitInstance
 import nha.kc.kotlincode.models.Task
 import nha.tu.tup.firebase.FirebaseInstance
+import java.util.Calendar
 
 class TaskScheduleRepository {
 
@@ -208,5 +214,43 @@ class TaskScheduleRepository {
             .addOnFailureListener { e ->
                 Log.w("Firestore", "Error updating dataset task fields", e)
             }
+    }
+
+    fun scheduleNotification(context: Context, task: Task, dateId: String) {
+        val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val intent = Intent(context, TaskNotificationReceiver::class.java).apply {
+            putExtra("task_name", task.TaskName)
+        }
+
+        val pendingIntent = PendingIntent.getBroadcast(
+            context,
+            task.TaskId.hashCode(),
+            intent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+
+        // Parse "HH:mm" -> Calendar
+        val timeParts = task.StartTime.split(":")
+        if (timeParts.size == 2) {
+            val hour = timeParts[0].toInt()
+            val minute = timeParts[1].toInt()
+
+            val calendar = Calendar.getInstance().apply {
+                set(Calendar.HOUR_OF_DAY, hour)
+                set(Calendar.MINUTE, minute)
+                set(Calendar.SECOND, 0)
+                set(Calendar.MILLISECOND, 0)
+            }
+
+            val triggerTime = calendar.timeInMillis - 1 * 60 * 1000 // nhắc trước 10 phút
+
+            if (triggerTime > System.currentTimeMillis()) {
+                alarmManager.setExactAndAllowWhileIdle(
+                    AlarmManager.RTC_WAKEUP,
+                    triggerTime,
+                    pendingIntent
+                )
+            }
+        }
     }
 }

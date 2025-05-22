@@ -1,5 +1,6 @@
 package com.example.totasks.viewmodels
 
+import android.content.Context
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -79,6 +80,10 @@ class TaskScheduleViewModel(val taskScheduleRepository: TaskScheduleRepository) 
 
     fun updateTaskInDataset(task: Task, updates: Map<String, Any>){
         taskScheduleRepository.updateTaskInDataset(task, updates)
+    }
+
+    fun scheduleNotification(context: Context, task: Task, dateId: String) {
+        taskScheduleRepository.scheduleNotification(context, task, dateId)
     }
 
     class TaskScheduleViewModelProviderFactory(val taskScheduleRepository: TaskScheduleRepository) :
