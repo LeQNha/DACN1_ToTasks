@@ -38,6 +38,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
     lateinit var filterPersonalBtn: TextView
     lateinit var filterEducationBtn: TextView
 
+    private val scheduledTaskTimeMap = mutableMapOf<String, String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,6 +70,20 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
             predictedTaskArrayList.clear()
             for (t in tasks) {
                 predictedTaskArrayList.add(t)
+
+                //set notification
+                val currentStartTime = t.StartTime
+                val previousStartTime = scheduledTaskTimeMap[t.TaskId]
+
+                if (previousStartTime == null || previousStartTime != currentStartTime) {
+                    val now = System.currentTimeMillis()
+                    val taskTime = convertToMillis(currentStartTime)
+
+                    if (taskTime - 60 * 1000 > now) {
+                        taskScheduleViewModel.scheduleNotification(this, t, selectedDateId)
+                        scheduledTaskTimeMap[t.TaskId] = currentStartTime // Cập nhật thời gian mới
+                    }
+                }
 
                 //add to dataset
                 taskScheduleViewModel.addTaskToDataSet(t)
@@ -283,5 +298,22 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
             }, selectedDate.year, selectedDate.month, selectedDate.day)
 
         datePickerDialog.show()
+    }
+
+    fun convertToMillis(timeString: String): Long {
+        val format = SimpleDateFormat("HH:mm", Locale.getDefault())
+        val date = format.parse(timeString)
+
+        val calendar = Calendar.getInstance().apply {
+            if (date != null) {
+                time = date
+                val now = Calendar.getInstance()
+                set(Calendar.YEAR, now.get(Calendar.YEAR))
+                set(Calendar.MONTH, now.get(Calendar.MONTH))
+                set(Calendar.DAY_OF_MONTH, now.get(Calendar.DAY_OF_MONTH))
+            }
+        }
+
+        return calendar.timeInMillis
     }
 }
