@@ -144,6 +144,8 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
         binding.taskImportanceSpinner.adapter = importanceAdapter
     }
 
+
+
     // Mới
     private fun setupTaskTypeButtons() {
         val btnPersonal = binding.btnPersonal
@@ -151,6 +153,15 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
         val btnEducation = binding.btnEducation
 
         val buttons = listOf(btnPersonal, btnWork, btnEducation)
+
+        fun resetAllButtons() {
+            for (btn in buttons) {
+                btn.setBackgroundColor(Color.parseColor("#F0F0F0"))
+                (btn as Button).setTextColor(Color.parseColor("#808080"))
+                (btn as MaterialButton).iconTint =
+                    ColorStateList.valueOf(Color.parseColor("#808080"))
+            }
+        }
 
         fun updateSelectedButton(selectedButton: View) {
             for (btn in buttons) {
@@ -178,8 +189,12 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
         }
 
 
+        // Reset tất cả nút về trạng thái chưa chọn
+        resetAllButtons()
+
         // Mặc định chọn "Personal"
-        updateSelectedButton(btnPersonal)
+//        updateSelectedButton(btnPersonal)
+        selectedTaskType = ""
 
         btnPersonal.setOnClickListener { updateSelectedButton(it) }
         btnWork.setOnClickListener { updateSelectedButton(it) }

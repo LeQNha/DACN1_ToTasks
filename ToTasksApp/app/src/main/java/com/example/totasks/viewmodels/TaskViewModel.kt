@@ -22,6 +22,7 @@ class TaskViewModel(val taskRepository: TaskRepository) : ViewModel() {
         } catch (e: Exception) {
             println("Error: ${e.message}")
             _predictedTask.value = null
+            _predictedTask.value = null
         }
     }
 

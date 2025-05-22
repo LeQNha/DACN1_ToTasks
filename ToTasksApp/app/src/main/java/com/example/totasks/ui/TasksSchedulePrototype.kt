@@ -244,7 +244,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
         binding.dayOfWeekTxtView.text = dayOfWeek
         binding.dayTxtView.text = date
 
-        selectedDateId = "${selectedDate.day}-${selectedDate.month}-${selectedDate.year}"
+        selectedDateId = "${selectedDate.day}-${selectedDate.month +1}-${selectedDate.year}"
     }
 
     private fun showDatePickerDialog() {
@@ -275,7 +275,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
                 binding.dayOfWeekTxtView.text = dayOfWeek
                 binding.dayTxtView.text = date
 
-                selectedDateId = "${selectedDate.day}-${selectedDate.month}-${selectedDate.year}"
+                selectedDateId = "${selectedDate.day}-${selectedDate.month + 1}-${selectedDate.year}"
 
                 taskScheduleViewModel.getTasks(selectedDateId)
 
