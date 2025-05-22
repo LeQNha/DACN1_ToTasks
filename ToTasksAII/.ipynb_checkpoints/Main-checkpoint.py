@@ -5,6 +5,8 @@ from typing import List, Optional, Dict, Tuple
 from TaskPredict import task_predict
 from TaskPredict import task_optimize
 
+from utils.SpellCheck import correct_spelling
+
 # Tạo một instance của FastAPI
 app = FastAPI()
 
@@ -32,6 +34,8 @@ async def predict_task(task: Task):
     # day_of_week = task.DayOfWeek
     # duration = task.Duration
     # start_time = task.StartTime
+
+    originTaskName = correct_spelling(task.TaskName)
 
     new_task = {
         "TaskId": task.TaskId,
@@ -84,7 +88,8 @@ async def predict_task(task: Task):
 
     new_task = {
             "TaskId": task_predicted['TaskId'],
-            "TaskName": task_predicted['TaskName'],
+            # "TaskName": task_predicted['TaskName'],
+            "TaskName": originTaskName,
             "Type": task_predicted['Type'],
             "Importance": task_predicted['Importance'],
             "DayOfWeek": task_predicted['DayOfWeek'],

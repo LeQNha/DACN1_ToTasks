@@ -27,6 +27,18 @@ def correct_spelling(text):
     ]
     return ' '.join(corrected_words)
 
+# def correct_spelling(text):
+#     words = text.split()
+#     corrected_words = []
+#     for word in words:
+#         corrected = spell.correction(word.lower())
+#         if word.istitle():
+#             corrected = corrected.capitalize()
+#         elif word.isupper():
+#             corrected = corrected.upper()
+#         corrected_words.append(corrected)
+#     return ' '.join(corrected_words)
+
 
 # Hàm tiền xử lý dữ liệu (bao gồm sửa lỗi chính tả)
 def preprocess_text_with_spell_check(text):
