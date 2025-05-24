@@ -6,12 +6,12 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.totasks.databinding.ActivityMainBinding
 import com.example.totasks.repositories.UserRepository
 import com.example.totasks.viewmodels.UserViewModel
-import android.provider.Settings
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

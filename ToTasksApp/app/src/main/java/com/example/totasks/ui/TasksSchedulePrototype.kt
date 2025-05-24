@@ -16,6 +16,7 @@ import nha.kc.kotlincode.models.Task
 import nha.tu.tup.firebase.FirebaseInstance
 import java.text.SimpleDateFormat
 import java.util.Calendar
+//import java.util.Date
 import java.util.Locale
 
 class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
@@ -31,6 +32,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
 
     companion object {
         var selectedDateId: String = ""
+        var todaySelectedDateId: String = ""
     }
 
     lateinit var filterAllBtn: TextView
@@ -80,7 +82,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
                     val taskTime = convertToMillis(currentStartTime)
 
                     if (taskTime - 60 * 1000 > now) {
-                        taskScheduleViewModel.scheduleNotification(this, t, selectedDateId)
+                        taskScheduleViewModel.scheduleNotification(this, t, todaySelectedDateId)
                         scheduledTaskTimeMap[t.TaskId] = currentStartTime // Cập nhật thời gian mới
                     }
                 }
@@ -247,6 +249,7 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
             calendar.get(Calendar.DAY_OF_MONTH)
         )
 
+
         // Lấy tên ngày trong tuần (ví dụ: Monday)
         val dayOfWeekFormat = SimpleDateFormat("EEEE", Locale.getDefault())
         val dayOfWeek = dayOfWeekFormat.format(calendar.time)
@@ -260,6 +263,8 @@ class TasksSchedulePrototype : BaseActivity(), TaskDialogListener {
         binding.dayTxtView.text = date
 
         selectedDateId = "${selectedDate.day}-${selectedDate.month +1}-${selectedDate.year}"
+
+        todaySelectedDateId = selectedDateId
     }
 
     private fun showDatePickerDialog() {

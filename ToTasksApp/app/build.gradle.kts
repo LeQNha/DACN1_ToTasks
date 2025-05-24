@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
+    implementation(libs.translate)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -95,5 +96,11 @@ dependencies {
     val nav_version = "2.7.3"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    // ML Kit Translation
+    implementation ("com.google.mlkit:translate:17.0.2")
+
+// ML Kit Language Identification
+    implementation ("com.google.mlkit:language-id:17.0.3")
 
 }

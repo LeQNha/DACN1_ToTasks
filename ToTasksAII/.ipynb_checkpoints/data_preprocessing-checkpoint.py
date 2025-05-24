@@ -1,7 +1,36 @@
 import pandas as pd
 import joblib
+import numpy as np
+from sklearn.preprocessing import StandardScaler
 from utils.SpellCheck import preprocess_text_with_spell_check
-from utils.ToolsPreparation import tfidf_vectorizer, le_type, le_importance, le_day, le_userid
+from utils.ToolsPreparation import tfidf_vectorizer, le_type, le_importance, le_day, le_userid, le_preferredtime
+
+from nltk.corpus import wordnet
+from random import choice
+
+def get_synonyms(word):
+    synonyms = set()
+    for syn in wordnet.synsets(word):
+        for lemma in syn.lemmas():
+            if lemma.name().lower() != word.lower():
+                synonyms.add(lemma.name().replace('_', ' '))
+    return list(synonyms)
+
+def augment_with_synonyms(sentence, num_replacements=1):
+    words = sentence.split()
+    new_words = words.copy()
+    replaced = 0
+
+    for i in range(len(words)):
+        synonyms = get_synonyms(words[i])
+        if synonyms:
+            new_words[i] = choice(synonyms)
+            replaced += 1
+            if replaced >= num_replacements:
+                break
+
+    return ' '.join(new_words)
+
 
 def clean_time_format(t):
     """Chuẩn hóa định dạng thời gian (HH:mm), trả về None nếu không hợp lệ"""
@@ -51,10 +80,10 @@ def preprocess_data(used_data):
     used_data['EndTime'] = used_data['EndTime'].apply(clean_time_format)
     used_data = used_data.dropna(subset=['StartTime', 'EndTime'])
 
-    # duplicates = used_data.duplicated(subset=["TaskName", "StartTime", "UserID", "DayOfWeek"])
+    # duplicates = used_data.duplicated(subset=["TaskName", "Type", "Importance", "StartTime", "UserID", "DayOfWeek"])
     # print(f"Số dòng trùng lặp theo tiêu chí: {duplicates.sum()}")
     # # Loại bỏ dòng trùng lặp dựa trên các thuộc tính đặc trưng
-    # used_data = used_data.drop_duplicates(subset=['TaskName', 'StartTime', 'UserID', 'DayOfWeek'])
+    # used_data = used_data.drop_duplicates(subset=['TaskName', "Type", "Importance", 'StartTime', 'UserID', 'DayOfWeek'])
 
     # Reset index sau khi lọc
     used_data.reset_index(drop=True, inplace=True)
@@ -76,11 +105,44 @@ def preprocess_data(used_data):
     used_data['DayOfWeek'] = le_day.fit_transform(used_data['DayOfWeek'])
     joblib.dump(le_day, "le_day.pkl")
 
-    used_data['UserID'] = le_userid.fit_transform(used_data['UserID'])
-    joblib.dump(le_userid, "le_userid.pkl")
+    # used_data['PreferredTime'] = le_preferredtime.fit_transform(used_data['PreferredTime'])
+    # joblib.dump(le_preferredtime, "le_preferredtime.pkl")
+
+    # used_data['UserID'] = le_userid.fit_transform(used_data['UserID'])
+    # joblib.dump(le_userid, "le_userid.pkl")
 
     # 6. Chuyển đổi StartTime thành số phút từ đầu ngày
     used_data['StartTimeMinutes'] = used_data['StartTime'].apply(time_to_minutes)
+
+    # # 7. Feature Engineering: thời gian tuần hoàn
+    # used_data['StartTime_sin'] = np.sin(2 * np.pi * used_data['StartTimeMinutes'] / 1440)
+    # used_data['StartTime_cos'] = np.cos(2 * np.pi * used_data['StartTimeMinutes'] / 1440)
+
+    # 8. DayOfWeek tuần hoàn (nếu cần)
+    used_data['DayOfWeek_sin'] = np.sin(2 * np.pi * used_data['DayOfWeek'] / 7)
+    used_data['DayOfWeek_cos'] = np.cos(2 * np.pi * used_data['DayOfWeek'] / 7)
+
+    # # 9. Feature interaction
+    # used_data['Importance_x_Duration'] = used_data['Importance'] * used_data['Duration']
+    # used_data['IsWeekend'] = used_data['DayOfWeek'].apply(lambda x: 1 if x in [5, 6] else 0)
+
+    # 10. Chuẩn hóa các cột số
+    
+    # scaler = StandardScaler()
+    # numerical_cols = ['Duration', 'StartTimeMinutes']
+    # used_data[numerical_cols] = scaler.fit_transform(used_data[numerical_cols])
+    # joblib.dump(scaler, "numerical_scaler.pkl")
+
+    scaler_duration = StandardScaler()
+    scaler_starttime = StandardScaler()
+    used_data['Duration'] = scaler_duration.fit_transform(used_data[['Duration']])
+    used_data['StartTimeMinutes'] = scaler_starttime.fit_transform(used_data[['StartTimeMinutes']])
+
+    joblib.dump(scaler_duration, "duration_scaler.pkl")
+    joblib.dump(scaler_starttime, "starttime_scaler.pkl")
+
+    
+    print("✅ Tiền xử lý hoàn tất với các đặc trưng nâng cao.")
 
     print("✅ Tiền xử lý hoàn tất.")
     return used_data, task_name_vectorized
