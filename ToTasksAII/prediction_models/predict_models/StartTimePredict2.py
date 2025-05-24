@@ -1,5 +1,7 @@
 import joblib
 import numpy as np
+import math
+from scipy.sparse import hstack
 from utils.ToolsPreparation import le_type, le_importance, le_day
 
 # def predict_start_time_2(task_name, task_type, importance, day_of_week, user_id):
@@ -16,6 +18,7 @@ def predict_start_time_2(task_name, task_type, importance, day_of_week):
     le_importance = joblib.load("le_importance.pkl")
     le_day = joblib.load("le_day.pkl")
     # le_user = joblib.load("le_userid.pkl")
+    starttime_scaler = joblib.load("starttime_scaler.pkl")
 
     # Vector hóa TaskName
     task_name_vectorized = tfidf_vectorizer.transform([task_name])
@@ -26,16 +29,29 @@ def predict_start_time_2(task_name, task_type, importance, day_of_week):
     day_of_week_encoded = le_day.transform([day_of_week])[0]
     # user_id_encoded = le_user.transform([user_id])
 
-    # Kết hợp dữ liệu đã xử lý
+     # Tính các đặc trưng tuần hoàn
+    day_of_week_sin = math.sin(2 * math.pi * day_of_week_encoded / 7)
+    day_of_week_cos = math.cos(2 * math.pi * day_of_week_encoded / 7)
+    
+    # # Kết hợp dữ liệu đã xử lý
     X_new = np.concatenate([
         task_name_vectorized.toarray().flatten(),
         # [task_type_encoded, importance_encoded, day_of_week_encoded, user_id_encoded]
-        [task_type_encoded, importance_encoded, day_of_week_encoded]
+        # [task_type_encoded, importance_encoded, day_of_week_encoded]
+        [task_type_encoded, importance_encoded, day_of_week_sin, day_of_week_cos]
     ]).reshape(1, -1)
 
-    # Chuẩn hóa dữ liệu
-    # X_new_scaled = scaler.transform(X_new)
+    # # Kết hợp TF-IDF và các đặc trưng khác
+    # additional_features = np.array([[type_encoded, importance_encoded, day_encoded]])
+    # X_combined = hstack([task_name_vectorized, additional_features])
+
+    # Dự đoán (giá trị chuẩn hóa)
+    scaled_prediction = model.predict(X_new)[0]
+
+   # Inverse transform để lấy lại giá trị thực (dạng phút)
+    start_time_minutes = starttime_scaler.inverse_transform([[scaled_prediction]])[0][0]
 
     # Dự đoán StartTime
     # return model.predict(X_new_scaled)[0]
-    return model.predict(X_new)[0]
+    return start_time_minutes
+    # return model.predict(X_new)[0]

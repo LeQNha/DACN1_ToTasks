@@ -1,5 +1,6 @@
 import joblib
 import numpy as np
+from scipy.sparse import hstack
 from utils.ToolsPreparation import le_type, le_day, le_importance
 
 # def predict_duration(task_name, task_type, day_of_week, task_importance, user_id):
@@ -14,6 +15,7 @@ def predict_duration(task_name, task_type, day_of_week, task_importance):
     le_importance = joblib.load("le_importance.pkl")
     le_day = joblib.load("le_day.pkl")
     # le_user = joblib.load("le_userid.pkl")
+    scaler_duration = joblib.load("duration_scaler.pkl")
 
     # Vector hóa TaskName
     taskname_vector = tfidf_vectorizer.transform([task_name])
@@ -30,6 +32,16 @@ def predict_duration(task_name, task_type, day_of_week, task_importance):
         # np.array([type_encoded[0], day_encoded[0], importance_encoded[0], user_id_encoded[0]]).reshape(1, -1)
         np.array([type_encoded[0], day_encoded[0], importance_encoded[0]]).reshape(1, -1)
     ])
+    #  # Ghép vector đầu vào
+    # categorical_features = np.array([[type_encoded, day_encoded, importance_encoded]])
+    # X_input = hstack([taskname_vector, categorical_features])
 
+     # Dự đoán giá trị đã được chuẩn hóa
+    predicted_duration_scaled = model.predict(new_input)[0]
+
+     # Đảo ngược chuẩn hóa (inverse transform)
+    predicted_duration_real = scaler_duration.inverse_transform([[predicted_duration_scaled]])[0][0]
+    
     # Dự đoán
-    return model.predict(new_input)[0]
+    return predicted_duration_real
+    # return model.predict(new_input)[0]

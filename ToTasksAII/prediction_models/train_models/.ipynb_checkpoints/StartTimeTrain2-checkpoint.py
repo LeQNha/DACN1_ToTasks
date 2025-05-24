@@ -6,13 +6,12 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from utils.ToolsPreparation import scaler, tfidf_vectorizer
 from utils.ModelEvaluation import mean_r2_calculate
+from scipy.sparse import hstack
 
 def train_start_time_prediction_model_2(task_name_vectorized, required_columns, start_time_minutes):
 
     print("-----start_time_prediction_model START TRAINNING.-----")
-    """
-    Huấn luyện mô hình dự đoán thời gian bắt đầu và lưu vào file.
-    """
+    
     start_time_random_forest_regressor_model_2 = RandomForestRegressor(random_state=42)
 
     # Chuyển đổi X_taskname thành DataFrame

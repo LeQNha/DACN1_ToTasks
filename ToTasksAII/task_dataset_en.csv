@@ -1,0 +1,1500 @@
+TaskID,TaskName,Type,Importance,Duration,DayOfWeek,StartTime,EndTime,UserID
+1801,Clean the kitchen,Personal,Normal,45,Sunday,16:00,16:45,user1
+1802,Dinner with friends,Personal,Less Important,30,Monday,19:30,20:00,user1
+1803,Pick up package,Personal,More Important,30,Thursday,11:45,12:15,user1
+1804,Take online quiz,Education,More Important,45,Tuesday,15:30,16:15,user1
+1805,Clean the kitchen,Personal,Normal,30,Sunday,11:30,12:00,user1
+1806,Edit a short video,Personal,Normal,60,Monday,19:30,20:30,user1
+1807,Update project status,Work,More Important,45,Thursday,13:45,14:30,user1
+1808,Do the laundry,Personal,Normal,45,Thursday,14:30,15:15,user1
+1809,Clean the bathroom,Personal,Normal,30,Wednesday,9:45,10:15,user1
+1810,Dinner with friends,Personal,Less Important,60,Thursday,18:45,19:45,user1
+1811,Design a presentation,Work,More Important,60,Saturday,17:15,18:15,user1
+1812,Design a presentation,Work,More Important,30,Thursday,16:00,16:30,user1
+1813,Join an online gaming session,Personal,Less Important,60,Tuesday,19:45,20:45,user1
+1814,Make a scrapbook,Personal,Normal,30,Saturday,15:30,16:00,user1
+1815,One-on-one with supervisor,Work,Important,60,Tuesday,14:00,15:00,user1
+1816,Dinner with friends,Personal,Less Important,45,Thursday,20:15,21:00,user1
+1817,Practice a new language,Education,Important,45,Thursday,18:00,18:45,user1
+1818,Jogging,Personal,Normal,30,Monday,5:30,6:00,user1
+1819,Summarize a chapter,Education,More Important,60,Sunday,14:30,15:30,user1
+1820,Attend webinar,Education,Important,30,Tuesday,15:30,16:00,user1
+1821,Jogging,Personal,Normal,45,Thursday,7:15,8:00,user1
+1822,Paint a picture,Personal,Normal,30,Monday,17:30,18:00,user1
+1823,Practice a new language,Education,Important,30,Thursday,17:30,18:00,user1
+1824,Call family,Personal,Less Important,30,Thursday,20:00,20:30,user1
+1825,Take notes from an eBook,Education,Important,60,Monday,19:00,20:00,user1
+1826,Write a blog post,Personal,Normal,30,Monday,16:00,16:30,user1
+1827,Weekly team briefing,Work,Important,45,Sunday,9:45,10:30,user1
+1828,Sketch a design,Personal,Normal,60,Wednesday,18:30,19:30,user1
+1829,Watch a movie,Personal,Less Important,30,Saturday,20:15,20:45,user1
+1830,Swimming,Personal,Normal,60,Saturday,6:45,7:45,user1
+1831,Write a summary of today's learnings,Education,More Important,60,Monday,12:45,13:45,user1
+1832,Home workout,Personal,Normal,60,Monday,8:30,9:30,user1
+1833,Clean the bathroom,Personal,Normal,45,Tuesday,12:30,13:15,user1
+1834,Home workout,Personal,Normal,60,Tuesday,8:45,9:45,user1
+1835,Clean the kitchen,Personal,Normal,30,Wednesday,18:30,19:00,user1
+1836,Swimming,Personal,Normal,60,Monday,8:15,9:15,user1
+1837,Client discussion,Work,Important,30,Thursday,11:30,12:00,user1
+1838,Yoga session,Personal,Normal,45,Sunday,6:00,6:45,user1
+1839,Client discussion,Work,Important,30,Friday,11:15,11:45,user1
+1840,Attend a birthday party,Personal,Less Important,30,Thursday,17:45,18:15,user1
+1841,Explore new tools,Education,Important,60,Wednesday,14:45,15:45,user1
+1842,Drop off donation,Personal,More Important,60,Thursday,9:00,10:00,user1
+1843,Visit the bank,Personal,More Important,45,Sunday,13:45,14:30,user1
+1844,Get a haircut,Personal,More Important,30,Friday,16:15,16:45,user1
+1845,Product demo with client,Work,Important,60,Saturday,12:30,13:30,user1
+1846,Coffee with a friend,Personal,Less Important,45,Tuesday,14:00,14:45,user1
+1847,Yoga session,Personal,Normal,45,Wednesday,7:45,8:30,user1
+1848,Explore new tools,Education,Important,30,Thursday,16:15,16:45,user1
+1849,Summarize a chapter,Education,More Important,60,Monday,16:30,17:30,user1
+1850,Design a presentation,Work,More Important,30,Tuesday,17:45,18:15,user1
+1851,Paint a picture,Personal,Normal,60,Sunday,16:00,17:00,user1
+1852,Watch a stand-up comedy,Personal,Less Important,60,Thursday,21:30,22:30,user1
+1853,Cycling,Personal,Normal,45,Monday,7:30,8:15,user1
+1854,Watch a stand-up comedy,Personal,Less Important,60,Friday,21:45,22:45,user1
+1855,Design a presentation,Work,More Important,60,Sunday,13:15,14:15,user1
+1856,Vacuum the floor,Personal,Normal,45,Friday,11:45,12:30,user1
+1857,Make a scrapbook,Personal,Normal,30,Monday,17:15,17:45,user1
+1858,Plan weekend gathering,Personal,Less Important,45,Friday,17:30,18:15,user1
+1859,Play games,Personal,Less Important,60,Saturday,17:45,18:45,user1
+1860,Play guitar,Personal,Normal,60,Wednesday,19:00,20:00,user1
+1861,Respond to work emails,Work,More Important,60,Thursday,13:30,14:30,user1
+1862,Edit a short video,Personal,Normal,60,Saturday,15:30,16:30,user1
+1863,Take notes from an eBook,Education,Important,30,Tuesday,12:00,12:30,user1
+1864,Coffee with a friend,Personal,Less Important,30,Wednesday,15:45,16:15,user1
+1865,Get a haircut,Personal,More Important,60,Sunday,11:00,12:00,user1
+1866,Clean the bathroom,Personal,Normal,30,Tuesday,16:00,16:30,user1
+1867,Learn Python,Education,Important,30,Thursday,14:45,15:15,user1
+1868,Write a poem,Personal,Normal,30,Wednesday,14:15,14:45,user1
+1869,Vacuum the floor,Personal,Normal,45,Monday,15:00,15:45,user1
+1870,Hang out at a cafe,Personal,Less Important,60,Monday,16:00,17:00,user1
+1871,Prepare budget report,Work,More Important,60,Sunday,14:30,15:30,user1
+1872,Water the plants,Personal,Normal,30,Monday,8:15,8:45,user1
+1873,Sketch a design,Personal,Normal,45,Monday,14:45,15:30,user1
+1874,Coffee with a friend,Personal,Less Important,30,Monday,14:30,15:00,user1
+1875,Write a blog post,Personal,Normal,45,Friday,17:15,18:00,user1
+1876,Chat with neighbors,Personal,Less Important,30,Wednesday,18:45,19:15,user1
+1877,Online course session,Education,Important,45,Tuesday,15:00,15:45,user1
+1878,Watch a stand-up comedy,Personal,Less Important,30,Thursday,20:30,21:00,user1
+1879,Attend a birthday party,Personal,Less Important,45,Wednesday,19:15,20:00,user1
+1880,Evening walk,Personal,Normal,60,Thursday,19:45,20:45,user1
+1881,Clean the kitchen,Personal,Normal,30,Sunday,17:15,17:45,user1
+1882,Cycling,Personal,Normal,45,Wednesday,6:45,7:30,user1
+1883,Yoga session,Personal,Normal,30,Sunday,7:15,7:45,user1
+1884,Hang out at a cafe,Personal,Less Important,45,Saturday,15:30,16:15,user1
+1885,Watch online tutorial,Education,Important,60,Sunday,10:30,11:30,user1
+1886,Grocery shopping,Personal,More Important,45,Tuesday,16:00,16:45,user1
+1887,Chat with neighbors,Personal,Less Important,30,Thursday,19:15,19:45,user1
+1888,Clean the bathroom,Personal,Normal,45,Wednesday,15:45,16:30,user1
+1889,Coffee with a friend,Personal,Less Important,30,Friday,17:15,17:45,user1
+1890,Online course session,Education,Important,45,Monday,12:45,13:30,user1
+1891,Write report,Work,More Important,60,Monday,11:00,12:00,user1
+1892,Make a scrapbook,Personal,Normal,60,Monday,18:30,19:30,user1
+1893,Buy stationery,Personal,More Important,45,Sunday,12:45,13:30,user1
+1894,Pick up package,Personal,More Important,30,Friday,13:00,13:30,user1
+1895,Wash dishes,Personal,Normal,45,Monday,17:30,18:15,user1
+1896,Wash dishes,Personal,Normal,30,Tuesday,14:00,14:30,user1
+1897,Vacuum the floor,Personal,Normal,45,Saturday,15:45,16:30,user1
+1898,Drop off donation,Personal,More Important,45,Friday,15:15,16:00,user1
+1899,Product demo with client,Work,Important,30,Friday,10:15,10:45,user1
+1900,Product demo with client,Work,Important,45,Wednesday,11:30,12:15,user1
+1901,Visit pharmacy,Personal,More Important,45,Tuesday,13:15,14:00,user1
+1902,Join online group chat,Personal,Less Important,60,Sunday,21:30,22:30,user1
+1903,Record a song,Personal,Normal,30,Wednesday,20:15,20:45,user1
+1904,Join an online gaming session,Personal,Less Important,60,Wednesday,18:45,19:45,user1
+1905,Read comics,Personal,Less Important,45,Wednesday,21:45,22:30,user1
+1906,Wash dishes,Personal,Normal,30,Wednesday,14:15,14:45,user1
+1907,Client discussion,Work,Important,45,Saturday,13:15,14:00,user1
+1908,Read comics,Personal,Less Important,45,Saturday,21:45,22:30,user1
+1909,Visit pharmacy,Personal,More Important,60,Wednesday,18:15,19:15,user1
+1910,Learn Python,Education,Important,45,Sunday,11:15,12:00,user1
+1911,Visit pharmacy,Personal,More Important,60,Sunday,10:00,11:00,user1
+1912,Grocery shopping,Personal,More Important,30,Monday,18:30,19:00,user1
+1913,Organize closet,Personal,Normal,30,Thursday,12:45,13:15,user1
+1914,Write a blog post,Personal,Normal,60,Sunday,16:00,17:00,user1
+1915,Visit pharmacy,Personal,More Important,30,Saturday,12:00,12:30,user1
+1916,Buy stationery,Personal,More Important,30,Wednesday,14:00,14:30,user1
+1917,Create flashcards for revision,Education,More Important,45,Saturday,12:30,13:15,user1
+1918,Write a poem,Personal,Normal,45,Sunday,14:30,15:15,user1
+1919,Client discussion,Work,Important,60,Friday,14:45,15:45,user1
+1920,Watch online tutorial,Education,Important,45,Monday,12:45,13:30,user1
+1921,Respond to work emails,Work,More Important,30,Thursday,12:45,13:15,user1
+1922,Water the plants,Personal,Normal,45,Tuesday,7:45,8:30,user1
+1923,Clean the bathroom,Personal,Normal,45,Thursday,13:45,14:30,user1
+1924,Evening gym workout,Personal,Normal,60,Thursday,17:15,18:15,user1
+1925,Stretching session,Personal,Normal,30,Monday,7:15,7:45,user1
+1926,Evening walk,Personal,Normal,60,Tuesday,19:15,20:15,user1
+1927,Visit the bank,Personal,More Important,45,Saturday,10:45,11:30,user1
+1928,Client discussion,Work,Important,30,Thursday,10:15,10:45,user1
+1929,Review lecture notes,Education,More Important,45,Monday,15:00,15:45,user1
+1930,Clean the bathroom,Personal,Normal,60,Wednesday,11:00,12:00,user1
+1931,Record a song,Personal,Normal,45,Tuesday,19:00,19:45,user1
+1932,Update project status,Work,More Important,45,Saturday,9:45,10:30,user1
+1933,Pick up package,Personal,More Important,45,Monday,10:00,10:45,user1
+1934,Take online quiz,Education,More Important,30,Saturday,13:30,14:00,user1
+1935,Grocery shopping,Personal,More Important,30,Wednesday,11:45,12:15,user1
+1936,Learn Python,Education,Important,45,Tuesday,15:00,15:45,user1
+1937,Attend a birthday party,Personal,Less Important,45,Friday,18:30,19:15,user1
+1938,Renew ID card,Personal,More Important,30,Sunday,13:00,13:30,user1
+1939,Clean the bathroom,Personal,Normal,60,Tuesday,15:15,16:15,user1
+1940,Reply to messages,Personal,Less Important,45,Wednesday,19:30,20:15,user1
+1941,Join online group chat,Personal,Less Important,60,Saturday,20:30,21:30,user1
+1942,Make a scrapbook,Personal,Normal,45,Tuesday,15:00,15:45,user1
+1943,Clean the kitchen,Personal,Normal,60,Sunday,10:45,11:45,user1
+1944,Clean the bathroom,Personal,Normal,45,Friday,12:00,12:45,user1
+1945,Test new software features,Work,More Important,30,Thursday,14:30,15:00,user1
+1946,Reply to messages,Personal,Less Important,60,Thursday,21:00,22:00,user1
+1947,Evening walk,Personal,Normal,45,Sunday,18:15,19:00,user1
+1948,Update project status,Work,More Important,45,Wednesday,14:30,15:15,user1
+1949,Clean the kitchen,Personal,Normal,60,Tuesday,16:45,17:45,user1
+1950,Test new software features,Work,More Important,60,Thursday,14:15,15:15,user1
+1951,Listen to music,Personal,Less Important,60,Sunday,20:45,21:45,user1
+1952,Take notes from an eBook,Education,Important,30,Tuesday,18:15,18:45,user1
+1953,Swimming,Personal,Normal,45,Friday,8:00,8:45,user1
+1954,Call family,Personal,Less Important,60,Wednesday,20:30,21:30,user1
+1955,Home workout,Personal,Normal,30,Wednesday,6:15,6:45,user1
+1956,Dust shelves,Personal,Normal,45,Wednesday,15:15,16:00,user1
+1957,Take online quiz,Education,More Important,30,Sunday,18:30,19:00,user1
+1958,Get a haircut,Personal,More Important,30,Wednesday,13:45,14:15,user1
+1959,Make a scrapbook,Personal,Normal,60,Monday,15:00,16:00,user1
+1960,Mail documents,Personal,More Important,30,Wednesday,12:30,13:00,user1
+1961,Pick up package,Personal,More Important,30,Friday,17:45,18:15,user1
+1962,Renew ID card,Personal,More Important,30,Thursday,10:00,10:30,user1
+1963,Watch a stand-up comedy,Personal,Less Important,60,Monday,21:30,22:30,user1
+1964,Visit pharmacy,Personal,More Important,30,Friday,15:15,15:45,user1
+1965,Listen to music,Personal,Less Important,30,Tuesday,19:00,19:30,user1
+1966,Coffee with a friend,Personal,Less Important,30,Tuesday,14:45,15:15,user1
+1967,Product demo with client,Work,Important,30,Saturday,14:00,14:30,user1
+1968,Practice a new language,Education,Important,60,Tuesday,8:30,9:30,user1
+1969,Vacuum the floor,Personal,Normal,30,Sunday,11:45,12:15,user1
+1970,Water the plants,Personal,Normal,60,Sunday,8:15,9:15,user1
+1971,Listen to music,Personal,Less Important,60,Wednesday,19:45,20:45,user1
+1972,One-on-one with supervisor,Work,Important,45,Thursday,13:15,14:00,user1
+1973,Watch a movie,Personal,Less Important,30,Friday,21:30,22:00,user1
+1974,Stretching session,Personal,Normal,60,Wednesday,7:00,8:00,user1
+1975,Code review session,Work,More Important,45,Wednesday,15:30,16:15,user1
+1976,Stretching session,Personal,Normal,45,Wednesday,6:45,7:30,user1
+1977,Pick up package,Personal,More Important,30,Wednesday,12:15,12:45,user1
+1978,Organize closet,Personal,Normal,30,Tuesday,14:45,15:15,user1
+1979,Code review session,Work,More Important,45,Monday,12:30,13:15,user1
+1980,Hang out at a cafe,Personal,Less Important,30,Wednesday,16:15,16:45,user1
+1981,Get a haircut,Personal,More Important,60,Thursday,15:15,16:15,user1
+1982,Make a scrapbook,Personal,Normal,60,Wednesday,17:15,18:15,user1
+1983,Product demo with client,Work,Important,60,Wednesday,10:00,11:00,user1
+1984,Plan weekend gathering,Personal,Less Important,45,Saturday,14:30,15:15,user1
+1985,Clean the bathroom,Personal,Normal,30,Monday,10:00,10:30,user1
+1986,Coffee with a friend,Personal,Less Important,30,Friday,14:15,14:45,user1
+1987,Create flashcards for revision,Education,More Important,30,Saturday,13:00,13:30,user1
+1988,Make a scrapbook,Personal,Normal,60,Thursday,15:30,16:30,user1
+1989,Read comics,Personal,Less Important,30,Thursday,21:15,21:45,user1
+1990,Vacuum the floor,Personal,Normal,45,Thursday,17:15,18:00,user1
+1991,Evening gym workout,Personal,Normal,30,Saturday,18:45,19:15,user1
+1992,Watch a stand-up comedy,Personal,Less Important,30,Wednesday,20:00,20:30,user1
+1993,Home workout,Personal,Normal,60,Friday,6:00,7:00,user1
+1994,Solve math problems,Education,More Important,60,Wednesday,13:45,14:45,user1
+1995,Do the laundry,Personal,Normal,30,Wednesday,15:15,15:45,user1
+1996,Edit a short video,Personal,Normal,60,Wednesday,19:45,20:45,user1
+1997,Swimming,Personal,Normal,45,Thursday,6:15,7:00,user1
+1998,Prepare budget report,Work,More Important,60,Saturday,9:45,10:45,user1
+1999,Swimming,Personal,Normal,30,Monday,8:45,9:15,user1
+2000,Watch a stand-up comedy,Personal,Less Important,45,Friday,21:15,22:00,user1
+2001,Create flashcards for revision,Education,More Important,60,Friday,17:45,18:45,user1
+2002,One-on-one with supervisor,Work,Important,30,Friday,14:45,15:15,user1
+2003,Water the plants,Personal,Normal,30,Tuesday,9:45,10:15,user1
+2004,Read a book,Education,More Important,30,Wednesday,9:15,9:45,user1
+2005,Watch a stand-up comedy,Personal,Less Important,45,Tuesday,21:15,22:00,user1
+2006,Paint a picture,Personal,Normal,60,Friday,15:30,16:30,user1
+2007,One-on-one with supervisor,Work,Important,60,Sunday,13:15,14:15,user1
+2008,Write short story,Personal,Normal,45,Wednesday,10:15,11:00,user1
+2009,Watch a movie,Personal,Less Important,30,Sunday,19:30,20:00,user1
+2010,Sketch a design,Personal,Normal,60,Friday,18:30,19:30,user1
+2011,Summarize a chapter,Education,More Important,60,Thursday,19:15,20:15,user1
+2012,Chat with neighbors,Personal,Less Important,60,Monday,18:45,19:45,user1
+2013,Yoga session,Personal,Normal,30,Sunday,7:45,8:15,user1
+2014,Call family,Personal,Less Important,60,Monday,20:15,21:15,user1
+2015,Strategy discussion,Work,Important,45,Wednesday,13:15,14:00,user1
+2016,Project sync-up,Work,Important,60,Friday,9:00,10:00,user1
+2017,Weekly team briefing,Work,Important,30,Sunday,9:30,10:00,user1
+2018,Attend webinar,Education,Important,60,Wednesday,13:30,14:30,user1
+2019,Learn Python,Education,Important,30,Saturday,11:30,12:00,user1
+2020,Watch a movie,Personal,Less Important,60,Monday,21:45,22:45,user1
+2021,Stretching session,Personal,Normal,45,Thursday,7:45,8:30,user1
+2022,Practice a new language,Education,Important,30,Wednesday,8:30,9:00,user1
+2023,Respond to work emails,Work,More Important,30,Sunday,8:45,9:15,user1
+2024,Summarize a chapter,Education,More Important,60,Wednesday,12:15,13:15,user1
+2025,Write short story,Personal,Normal,30,Tuesday,17:30,18:00,user1
+2026,Visit the bank,Personal,More Important,45,Monday,9:30,10:15,user1
+2027,Watch a stand-up comedy,Personal,Less Important,60,Thursday,20:45,21:45,user1
+2028,One-on-one with supervisor,Work,Important,45,Saturday,16:30,17:15,user1
+2029,Project sync-up,Work,Important,30,Thursday,10:45,11:15,user1
+2030,Read comics,Personal,Less Important,45,Saturday,17:30,18:15,user1
+2031,Make a scrapbook,Personal,Normal,60,Tuesday,15:45,16:45,user1
+2032,Write short story,Personal,Normal,60,Thursday,11:15,12:15,user1
+2033,Practice coding,Education,Important,30,Wednesday,21:45,22:15,user1
+2034,Grocery shopping,Personal,More Important,60,Friday,14:15,15:15,user1
+2035,Stream live concert,Personal,Less Important,30,Wednesday,21:30,22:00,user1
+2036,Review lecture notes,Education,More Important,60,Monday,17:15,18:15,user1
+2037,Grocery shopping,Personal,More Important,60,Tuesday,13:00,14:00,user1
+2038,Pick up package,Personal,More Important,45,Wednesday,12:00,12:45,user1
+2039,Explore new tools,Education,Important,60,Saturday,15:30,16:30,user1
+2040,Paint a picture,Personal,Normal,60,Thursday,17:15,18:15,user1
+2041,Hang out at a cafe,Personal,Less Important,30,Tuesday,16:00,16:30,user1
+2042,Swimming,Personal,Normal,45,Thursday,6:30,7:15,user1
+2043,Renew ID card,Personal,More Important,60,Wednesday,9:15,10:15,user1
+2044,Dust shelves,Personal,Normal,60,Saturday,12:30,13:30,user1
+2045,Make a scrapbook,Personal,Normal,60,Monday,18:45,19:45,user1
+2046,Write a poem,Personal,Normal,30,Tuesday,13:15,13:45,user1
+2047,Write a blog post,Personal,Normal,30,Friday,17:45,18:15,user1
+2048,Summarize a chapter,Education,More Important,60,Monday,18:30,19:30,user1
+2049,Chat with neighbors,Personal,Less Important,60,Friday,19:45,20:45,user1
+2050,Test new software features,Work,More Important,30,Monday,13:45,14:15,user1
+2051,Call family,Personal,Less Important,60,Saturday,20:15,21:15,user1
+2052,Play games,Personal,Less Important,60,Tuesday,19:30,20:30,user1
+2053,Update project status,Work,More Important,45,Sunday,14:15,15:00,user1
+2054,Practice coding,Education,Important,60,Wednesday,10:00,11:00,user1
+2055,Visit pharmacy,Personal,More Important,30,Monday,13:00,13:30,user1
+2056,Plan weekend gathering,Personal,Less Important,45,Wednesday,16:45,17:30,user1
+2057,Write report,Work,More Important,30,Monday,10:30,11:00,user1
+2058,Get a haircut,Personal,More Important,60,Monday,15:15,16:15,user1
+2059,Practice a new language,Education,Important,45,Wednesday,15:30,16:15,user1
+2060,Read a technical article,Education,Important,45,Monday,18:15,19:00,user1
+2061,Watch a movie,Personal,Less Important,60,Wednesday,18:15,19:15,user1
+2062,Buy stationery,Personal,More Important,45,Friday,15:30,16:15,user1
+2063,Read comics,Personal,Less Important,45,Friday,19:45,20:30,user1
+2064,Code review session,Work,More Important,60,Tuesday,15:45,16:45,user1
+2065,Visit the bank,Personal,More Important,45,Thursday,11:15,12:00,user1
+2066,Mop the floor,Personal,Normal,45,Monday,11:15,12:00,user1
+2067,Clean the bathroom,Personal,Normal,60,Sunday,17:15,18:15,user1
+2068,Listen to music,Personal,Less Important,30,Monday,18:00,18:30,user1
+2069,Summarize a chapter,Education,More Important,30,Sunday,15:15,15:45,user1
+2070,Summarize a chapter,Education,More Important,30,Wednesday,13:00,13:30,user1
+2071,Attend a birthday party,Personal,Less Important,45,Saturday,21:45,22:30,user1
+2072,Dinner with friends,Personal,Less Important,45,Thursday,19:00,19:45,user1
+2073,Online course session,Education,Important,30,Thursday,15:30,16:00,user1
+2074,Project sync-up,Work,Important,30,Friday,9:30,10:00,user1
+2075,Swimming,Personal,Normal,30,Tuesday,8:00,8:30,user1
+2076,Complete a coding challenge,Education,Important,45,Sunday,9:15,10:00,user1
+2077,Watch online tutorial,Education,Important,45,Friday,16:15,17:00,user1
+2078,Strategy discussion,Work,Important,45,Thursday,13:15,14:00,user1
+2079,Attend webinar,Education,Important,30,Sunday,10:00,10:30,user1
+2080,Visit pharmacy,Personal,More Important,60,Tuesday,12:00,13:00,user1
+2081,Mail documents,Personal,More Important,60,Saturday,16:00,17:00,user1
+2082,Wash dishes,Personal,Normal,45,Wednesday,13:15,14:00,user1
+2083,Attend a birthday party,Personal,Less Important,45,Sunday,21:00,21:45,user1
+2084,Water the plants,Personal,Normal,45,Friday,7:15,8:00,user1
+2085,Stream live concert,Personal,Less Important,60,Friday,21:15,22:15,user1
+2086,Mail documents,Personal,More Important,45,Monday,15:45,16:30,user1
+2087,Review lecture notes,Education,More Important,30,Monday,12:15,12:45,user1
+2088,Mail documents,Personal,More Important,30,Sunday,11:15,11:45,user1
+2089,Watch a stand-up comedy,Personal,Less Important,30,Tuesday,20:30,21:00,user1
+2090,Attend a birthday party,Personal,Less Important,45,Thursday,21:00,21:45,user1
+2091,Get a haircut,Personal,More Important,30,Sunday,16:45,17:15,user1
+2092,Home workout,Personal,Normal,60,Friday,8:15,9:15,user1
+2093,Swimming,Personal,Normal,60,Wednesday,6:30,7:30,user1
+2094,Product demo with client,Work,Important,45,Wednesday,11:00,11:45,user1
+2095,Weekly team briefing,Work,Important,30,Monday,10:15,10:45,user1
+2096,Pick up package,Personal,More Important,60,Thursday,16:00,17:00,user1
+2097,Complete a coding challenge,Education,Important,30,Saturday,12:15,12:45,user1
+2098,Vacuum the floor,Personal,Normal,45,Wednesday,10:00,10:45,user1
+2099,Record a song,Personal,Normal,60,Monday,17:30,18:30,user1
+2100,Edit a short video,Personal,Normal,45,Saturday,15:15,16:00,user1
+2101,Swimming,Personal,Normal,30,Wednesday,8:15,8:45,user1
+2102,Listen to music,Personal,Less Important,45,Saturday,18:00,18:45,user1
+2103,Buy stationery,Personal,More Important,45,Saturday,11:45,12:30,user1
+2104,Swimming,Personal,Normal,30,Thursday,8:45,9:15,user1
+2105,Design a presentation,Work,More Important,60,Friday,9:00,10:00,user1
+2106,Online course session,Education,Important,45,Wednesday,18:15,19:00,user1
+2107,Take notes from an eBook,Education,Important,30,Sunday,16:00,16:30,user1
+2108,Paint a picture,Personal,Normal,45,Sunday,16:45,17:30,user1
+2109,Water the plants,Personal,Normal,60,Monday,9:45,10:45,user1
+2110,Join an online gaming session,Personal,Less Important,60,Sunday,21:45,22:45,user1
+2111,Yoga session,Personal,Normal,45,Saturday,6:00,6:45,user1
+2112,Learn Python,Education,Important,30,Thursday,16:30,17:00,user1
+2113,Attend webinar,Education,Important,45,Thursday,12:00,12:45,user1
+2114,Play guitar,Personal,Normal,45,Tuesday,18:30,19:15,user1
+2115,Pick up package,Personal,More Important,30,Thursday,10:15,10:45,user1
+2116,Home workout,Personal,Normal,60,Friday,7:30,8:30,user1
+2117,Stream live concert,Personal,Less Important,30,Saturday,20:45,21:15,user1
+2118,Edit a short video,Personal,Normal,30,Thursday,19:45,20:15,user1
+2119,Solve math problems,Education,More Important,60,Saturday,15:45,16:45,user1
+2120,Strategy discussion,Work,Important,30,Monday,12:30,13:00,user1
+2121,Home workout,Personal,Normal,30,Friday,6:15,6:45,user1
+2122,Read research paper,Education,Important,45,Wednesday,21:00,21:45,user1
+2123,Summarize a chapter,Education,More Important,60,Thursday,9:00,10:00,user1
+2124,Cycling,Personal,Normal,30,Sunday,7:30,8:00,user1
+2125,Write a poem,Personal,Normal,45,Thursday,14:00,14:45,user1
+2126,Visit pharmacy,Personal,More Important,45,Monday,15:30,16:15,user1
+2127,Write a summary of today's learnings,Education,More Important,45,Tuesday,18:15,19:00,user1
+2128,Clean the kitchen,Personal,Normal,30,Friday,19:00,19:30,user1
+2129,One-on-one with supervisor,Work,Important,60,Saturday,10:15,11:15,user1
+2130,Dinner with friends,Personal,Less Important,45,Wednesday,19:00,19:45,user1
+2131,Read comics,Personal,Less Important,60,Friday,21:00,22:00,user1
+2132,Respond to work emails,Work,More Important,60,Wednesday,16:45,17:45,user1
+2133,Evening gym workout,Personal,Normal,60,Saturday,19:30,20:30,user1
+2134,Read a book,Education,More Important,30,Thursday,11:30,12:00,user1
+2135,Learn Python,Education,Important,30,Wednesday,14:30,15:00,user1
+2136,Read a technical article,Education,Important,45,Wednesday,10:45,11:30,user1
+2137,Organize closet,Personal,Normal,60,Tuesday,12:45,13:45,user1
+2138,Join online group chat,Personal,Less Important,30,Tuesday,20:15,20:45,user1
+2139,Edit a short video,Personal,Normal,30,Saturday,18:15,18:45,user1
+2140,Attend a birthday party,Personal,Less Important,60,Saturday,18:30,19:30,user1
+2141,Take notes from an eBook,Education,Important,60,Wednesday,12:00,13:00,user1
+2142,Join an online gaming session,Personal,Less Important,60,Thursday,18:45,19:45,user1
+2143,Read a technical article,Education,Important,30,Sunday,12:00,12:30,user1
+2144,Attend webinar,Education,Important,30,Sunday,16:30,17:00,user1
+2145,Review lecture notes,Education,More Important,30,Monday,17:45,18:15,user1
+2146,Attend a birthday party,Personal,Less Important,45,Friday,17:30,18:15,user1
+2147,Sketch a design,Personal,Normal,45,Tuesday,16:15,17:00,user1
+2148,Jogging,Personal,Normal,30,Friday,7:45,8:15,user1
+2149,Hang out at a cafe,Personal,Less Important,45,Wednesday,15:00,15:45,user1
+2150,Online course session,Education,Important,60,Monday,13:45,14:45,user1
+2151,Paint a picture,Personal,Normal,30,Monday,18:00,18:30,user1
+2152,Complete a coding challenge,Education,Important,30,Saturday,11:00,11:30,user1
+2153,Play guitar,Personal,Normal,45,Wednesday,20:15,21:00,user1
+2154,Project sync-up,Work,Important,30,Monday,9:00,9:30,user1
+2155,Weekly team briefing,Work,Important,60,Friday,9:30,10:30,user1
+2156,Strategy discussion,Work,Important,45,Friday,11:30,12:15,user1
+2157,Watch a movie,Personal,Less Important,30,Friday,20:00,20:30,user1
+2158,Attend webinar,Education,Important,60,Tuesday,13:45,14:45,user1
+2159,Solve math problems,Education,More Important,45,Tuesday,18:45,19:30,user1
+2160,Write a blog post,Personal,Normal,45,Friday,14:15,15:00,user1
+2161,Write report,Work,More Important,45,Saturday,14:45,15:30,user1
+2162,Practice a new language,Education,Important,45,Thursday,19:45,20:30,user1
+2163,Make a scrapbook,Personal,Normal,60,Saturday,17:30,18:30,user1
+2164,Mail documents,Personal,More Important,60,Sunday,10:15,11:15,user1
+2165,Read comics,Personal,Less Important,60,Saturday,20:30,21:30,user1
+2166,One-on-one with supervisor,Work,Important,60,Monday,11:45,12:45,user1
+2167,Read research paper,Education,Important,30,Wednesday,11:15,11:45,user1
+2168,Mop the floor,Personal,Normal,30,Thursday,17:00,17:30,user1
+2169,Read a book,Education,More Important,60,Wednesday,11:00,12:00,user1
+2170,Listen to music,Personal,Less Important,30,Sunday,19:45,20:15,user1
+2171,Product demo with client,Work,Important,30,Tuesday,14:00,14:30,user1
+2172,Product demo with client,Work,Important,45,Tuesday,11:00,11:45,user1
+2173,Cross-department alignment,Work,Important,45,Monday,15:15,16:00,user1
+2174,Plan weekend gathering,Personal,Less Important,45,Sunday,14:45,15:30,user1
+2175,Clean the kitchen,Personal,Normal,60,Thursday,17:30,18:30,user1
+2176,Online course session,Education,Important,30,Sunday,8:15,8:45,user1
+2177,Design a presentation,Work,More Important,45,Friday,10:00,10:45,user1
+2178,Drop off donation,Personal,More Important,60,Sunday,13:30,14:30,user1
+2179,Vacuum the floor,Personal,Normal,30,Friday,16:15,16:45,user1
+2180,Play games,Personal,Less Important,60,Thursday,20:15,21:15,user1
+2181,Sketch a design,Personal,Normal,45,Sunday,18:45,19:30,user1
+2182,Water the plants,Personal,Normal,60,Thursday,7:15,8:15,user1
+2183,Online course session,Education,Important,60,Thursday,10:45,11:45,user1
+2184,Visit pharmacy,Personal,More Important,60,Monday,9:45,10:45,user1
+2185,Write a blog post,Personal,Normal,30,Tuesday,14:00,14:30,user1
+2186,Complete a coding challenge,Education,Important,30,Tuesday,19:45,20:15,user1
+2187,Mop the floor,Personal,Normal,30,Sunday,17:00,17:30,user1
+2188,Play games,Personal,Less Important,30,Wednesday,19:45,20:15,user1
+2189,Get a haircut,Personal,More Important,60,Sunday,16:00,17:00,user1
+2190,Dinner with friends,Personal,Less Important,45,Saturday,21:45,22:30,user1
+2191,Read comics,Personal,Less Important,60,Friday,19:30,20:30,user1
+2192,Evening gym workout,Personal,Normal,45,Saturday,18:00,18:45,user1
+2193,Watch YouTube,Personal,Less Important,30,Thursday,21:00,21:30,user1
+2194,Buy stationery,Personal,More Important,45,Wednesday,12:45,13:30,user1
+2195,Play guitar,Personal,Normal,30,Sunday,17:15,17:45,user1
+2196,Take notes from an eBook,Education,Important,60,Saturday,18:45,19:45,user1
+2197,Paint a picture,Personal,Normal,30,Sunday,15:15,15:45,user1
+2198,Product demo with client,Work,Important,45,Tuesday,12:45,13:30,user1
+2199,Drop off donation,Personal,More Important,60,Monday,14:00,15:00,user1
+2200,Product demo with client,Work,Important,30,Sunday,14:15,14:45,user1
+2201,Project sync-up,Work,Important,60,Sunday,15:30,16:30,user1
+2202,Weekly team briefing,Work,Important,45,Thursday,9:45,10:30,user1
+2203,Cross-department alignment,Work,Important,30,Sunday,13:15,13:45,user1
+2204,Write short story,Personal,Normal,60,Tuesday,11:30,12:30,user1
+2205,Mail documents,Personal,More Important,60,Monday,12:30,13:30,user1
+2206,Practice coding,Education,Important,45,Tuesday,12:30,13:15,user1
+2207,Stream live concert,Personal,Less Important,60,Saturday,20:00,21:00,user1
+2208,Cycling,Personal,Normal,60,Wednesday,7:45,8:45,user1
+2209,Cross-department alignment,Work,Important,60,Wednesday,10:00,11:00,user1
+2210,Coffee with a friend,Personal,Less Important,45,Wednesday,14:45,15:30,user1
+2211,Listen to music,Personal,Less Important,60,Sunday,20:00,21:00,user1
+2212,Mail documents,Personal,More Important,45,Monday,14:15,15:00,user1
+2213,Read a technical article,Education,Important,45,Sunday,19:15,20:00,user1
+2214,Join an online gaming session,Personal,Less Important,30,Thursday,22:45,23:15,user1
+2215,Pick up package,Personal,More Important,60,Friday,12:15,13:15,user1
+2216,Project sync-up,Work,Important,45,Monday,12:00,12:45,user1
+2217,Design a presentation,Work,More Important,30,Tuesday,14:15,14:45,user1
+2218,Organize closet,Personal,Normal,30,Friday,16:45,17:15,user1
+2219,Clean the bathroom,Personal,Normal,30,Sunday,16:15,16:45,user1
+2220,Read a technical article,Education,Important,45,Wednesday,14:45,15:30,user1
+2221,Read a book,Education,More Important,45,Tuesday,19:00,19:45,user1
+2222,Respond to work emails,Work,More Important,30,Saturday,13:15,13:45,user1
+2223,Respond to work emails,Work,More Important,45,Wednesday,13:15,14:00,user1
+2224,Take notes from an eBook,Education,Important,60,Friday,14:45,15:45,user1
+2225,Weekly team briefing,Work,Important,60,Wednesday,9:30,10:30,user1
+2226,Watch YouTube,Personal,Less Important,30,Sunday,21:30,22:00,user1
+2227,Get a haircut,Personal,More Important,60,Monday,12:30,13:30,user1
+2228,Explore new tools,Education,Important,30,Monday,9:30,10:00,user1
+2229,Complete a coding challenge,Education,Important,45,Sunday,12:45,13:30,user1
+2230,Grocery shopping,Personal,More Important,45,Saturday,15:30,16:15,user1
+2231,Cycling,Personal,Normal,30,Tuesday,7:30,8:00,user1
+2232,Drop off donation,Personal,More Important,30,Saturday,11:00,11:30,user1
+2233,Weekly team briefing,Work,Important,45,Thursday,9:30,10:15,user1
+2234,Solve math problems,Education,More Important,30,Saturday,17:15,17:45,user1
+2235,Attend webinar,Education,Important,45,Saturday,11:30,12:15,user1
+2236,Strategy discussion,Work,Important,45,Monday,10:00,10:45,user1
+2237,Read comics,Personal,Less Important,60,Friday,17:30,18:30,user1
+2238,Attend webinar,Education,Important,45,Friday,14:30,15:15,user1
+2239,Jogging,Personal,Normal,60,Sunday,5:30,6:30,user1
+2240,Yoga session,Personal,Normal,45,Tuesday,7:00,7:45,user1
+2241,Drop off donation,Personal,More Important,60,Monday,13:15,14:15,user1
+2242,Wash dishes,Personal,Normal,30,Sunday,11:45,12:15,user1
+2243,Learn Python,Education,Important,45,Monday,9:15,10:00,user1
+2244,Test new software features,Work,More Important,60,Monday,13:00,14:00,user1
+2245,Record a song,Personal,Normal,45,Saturday,17:15,18:00,user1
+2246,Read research paper,Education,Important,60,Saturday,13:45,14:45,user1
+2247,Solve math problems,Education,More Important,45,Friday,18:00,18:45,user1
+2248,Dinner with friends,Personal,Less Important,30,Saturday,21:00,21:30,user1
+2249,Clean the bathroom,Personal,Normal,60,Saturday,10:30,11:30,user1
+2250,Water the plants,Personal,Normal,30,Wednesday,8:15,8:45,user1
+2251,Cycling,Personal,Normal,60,Friday,5:15,6:15,user1
+2252,Get a haircut,Personal,More Important,30,Thursday,16:45,17:15,user1
+2253,Watch a movie,Personal,Less Important,60,Monday,20:30,21:30,user1
+2254,Grocery shopping,Personal,More Important,45,Wednesday,18:15,19:00,user1
+2255,Coffee with a friend,Personal,Less Important,30,Friday,16:30,17:00,user1
+2256,Take online quiz,Education,More Important,45,Sunday,12:45,13:30,user1
+2257,Watch a stand-up comedy,Personal,Less Important,60,Saturday,20:00,21:00,user1
+2258,Clean the kitchen,Personal,Normal,30,Thursday,14:30,15:00,user1
+2259,Jogging,Personal,Normal,45,Thursday,6:15,7:00,user1
+2260,Cross-department alignment,Work,Important,45,Friday,15:15,16:00,user1
+2261,Project sync-up,Work,Important,60,Saturday,12:45,13:45,user1
+2262,Watch a stand-up comedy,Personal,Less Important,60,Saturday,19:45,20:45,user1
+2263,Water the plants,Personal,Normal,30,Tuesday,8:15,8:45,user1
+2264,Clean the bathroom,Personal,Normal,60,Thursday,9:00,10:00,user1
+2265,Chat with neighbors,Personal,Less Important,30,Monday,17:15,17:45,user1
+2266,Play guitar,Personal,Normal,45,Wednesday,17:30,18:15,user1
+2267,Join online group chat,Personal,Less Important,45,Saturday,21:00,21:45,user1
+2268,Stretching session,Personal,Normal,30,Sunday,6:15,6:45,user1
+2269,Practice a new language,Education,Important,45,Sunday,8:00,8:45,user1
+2270,Complete a coding challenge,Education,Important,60,Monday,11:15,12:15,user1
+2271,Clean the bathroom,Personal,Normal,30,Wednesday,11:15,11:45,user1
+2272,Test new software features,Work,More Important,60,Saturday,12:30,13:30,user1
+2273,Renew ID card,Personal,More Important,45,Saturday,10:30,11:15,user1
+2274,Client discussion,Work,Important,45,Saturday,11:15,12:00,user1
+2275,Buy stationery,Personal,More Important,60,Thursday,10:15,11:15,user1
+2276,Mop the floor,Personal,Normal,60,Tuesday,13:15,14:15,user1
+2277,Visit pharmacy,Personal,More Important,30,Friday,17:00,17:30,user1
+2278,Yoga session,Personal,Normal,45,Wednesday,6:45,7:30,user1
+2279,Yoga session,Personal,Normal,60,Thursday,7:15,8:15,user1
+2280,Play games,Personal,Less Important,30,Sunday,17:45,18:15,user1
+2281,Attend a birthday party,Personal,Less Important,45,Tuesday,18:00,18:45,user1
+2282,Evening gym workout,Personal,Normal,60,Tuesday,18:30,19:30,user1
+2283,Write short story,Personal,Normal,45,Tuesday,14:30,15:15,user1
+2284,Clean the bathroom,Personal,Normal,45,Sunday,14:30,15:15,user1
+2285,Join an online gaming session,Personal,Less Important,45,Wednesday,21:15,22:00,user1
+2286,Mail documents,Personal,More Important,30,Monday,13:15,13:45,user1
+2287,Home workout,Personal,Normal,45,Wednesday,8:30,9:15,user1
+2288,Buy stationery,Personal,More Important,45,Friday,14:00,14:45,user1
+2289,Complete a coding challenge,Education,Important,45,Monday,11:45,12:30,user1
+2290,Explore new tools,Education,Important,30,Friday,17:45,18:15,user1
+2291,Design a presentation,Work,More Important,30,Sunday,9:45,10:15,user1
+2292,Take notes from an eBook,Education,Important,45,Monday,11:45,12:30,user1
+2293,Get a haircut,Personal,More Important,30,Friday,17:15,17:45,user1
+2294,Respond to work emails,Work,More Important,60,Friday,14:45,15:45,user1
+2295,Reply to messages,Personal,Less Important,60,Wednesday,19:00,20:00,user1
+2296,Write a poem,Personal,Normal,45,Saturday,15:30,16:15,user1
+2297,Stretching session,Personal,Normal,45,Thursday,6:30,7:15,user1
+2298,Clean the kitchen,Personal,Normal,45,Tuesday,17:45,18:30,user1
+2299,Test new software features,Work,More Important,60,Friday,15:30,16:30,user1
+2300,Grocery shopping,Personal,More Important,30,Tuesday,12:00,12:30,user1
+2301,Evening gym workout,Personal,Normal,45,Friday,18:45,19:30,user1
+2302,Dust shelves,Personal,Normal,45,Saturday,14:30,15:15,user1
+2303,Attend webinar,Education,Important,30,Friday,13:15,13:45,user1
+2304,Dinner with friends,Personal,Less Important,30,Thursday,21:15,21:45,user1
+2305,Paint a picture,Personal,Normal,45,Friday,14:45,15:30,user1
+2306,Plan weekend gathering,Personal,Less Important,60,Saturday,15:45,16:45,user1
+2307,Take online quiz,Education,More Important,45,Thursday,13:00,13:45,user1
+2308,One-on-one with supervisor,Work,Important,60,Thursday,16:30,17:30,user1
+2309,Mop the floor,Personal,Normal,45,Sunday,11:00,11:45,user1
+2310,Attend webinar,Education,Important,45,Wednesday,16:45,17:30,user1
+2311,Evening gym workout,Personal,Normal,45,Monday,17:15,18:00,user1
+2312,Write a poem,Personal,Normal,45,Saturday,13:00,13:45,user1
+2313,Write a poem,Personal,Normal,60,Monday,17:00,18:00,user1
+2314,Do the laundry,Personal,Normal,45,Thursday,14:45,15:30,user1
+2315,Watch a movie,Personal,Less Important,30,Thursday,19:45,20:15,user1
+2316,Update project status,Work,More Important,30,Wednesday,12:45,13:15,user1
+2317,Water the plants,Personal,Normal,30,Monday,7:00,7:30,user1
+2318,Attend a birthday party,Personal,Less Important,60,Tuesday,20:45,21:45,user1
+2319,Visit pharmacy,Personal,More Important,45,Tuesday,10:30,11:15,user1
+2320,Write a poem,Personal,Normal,60,Sunday,11:00,12:00,user1
+2321,Do the laundry,Personal,Normal,60,Sunday,10:15,11:15,user1
+2322,Create flashcards for revision,Education,More Important,45,Wednesday,11:15,12:00,user1
+2323,Attend webinar,Education,Important,60,Friday,10:30,11:30,user1
+2324,Summarize a chapter,Education,More Important,30,Thursday,13:45,14:15,user1
+2325,Take notes from an eBook,Education,Important,60,Monday,13:30,14:30,user1
+2326,Grocery shopping,Personal,More Important,30,Saturday,16:30,17:00,user1
+2327,Chat with neighbors,Personal,Less Important,60,Monday,17:00,18:00,user1
+2328,Watch a movie,Personal,Less Important,45,Saturday,21:15,22:00,user1
+2329,Join online group chat,Personal,Less Important,30,Saturday,20:00,20:30,user1
+2330,Mop the floor,Personal,Normal,60,Wednesday,11:15,12:15,user1
+2331,Project sync-up,Work,Important,60,Friday,12:30,13:30,user1
+2332,Watch YouTube,Personal,Less Important,45,Sunday,20:15,21:00,user1
+2333,Watch online tutorial,Education,Important,45,Sunday,11:30,12:15,user1
+2334,Drop off donation,Personal,More Important,45,Sunday,11:15,12:00,user1
+2335,Read a book,Education,More Important,60,Tuesday,15:45,16:45,user1
+2336,Respond to work emails,Work,More Important,45,Sunday,16:45,17:30,user1
+2337,Read research paper,Education,Important,45,Thursday,18:00,18:45,user1
+2338,Listen to music,Personal,Less Important,45,Saturday,20:00,20:45,user1
+2339,Stretching session,Personal,Normal,30,Friday,6:45,7:15,user1
+2340,Watch online tutorial,Education,Important,45,Friday,13:45,14:30,user1
+2341,Write a summary of today's learnings,Education,More Important,30,Tuesday,15:30,16:00,user1
+2342,Get a haircut,Personal,More Important,30,Wednesday,17:15,17:45,user1
+2343,Paint a picture,Personal,Normal,45,Tuesday,13:30,14:15,user1
+2344,Record a song,Personal,Normal,45,Saturday,18:30,19:15,user1
+2345,Code review session,Work,More Important,30,Saturday,12:45,13:15,user1
+2346,Pick up package,Personal,More Important,45,Friday,15:30,16:15,user1
+2347,Complete a coding challenge,Education,Important,45,Thursday,16:45,17:30,user1
+2348,Read a technical article,Education,Important,30,Tuesday,20:30,21:00,user1
+2349,Code review session,Work,More Important,45,Monday,15:45,16:30,user1
+2350,Watch a stand-up comedy,Personal,Less Important,45,Saturday,21:15,22:00,user1
+2351,Play guitar,Personal,Normal,45,Wednesday,17:15,18:00,user1
+2352,One-on-one with supervisor,Work,Important,60,Wednesday,11:15,12:15,user1
+2353,Create flashcards for revision,Education,More Important,60,Saturday,12:45,13:45,user1
+2354,Read a technical article,Education,Important,30,Wednesday,15:30,16:00,user1
+2355,Join online group chat,Personal,Less Important,45,Friday,21:15,22:00,user1
+2356,Wash dishes,Personal,Normal,60,Wednesday,11:15,12:15,user1
+2357,Get a haircut,Personal,More Important,30,Friday,15:30,16:00,user1
+2358,Evening walk,Personal,Normal,30,Tuesday,17:00,17:30,user1
+2359,Read a technical article,Education,Important,60,Monday,20:30,21:30,user1
+2360,Organize closet,Personal,Normal,30,Wednesday,12:15,12:45,user1
+2361,Yoga session,Personal,Normal,60,Friday,6:00,7:00,user1
+2362,Product demo with client,Work,Important,30,Sunday,14:00,14:30,user1
+2363,Do the laundry,Personal,Normal,60,Saturday,14:15,15:15,user1
+2364,Visit the bank,Personal,More Important,30,Monday,11:00,11:30,user1
+2365,Cycling,Personal,Normal,60,Saturday,7:00,8:00,user1
+2366,Wash dishes,Personal,Normal,30,Sunday,9:30,10:00,user1
+2367,Listen to music,Personal,Less Important,30,Tuesday,19:30,20:00,user1
+2368,Practice a new language,Education,Important,30,Sunday,11:00,11:30,user1
+2369,Design a presentation,Work,More Important,30,Thursday,14:45,15:15,user1
+2370,Project sync-up,Work,Important,60,Monday,10:45,11:45,user1
+2371,Get a haircut,Personal,More Important,45,Thursday,11:00,11:45,user1
+2372,Dinner with friends,Personal,Less Important,60,Friday,18:45,19:45,user1
+2373,Take online quiz,Education,More Important,60,Saturday,16:00,17:00,user1
+2374,Project sync-up,Work,Important,30,Thursday,11:15,11:45,user1
+2375,One-on-one with supervisor,Work,Important,60,Thursday,16:45,17:45,user1
+2376,Prepare budget report,Work,More Important,45,Tuesday,14:30,15:15,user1
+2377,Code review session,Work,More Important,60,Thursday,11:15,12:15,user1
+2378,Swimming,Personal,Normal,30,Friday,6:00,6:30,user1
+2379,Write a blog post,Personal,Normal,45,Tuesday,17:15,18:00,user1
+2380,Drop off donation,Personal,More Important,60,Sunday,14:15,15:15,user1
+2381,Write report,Work,More Important,45,Tuesday,11:45,12:30,user1
+2382,Grocery shopping,Personal,More Important,60,Saturday,12:30,13:30,user1
+2383,Organize closet,Personal,Normal,45,Tuesday,12:00,12:45,user1
+2384,Cross-department alignment,Work,Important,45,Tuesday,12:15,13:00,user1
+2385,Jogging,Personal,Normal,30,Saturday,5:45,6:15,user1
+2386,Prepare budget report,Work,More Important,30,Tuesday,12:30,13:00,user1
+2387,Reply to messages,Personal,Less Important,30,Thursday,19:00,19:30,user1
+2388,Listen to music,Personal,Less Important,45,Sunday,18:30,19:15,user1
+2389,Summarize a chapter,Education,More Important,30,Saturday,10:00,10:30,user1
+2390,Take notes from an eBook,Education,Important,45,Saturday,20:30,21:15,user1
+2391,Solve math problems,Education,More Important,45,Tuesday,18:00,18:45,user1
+2392,Write short story,Personal,Normal,60,Tuesday,16:45,17:45,user1
+2393,Test new software features,Work,More Important,45,Tuesday,12:00,12:45,user1
+2394,Product demo with client,Work,Important,30,Wednesday,10:45,11:15,user1
+2395,Clean the kitchen,Personal,Normal,30,Thursday,10:30,11:00,user1
+2396,Cycling,Personal,Normal,45,Thursday,5:00,5:45,user1
+2397,Evening gym workout,Personal,Normal,30,Sunday,19:45,20:15,user1
+2398,Listen to music,Personal,Less Important,45,Sunday,21:15,22:00,user1
+2399,Write a blog post,Personal,Normal,30,Monday,16:30,17:00,user1
+2400,Water the plants,Personal,Normal,30,Thursday,9:00,9:30,user1
+2401,Write short story,Personal,Normal,30,Monday,11:30,12:00,user1
+2402,One-on-one with supervisor,Work,Important,30,Thursday,13:30,14:00,user1
+2403,Solve math problems,Education,More Important,45,Tuesday,15:15,16:00,user1
+2404,Water the plants,Personal,Normal,60,Thursday,8:15,9:15,user1
+2405,Drop off donation,Personal,More Important,45,Thursday,11:30,12:15,user1
+2406,Plan weekend gathering,Personal,Less Important,30,Wednesday,16:00,16:30,user1
+2407,Online course session,Education,Important,30,Thursday,8:45,9:15,user1
+2408,Create flashcards for revision,Education,More Important,60,Tuesday,9:30,10:30,user1
+2409,Dust shelves,Personal,Normal,30,Saturday,11:30,12:00,user1
+2410,Stream live concert,Personal,Less Important,30,Sunday,21:30,22:00,user1
+2411,Play games,Personal,Less Important,45,Monday,20:15,21:00,user1
+2412,Summarize a chapter,Education,More Important,60,Saturday,17:30,18:30,user1
+2413,Take notes from an eBook,Education,Important,30,Thursday,16:45,17:15,user1
+2414,Swimming,Personal,Normal,60,Sunday,8:15,9:15,user1
+2415,Record a song,Personal,Normal,30,Wednesday,20:30,21:00,user1
+2416,Mop the floor,Personal,Normal,45,Thursday,16:00,16:45,user1
+2417,Respond to work emails,Work,More Important,60,Thursday,9:00,10:00,user1
+2418,Review lecture notes,Education,More Important,60,Sunday,14:30,15:30,user1
+2419,Yoga session,Personal,Normal,45,Saturday,6:45,7:30,user1
+2420,Strategy discussion,Work,Important,60,Wednesday,11:00,12:00,user1
+2421,Solve math problems,Education,More Important,30,Wednesday,20:15,20:45,user1
+2422,Watch YouTube,Personal,Less Important,60,Friday,21:30,22:30,user1
+2423,Grocery shopping,Personal,More Important,60,Wednesday,18:00,19:00,user1
+2424,Pick up package,Personal,More Important,45,Thursday,11:15,12:00,user1
+2425,Yoga session,Personal,Normal,45,Monday,7:00,7:45,user1
+2426,Listen to music,Personal,Less Important,60,Friday,18:15,19:15,user1
+2427,Dust shelves,Personal,Normal,30,Sunday,15:15,15:45,user1
+2428,Wash dishes,Personal,Normal,30,Wednesday,15:30,16:00,user1
+2429,Grocery shopping,Personal,More Important,60,Wednesday,17:30,18:30,user1
+2430,Cross-department alignment,Work,Important,45,Thursday,15:45,16:30,user1
+2431,Home workout,Personal,Normal,45,Saturday,8:30,9:15,user1
+2432,Listen to music,Personal,Less Important,30,Tuesday,20:15,20:45,user1
+2433,Take notes from an eBook,Education,Important,30,Thursday,12:00,12:30,user1
+2434,Hang out at a cafe,Personal,Less Important,60,Saturday,15:15,16:15,user1
+2435,Sketch a design,Personal,Normal,60,Saturday,17:45,18:45,user1
+2436,Summarize a chapter,Education,More Important,60,Wednesday,18:00,19:00,user1
+2437,Strategy discussion,Work,Important,60,Thursday,11:15,12:15,user1
+2438,Weekly team briefing,Work,Important,60,Wednesday,10:30,11:30,user1
+2439,Stretching session,Personal,Normal,60,Monday,7:30,8:30,user1
+2440,Read comics,Personal,Less Important,45,Thursday,18:45,19:30,user1
+2441,Play games,Personal,Less Important,60,Tuesday,20:00,21:00,user1
+2442,Evening walk,Personal,Normal,60,Thursday,19:00,20:00,user1
+2443,Pick up package,Personal,More Important,60,Tuesday,17:15,18:15,user1
+2444,Join an online gaming session,Personal,Less Important,60,Thursday,19:00,20:00,user1
+2445,Complete a coding challenge,Education,Important,45,Wednesday,14:30,15:15,user1
+2446,Write a summary of today's learnings,Education,More Important,30,Sunday,17:15,17:45,user1
+2447,Hang out at a cafe,Personal,Less Important,60,Sunday,15:00,16:00,user1
+2448,Record a song,Personal,Normal,60,Thursday,19:30,20:30,user1
+2449,Solve math problems,Education,More Important,60,Sunday,20:30,21:30,user1
+2450,Write short story,Personal,Normal,30,Monday,15:00,15:30,user1
+2451,Home workout,Personal,Normal,45,Monday,8:15,9:00,user1
+2452,Attend webinar,Education,Important,45,Friday,15:00,15:45,user1
+2453,Online course session,Education,Important,45,Sunday,12:15,13:00,user1
+2454,Practice coding,Education,Important,30,Sunday,11:00,11:30,user1
+2455,Plan weekend gathering,Personal,Less Important,30,Tuesday,15:00,15:30,user1
+2456,Attend a birthday party,Personal,Less Important,45,Tuesday,18:45,19:30,user1
+2457,Evening gym workout,Personal,Normal,30,Monday,17:00,17:30,user1
+2458,Join an online gaming session,Personal,Less Important,60,Friday,19:45,20:45,user1
+2459,Swimming,Personal,Normal,30,Monday,6:15,6:45,user1
+2460,Code review session,Work,More Important,30,Monday,15:00,15:30,user1
+2461,Get a haircut,Personal,More Important,60,Sunday,11:30,12:30,user1
+2462,Read comics,Personal,Less Important,45,Tuesday,17:45,18:30,user1
+2463,Read research paper,Education,Important,30,Saturday,10:30,11:00,user1
+2464,Wash dishes,Personal,Normal,30,Wednesday,15:15,15:45,user1
+2465,Review lecture notes,Education,More Important,45,Wednesday,12:15,13:00,user1
+2466,Design a presentation,Work,More Important,60,Monday,9:30,10:30,user1
+2467,Stream live concert,Personal,Less Important,45,Saturday,19:45,20:30,user1
+2468,Attend a birthday party,Personal,Less Important,45,Tuesday,21:15,22:00,user1
+2469,Organize closet,Personal,Normal,30,Thursday,16:15,16:45,user1
+2470,Hang out at a cafe,Personal,Less Important,30,Sunday,15:45,16:15,user1
+2471,Plan weekend gathering,Personal,Less Important,60,Monday,16:45,17:45,user1
+2472,Design a presentation,Work,More Important,30,Wednesday,12:45,13:15,user1
+2473,Explore new tools,Education,Important,30,Friday,10:15,10:45,user1
+2474,Play games,Personal,Less Important,60,Saturday,18:45,19:45,user1
+2475,Learn Python,Education,Important,30,Friday,10:15,10:45,user1
+2476,Listen to music,Personal,Less Important,30,Sunday,19:15,19:45,user1
+2477,Write a poem,Personal,Normal,30,Wednesday,11:30,12:00,user1
+2478,Take notes from an eBook,Education,Important,45,Wednesday,16:45,17:30,user1
+2479,Stream live concert,Personal,Less Important,60,Friday,20:45,21:45,user1
+2480,Plan weekend gathering,Personal,Less Important,45,Tuesday,14:15,15:00,user1
+2481,Write short story,Personal,Normal,30,Wednesday,15:30,16:00,user1
+2482,One-on-one with supervisor,Work,Important,45,Thursday,15:00,15:45,user1
+2483,Summarize a chapter,Education,More Important,45,Thursday,15:45,16:30,user1
+2484,Watch a movie,Personal,Less Important,30,Thursday,18:45,19:15,user1
+2485,Dust shelves,Personal,Normal,45,Monday,13:15,14:00,user1
+2486,Take notes from an eBook,Education,Important,60,Saturday,14:30,15:30,user1
+2487,Write short story,Personal,Normal,60,Sunday,15:15,16:15,user1
+2488,Swimming,Personal,Normal,45,Saturday,8:00,8:45,user1
+2489,Evening walk,Personal,Normal,30,Sunday,17:15,17:45,user1
+2490,Paint a picture,Personal,Normal,60,Saturday,17:00,18:00,user1
+2491,Chat with neighbors,Personal,Less Important,45,Thursday,18:15,19:00,user1
+2492,Visit pharmacy,Personal,More Important,60,Saturday,14:30,15:30,user1
+2493,Watch a movie,Personal,Less Important,60,Sunday,20:00,21:00,user1
+2494,Learn Python,Education,Important,45,Friday,10:45,11:30,user1
+2495,Respond to work emails,Work,More Important,45,Saturday,10:15,11:00,user1
+2496,Take notes from an eBook,Education,Important,30,Saturday,12:00,12:30,user1
+2497,Test new software features,Work,More Important,30,Sunday,14:15,14:45,user1
+2498,Do the laundry,Personal,Normal,45,Friday,16:15,17:00,user1
+2499,Join an online gaming session,Personal,Less Important,30,Thursday,20:30,21:00,user1
+2500,Visit pharmacy,Personal,More Important,45,Saturday,10:30,11:15,user1
+2501,Play games,Personal,Less Important,60,Friday,18:00,19:00,user1
+2502,Evening walk,Personal,Normal,60,Thursday,18:45,19:45,user1
+2503,Drop off donation,Personal,More Important,60,Friday,16:45,17:45,user1
+2504,Read a book,Education,More Important,30,Saturday,11:00,11:30,user1
+2505,Hang out at a cafe,Personal,Less Important,60,Sunday,16:45,17:45,user1
+2506,Solve math problems,Education,More Important,45,Wednesday,18:00,18:45,user1
+2507,Join an online gaming session,Personal,Less Important,60,Saturday,18:45,19:45,user1
+2508,Evening gym workout,Personal,Normal,45,Thursday,19:15,20:00,user1
+2509,Practice a new language,Education,Important,30,Saturday,19:15,19:45,user1
+2510,Water the plants,Personal,Normal,60,Saturday,7:30,8:30,user1
+2511,Buy stationery,Personal,More Important,45,Thursday,17:30,18:15,user1
+2512,Dinner with friends,Personal,Less Important,30,Wednesday,21:00,21:30,user1
+2513,Practice a new language,Education,Important,30,Thursday,9:15,9:45,user1
+2514,Clean the bathroom,Personal,Normal,45,Wednesday,12:30,13:15,user1
+2515,Stretching session,Personal,Normal,60,Thursday,6:15,7:15,user1
+2516,Watch a movie,Personal,Less Important,60,Thursday,21:15,22:15,user1
+2517,Explore new tools,Education,Important,30,Friday,9:45,10:15,user1
+2518,Pick up package,Personal,More Important,60,Monday,14:30,15:30,user1
+2519,Clean the kitchen,Personal,Normal,30,Wednesday,18:45,19:15,user1
+2520,Prepare budget report,Work,More Important,45,Tuesday,15:15,16:00,user1
+2521,Take online quiz,Education,More Important,60,Thursday,11:45,12:45,user1
+2522,Prepare budget report,Work,More Important,30,Wednesday,14:00,14:30,user1
+2523,Solve math problems,Education,More Important,45,Friday,10:00,10:45,user1
+2524,Chat with neighbors,Personal,Less Important,45,Sunday,19:15,20:00,user1
+2525,Dinner with friends,Personal,Less Important,45,Saturday,21:15,22:00,user1
+2526,Water the plants,Personal,Normal,30,Monday,7:30,8:00,user1
+2527,Write short story,Personal,Normal,30,Sunday,15:45,16:15,user1
+2528,Hang out at a cafe,Personal,Less Important,60,Monday,17:15,18:15,user1
+2529,Stretching session,Personal,Normal,30,Wednesday,7:30,8:00,user1
+2530,Vacuum the floor,Personal,Normal,45,Tuesday,13:45,14:30,user1
+2531,Paint a picture,Personal,Normal,45,Sunday,18:45,19:30,user1
+2532,Read research paper,Education,Important,45,Sunday,19:30,20:15,user1
+2533,Renew ID card,Personal,More Important,60,Saturday,14:15,15:15,user1
+2534,Take online quiz,Education,More Important,45,Monday,13:00,13:45,user1
+2535,Cycling,Personal,Normal,45,Friday,7:45,8:30,user1
+2536,Product demo with client,Work,Important,45,Thursday,13:45,14:30,user1
+2537,Visit the bank,Personal,More Important,30,Friday,10:30,11:00,user1
+2538,Mop the floor,Personal,Normal,30,Saturday,15:45,16:15,user1
+2539,Drop off donation,Personal,More Important,30,Saturday,16:45,17:15,user1
+2540,Drop off donation,Personal,More Important,60,Wednesday,11:30,12:30,user1
+2541,Write short story,Personal,Normal,45,Thursday,10:00,10:45,user1
+2542,Prepare budget report,Work,More Important,60,Friday,11:45,12:45,user1
+2543,Code review session,Work,More Important,60,Thursday,14:30,15:30,user1
+2544,Coffee with a friend,Personal,Less Important,30,Tuesday,15:30,16:00,user1
+2545,Join an online gaming session,Personal,Less Important,60,Tuesday,22:15,23:15,user1
+2546,Complete a coding challenge,Education,Important,30,Sunday,14:15,14:45,user1
+2547,Evening gym workout,Personal,Normal,30,Monday,17:45,18:15,user1
+2548,Read research paper,Education,Important,60,Saturday,20:45,21:45,user1
+2549,Solve math problems,Education,More Important,60,Saturday,13:45,14:45,user1
+2550,Swimming,Personal,Normal,60,Tuesday,7:30,8:30,user1
+2551,Organize closet,Personal,Normal,60,Monday,13:30,14:30,user1
+2552,Write a blog post,Personal,Normal,30,Monday,15:15,15:45,user1
+2553,Pick up package,Personal,More Important,30,Monday,12:15,12:45,user1
+2554,Home workout,Personal,Normal,30,Tuesday,6:15,6:45,user1
+2555,Product demo with client,Work,Important,45,Friday,11:15,12:00,user1
+2556,Create flashcards for revision,Education,More Important,30,Friday,10:45,11:15,user1
+2557,Design a presentation,Work,More Important,60,Sunday,17:30,18:30,user1
+2558,Coffee with a friend,Personal,Less Important,45,Saturday,16:15,17:00,user1
+2559,Write a blog post,Personal,Normal,30,Friday,16:15,16:45,user1
+2560,Update project status,Work,More Important,60,Sunday,9:00,10:00,user1
+2561,Read a technical article,Education,Important,60,Wednesday,12:00,13:00,user1
+2562,Swimming,Personal,Normal,45,Saturday,7:45,8:30,user1
+2563,Read comics,Personal,Less Important,30,Sunday,21:00,21:30,user1
+2564,Write short story,Personal,Normal,30,Tuesday,11:15,11:45,user1
+2565,Update project status,Work,More Important,60,Monday,15:15,16:15,user1
+2566,Write a summary of today's learnings,Education,More Important,30,Thursday,18:45,19:15,user1
+2567,Evening walk,Personal,Normal,45,Saturday,18:45,19:30,user1
+2568,Watch YouTube,Personal,Less Important,60,Saturday,21:45,22:45,user1
+2569,Read research paper,Education,Important,60,Thursday,10:00,11:00,user1
+2570,Read research paper,Education,Important,60,Saturday,17:45,18:45,user1
+2571,Explore new tools,Education,Important,30,Tuesday,14:00,14:30,user1
+2572,Call family,Personal,Less Important,60,Friday,18:15,19:15,user1
+2573,Code review session,Work,More Important,60,Friday,11:15,12:15,user1
+2574,Watch YouTube,Personal,Less Important,30,Wednesday,21:15,21:45,user1
+2575,Make a scrapbook,Personal,Normal,30,Tuesday,17:15,17:45,user1
+2576,Summarize a chapter,Education,More Important,60,Friday,15:00,16:00,user1
+2577,Read a book,Education,More Important,60,Tuesday,10:15,11:15,user1
+2578,Stream live concert,Personal,Less Important,30,Sunday,20:15,20:45,user1
+2579,Review lecture notes,Education,More Important,45,Monday,17:30,18:15,user1
+2580,Drop off donation,Personal,More Important,30,Saturday,15:15,15:45,user1
+2581,Yoga session,Personal,Normal,30,Thursday,6:30,7:00,user1
+2582,Weekly team briefing,Work,Important,30,Thursday,10:45,11:15,user1
+2583,Design a presentation,Work,More Important,60,Friday,11:15,12:15,user1
+2584,Clean the kitchen,Personal,Normal,30,Thursday,10:15,10:45,user1
+2585,Evening walk,Personal,Normal,60,Friday,19:15,20:15,user1
+2586,Online course session,Education,Important,30,Sunday,10:30,11:00,user1
+2587,Evening walk,Personal,Normal,45,Saturday,17:15,18:00,user1
+2588,Jogging,Personal,Normal,60,Saturday,5:00,6:00,user1
+2589,Test new software features,Work,More Important,60,Thursday,12:15,13:15,user1
+2590,Respond to work emails,Work,More Important,45,Saturday,9:30,10:15,user1
+2591,Write short story,Personal,Normal,45,Sunday,14:30,15:15,user1
+2592,Paint a picture,Personal,Normal,30,Friday,15:00,15:30,user1
+2593,Summarize a chapter,Education,More Important,60,Wednesday,11:15,12:15,user1
+2594,Cross-department alignment,Work,Important,30,Wednesday,12:00,12:30,user1
+2595,Learn Python,Education,Important,60,Tuesday,9:00,10:00,user1
+2596,Learn Python,Education,Important,60,Monday,13:30,14:30,user1
+2597,Respond to work emails,Work,More Important,60,Monday,10:45,11:45,user1
+2598,Edit a short video,Personal,Normal,60,Friday,18:15,19:15,user1
+2599,Review lecture notes,Education,More Important,60,Saturday,12:30,13:30,user1
+2600,Solve math problems,Education,More Important,45,Monday,15:45,16:30,user1
+2601,Code review session,Work,More Important,30,Friday,11:00,11:30,user1
+2602,Stretching session,Personal,Normal,30,Monday,6:30,7:00,user1
+2603,Plan weekend gathering,Personal,Less Important,60,Friday,16:00,17:00,user1
+2604,Client discussion,Work,Important,60,Sunday,10:30,11:30,user1
+2605,Listen to music,Personal,Less Important,45,Thursday,18:00,18:45,user1
+2606,Cycling,Personal,Normal,30,Tuesday,6:15,6:45,user1
+2607,Visit the bank,Personal,More Important,45,Saturday,13:45,14:30,user1
+2608,Create flashcards for revision,Education,More Important,45,Sunday,16:45,17:30,user1
+2609,Record a song,Personal,Normal,30,Friday,18:45,19:15,user1
+2610,Product demo with client,Work,Important,30,Wednesday,10:15,10:45,user1
+2611,Write a summary of today's learnings,Education,More Important,45,Sunday,10:45,11:30,user1
+2612,Buy stationery,Personal,More Important,30,Monday,10:45,11:15,user1
+2613,Buy stationery,Personal,More Important,60,Saturday,13:45,14:45,user1
+2614,Watch a stand-up comedy,Personal,Less Important,45,Friday,20:15,21:00,user1
+2615,Attend webinar,Education,Important,30,Wednesday,16:00,16:30,user1
+2616,Create flashcards for revision,Education,More Important,30,Sunday,14:15,14:45,user1
+2617,Cycling,Personal,Normal,60,Thursday,7:15,8:15,user1
+2618,Jogging,Personal,Normal,45,Thursday,7:45,8:30,user1
+2619,Vacuum the floor,Personal,Normal,60,Monday,10:15,11:15,user1
+2620,Jogging,Personal,Normal,45,Saturday,7:30,8:15,user1
+2621,Respond to work emails,Work,More Important,60,Wednesday,16:30,17:30,user1
+2622,Design a presentation,Work,More Important,45,Monday,11:30,12:15,user1
+2623,Chat with neighbors,Personal,Less Important,60,Monday,18:30,19:30,user1
+2624,Client discussion,Work,Important,30,Monday,15:00,15:30,user1
+2625,Sketch a design,Personal,Normal,30,Monday,15:30,16:00,user1
+2626,Reply to messages,Personal,Less Important,30,Tuesday,20:00,20:30,user1
+2627,Write a blog post,Personal,Normal,30,Thursday,13:00,13:30,user1
+2628,Read a technical article,Education,Important,60,Saturday,16:00,17:00,user1
+2629,Clean the kitchen,Personal,Normal,60,Wednesday,15:00,16:00,user1
+2630,Call family,Personal,Less Important,30,Sunday,18:00,18:30,user1
+2631,Jogging,Personal,Normal,45,Friday,6:00,6:45,user1
+2632,Renew ID card,Personal,More Important,60,Tuesday,13:00,14:00,user1
+2633,Cross-department alignment,Work,Important,30,Thursday,11:00,11:30,user1
+2634,Vacuum the floor,Personal,Normal,30,Thursday,11:30,12:00,user1
+2635,Listen to music,Personal,Less Important,60,Sunday,18:15,19:15,user1
+2636,One-on-one with supervisor,Work,Important,45,Tuesday,11:45,12:30,user1
+2637,Jogging,Personal,Normal,60,Tuesday,7:15,8:15,user1
+2638,Record a song,Personal,Normal,30,Monday,18:30,19:00,user1
+2639,Complete a coding challenge,Education,Important,30,Thursday,15:45,16:15,user1
+2640,Reply to messages,Personal,Less Important,30,Wednesday,20:15,20:45,user1
+2641,Swimming,Personal,Normal,60,Monday,6:00,7:00,user1
+2642,One-on-one with supervisor,Work,Important,60,Friday,12:45,13:45,user1
+2643,Watch a movie,Personal,Less Important,45,Saturday,18:15,19:00,user1
+2644,Design a presentation,Work,More Important,30,Thursday,13:00,13:30,user1
+2645,Read research paper,Education,Important,30,Saturday,15:30,16:00,user1
+2646,Design a presentation,Work,More Important,30,Sunday,17:00,17:30,user1
+2647,Clean the bathroom,Personal,Normal,45,Sunday,13:30,14:15,user1
+2648,Join online group chat,Personal,Less Important,30,Tuesday,21:45,22:15,user1
+2649,Dinner with friends,Personal,Less Important,60,Saturday,18:15,19:15,user1
+2650,Watch YouTube,Personal,Less Important,45,Thursday,20:45,21:30,user1
+2651,Clean the bathroom,Personal,Normal,45,Saturday,12:30,13:15,user1
+2652,Grocery shopping,Personal,More Important,30,Friday,19:00,19:30,user1
+2653,Join an online gaming session,Personal,Less Important,45,Thursday,20:15,21:00,user1
+2654,Edit a short video,Personal,Normal,45,Thursday,18:00,18:45,user1
+2655,Wash dishes,Personal,Normal,30,Sunday,19:15,19:45,user1
+2656,Visit the bank,Personal,More Important,45,Friday,11:45,12:30,user1
+2657,Create flashcards for revision,Education,More Important,60,Thursday,13:00,14:00,user1
+2658,Mail documents,Personal,More Important,45,Thursday,14:45,15:30,user1
+2659,Watch YouTube,Personal,Less Important,60,Tuesday,19:00,20:00,user1
+2660,Attend webinar,Education,Important,30,Monday,14:00,14:30,user1
+2661,Home workout,Personal,Normal,60,Thursday,7:45,8:45,user1
+2662,Take notes from an eBook,Education,Important,60,Saturday,12:30,13:30,user1
+2663,Watch online tutorial,Education,Important,30,Thursday,21:15,21:45,user1
+2664,Evening walk,Personal,Normal,60,Monday,19:00,20:00,user1
+2665,Strategy discussion,Work,Important,45,Thursday,13:00,13:45,user1
+2666,Stretching session,Personal,Normal,60,Tuesday,6:30,7:30,user1
+2667,Make a scrapbook,Personal,Normal,30,Thursday,17:15,17:45,user1
+2668,Cross-department alignment,Work,Important,45,Wednesday,13:00,13:45,user1
+2669,Drop off donation,Personal,More Important,45,Tuesday,10:15,11:00,user1
+2670,Client discussion,Work,Important,60,Wednesday,12:45,13:45,user1
+2671,Product demo with client,Work,Important,45,Wednesday,12:30,13:15,user1
+2672,Paint a picture,Personal,Normal,30,Wednesday,16:45,17:15,user1
+2673,Watch a movie,Personal,Less Important,60,Monday,20:00,21:00,user1
+2674,Write a blog post,Personal,Normal,60,Tuesday,16:30,17:30,user1
+2675,Mop the floor,Personal,Normal,45,Monday,14:30,15:15,user1
+2676,Weekly team briefing,Work,Important,30,Tuesday,10:45,11:15,user1
+2677,Attend webinar,Education,Important,60,Friday,11:30,12:30,user1
+2678,Chat with neighbors,Personal,Less Important,45,Monday,17:30,18:15,user1
+2679,Explore new tools,Education,Important,60,Monday,9:45,10:45,user1
+2680,Dinner with friends,Personal,Less Important,60,Thursday,18:15,19:15,user1
+2681,Take notes from an eBook,Education,Important,30,Sunday,20:45,21:15,user1
+2682,Online course session,Education,Important,45,Saturday,8:00,8:45,user1
+2683,Stream live concert,Personal,Less Important,45,Monday,20:15,21:00,user1
+2684,Listen to music,Personal,Less Important,45,Tuesday,19:45,20:30,user1
+2685,Explore new tools,Education,Important,30,Saturday,13:00,13:30,user1
+2686,Sketch a design,Personal,Normal,60,Monday,18:45,19:45,user1
+2687,Hang out at a cafe,Personal,Less Important,45,Sunday,17:00,17:45,user1
+2688,Evening walk,Personal,Normal,30,Monday,17:00,17:30,user1
+2689,Watch online tutorial,Education,Important,60,Sunday,11:00,12:00,user1
+2690,Respond to work emails,Work,More Important,30,Monday,9:15,9:45,user1
+2691,Practice a new language,Education,Important,60,Friday,10:00,11:00,user1
+2692,Evening walk,Personal,Normal,60,Wednesday,18:30,19:30,user1
+2693,Clean the bathroom,Personal,Normal,30,Tuesday,14:15,14:45,user1
+2694,Pick up package,Personal,More Important,60,Tuesday,11:15,12:15,user1
+2695,Organize closet,Personal,Normal,30,Sunday,16:45,17:15,user1
+2696,Read research paper,Education,Important,60,Friday,21:00,22:00,user1
+2697,Read a technical article,Education,Important,45,Monday,20:15,21:00,user1
+2698,Watch a movie,Personal,Less Important,30,Thursday,21:00,21:30,user1
+2699,Home workout,Personal,Normal,45,Wednesday,7:45,8:30,user1
+2700,Drop off donation,Personal,More Important,30,Friday,16:15,16:45,user1
+2701,Visit the bank,Personal,More Important,60,Monday,9:00,10:00,user1
+2702,Wash dishes,Personal,Normal,45,Sunday,14:45,15:30,user1
+2703,Paint a picture,Personal,Normal,60,Friday,13:00,14:00,user1
+2704,Respond to work emails,Work,More Important,45,Monday,11:30,12:15,user1
+2705,Clean the bathroom,Personal,Normal,30,Friday,15:45,16:15,user1
+2706,Sketch a design,Personal,Normal,45,Sunday,14:00,14:45,user1
+2707,Test new software features,Work,More Important,60,Thursday,10:30,11:30,user1
+2708,Test new software features,Work,More Important,60,Thursday,9:00,10:00,user1
+2709,Buy stationery,Personal,More Important,45,Sunday,10:45,11:30,user1
+2710,Vacuum the floor,Personal,Normal,45,Wednesday,17:45,18:30,user1
+2711,Water the plants,Personal,Normal,30,Saturday,8:45,9:15,user1
+2712,Evening walk,Personal,Normal,60,Tuesday,19:00,20:00,user1
+2713,Take notes from an eBook,Education,Important,30,Monday,11:15,11:45,user1
+2714,Prepare budget report,Work,More Important,60,Sunday,13:15,14:15,user1
+2715,Do the laundry,Personal,Normal,45,Monday,17:15,18:00,user1
+2716,Buy stationery,Personal,More Important,45,Wednesday,11:00,11:45,user1
+2717,Test new software features,Work,More Important,45,Wednesday,10:45,11:30,user1
+2718,Paint a picture,Personal,Normal,60,Sunday,13:45,14:45,user1
+2719,Stream live concert,Personal,Less Important,60,Monday,21:45,22:45,user1
+2720,Read research paper,Education,Important,60,Thursday,11:30,12:30,user1
+2721,Buy stationery,Personal,More Important,45,Tuesday,11:30,12:15,user1
+2722,Dinner with friends,Personal,Less Important,60,Sunday,21:30,22:30,user1
+2723,Clean the bathroom,Personal,Normal,30,Tuesday,13:30,14:00,user1
+2724,Swimming,Personal,Normal,30,Sunday,7:00,7:30,user1
+2725,Mop the floor,Personal,Normal,45,Monday,15:45,16:30,user1
+2726,Practice coding,Education,Important,60,Friday,21:45,22:45,user1
+2727,Learn Python,Education,Important,60,Monday,10:30,11:30,user1
+2728,Attend webinar,Education,Important,45,Monday,15:45,16:30,user1
+2729,Reply to messages,Personal,Less Important,60,Tuesday,18:30,19:30,user1
+2730,Read a technical article,Education,Important,30,Thursday,11:15,11:45,user1
+2731,Create flashcards for revision,Education,More Important,60,Monday,18:45,19:45,user1
+2732,Read research paper,Education,Important,60,Saturday,10:00,11:00,user1
+2733,One-on-one with supervisor,Work,Important,30,Thursday,15:45,16:15,user1
+2734,Learn Python,Education,Important,60,Tuesday,9:45,10:45,user1
+2735,Attend a birthday party,Personal,Less Important,45,Friday,17:15,18:00,user1
+2736,Yoga session,Personal,Normal,30,Thursday,7:45,8:15,user1
+2737,Join online group chat,Personal,Less Important,30,Thursday,20:30,21:00,user1
+2738,Review lecture notes,Education,More Important,45,Tuesday,8:00,8:45,user1
+2739,Clean the bathroom,Personal,Normal,45,Saturday,11:30,12:15,user1
+2740,Code review session,Work,More Important,30,Saturday,11:30,12:00,user1
+2741,Mop the floor,Personal,Normal,30,Thursday,12:15,12:45,user1
+2742,Design a presentation,Work,More Important,30,Sunday,15:45,16:15,user1
+2743,Water the plants,Personal,Normal,45,Saturday,8:30,9:15,user1
+2744,Watch online tutorial,Education,Important,30,Saturday,15:30,16:00,user1
+2745,Code review session,Work,More Important,45,Thursday,14:00,14:45,user1
+2746,Write a summary of today's learnings,Education,More Important,30,Tuesday,14:15,14:45,user1
+2747,Chat with neighbors,Personal,Less Important,30,Sunday,18:00,18:30,user1
+2748,Stretching session,Personal,Normal,30,Sunday,7:30,8:00,user1
+2749,Take online quiz,Education,More Important,45,Monday,20:30,21:15,user1
+2750,Yoga session,Personal,Normal,30,Monday,6:00,6:30,user1
+2751,Dust shelves,Personal,Normal,60,Wednesday,16:30,17:30,user1
+2752,Attend a birthday party,Personal,Less Important,45,Monday,18:00,18:45,user1
+2753,Buy stationery,Personal,More Important,30,Thursday,16:30,17:00,user1
+2754,Make a scrapbook,Personal,Normal,60,Sunday,18:00,19:00,user1
+2755,Water the plants,Personal,Normal,30,Monday,8:30,9:00,user1
+2756,Review lecture notes,Education,More Important,60,Thursday,15:00,16:00,user1
+2757,Practice a new language,Education,Important,45,Monday,11:45,12:30,user1
+2758,Write short story,Personal,Normal,30,Sunday,10:30,11:00,user1
+2759,Renew ID card,Personal,More Important,30,Thursday,13:30,14:00,user1
+2760,Practice a new language,Education,Important,60,Friday,8:45,9:45,user1
+2761,Mop the floor,Personal,Normal,60,Friday,13:15,14:15,user1
+2762,Write short story,Personal,Normal,60,Tuesday,16:15,17:15,user1
+2763,Code review session,Work,More Important,45,Thursday,11:45,12:30,user1
+2764,Team meeting,Work,Important,30,Monday,10:15,10:45,user1
+2765,Watch a stand-up comedy,Personal,Less Important,45,Sunday,20:45,21:30,user1
+2766,Project sync-up,Work,Important,30,Wednesday,10:00,10:30,user1
+2767,Design a presentation,Work,More Important,60,Monday,14:15,15:15,user1
+2768,Renew ID card,Personal,More Important,30,Saturday,9:15,9:45,user1
+2769,Reply to messages,Personal,Less Important,45,Sunday,19:15,20:00,user1
+2770,Renew ID card,Personal,More Important,45,Sunday,14:15,15:00,user1
+2771,Prepare budget report,Work,More Important,60,Saturday,9:00,10:00,user1
+2772,Plan weekend gathering,Personal,Less Important,30,Tuesday,14:30,15:00,user1
+2773,Take online quiz,Education,More Important,60,Sunday,17:45,18:45,user1
+2774,Mail documents,Personal,More Important,30,Wednesday,12:45,13:15,user1
+2775,Watch a movie,Personal,Less Important,60,Sunday,20:30,21:30,user1
+2776,Watch online tutorial,Education,Important,45,Tuesday,16:30,17:15,user1
+2777,Evening gym workout,Personal,Normal,60,Tuesday,19:00,20:00,user1
+2778,Read research paper,Education,Important,45,Sunday,21:00,21:45,user1
+2779,Write a blog post,Personal,Normal,60,Sunday,17:00,18:00,user1
+2780,Do the laundry,Personal,Normal,30,Monday,14:30,15:00,user1
+2781,Wash dishes,Personal,Normal,30,Saturday,14:45,15:15,user1
+2782,Drop off donation,Personal,More Important,45,Monday,10:00,10:45,user1
+2783,Coffee with a friend,Personal,Less Important,45,Sunday,17:00,17:45,user1
+2784,Update project status,Work,More Important,60,Monday,13:00,14:00,user1
+2785,Online course session,Education,Important,60,Thursday,11:45,12:45,user1
+2786,Watch online tutorial,Education,Important,45,Tuesday,13:30,14:15,user1
+2787,Respond to work emails,Work,More Important,45,Friday,16:00,16:45,user1
+2788,Sketch a design,Personal,Normal,60,Tuesday,18:00,19:00,user1
+2789,Solve math problems,Education,More Important,60,Wednesday,20:00,21:00,user1
+2790,Listen to music,Personal,Less Important,30,Thursday,20:45,21:15,user1
+2791,Swimming,Personal,Normal,45,Thursday,8:30,9:15,user1
+2792,Learn Python,Education,Important,60,Saturday,12:45,13:45,user1
+2793,Play guitar,Personal,Normal,60,Tuesday,20:15,21:15,user1
+2794,Read a book,Education,More Important,30,Wednesday,13:15,13:45,user1
+2795,Read a book,Education,More Important,30,Tuesday,16:00,16:30,user1
+2796,Hang out at a cafe,Personal,Less Important,30,Friday,17:45,18:15,user1
+2797,Create flashcards for revision,Education,More Important,30,Friday,18:45,19:15,user1
+2798,Solve math problems,Education,More Important,60,Monday,14:00,15:00,user1
+2799,Practice coding,Education,Important,45,Thursday,19:15,20:00,user1
+2800,Read research paper,Education,Important,30,Monday,20:00,20:30,user1
+2801,Create flashcards for revision,Education,More Important,45,Wednesday,10:00,10:45,user1
+2802,Project sync-up,Work,Important,45,Tuesday,10:45,11:30,user1
+2803,Record a song,Personal,Normal,45,Sunday,19:45,20:30,user1
+2804,Plan weekend gathering,Personal,Less Important,60,Monday,17:15,18:15,user1
+2805,Play guitar,Personal,Normal,45,Thursday,18:45,19:30,user1
+2806,Reply to messages,Personal,Less Important,30,Thursday,20:15,20:45,user1
+2807,Watch a movie,Personal,Less Important,45,Tuesday,18:15,19:00,user1
+2808,Get a haircut,Personal,More Important,60,Saturday,16:45,17:45,user1
+2809,Clean the bathroom,Personal,Normal,60,Saturday,17:45,18:45,user1
+2810,Hang out at a cafe,Personal,Less Important,45,Thursday,15:00,15:45,user1
+2811,Summarize a chapter,Education,More Important,45,Sunday,10:00,10:45,user1
+2812,Record a song,Personal,Normal,60,Saturday,18:00,19:00,user1
+2813,Call family,Personal,Less Important,45,Friday,19:15,20:00,user1
+2814,Explore new tools,Education,Important,45,Saturday,16:30,17:15,user1
+2815,Visit pharmacy,Personal,More Important,30,Tuesday,16:30,17:00,user1
+2816,Project sync-up,Work,Important,60,Friday,13:00,14:00,user1
+2817,Prepare budget report,Work,More Important,60,Wednesday,15:45,16:45,user1
+2818,Respond to work emails,Work,More Important,30,Monday,13:15,13:45,user1
+2819,Prepare budget report,Work,More Important,60,Sunday,15:15,16:15,user1
+2820,Listen to music,Personal,Less Important,45,Friday,19:45,20:30,user1
+2821,Read a technical article,Education,Important,30,Sunday,15:45,16:15,user1
+2822,Water the plants,Personal,Normal,30,Friday,9:45,10:15,user1
+2823,Edit a short video,Personal,Normal,60,Saturday,20:30,21:30,user1
+2824,Attend webinar,Education,Important,45,Tuesday,14:45,15:30,user1
+2825,Read comics,Personal,Less Important,45,Tuesday,18:15,19:00,user1
+2826,Read comics,Personal,Less Important,60,Monday,20:45,21:45,user1
+2827,Edit a short video,Personal,Normal,45,Friday,17:30,18:15,user1
+2828,Take online quiz,Education,More Important,60,Saturday,17:30,18:30,user1
+2829,Grocery shopping,Personal,More Important,60,Saturday,11:30,12:30,user1
+2830,Take notes from an eBook,Education,Important,30,Thursday,19:15,19:45,user1
+2831,Mail documents,Personal,More Important,60,Friday,11:15,12:15,user1
+2832,Write a poem,Personal,Normal,45,Sunday,12:30,13:15,user1
+2833,Read a book,Education,More Important,60,Sunday,12:00,13:00,user1
+2834,Grocery shopping,Personal,More Important,45,Wednesday,17:15,18:00,user1
+2835,Weekly team briefing,Work,Important,60,Sunday,10:00,11:00,user1
+2836,Drop off donation,Personal,More Important,60,Wednesday,10:15,11:15,user1
+2837,Renew ID card,Personal,More Important,45,Monday,11:45,12:30,user1
+2838,Practice coding,Education,Important,30,Monday,12:00,12:30,user1
+2839,Yoga session,Personal,Normal,60,Friday,7:00,8:00,user1
+2840,Watch a stand-up comedy,Personal,Less Important,60,Monday,20:45,21:45,user1
+2841,Drop off donation,Personal,More Important,60,Tuesday,9:00,10:00,user1
+2842,Drop off donation,Personal,More Important,30,Friday,9:15,9:45,user1
+2843,Read a book,Education,More Important,60,Friday,13:45,14:45,user1
+2844,Organize closet,Personal,Normal,45,Sunday,18:30,19:15,user1
+2845,Paint a picture,Personal,Normal,60,Tuesday,14:30,15:30,user1
+2846,Watch a stand-up comedy,Personal,Less Important,45,Saturday,21:30,22:15,user1
+2847,Mop the floor,Personal,Normal,45,Saturday,14:30,15:15,user1
+2848,Write report,Work,More Important,45,Monday,9:00,9:45,user1
+2849,Jogging,Personal,Normal,45,Saturday,5:30,6:15,user1
+2850,Explore new tools,Education,Important,30,Tuesday,10:30,11:00,user1
+2851,Read comics,Personal,Less Important,45,Sunday,21:30,22:15,user1
+2852,Play games,Personal,Less Important,30,Monday,18:45,19:15,user1
+2853,Watch online tutorial,Education,Important,30,Tuesday,17:30,18:00,user1
+2854,Write short story,Personal,Normal,30,Sunday,17:15,17:45,user1
+2855,Complete a coding challenge,Education,Important,60,Friday,11:30,12:30,user1
+2856,Take online quiz,Education,More Important,45,Monday,20:45,21:30,user1
+2857,Evening walk,Personal,Normal,30,Friday,19:00,19:30,user1
+2858,Organize closet,Personal,Normal,30,Saturday,16:30,17:00,user1
+2859,Join online group chat,Personal,Less Important,30,Friday,21:45,22:15,user1
+2860,Chat with neighbors,Personal,Less Important,30,Sunday,18:45,19:15,user1
+2861,Make a scrapbook,Personal,Normal,60,Wednesday,14:00,15:00,user1
+2862,Visit the bank,Personal,More Important,45,Saturday,10:15,11:00,user1
+2863,Weekly team briefing,Work,Important,45,Friday,9:00,9:45,user1
+2864,Design a presentation,Work,More Important,45,Sunday,12:15,13:00,user1
+2865,Weekly team briefing,Work,Important,30,Thursday,10:15,10:45,user1
+2866,Watch online tutorial,Education,Important,30,Monday,15:15,15:45,user1
+2867,Coffee with a friend,Personal,Less Important,60,Sunday,16:15,17:15,user1
+2868,Attend webinar,Education,Important,30,Sunday,16:45,17:15,user1
+2869,Attend webinar,Education,Important,60,Friday,12:30,13:30,user1
+2870,Read a technical article,Education,Important,45,Friday,19:15,20:00,user1
+2871,Solve math problems,Education,More Important,30,Thursday,19:45,20:15,user1
+2872,Coffee with a friend,Personal,Less Important,60,Sunday,14:15,15:15,user1
+2873,Plan weekend gathering,Personal,Less Important,30,Sunday,17:00,17:30,user1
+2874,Take online quiz,Education,More Important,30,Saturday,15:15,15:45,user1
+2875,Clean the kitchen,Personal,Normal,60,Thursday,12:15,13:15,user1
+2876,Summarize a chapter,Education,More Important,60,Wednesday,16:45,17:45,user1
+2877,Read a book,Education,More Important,45,Monday,15:45,16:30,user1
+2878,Read a technical article,Education,Important,60,Wednesday,12:30,13:30,user1
+2879,Solve math problems,Education,More Important,45,Monday,20:30,21:15,user1
+2880,Watch a movie,Personal,Less Important,45,Tuesday,18:45,19:30,user1
+2881,Update project status,Work,More Important,60,Saturday,12:00,13:00,user1
+2882,Write report,Work,More Important,60,Friday,13:45,14:45,user1
+2883,Learn Python,Education,Important,45,Saturday,14:30,15:15,user1
+2884,Mail documents,Personal,More Important,60,Tuesday,16:15,17:15,user1
+2885,Join an online gaming session,Personal,Less Important,30,Sunday,19:00,19:30,user1
+2886,Watch a movie,Personal,Less Important,60,Sunday,19:15,20:15,user1
+2887,Strategy discussion,Work,Important,60,Sunday,11:00,12:00,user1
+2888,Hang out at a cafe,Personal,Less Important,60,Tuesday,17:15,18:15,user1
+2889,Stretching session,Personal,Normal,30,Monday,7:45,8:15,user1
+2890,Vacuum the floor,Personal,Normal,45,Saturday,10:15,11:00,user1
+2891,Solve math problems,Education,More Important,60,Thursday,18:00,19:00,user1
+2892,Watch a stand-up comedy,Personal,Less Important,45,Tuesday,19:45,20:30,user1
+2893,Watch a stand-up comedy,Personal,Less Important,45,Thursday,19:00,19:45,user1
+2894,Chat with neighbors,Personal,Less Important,30,Saturday,18:45,19:15,user1
+2895,Practice a new language,Education,Important,30,Sunday,10:45,11:15,user1
+2896,Plan weekend gathering,Personal,Less Important,45,Friday,16:45,17:30,user1
+2897,Record a song,Personal,Normal,45,Sunday,17:15,18:00,user1
+2898,Vacuum the floor,Personal,Normal,60,Sunday,14:30,15:30,user1
+2899,Join online group chat,Personal,Less Important,60,Friday,21:30,22:30,user1
+2900,Listen to music,Personal,Less Important,45,Saturday,21:15,22:00,user1
+2901,Dinner with friends,Personal,Less Important,60,Saturday,19:00,20:00,user1
+2902,Read a technical article,Education,Important,60,Thursday,14:30,15:30,user1
+2903,Attend a birthday party,Personal,Less Important,60,Monday,19:00,20:00,user1
+2904,Attend a birthday party,Personal,Less Important,60,Tuesday,19:15,20:15,user1
+2905,Renew ID card,Personal,More Important,45,Wednesday,11:30,12:15,user1
+2906,Read a book,Education,More Important,60,Thursday,10:45,11:45,user1
+2907,Renew ID card,Personal,More Important,45,Thursday,10:45,11:30,user1
+2908,Evening walk,Personal,Normal,45,Wednesday,18:15,19:00,user1
+2909,Yoga session,Personal,Normal,45,Sunday,6:45,7:30,user1
+2910,Organize closet,Personal,Normal,30,Monday,11:45,12:15,user1
+2911,Evening gym workout,Personal,Normal,45,Thursday,18:15,19:00,user1
+2912,Watch a movie,Personal,Less Important,45,Wednesday,19:15,20:00,user1
+2913,Watch YouTube,Personal,Less Important,30,Monday,22:15,22:45,user1
+2914,Clean the bathroom,Personal,Normal,60,Thursday,12:00,13:00,user1
+2915,Explore new tools,Education,Important,60,Wednesday,11:00,12:00,user1
+2916,Drop off donation,Personal,More Important,30,Monday,16:45,17:15,user1
+2917,Grocery shopping,Personal,More Important,45,Sunday,13:30,14:15,user1
+2918,Get a haircut,Personal,More Important,60,Sunday,12:00,13:00,user1
+2919,Client discussion,Work,Important,30,Sunday,12:00,12:30,user1
+2920,Sketch a design,Personal,Normal,60,Saturday,16:00,17:00,user1
+2921,Explore new tools,Education,Important,60,Tuesday,12:30,13:30,user1
+2922,Strategy discussion,Work,Important,45,Sunday,11:15,12:00,user1
+2923,Cycling,Personal,Normal,60,Tuesday,5:45,6:45,user1
+2924,Evening gym workout,Personal,Normal,30,Wednesday,17:00,17:30,user1
+2925,Vacuum the floor,Personal,Normal,60,Sunday,10:15,11:15,user1
+2926,Organize closet,Personal,Normal,60,Saturday,18:30,19:30,user1
+2927,Renew ID card,Personal,More Important,60,Wednesday,11:15,12:15,user1
+2928,Create flashcards for revision,Education,More Important,45,Saturday,13:30,14:15,user1
+2929,Attend a birthday party,Personal,Less Important,30,Monday,17:15,17:45,user1
+2930,Buy stationery,Personal,More Important,30,Monday,11:00,11:30,user1
+2931,Do the laundry,Personal,Normal,45,Saturday,10:30,11:15,user1
+2932,Prepare budget report,Work,More Important,30,Wednesday,9:30,10:00,user1
+2933,Yoga session,Personal,Normal,45,Monday,7:30,8:15,user1
+2934,Write short story,Personal,Normal,45,Monday,16:30,17:15,user1
+2935,Join online group chat,Personal,Less Important,30,Friday,20:00,20:30,user1
+2936,Wash dishes,Personal,Normal,30,Wednesday,18:45,19:15,user1
+2937,Coffee with a friend,Personal,Less Important,60,Monday,17:30,18:30,user1
+2938,Attend a birthday party,Personal,Less Important,60,Sunday,17:00,18:00,user1
+2939,Sketch a design,Personal,Normal,30,Monday,18:00,18:30,user1
+2940,Mop the floor,Personal,Normal,45,Tuesday,14:45,15:30,user1
+2941,Pick up package,Personal,More Important,30,Friday,15:45,16:15,user1
+2942,Renew ID card,Personal,More Important,45,Wednesday,9:00,9:45,user1
+2943,Stream live concert,Personal,Less Important,60,Tuesday,20:45,21:45,user1
+2944,Explore new tools,Education,Important,60,Wednesday,15:15,16:15,user1
+2945,Code review session,Work,More Important,45,Monday,14:45,15:30,user1
+2946,Clean the bathroom,Personal,Normal,60,Friday,14:00,15:00,user1
+2947,Call family,Personal,Less Important,30,Saturday,18:45,19:15,user1
+2948,Weekly team briefing,Work,Important,60,Monday,10:30,11:30,user1
+2949,Join online group chat,Personal,Less Important,60,Wednesday,20:00,21:00,user1
+2950,Practice a new language,Education,Important,60,Sunday,16:15,17:15,user1
+2951,Prepare budget report,Work,More Important,45,Monday,11:45,12:30,user1
+2952,Stream live concert,Personal,Less Important,60,Monday,20:00,21:00,user1
+2953,Design a presentation,Work,More Important,30,Tuesday,12:00,12:30,user1
+2954,Paint a picture,Personal,Normal,30,Tuesday,15:00,15:30,user1
+2955,Client discussion,Work,Important,45,Saturday,12:15,13:00,user1
+2956,Do the laundry,Personal,Normal,45,Wednesday,11:45,12:30,user1
+2957,Coffee with a friend,Personal,Less Important,45,Thursday,15:00,15:45,user1
+2958,Get a haircut,Personal,More Important,30,Wednesday,16:45,17:15,user1
+2959,Vacuum the floor,Personal,Normal,45,Sunday,17:30,18:15,user1
+2960,Jogging,Personal,Normal,30,Friday,6:30,7:00,user1
+2961,Coffee with a friend,Personal,Less Important,30,Monday,17:00,17:30,user1
+2962,Pick up package,Personal,More Important,45,Wednesday,12:30,13:15,user1
+2963,Watch a stand-up comedy,Personal,Less Important,30,Monday,20:30,21:00,user1
+2964,Product demo with client,Work,Important,60,Sunday,12:45,13:45,user1
+2965,Plan weekend gathering,Personal,Less Important,30,Saturday,17:30,18:00,user1
+2966,Chat with neighbors,Personal,Less Important,45,Wednesday,19:00,19:45,user1
+2967,Evening gym workout,Personal,Normal,45,Friday,18:30,19:15,user1
+2968,Watch a stand-up comedy,Personal,Less Important,45,Saturday,20:15,21:00,user1
+2969,Water the plants,Personal,Normal,45,Saturday,9:00,9:45,user1
+2970,Weekly team briefing,Work,Important,45,Friday,9:15,10:00,user1
+2971,Team meeting,Work,Important,45,Thursday,14:30,15:15,user1
+2972,Evening walk,Personal,Normal,30,Sunday,19:00,19:30,user1
+2973,Cross-department alignment,Work,Important,45,Saturday,14:45,15:30,user1
+2974,Hang out at a cafe,Personal,Less Important,30,Friday,15:15,15:45,user1
+2975,Read a technical article,Education,Important,45,Tuesday,18:15,19:00,user1
+2976,Read research paper,Education,Important,45,Wednesday,13:45,14:30,user1
+2977,Code review session,Work,More Important,45,Tuesday,12:15,13:00,user1
+2978,Buy stationery,Personal,More Important,60,Sunday,14:00,15:00,user1
+2979,Write short story,Personal,Normal,60,Thursday,12:00,13:00,user1
+2980,Design a presentation,Work,More Important,30,Wednesday,11:45,12:15,user1
+2981,Team meeting,Work,Important,60,Wednesday,11:00,12:00,user1
+2982,Review lecture notes,Education,More Important,30,Tuesday,13:30,14:00,user1
+2983,Design a presentation,Work,More Important,60,Thursday,12:30,13:30,user1
+2984,Solve math problems,Education,More Important,45,Monday,15:30,16:15,user1
+2985,Take online quiz,Education,More Important,30,Sunday,15:00,15:30,user1
+2986,Write report,Work,More Important,45,Saturday,10:30,11:15,user1
+2987,Practice coding,Education,Important,30,Sunday,11:15,11:45,user1
+2988,Take notes from an eBook,Education,Important,30,Monday,14:00,14:30,user1
+2989,Call family,Personal,Less Important,60,Friday,20:45,21:45,user1
+2990,Drop off donation,Personal,More Important,45,Monday,13:30,14:15,user1
+2991,Join an online gaming session,Personal,Less Important,45,Tuesday,20:15,21:00,user1
+2992,Buy stationery,Personal,More Important,60,Tuesday,12:00,13:00,user1
+2993,Plan weekend gathering,Personal,Less Important,30,Tuesday,16:45,17:15,user1
+2994,Mop the floor,Personal,Normal,60,Tuesday,11:15,12:15,user1
+2995,Play guitar,Personal,Normal,30,Saturday,17:45,18:15,user1
+2996,Water the plants,Personal,Normal,30,Thursday,9:30,10:00,user1
+2997,Online course session,Education,Important,45,Sunday,17:30,18:15,user1
+2998,Evening walk,Personal,Normal,60,Friday,19:30,20:30,user1
+2999,Do the laundry,Personal,Normal,30,Sunday,17:15,17:45,user1
+3000,Renew ID card,Personal,More Important,60,Sunday,10:30,11:30,user1
+3001,One-on-one with supervisor,Work,Important,60,Tuesday,13:30,14:30,user1
+3002,Watch YouTube,Personal,Less Important,60,Friday,20:30,21:30,user1
+3003,Watch YouTube,Personal,Less Important,30,Saturday,20:15,20:45,user1
+3004,Buy stationery,Personal,More Important,60,Wednesday,12:00,13:00,user1
+3005,Read a technical article,Education,Important,30,Thursday,19:15,19:45,user1
+3006,Evening gym workout,Personal,Normal,60,Monday,18:00,19:00,user1
+3007,Join online group chat,Personal,Less Important,30,Monday,21:45,22:15,user1
+3008,Mail documents,Personal,More Important,60,Wednesday,15:30,16:30,user1
+3009,Water the plants,Personal,Normal,30,Sunday,9:45,10:15,user1
+3010,Design a presentation,Work,More Important,45,Thursday,14:30,15:15,user1
+3011,Evening walk,Personal,Normal,45,Saturday,17:30,18:15,user1
+3012,Take notes from an eBook,Education,Important,30,Sunday,20:30,21:00,user1
+3013,Play guitar,Personal,Normal,30,Tuesday,18:00,18:30,user1
+3014,Create flashcards for revision,Education,More Important,45,Wednesday,16:30,17:15,user1
+3015,Do the laundry,Personal,Normal,30,Saturday,12:30,13:00,user1
+3016,Paint a picture,Personal,Normal,60,Tuesday,18:45,19:45,user1
+3017,Listen to music,Personal,Less Important,60,Thursday,21:45,22:45,user1
+3018,Watch online tutorial,Education,Important,60,Sunday,12:00,13:00,user1
+3019,Stretching session,Personal,Normal,60,Friday,7:30,8:30,user1
+3020,Explore new tools,Education,Important,60,Saturday,14:15,15:15,user1
+3021,Team meeting,Work,Important,45,Wednesday,14:00,14:45,user1
+3022,Drop off donation,Personal,More Important,60,Wednesday,12:15,13:15,user1
+3023,Test new software features,Work,More Important,45,Friday,10:00,10:45,user1
+3024,Take online quiz,Education,More Important,60,Monday,14:00,15:00,user1
+3025,Practice a new language,Education,Important,30,Saturday,17:45,18:15,user1
+3026,Clean the bathroom,Personal,Normal,45,Friday,12:30,13:15,user1
+3027,Design a presentation,Work,More Important,30,Friday,14:45,15:15,user1
+3028,Read research paper,Education,Important,60,Wednesday,16:00,17:00,user1
+3029,Product demo with client,Work,Important,30,Thursday,12:45,13:15,user1
+3030,Stream live concert,Personal,Less Important,30,Wednesday,19:30,20:00,user1
+3031,Home workout,Personal,Normal,60,Sunday,8:15,9:15,user1
+3032,Write a summary of today's learnings,Education,More Important,30,Friday,9:15,9:45,user1
+3033,Dust shelves,Personal,Normal,60,Saturday,10:30,11:30,user1
+3034,Chat with neighbors,Personal,Less Important,30,Thursday,19:30,20:00,user1
+3035,Plan weekend gathering,Personal,Less Important,60,Wednesday,17:15,18:15,user1
+3036,Write a poem,Personal,Normal,45,Monday,13:30,14:15,user1
+3037,Weekly team briefing,Work,Important,30,Sunday,9:00,9:30,user1
+3038,Grocery shopping,Personal,More Important,30,Monday,17:15,17:45,user1
+3039,Client discussion,Work,Important,30,Tuesday,11:30,12:00,user1
+3040,Design a presentation,Work,More Important,60,Thursday,15:45,16:45,user1
+3041,Paint a picture,Personal,Normal,30,Monday,17:00,17:30,user1
+3042,Read a book,Education,More Important,30,Sunday,13:45,14:15,user1
+3043,Wash dishes,Personal,Normal,60,Monday,12:15,13:15,user1
+3044,Clean the bathroom,Personal,Normal,60,Tuesday,17:15,18:15,user1
+3045,Home workout,Personal,Normal,45,Sunday,8:30,9:15,user1
+3046,Renew ID card,Personal,More Important,60,Friday,9:00,10:00,user1
+3047,Cycling,Personal,Normal,45,Monday,6:00,6:45,user1
+3048,Write short story,Personal,Normal,60,Sunday,15:00,16:00,user1
+3049,Yoga session,Personal,Normal,30,Tuesday,6:00,6:30,user1
+3050,Prepare budget report,Work,More Important,60,Friday,14:30,15:30,user1
+3051,Practice coding,Education,Important,60,Wednesday,18:00,19:00,user1
+3052,Online course session,Education,Important,30,Saturday,9:15,9:45,user1
+3053,Take online quiz,Education,More Important,45,Saturday,18:45,19:30,user1
+3054,Grocery shopping,Personal,More Important,60,Friday,15:00,16:00,user1
+3055,Design a presentation,Work,More Important,60,Saturday,9:15,10:15,user1
+3056,Mail documents,Personal,More Important,60,Monday,16:00,17:00,user1
+3057,Watch a stand-up comedy,Personal,Less Important,60,Monday,19:15,20:15,user1
+3058,Complete a coding challenge,Education,Important,60,Saturday,19:15,20:15,user1
+3059,Call family,Personal,Less Important,45,Thursday,19:15,20:00,user1
+3060,Watch a stand-up comedy,Personal,Less Important,60,Tuesday,19:15,20:15,user1
+3061,Do the laundry,Personal,Normal,30,Friday,17:45,18:15,user1
+3062,Jogging,Personal,Normal,60,Wednesday,7:45,8:45,user1
+3063,Home workout,Personal,Normal,60,Saturday,7:45,8:45,user1
+3064,Evening walk,Personal,Normal,45,Monday,17:30,18:15,user1
+3065,Get a haircut,Personal,More Important,60,Monday,11:00,12:00,user1
+3066,Watch YouTube,Personal,Less Important,60,Saturday,21:15,22:15,user1
+3067,Listen to music,Personal,Less Important,45,Saturday,18:45,19:30,user1
+3068,Buy stationery,Personal,More Important,60,Sunday,14:30,15:30,user1
+3069,Coffee with a friend,Personal,Less Important,45,Monday,15:30,16:15,user1
+3070,Home workout,Personal,Normal,60,Monday,6:45,7:45,user1
+3071,One-on-one with supervisor,Work,Important,60,Tuesday,15:45,16:45,user1
+3072,Strategy discussion,Work,Important,60,Saturday,10:00,11:00,user1
+3073,Write a poem,Personal,Normal,30,Tuesday,14:15,14:45,user1
+3074,Visit the bank,Personal,More Important,30,Thursday,12:30,13:00,user1
+3075,Sketch a design,Personal,Normal,60,Sunday,16:00,17:00,user1
+3076,Water the plants,Personal,Normal,45,Thursday,8:45,9:30,user1
+3077,Write a blog post,Personal,Normal,45,Thursday,17:00,17:45,user1
+3078,Read comics,Personal,Less Important,30,Tuesday,19:45,20:15,user1
+3079,Grocery shopping,Personal,More Important,30,Thursday,11:45,12:15,user1
+3080,Join online group chat,Personal,Less Important,60,Thursday,21:30,22:30,user1
+3081,Solve math problems,Education,More Important,45,Wednesday,14:15,15:00,user1
+3082,Practice a new language,Education,Important,45,Thursday,18:45,19:30,user1
+3083,Mail documents,Personal,More Important,30,Sunday,12:15,12:45,user1
+3084,Cycling,Personal,Normal,60,Thursday,5:45,6:45,user1
+3085,Review lecture notes,Education,More Important,30,Monday,14:45,15:15,user1
+3086,Learn Python,Education,Important,45,Saturday,13:45,14:30,user1
+3087,Read a book,Education,More Important,45,Monday,8:30,9:15,user1
+3088,Evening walk,Personal,Normal,60,Tuesday,17:45,18:45,user1
+3089,Drop off donation,Personal,More Important,30,Tuesday,16:45,17:15,user1
+3090,Read comics,Personal,Less Important,30,Sunday,19:30,20:00,user1
+3091,Take online quiz,Education,More Important,60,Monday,13:15,14:15,user1
+3092,Cycling,Personal,Normal,45,Monday,7:15,8:00,user1
+3093,Take online quiz,Education,More Important,30,Monday,19:15,19:45,user1
+3094,Drop off donation,Personal,More Important,30,Wednesday,15:15,15:45,user1
+3095,Grocery shopping,Personal,More Important,60,Wednesday,15:15,16:15,user1
+3096,Jogging,Personal,Normal,60,Sunday,5:45,6:45,user1
+3097,Play guitar,Personal,Normal,60,Saturday,18:15,19:15,user1
+3098,Chat with neighbors,Personal,Less Important,60,Sunday,17:00,18:00,user1
+3099,Chat with neighbors,Personal,Less Important,45,Sunday,17:30,18:15,user1
+3100,Take notes from an eBook,Education,Important,60,Saturday,17:45,18:45,user1
+3101,Sketch a design,Personal,Normal,30,Saturday,18:00,18:30,user1
+3102,Prepare budget report,Work,More Important,30,Sunday,13:30,14:00,user1
+3103,Buy stationery,Personal,More Important,45,Saturday,15:15,16:00,user1
+3104,Plan weekend gathering,Personal,Less Important,30,Tuesday,16:00,16:30,user1
+3105,Mop the floor,Personal,Normal,45,Wednesday,15:00,15:45,user1
+3106,Read research paper,Education,Important,60,Thursday,14:45,15:45,user1
+3107,Take online quiz,Education,More Important,60,Wednesday,17:30,18:30,user1
+3108,Vacuum the floor,Personal,Normal,60,Thursday,13:30,14:30,user1
+3109,Read research paper,Education,Important,60,Saturday,10:15,11:15,user1
+3110,Call family,Personal,Less Important,45,Sunday,18:45,19:30,user1
+3111,Watch a stand-up comedy,Personal,Less Important,45,Friday,20:00,20:45,user1
+3112,Swimming,Personal,Normal,60,Monday,6:45,7:45,user1
+3113,Vacuum the floor,Personal,Normal,60,Tuesday,13:00,14:00,user1
+3114,Cross-department alignment,Work,Important,45,Saturday,10:00,10:45,user1
+3115,Home workout,Personal,Normal,30,Monday,7:00,7:30,user1
+3116,Hang out at a cafe,Personal,Less Important,30,Friday,17:00,17:30,user1
+3117,Summarize a chapter,Education,More Important,30,Wednesday,19:00,19:30,user1
+3118,Do the laundry,Personal,Normal,60,Friday,16:30,17:30,user1
+3119,Practice coding,Education,Important,60,Sunday,15:00,16:00,user1
+3120,Evening gym workout,Personal,Normal,45,Monday,19:30,20:15,user1
+3121,Do the laundry,Personal,Normal,45,Tuesday,13:00,13:45,user1
+3122,Record a song,Personal,Normal,60,Tuesday,17:00,18:00,user1
+3123,Strategy discussion,Work,Important,30,Tuesday,15:00,15:30,user1
+3124,Water the plants,Personal,Normal,45,Sunday,9:30,10:15,user1
+3125,Solve math problems,Education,More Important,30,Monday,17:45,18:15,user1
+3126,Complete a coding challenge,Education,Important,45,Monday,16:45,17:30,user1
+3127,Team meeting,Work,Important,60,Tuesday,14:45,15:45,user1
+3128,Summarize a chapter,Education,More Important,45,Tuesday,9:30,10:15,user1
+3129,Review lecture notes,Education,More Important,30,Sunday,14:45,15:15,user1
+3130,Read a book,Education,More Important,45,Friday,14:15,15:00,user1
+3131,Summarize a chapter,Education,More Important,45,Monday,16:45,17:30,user1
+3132,Team meeting,Work,Important,30,Friday,14:30,15:00,user1
+3133,Plan weekend gathering,Personal,Less Important,30,Tuesday,16:30,17:00,user1
+3134,Coffee with a friend,Personal,Less Important,45,Saturday,16:00,16:45,user1
+3135,One-on-one with supervisor,Work,Important,30,Friday,14:15,14:45,user1
+3136,Do the laundry,Personal,Normal,60,Friday,12:15,13:15,user1
+3137,Practice coding,Education,Important,30,Thursday,15:15,15:45,user1
+3138,Visit the bank,Personal,More Important,60,Monday,9:45,10:45,user1
+3139,Visit the bank,Personal,More Important,30,Saturday,11:15,11:45,user1
+3140,Complete a coding challenge,Education,Important,30,Wednesday,17:00,17:30,user1
+3141,Test new software features,Work,More Important,45,Saturday,13:30,14:15,user1
+3142,Cross-department alignment,Work,Important,60,Tuesday,11:45,12:45,user1
+3143,Grocery shopping,Personal,More Important,30,Friday,9:30,10:00,user1
+3144,Write a poem,Personal,Normal,45,Tuesday,16:45,17:30,user1
+3145,Buy stationery,Personal,More Important,30,Sunday,12:15,12:45,user1
+3146,Write report,Work,More Important,30,Sunday,14:00,14:30,user1
+3147,Play games,Personal,Less Important,30,Saturday,22:45,23:15,user1
+3148,Vacuum the floor,Personal,Normal,60,Wednesday,13:45,14:45,user1
+3149,Wash dishes,Personal,Normal,30,Friday,11:30,12:00,user1
+3150,Respond to work emails,Work,More Important,30,Friday,16:15,16:45,user1
+3151,Clean the kitchen,Personal,Normal,45,Tuesday,11:15,12:00,user1
+3152,Organize closet,Personal,Normal,45,Monday,15:15,16:00,user1
+3153,Buy stationery,Personal,More Important,60,Saturday,15:30,16:30,user1
+3154,Visit pharmacy,Personal,More Important,45,Wednesday,15:00,15:45,user1
+3155,Edit a short video,Personal,Normal,60,Thursday,18:30,19:30,user1
+3156,Mail documents,Personal,More Important,30,Thursday,15:45,16:15,user1
+3157,Visit pharmacy,Personal,More Important,30,Thursday,15:30,16:00,user1
+3158,Visit pharmacy,Personal,More Important,45,Wednesday,9:00,9:45,user1
+3159,Client discussion,Work,Important,60,Sunday,15:15,16:15,user1
+3160,Make a scrapbook,Personal,Normal,45,Tuesday,15:15,16:00,user1
+3161,Hang out at a cafe,Personal,Less Important,45,Tuesday,16:30,17:15,user1
+3162,Wash dishes,Personal,Normal,60,Sunday,14:30,15:30,user1
+3163,Evening gym workout,Personal,Normal,30,Saturday,19:00,19:30,user1
+3164,Evening walk,Personal,Normal,45,Saturday,18:15,19:00,user1
+3165,Get a haircut,Personal,More Important,30,Saturday,17:45,18:15,user1
+3166,One-on-one with supervisor,Work,Important,30,Monday,11:00,11:30,user1
+3167,One-on-one with supervisor,Work,Important,45,Saturday,12:45,13:30,user1
+3168,Join an online gaming session,Personal,Less Important,45,Friday,19:15,20:00,user1
+3169,Paint a picture,Personal,Normal,30,Wednesday,18:15,18:45,user1
+3170,Mail documents,Personal,More Important,45,Saturday,11:15,12:00,user1
+3171,Design a presentation,Work,More Important,30,Sunday,13:45,14:15,user1
+3172,Visit pharmacy,Personal,More Important,30,Tuesday,17:15,17:45,user1
+3173,Cross-department alignment,Work,Important,60,Monday,10:00,11:00,user1
+3174,Vacuum the floor,Personal,Normal,45,Saturday,11:00,11:45,user1
+3175,Take notes from an eBook,Education,Important,45,Tuesday,13:00,13:45,user1
+3176,One-on-one with supervisor,Work,Important,45,Friday,16:15,17:00,user1
+3177,Join an online gaming session,Personal,Less Important,45,Tuesday,18:45,19:30,user1
+3178,Cross-department alignment,Work,Important,60,Thursday,12:30,13:30,user1
+3179,Join online group chat,Personal,Less Important,30,Sunday,21:00,21:30,user1
+3180,Record a song,Personal,Normal,30,Thursday,20:00,20:30,user1
+3181,Chat with neighbors,Personal,Less Important,45,Thursday,17:00,17:45,user1
+3182,Read research paper,Education,Important,45,Monday,10:45,11:30,user1
+3183,Review lecture notes,Education,More Important,60,Friday,13:00,14:00,user1
+3184,Play guitar,Personal,Normal,30,Monday,17:45,18:15,user1
+3185,Watch online tutorial,Education,Important,45,Monday,11:15,12:00,user1
+3186,Test new software features,Work,More Important,45,Sunday,13:15,14:00,user1
+3187,Vacuum the floor,Personal,Normal,60,Thursday,16:15,17:15,user1
+3188,Call family,Personal,Less Important,60,Thursday,19:30,20:30,user1
+3189,Explore new tools,Education,Important,45,Monday,11:00,11:45,user1
+3190,Weekly team briefing,Work,Important,45,Saturday,9:00,9:45,user1
+3191,Jogging,Personal,Normal,45,Friday,5:45,6:30,user1
+3192,Call family,Personal,Less Important,60,Wednesday,19:45,20:45,user1
+3193,Clean the kitchen,Personal,Normal,30,Thursday,9:15,9:45,user1
+3194,Practice coding,Education,Important,45,Friday,21:00,21:45,user1
+3195,Test new software features,Work,More Important,45,Tuesday,14:45,15:30,user1
+3196,Attend webinar,Education,Important,30,Sunday,15:45,16:15,user1
+3197,Take online quiz,Education,More Important,30,Monday,10:30,11:00,user1
+3198,Code review session,Work,More Important,30,Sunday,14:30,15:00,user1
+3199,Read research paper,Education,Important,30,Sunday,16:30,17:00,user1
+3200,Stream live concert,Personal,Less Important,30,Wednesday,21:45,22:15,user1
+3201,Jogging,Personal,Normal,30,Wednesday,7:15,7:45,user1
+3202,Do the laundry,Personal,Normal,60,Wednesday,11:15,12:15,user1
+3203,Write report,Work,More Important,30,Monday,11:30,12:00,user1
+3204,Sketch a design,Personal,Normal,45,Thursday,14:00,14:45,user1
+3205,Renew ID card,Personal,More Important,30,Monday,9:45,10:15,user1
+3206,Team meeting,Work,Important,30,Wednesday,9:30,10:00,user1
+3207,Sketch a design,Personal,Normal,45,Monday,17:45,18:30,user1
+3208,Wash dishes,Personal,Normal,30,Tuesday,17:00,17:30,user1
+3209,Watch YouTube,Personal,Less Important,30,Tuesday,22:30,23:00,user1
+3210,Cross-department alignment,Work,Important,30,Wednesday,11:15,11:45,user1
+3211,Write a summary of today's learnings,Education,More Important,45,Tuesday,15:45,16:30,user1
+3212,Visit pharmacy,Personal,More Important,60,Monday,13:15,14:15,user1
+3213,Write short story,Personal,Normal,60,Wednesday,11:15,12:15,user1
+3214,Take online quiz,Education,More Important,45,Friday,14:45,15:30,user1
+3215,Yoga session,Personal,Normal,45,Monday,7:15,8:00,user1
+3216,Mail documents,Personal,More Important,30,Wednesday,14:30,15:00,user1
+3217,Cross-department alignment,Work,Important,30,Saturday,15:00,15:30,user1
+3218,Plan weekend gathering,Personal,Less Important,45,Wednesday,15:15,16:00,user1
+3219,Online course session,Education,Important,60,Saturday,12:30,13:30,user1
+3220,Prepare budget report,Work,More Important,30,Monday,11:00,11:30,user1
+3221,Team meeting,Work,Important,30,Saturday,16:15,16:45,user1
+3222,Buy stationery,Personal,More Important,60,Saturday,11:15,12:15,user1
+3223,Read research paper,Education,Important,45,Wednesday,18:15,19:00,user1
+3224,Visit pharmacy,Personal,More Important,60,Saturday,12:45,13:45,user1
+3225,Complete a coding challenge,Education,Important,60,Wednesday,18:15,19:15,user1
+3226,Write a summary of today's learnings,Education,More Important,45,Thursday,9:15,10:00,user1
+3227,Cross-department alignment,Work,Important,30,Monday,11:45,12:15,user1
+3228,Swimming,Personal,Normal,30,Wednesday,7:45,8:15,user1
+3229,Play guitar,Personal,Normal,45,Monday,18:15,19:00,user1
+3230,Play games,Personal,Less Important,60,Wednesday,19:30,20:30,user1
+3231,Practice coding,Education,Important,60,Thursday,15:00,16:00,user1
+3232,Complete a coding challenge,Education,Important,30,Tuesday,15:00,15:30,user1
+3233,Strategy discussion,Work,Important,30,Thursday,14:15,14:45,user1
+3234,Visit pharmacy,Personal,More Important,45,Monday,18:00,18:45,user1
+3235,Design a presentation,Work,More Important,45,Friday,15:15,16:00,user1
+3236,Play games,Personal,Less Important,45,Friday,18:15,19:00,user1
+3237,Plan weekend gathering,Personal,Less Important,45,Saturday,16:45,17:30,user1
+3238,Write a blog post,Personal,Normal,60,Saturday,15:45,16:45,user1
+3239,Team meeting,Work,Important,60,Saturday,10:00,11:00,user1
+3240,Read research paper,Education,Important,45,Monday,15:30,16:15,user1
+3241,Write a summary of today's learnings,Education,More Important,60,Saturday,17:00,18:00,user1
+3242,Strategy discussion,Work,Important,45,Monday,12:15,13:00,user1
+3243,Read research paper,Education,Important,45,Saturday,20:15,21:00,user1
+3244,Evening walk,Personal,Normal,30,Wednesday,17:30,18:00,user1
+3245,Update project status,Work,More Important,30,Thursday,11:15,11:45,user1
+3246,Sketch a design,Personal,Normal,30,Friday,18:00,18:30,user1
+3247,Call family,Personal,Less Important,60,Wednesday,18:30,19:30,user1
+3248,Read comics,Personal,Less Important,30,Saturday,17:15,17:45,user1
+3249,Buy stationery,Personal,More Important,60,Wednesday,11:45,12:45,user1
+3250,Team meeting,Work,Important,60,Friday,11:15,12:15,user1
+3251,Write a poem,Personal,Normal,30,Wednesday,11:15,11:45,user1
+3252,Visit the bank,Personal,More Important,30,Friday,12:00,12:30,user1
+3253,Home workout,Personal,Normal,60,Sunday,6:30,7:30,user1
+3254,Solve math problems,Education,More Important,45,Sunday,14:15,15:00,user1
+3255,Join online group chat,Personal,Less Important,30,Sunday,20:15,20:45,user1
+3256,Online course session,Education,Important,45,Monday,19:45,20:30,user1
+3257,Take online quiz,Education,More Important,30,Saturday,13:45,14:15,user1
+3258,Chat with neighbors,Personal,Less Important,30,Tuesday,19:15,19:45,user1
+3259,Reply to messages,Personal,Less Important,60,Friday,20:45,21:45,user1
+3260,Renew ID card,Personal,More Important,45,Tuesday,14:15,15:00,user1
+3261,Attend a birthday party,Personal,Less Important,45,Monday,21:00,21:45,user1
+3262,Clean the kitchen,Personal,Normal,30,Saturday,9:00,9:30,user1
+3263,Water the plants,Personal,Normal,30,Sunday,7:30,8:00,user1
+3264,Grocery shopping,Personal,More Important,30,Saturday,13:30,14:00,user1
+3265,Respond to work emails,Work,More Important,60,Thursday,15:45,16:45,user1
+3266,Design a presentation,Work,More Important,30,Monday,9:45,10:15,user1
+3267,Join online group chat,Personal,Less Important,45,Tuesday,19:00,19:45,user1
+3268,Plan weekend gathering,Personal,Less Important,45,Sunday,15:30,16:15,user1
+3269,Update project status,Work,More Important,45,Monday,9:30,10:15,user1
+3270,Jogging,Personal,Normal,45,Saturday,5:15,6:00,user1
+3271,Attend a birthday party,Personal,Less Important,45,Wednesday,18:15,19:00,user1
+3272,Read comics,Personal,Less Important,30,Thursday,18:00,18:30,user1
+3273,Client discussion,Work,Important,30,Monday,15:45,16:15,user1
+3274,Make a scrapbook,Personal,Normal,45,Sunday,16:45,17:30,user1
+3275,Update project status,Work,More Important,60,Sunday,15:30,16:30,user1
+3276,Mail documents,Personal,More Important,60,Friday,15:45,16:45,user1
+3277,Watch a movie,Personal,Less Important,30,Tuesday,21:00,21:30,user1
+3278,Write short story,Personal,Normal,30,Wednesday,14:00,14:30,user1
+3279,Respond to work emails,Work,More Important,30,Thursday,16:30,17:00,user1
+3280,Read research paper,Education,Important,30,Saturday,19:30,20:00,user1
+3281,Practice coding,Education,Important,45,Thursday,19:45,20:30,user1
+3282,Buy stationery,Personal,More Important,45,Tuesday,12:45,13:30,user1
+3283,Write a poem,Personal,Normal,60,Friday,13:45,14:45,user1
+3284,Summarize a chapter,Education,More Important,30,Monday,17:30,18:00,user1
+3285,Strategy discussion,Work,Important,45,Friday,11:00,11:45,user1
+3286,Online course session,Education,Important,60,Thursday,19:45,20:45,user1
+3287,Write a poem,Personal,Normal,45,Saturday,12:15,13:00,user1
+3288,Take online quiz,Education,More Important,45,Friday,19:30,20:15,user1
+3289,Mail documents,Personal,More Important,45,Sunday,16:00,16:45,user1
+3290,Test new software features,Work,More Important,45,Saturday,13:15,14:00,user1
+3291,Water the plants,Personal,Normal,45,Saturday,8:15,9:00,user1
+3292,Take notes from an eBook,Education,Important,45,Monday,17:45,18:30,user1
+3293,Practice a new language,Education,Important,60,Saturday,19:30,20:30,user1
+3294,Read research paper,Education,Important,30,Sunday,14:45,15:15,user1
+3295,Read research paper,Education,Important,60,Saturday,14:45,15:45,user1
+3296,Test new software features,Work,More Important,45,Monday,16:15,17:00,user1
+3297,Weekly team briefing,Work,Important,60,Friday,10:15,11:15,user1
+3298,Record a song,Personal,Normal,60,Sunday,18:45,19:45,user1
+3299,Prepare budget report,Work,More Important,60,Wednesday,12:00,13:00,user1
