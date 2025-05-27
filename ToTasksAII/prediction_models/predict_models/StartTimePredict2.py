@@ -41,10 +41,6 @@ def predict_start_time_2(task_name, task_type, importance, day_of_week):
         [task_type_encoded, importance_encoded, day_of_week_sin, day_of_week_cos]
     ]).reshape(1, -1)
 
-    # # Kết hợp TF-IDF và các đặc trưng khác
-    # additional_features = np.array([[type_encoded, importance_encoded, day_encoded]])
-    # X_combined = hstack([task_name_vectorized, additional_features])
-
     # Dự đoán (giá trị chuẩn hóa)
     scaled_prediction = model.predict(X_new)[0]
 

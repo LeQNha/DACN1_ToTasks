@@ -6,7 +6,8 @@ from utils.ModelEvaluation import mean_r2_calculate
 from scipy.sparse import hstack
 
 # def train_duration_prediction_model(task_name_vectorized, used_data_type, used_data_day_of_week, used_data_importance, used_data_userid, used_data_duration):
-def train_duration_prediction_model(task_name_vectorized, used_data_type, used_data_day_of_week, used_data_importance, used_data_duration):
+# def train_duration_prediction_model(task_name_vectorized, used_data_type, used_data_day_of_week, used_data_importance, used_data_duration):
+def train_duration_prediction_model(task_name_vectorized, used_data_type, used_data_DayOfWeek_sin, used_data_DayOfWeek_cos, used_data_importance, used_data_duration):
 
     print("-----duration_prediction_model START TRAINNING.-----")
 
@@ -22,7 +23,7 @@ def train_duration_prediction_model(task_name_vectorized, used_data_type, used_d
     # ])
     X = np.hstack([
         task_name_vectorized.toarray(),
-        np.column_stack((used_data_type, used_data_day_of_week, used_data_importance))
+        np.column_stack((used_data_type, used_data_DayOfWeek_sin, used_data_DayOfWeek_cos , used_data_importance))
     ])
     y = used_data_duration
 
