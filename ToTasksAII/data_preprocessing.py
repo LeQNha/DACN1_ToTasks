@@ -105,9 +105,6 @@ def preprocess_data(used_data):
     used_data['DayOfWeek'] = le_day.fit_transform(used_data['DayOfWeek'])
     joblib.dump(le_day, "le_day.pkl")
 
-    # used_data['PreferredTime'] = le_preferredtime.fit_transform(used_data['PreferredTime'])
-    # joblib.dump(le_preferredtime, "le_preferredtime.pkl")
-
     # used_data['UserID'] = le_userid.fit_transform(used_data['UserID'])
     # joblib.dump(le_userid, "le_userid.pkl")
 
@@ -122,17 +119,7 @@ def preprocess_data(used_data):
     used_data['DayOfWeek_sin'] = np.sin(2 * np.pi * used_data['DayOfWeek'] / 7)
     used_data['DayOfWeek_cos'] = np.cos(2 * np.pi * used_data['DayOfWeek'] / 7)
 
-    # # 9. Feature interaction
-    # used_data['Importance_x_Duration'] = used_data['Importance'] * used_data['Duration']
-    # used_data['IsWeekend'] = used_data['DayOfWeek'].apply(lambda x: 1 if x in [5, 6] else 0)
-
     # 10. Chuẩn hóa các cột số
-    
-    # scaler = StandardScaler()
-    # numerical_cols = ['Duration', 'StartTimeMinutes']
-    # used_data[numerical_cols] = scaler.fit_transform(used_data[numerical_cols])
-    # joblib.dump(scaler, "numerical_scaler.pkl")
-
     scaler_duration = StandardScaler()
     scaler_starttime = StandardScaler()
     used_data['Duration'] = scaler_duration.fit_transform(used_data[['Duration']])

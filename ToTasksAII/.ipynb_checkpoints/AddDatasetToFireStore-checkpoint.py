@@ -10,11 +10,12 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 # Đọc file CSV (đường dẫn file bạn vừa upload)
-csv_file_path = "task_dataset_en.csv"
+# csv_file_path = "task_dataset_en.csv"
+csv_file_path = "downloaded_dataset_og.csv"
 df = pd.read_csv(csv_file_path)
 
 # Thêm cột UserID = "user1"
-df["UserID"] = "user1"
+# df["UserID"] = "user1"
 
 # Lưu từng dòng vào Firestore
 for index, row in df.iterrows():
@@ -27,7 +28,8 @@ for index, row in df.iterrows():
         "Importance": row["Importance"],
         "DayOfWeek": row["DayOfWeek"],
         "StartTime": row["StartTime"],
-        "EndTime": row["EndTime"]
+        "EndTime": row["EndTime"],
+        "UserID": row ["UserID"]
     }
 
     # Tên collection: "tasks", mỗi document ID là tự sinh

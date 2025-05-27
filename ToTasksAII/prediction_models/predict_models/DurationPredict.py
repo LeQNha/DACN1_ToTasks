@@ -1,5 +1,6 @@
 import joblib
 import numpy as np
+import math
 from scipy.sparse import hstack
 from utils.ToolsPreparation import le_type, le_day, le_importance
 
@@ -26,15 +27,36 @@ def predict_duration(task_name, task_type, day_of_week, task_importance):
     # user_id_encoded = le_user.transform([user_id])
     importance_encoded = le_importance.transform([task_importance])
 
+     # Tính các đặc trưng tuần hoàn
+    day_of_week_sin = math.sin(2 * math.pi * day_encoded / 7)
+    day_of_week_cos = math.cos(2 * math.pi * day_encoded / 7)
+
     # Tạo mảng đầu vào
+    # new_input = np.hstack([
+    #     taskname_vector.toarray(),
+    #     # np.array([type_encoded[0], day_encoded[0], importance_encoded[0], user_id_encoded[0]]).reshape(1, -1)
+    #     np.array([type_encoded[0], day_encoded[0], importance_encoded[0]]).reshape(1, -1)
+    # ])
+
+    other_features = np.array([
+        type_encoded[0],
+        day_of_week_sin,
+        day_of_week_cos,
+        importance_encoded[0]
+    ])
+
     new_input = np.hstack([
         taskname_vector.toarray(),
-        # np.array([type_encoded[0], day_encoded[0], importance_encoded[0], user_id_encoded[0]]).reshape(1, -1)
-        np.array([type_encoded[0], day_encoded[0], importance_encoded[0]]).reshape(1, -1)
+        other_features.reshape(1, -1)
     ])
-    #  # Ghép vector đầu vào
-    # categorical_features = np.array([[type_encoded, day_encoded, importance_encoded]])
-    # X_input = hstack([taskname_vector, categorical_features])
+
+    # # Kết hợp dữ liệu đã xử lý
+    # new_input = np.concatenate([
+    #     taskname_vector.toarray().flatten(),
+    #     # [task_type_encoded, importance_encoded, day_of_week_encoded, user_id_encoded]
+    #     # [task_type_encoded, importance_encoded, day_of_week_encoded]
+    #     [type_encoded, day_of_week_sin, day_of_week_cos, importance_encoded]
+    # ]).reshape(1, -1)
 
      # Dự đoán giá trị đã được chuẩn hóa
     predicted_duration_scaled = model.predict(new_input)[0]
