@@ -3,7 +3,8 @@ import joblib
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from utils.SpellCheck import preprocess_text_with_spell_check
-from utils.ToolsPreparation import tfidf_vectorizer, le_type, le_importance, le_day, le_userid, le_preferredtime
+# from utils.ToolsPreparation import tfidf_vectorizer, le_type, le_importance, le_day, le_userid, le_preferredtime
+from utils.ToolsPreparation import tfidf_vectorizer, le_type, le_importance, le_day, le_userid, le_preferredtime, ohe_type
 
 from nltk.corpus import wordnet
 from random import choice
@@ -96,8 +97,25 @@ def preprocess_data(used_data):
     joblib.dump(tfidf_vectorizer, "tfidf_vectorizer.pkl")
 
     # 5. Label encode các cột phân loại
-    used_data['Type'] = le_type.fit_transform(used_data['Type'])
+    # used_data['Type'] = le_type.fit_transform(used_data['Type'])
+    # joblib.dump(le_type, "le_type.pkl")
+    used_data['Type_LabelEncoded'] = le_type.fit_transform(used_data['Type'])
     joblib.dump(le_type, "le_type.pkl")
+
+    # # One-hot encode cột 'Type'
+    # type_dummies = pd.get_dummies(used_data['Type'], prefix='Type')
+    # used_data = pd.concat([used_data.drop(columns=['Type']), type_dummies], axis=1)
+
+    type_encoded = ohe_type.fit_transform(used_data[['Type']])
+    joblib.dump(ohe_type, "ohe_type.pkl")
+
+    # Thêm vào DataFrame:
+    type_encoded_df = pd.DataFrame(type_encoded.toarray(), columns=[f"Type_{cat}" for cat in ohe_type.categories_[0]])
+    # Reset chỉ mục để tránh lỗi khi concat
+    type_encoded_df.index = used_data.index
+    # used_data = pd.concat([used_data.drop(columns=['Type']), type_encoded_df], axis=1)
+    used_data = pd.concat([used_data, type_encoded_df], axis=1)
+    
 
     used_data['Importance'] = le_importance.fit_transform(used_data['Importance'])
     joblib.dump(le_importance, "le_importance.pkl")

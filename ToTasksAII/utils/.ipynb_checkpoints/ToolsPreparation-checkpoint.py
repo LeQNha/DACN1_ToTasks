@@ -1,12 +1,15 @@
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.preprocessing import LabelEncoder, StandardScaler, OneHotEncoder
 
 le_type = LabelEncoder()
 le_importance = LabelEncoder()
 le_day = LabelEncoder()
 le_preferredtime = LabelEncoder()
 le_userid = LabelEncoder()
+
+# One-hot encode Type
+ohe_type = OneHotEncoder(sparse_output=True, handle_unknown='ignore')
 
 tfidf_vectorizer = TfidfVectorizer()
 

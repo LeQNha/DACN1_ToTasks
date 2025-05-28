@@ -22,10 +22,10 @@ TaskID,TaskName,Type,Importance,Duration,DayOfWeek,StartTime,EndTime,UserID
 1198,Take a coffee break,Personal,Normal,10,Monday,10:30,10:40,user1
 1293,Coding Session,Personal,Very Important,108,Tuesday,7:00,8:48,user1
 1098,Make phone calls for work,Work,Normal,30,Thursday,9:00,9:30,user1
-0faxAxZwPhDQBtDXJwcA,gardening,Personal,Normal,45,Wednesday,07:30,08:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+0faxAxZwPhDQBtDXJwcA,gardening,Personal,Normal,45,Wednesday,7:30,8:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 677,Meeting,Personal,Important,67,Sunday,12:00,13:07,user1
 382,Meeting,Work,Less Important,86,Friday,4:00,5:26,user1
-842,Attend a party,Social,Less Important,180,Saturday,18:30,21:30,user1
+842,Attend a party,Personal,Less Important,180,Saturday,18:30,21:30,user1
 305,Read a book,Personal,Normal,60,Friday,20:00,21:00,user1
 507,Go shopping,Personal,Normal,60,Thursday,16:00,17:00,user1
 1370,Make a to-do list for the day,Personal,Normal,10,Saturday,7:20,7:30,user1
@@ -143,7 +143,7 @@ TaskID,TaskName,Type,Importance,Duration,DayOfWeek,StartTime,EndTime,UserID
 409,Clean out old files,Work,Normal,60,Monday,16:30,17:30,user1
 1483,Write a letter,Personal,Less Important,30,Sunday,18:30,19:00,user1
 754,Drive to work,Work,Normal,30,Saturday,9:30,10:00,user1
-589,Meet new people,Social,Normal,60,Tuesday,15:00,16:00,user1
+589,Meet new people,Personal,Normal,60,Tuesday,15:00,16:00,user1
 249,Shop online,Personal,Normal,60,Saturday,12:00,13:00,user1
 1795,Pay bills,Personal,Important,30,Friday,18:00,18:30,user1
 901,Meeting with client,Work,Very Important,60,Monday,9:00,10:00,user1
@@ -303,7 +303,7 @@ TaskID,TaskName,Type,Importance,Duration,DayOfWeek,StartTime,EndTime,UserID
 373,Grocery Shopping,Personal,Important,66,Wednesday,1:00,2:06,user1
 773,Drive to work,Work,Normal,30,Tuesday,8:30,9:00,user1
 1378,Check bank statements,Personal,Normal,15,Tuesday,16:30,16:45,user1
-9lGluGPS5OIoY9Z0Zxp1,wake,Personal,Very Important,15,Monday,06:05,06:20,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+9lGluGPS5OIoY9Z0Zxp1,wake,Personal,Very Important,15,Monday,6:05,6:20,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 339,Listen to podcast,Personal,Normal,30,Thursday,20:45,21:15,user1
 9milbSiomwoHmyERsweC,reading,Personal,Normal,65,Monday,12:10,13:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1421,Organize work,Work,Important,60,Sunday,10:30,11:30,user1
@@ -337,7 +337,7 @@ TaskID,TaskName,Type,Importance,Duration,DayOfWeek,StartTime,EndTime,UserID
 703,Prepare slides for a presentation,Work,Important,90,Tuesday,9:00,10:30,user1
 429,Practice a musical instrument,Personal,Normal,60,Sunday,17:30,18:30,user1
 1590,Coding Session,Personal,Normal,16,Saturday,16:00,16:16,user1
-AogOCsEuX2CHxlGdBBk3,wake,Personal,Very Important,15,Monday,06:35,06:50,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+AogOCsEuX2CHxlGdBBk3,wake,Personal,Very Important,15,Monday,6:35,6:50,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1699,Have breakfast,Personal,Normal,30,Tuesday,7:00,7:30,user1
 1686,Clean the living room,Personal,Normal,30,Wednesday,10:00,10:30,user1
 330,Learn programming,Education,Very Important,90,Tuesday,19:15,20:45,user1
@@ -359,7 +359,7 @@ AogOCsEuX2CHxlGdBBk3,wake,Personal,Very Important,15,Monday,06:35,06:50,AcggWN6c
 1179,Call a friend,Personal,Normal,20,Wednesday,18:00,18:20,user1
 1259,Coding Session,Personal,Normal,68,Wednesday,7:00,8:08,user1
 1705,Go to work,Work,Very Important,60,Wednesday,9:30,10:30,user1
-BcScv9W96s9EkeA9bNSM,meeting client,Work,Very Important,60,Monday,09:00,10:00,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+BcScv9W96s9EkeA9bNSM,meeting client,Work,Very Important,60,Monday,9:00,10:00,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1216,Work group meeting,Work,Very Important,60,Tuesday,11:00,12:00,user1
 12,Yoga practice,Personal,Normal,30,Friday,6:00,6:30,user1
 575,Meditate,Personal,Normal,15,Saturday,6:40,6:55,user1
@@ -372,7 +372,7 @@ BcScv9W96s9EkeA9bNSM,meeting client,Work,Very Important,60,Monday,09:00,10:00,Ac
 1735,Repair things,Personal,Normal,60,Sunday,15:00,16:00,user1
 45,Hang out with friends,Personal,Normal,120,Wednesday,18:15,20:15,user1
 450,Take a shower,Personal,Normal,20,Monday,7:05,7:25,user1
-1142,Attend a party,Social,Less Important,180,Saturday,18:30,21:30,user1
+1142,Attend a party,Personal,Less Important,180,Saturday,18:30,21:30,user1
 1548,Jogging,Personal,Less Important,30,Saturday,7:45,8:15,user1
 1438,Visit family,Personal,Normal,120,Sunday,14:00,16:00,user1
 352,Team brainstorming session,Work,Very Important,90,Tuesday,10:00,11:30,user1
@@ -567,7 +567,7 @@ HPGO8MOQvAJVD30lBeVJ,cooking,Personal,Normal,60,Monday,12:15,13:15,AcggWN6cpMNmE
 100,Take an online quiz,Education,Normal,30,Monday,17:30,18:00,user1
 1119,Send a message,Personal,Less Important,10,Monday,23:20,23:30,user1
 1733,Post on a blog,Personal,Less Important,30,Sunday,14:30,15:00,user1
-1189,Meet new people,Social,Normal,60,Tuesday,15:00,16:00,user1
+1189,Meet new people,Personal,Normal,60,Tuesday,15:00,16:00,user1
 238,Visit family,Personal,Normal,120,Sunday,14:00,16:00,user1
 1176,Write to-do list,Work,Normal,10,Sunday,8:45,8:55,user1
 402,Attend a seminar on technology trends,Education,Very Important,120,Monday,14:00,16:00,user1
@@ -670,7 +670,7 @@ L74VNSEdgxZqlMegnrVO,meeting,Work,Normal,100,Tuesday,11:00,12:40,AcggWN6cpMNmEhl
 1371,Water the plants,Personal,Normal,10,Saturday,7:30,7:40,user1
 579,Call a friend,Personal,Normal,20,Wednesday,18:00,18:20,user1
 738,Research healthy recipes,Personal,Normal,60,Tuesday,11:00,12:00,user1
-542,Attend a party,Social,Less Important,180,Saturday,18:30,21:30,user1
+542,Attend a party,Personal,Less Important,180,Saturday,18:30,21:30,user1
 1577,Meeting,Personal,Important,67,Sunday,12:00,13:07,user1
 256,Brush teeth,Personal,Normal,5,Saturday,6:50,6:55,user1
 1150,Learn a new skill,Education,Important,60,Sunday,16:30,17:30,user1
@@ -696,7 +696,7 @@ L74VNSEdgxZqlMegnrVO,meeting,Work,Normal,100,Tuesday,11:00,12:40,AcggWN6cpMNmEhl
 1701,Browse social media,Personal,Less Important,15,Tuesday,7:45,8:00,user1
 1430,Tidy up the house,Personal,Normal,30,Monday,21:15,21:45,user1
 235,Repair things,Personal,Normal,60,Sunday,15:00,16:00,user1
-N3Xl8uplXp3BGo8Pn1wZ,attend seminar,Education,Very Important,120,Thursday,09:00,11:00,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+N3Xl8uplXp3BGo8Pn1wZ,attend seminar,Education,Very Important,120,Thursday,9:00,11:00,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 122,Sketch a design,Personal,Normal,90,Sunday,14:00,15:30,user1
 711,Morning journaling,Personal,Normal,30,Wednesday,6:30,7:00,user1
 ND4F5crWdjXmfPPVjBY9,take nap,Personal,Less Important,30,Thursday,15:45,16:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
@@ -810,7 +810,7 @@ OQscR2ljC1wEUFGpFpZx,check work update,Work,Normal,20,Monday,18:50,19:10,AcggWN6
 1043,Visit the library,Education,Normal,60,Sunday,14:30,15:30,user1
 908,Plan for the new week,Work,Important,45,Monday,8:00,8:45,user1
 1436,Take photos,Personal,Less Important,30,Sunday,17:00,17:30,user1
-Qts6oMx0nTVmfjUbE0ns,exercise,Personal,Less Important,45,Wednesday,06:30,07:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+Qts6oMx0nTVmfjUbE0ns,exercise,Personal,Less Important,45,Wednesday,6:30,7:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 771,Water the plants,Personal,Normal,10,Saturday,7:30,7:40,user1
 325,Hang out with friends,Personal,Normal,120,Thursday,18:15,20:15,user1
 1595,Meeting,Work,Very Important,82,Thursday,20:00,21:22,user1
@@ -819,9 +819,9 @@ Qts6oMx0nTVmfjUbE0ns,exercise,Personal,Less Important,45,Wednesday,06:30,07:15,A
 1002,Attend a seminar on technology trends,Education,Very Important,120,Monday,14:00,16:00,user1
 1605,Take a long walk,Personal,Less Important,45,Thursday,7:30,8:15,user1
 207,Go shopping,Personal,Normal,60,Thursday,16:00,17:00,user1
-RBarRRno1A0kYSQ1TEoY,exercise,Personal,Less Important,45,Monday,06:45,07:30,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+RBarRRno1A0kYSQ1TEoY,exercise,Personal,Less Important,45,Monday,6:45,7:30,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1470,Check social media,Personal,Less Important,10,Thursday,15:30,15:40,user1
-RHY4glJzHkPsDmGw4Pt9,writing,Personal,Very Important,25,Wednesday,02:00,02:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+RHY4glJzHkPsDmGw4Pt9,writing,Personal,Very Important,25,Wednesday,2:00,2:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1016,Learn new software,Education,Important,120,Monday,9:00,11:00,user1
 165,Wash dishes,Personal,Normal,15,Monday,19:30,19:45,user1
 1518,Prepare lecture,Work,Important,90,Thursday,13:30,15:00,user1
@@ -872,7 +872,7 @@ SycYCVjLGiJb0dYM2wU2,plan trip,Personal,Important,90,Thursday,14:00,15:30,AcggWN
 940,Meeting with client,Work,Very Important,60,Friday,9:15,10:15,user1
 295,Pay bills,Personal,Important,30,Friday,18:00,18:30,user1
 1694,Take a hot bath,Personal,Normal,30,Wednesday,20:00,20:30,user1
-1789,Meet new people,Social,Normal,60,Tuesday,15:00,16:00,user1
+1789,Meet new people,Personal,Normal,60,Tuesday,15:00,16:00,user1
 991,Grocery Shopping,Personal,Important,101,Sunday,6:00,7:41,user1
 1313,Team status update,Work,Very Important,60,Friday,11:00,12:00,user1
 1126,Garden,Personal,Normal,60,Friday,16:30,17:30,user1
@@ -925,7 +925,7 @@ SycYCVjLGiJb0dYM2wU2,plan trip,Personal,Important,90,Thursday,14:00,15:30,AcggWN
 1318,Organize a photo album,Personal,Normal,60,Wednesday,20:00,21:00,user1
 V7uFZyiwJL4Rz81byZkw,walking,Personal,Normal,30,Thursday,16:45,17:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 641,Go to the supermarket,Personal,Normal,30,Saturday,16:15,16:45,user1
-VGhnp8l58RutTIRaQFfw,writing,Work,Important,20,Wednesday,09:05,09:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+VGhnp8l58RutTIRaQFfw,writing,Work,Important,20,Wednesday,9:05,9:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 968,Email Responses,Personal,Normal,111,Friday,7:00,8:51,user1
 926,Teamwork,Work,Very Important,120,Friday,14:15,16:15,user1
 113,Team status update,Work,Very Important,60,Friday,11:00,12:00,user1
@@ -962,7 +962,7 @@ VGhnp8l58RutTIRaQFfw,writing,Work,Important,20,Wednesday,09:05,09:25,AcggWN6cpMN
 1327,Attend a yoga retreat,Personal,Important,120,Friday,8:00,10:00,user1
 693,Coding Session,Personal,Very Important,108,Tuesday,7:00,8:48,user1
 53,Gardening,Personal,Normal,45,Wednesday,7:30,8:15,user1
-WPwB7fD4mfhrmn7JMfGC,drive work,Work,Normal,30,Thursday,08:55,09:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+WPwB7fD4mfhrmn7JMfGC,drive work,Work,Normal,30,Thursday,8:55,9:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1451,Watch a livestream,Personal,Less Important,60,Monday,19:00,20:00,user1
 1600,Take an online quiz,Education,Normal,30,Monday,17:30,18:00,user1
 97,Grocery Shopping,Personal,Important,101,Saturday,9:00,10:41,user1
@@ -1017,7 +1017,7 @@ WPwB7fD4mfhrmn7JMfGC,drive work,Work,Normal,30,Thursday,08:55,09:25,AcggWN6cpMNm
 1310,Research new skills to learn,Education,Important,90,Tuesday,14:00,15:30,user1
 308,Plan for the new week,Work,Important,45,Monday,8:00,8:45,user1
 523,Plan for tomorrow,Work,Important,20,Tuesday,22:00,22:20,user1
-889,Meet new people,Social,Normal,60,Tuesday,15:00,16:00,user1
+889,Meet new people,Personal,Normal,60,Tuesday,15:00,16:00,user1
 388,Reading,Personal,Normal,81,Thursday,13:00,14:21,user1
 1018,Organize a photo album,Personal,Normal,60,Wednesday,20:00,21:00,user1
 301,Meeting with client,Work,Very Important,60,Monday,9:00,10:00,user1
@@ -1219,7 +1219,7 @@ fKrH1CXhh51ySFcB2RTA,relax audio book,Personal,Normal,50,Thursday,18:15,19:05,Ac
 1762,Take a break,Personal,Less Important,10,Wednesday,9:45,9:55,user1
 63,Yoga,Personal,Important,22,Sunday,13:00,13:22,user1
 1700,Drink coffee,Personal,Normal,15,Tuesday,7:30,7:45,user1
-fd0vXVIOxIY4yGUJ6wgR,attend seminar,Education,Very Important,120,Thursday,09:00,11:00,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+fd0vXVIOxIY4yGUJ6wgR,attend seminar,Education,Very Important,120,Thursday,9:00,11:00,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 281,Watch TV series,Personal,Normal,60,Friday,21:00,22:00,user1
 1706,Meet friends,Personal,Normal,90,Wednesday,17:00,18:30,user1
 294,Have a meeting,Work,Very Important,60,Thursday,9:00,10:00,user1
@@ -1248,8 +1248,8 @@ fd0vXVIOxIY4yGUJ6wgR,attend seminar,Education,Very Important,120,Thursday,09:00,
 59,Coding Session,Personal,Normal,68,Wednesday,7:00,8:08,user1
 331,Yoga practice,Personal,Normal,30,Wednesday,6:15,6:45,user1
 49,Cooking,Personal,Normal,60,Sunday,12:15,13:15,user1
-gMxjwUbe4CkO6V995j1V,coding session,Personal,Normal,70,Wednesday,07:00,08:10,AcggWN6cpMNmEhlgSKPVUc1Ylq32
-gPWHx19dxNIgbFmmQQ8w,take morning walk,Personal,Normal,20,Thursday,07:00,07:20,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+gMxjwUbe4CkO6V995j1V,coding session,Personal,Normal,70,Wednesday,7:00,8:10,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+gPWHx19dxNIgbFmmQQ8w,take morning walk,Personal,Normal,20,Thursday,7:00,7:20,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1036,Update LinkedIn profile,Work,Important,45,Sunday,12:00,12:45,user1
 985,Reading,Personal,Very Important,104,Monday,15:00,16:44,user1
 561,Organize desk,Work,Normal,15,Tuesday,8:30,8:45,user1
@@ -1307,8 +1307,8 @@ gPWHx19dxNIgbFmmQQ8w,take morning walk,Personal,Normal,20,Thursday,07:00,07:20,A
 1724,Sunbathe,Personal,Less Important,30,Wednesday,16:00,16:30,user1
 708,Host a movie night,Personal,Normal,150,Sunday,20:00,22:30,user1
 607,Teamwork,Work,Very Important,120,Sunday,14:00,16:00,user1
-iRVxZT3XJTD8poERtBdF,exercise,Personal,Less Important,45,Thursday,06:45,07:30,AcggWN6cpMNmEhlgSKPVUc1Ylq32
-iSPG4DMGZCYKDir9auR5,visit museum,Personal,Normal,120,Thursday,07:00,09:00,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+iRVxZT3XJTD8poERtBdF,exercise,Personal,Less Important,45,Thursday,6:45,7:30,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+iSPG4DMGZCYKDir9auR5,visit museum,Personal,Normal,120,Thursday,7:00,9:00,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 988,Reading,Personal,Normal,81,Thursday,13:00,14:21,user1
 1099,Have breakfast,Personal,Normal,30,Tuesday,7:00,7:30,user1
 ibiusvcXrM1uO5CUfEmO,play sport,Personal,Normal,60,Thursday,17:30,18:30,AcggWN6cpMNmEhlgSKPVUc1Ylq32
@@ -1488,7 +1488,7 @@ ibiusvcXrM1uO5CUfEmO,play sport,Personal,Normal,60,Thursday,17:30,18:30,AcggWN6c
 139,Weekly team sync-up,Work,Very Important,60,Wednesday,15:00,16:00,user1
 1130,Tidy up the house,Personal,Normal,30,Monday,21:15,21:45,user1
 571,Clear notifications,Personal,Less Important,5,Friday,15:40,15:45,user1
-1489,Meet new people,Social,Normal,60,Tuesday,15:00,16:00,user1
+1489,Meet new people,Personal,Normal,60,Tuesday,15:00,16:00,user1
 210,Have lunch,Personal,Normal,60,Thursday,12:00,13:00,user1
 1052,Check social media,Personal,Normal,15,Monday,8:15,8:30,user1
 462,Do the laundry,Personal,Normal,30,Monday,14:30,15:00,user1
@@ -1536,7 +1536,7 @@ oi1VREsp5fSREtoUnDbk,laundry,Personal,Normal,30,Monday,14:35,15:05,AcggWN6cpMNmE
 1369,Read the news,Personal,Normal,20,Tuesday,7:00,7:20,user1
 1027,Attend a yoga retreat,Personal,Important,120,Friday,8:00,10:00,user1
 332,Check email,Work,Normal,15,Thursday,8:00,9:15,user1
-1742,Attend a party,Social,Less Important,180,Saturday,18:30,21:30,user1
+1742,Attend a party,Personal,Less Important,180,Saturday,18:30,21:30,user1
 1439,Play with pets,Personal,Normal,30,Saturday,14:50,15:20,user1
 1339,Weekly team sync-up,Work,Very Important,60,Wednesday,15:00,16:00,user1
 774,Grocery shopping,Personal,Normal,60,Sunday,10:00,11:00,user1
@@ -1588,7 +1588,7 @@ qUCBbDgiNzgiincXCpzB,reading,Personal,Normal,80,Wednesday,13:40,15:00,AcggWN6cpM
 qYYzlgj5LH6MNGoBEZaH,listen music,Work,Normal,30,Wednesday,11:20,11:50,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1274,Email Responses,Personal,Normal,83,Thursday,23:00,0:23,user1
 1658,Have lunch,Personal,Normal,45,Monday,12:15,13:00,user1
-qla8yX3tHxqTfkLArUtr,pack lunch,Personal,Normal,15,Thursday,07:30,07:45,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+qla8yX3tHxqTfkLArUtr,pack lunch,Personal,Normal,15,Thursday,7:30,7:45,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1561,Grocery Shopping,Personal,Very Important,15,Friday,22:00,22:15,user1
 106,Create a new recipe,Personal,Normal,90,Friday,18:00,19:30,user1
 196,Take a morning walk,Personal,Normal,20,Thursday,7:00,7:20,user1
@@ -1662,10 +1662,10 @@ r8XG57Kz6mTx5JF39Kj5,listen music,Personal,Normal,30,Wednesday,12:10,12:40,AcggW
 1344,Complete a crossword puzzle,Personal,Normal,30,Monday,21:00,21:30,user1
 1599,Meeting,Work,Normal,95,Monday,23:00,0:35,user1
 847,Update personal profiles,Personal,Less Important,15,Thursday,13:00,13:15,user1
-1442,Attend a party,Social,Less Important,180,Saturday,18:30,21:30,user1
+1442,Attend a party,Personal,Less Important,180,Saturday,18:30,21:30,user1
 858,Take vitamins,Personal,Normal,5,Saturday,7:10,7:15,user1
 1060,Call a friend,Personal,Normal,20,Monday,13:30,13:50,user1
-t9Een7vcXJbVqYgP67XS,writing,Work,Important,20,Wednesday,09:05,09:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+t9Een7vcXJbVqYgP67XS,writing,Work,Important,20,Wednesday,9:05,9:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 993,Coding Session,Personal,Very Important,108,Tuesday,7:00,8:48,user1
 528,Cook dinner,Personal,Normal,60,Sunday,19:45,20:45,user1
 1193,Read a magazine,Personal,Less Important,20,Saturday,15:00,15:20,user1
@@ -1689,7 +1689,7 @@ tf9raoKmS4Cvg90bBMlo,learn new language,Education,Important,60,Monday,19:55,20:5
 1722,Clean the room,Personal,Normal,30,Monday,11:30,12:00,user1
 1349,Brush teeth,Personal,Normal,5,Monday,7:00,7:05,user1
 304,Write report,Work,Important,90,Thursday,10:30,12:00,user1
-u1it5UjR7uQc4fWpBxet,writing,Personal,Very Important,25,Wednesday,02:00,02:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+u1it5UjR7uQc4fWpBxet,writing,Personal,Very Important,25,Wednesday,2:00,2:25,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 39,Listen to podcast,Personal,Normal,30,Thursday,20:45,21:15,user1
 26,Teamwork,Work,Very Important,120,Friday,14:15,16:15,user1
 1149,Shop online,Personal,Normal,60,Saturday,12:00,13:00,user1
@@ -1765,7 +1765,7 @@ wIDAaVrnjEd6R3rylAtm,read book,Personal,Normal,60,Tuesday,20:10,21:10,AcggWN6cpM
 418,Organize a photo album,Personal,Normal,60,Wednesday,20:00,21:00,user1
 486,Clean the living room,Personal,Normal,30,Wednesday,10:00,10:30,user1
 1579,Meeting,Work,Normal,102,Tuesday,11:00,12:42,user1
-289,Meet new people,Social,Normal,60,Tuesday,15:00,16:00,user1
+289,Meet new people,Personal,Normal,60,Tuesday,15:00,16:00,user1
 1164,Reply to messages,Personal,Normal,15,Friday,15:00,15:15,user1
 315,Watch a movie,Personal,Less Important,120,Monday,21:00,23:00,user1
 263,Walk to the bus stop,Personal,Normal,10,Thursday,7:30,7:40,user1
@@ -1832,7 +1832,7 @@ yRQ8ArT1J2x1wqHG1hJ1,exercise,Personal,Less Important,45,Thursday,11:30,12:15,Ac
 1602,Attend a seminar on technology trends,Education,Very Important,120,Monday,14:00,16:00,user1
 1498,Take a coffee break,Personal,Normal,10,Monday,10:30,10:40,user1
 987,Writing,Work,Important,18,Wednesday,9:00,9:18,user1
-yZ2KIAnTKYcavNe3FKde,exercise,Personal,Less Important,45,Tuesday,06:30,07:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
+yZ2KIAnTKYcavNe3FKde,exercise,Personal,Less Important,45,Tuesday,6:30,7:15,AcggWN6cpMNmEhlgSKPVUc1Ylq32
 1478,Read a blog,Personal,Less Important,15,Tuesday,10:15,10:30,user1
 17,Write a diary,Personal,Normal,30,Wednesday,22:30,23:00,user1
 1204,Write report,Work,Important,90,Thursday,10:30,12:00,user1
@@ -1865,5 +1865,5 @@ yZ2KIAnTKYcavNe3FKde,exercise,Personal,Less Important,45,Tuesday,06:30,07:15,Acg
 1238,Clean the house,Personal,Normal,60,Wednesday,9:15,10:15,user1
 1660,Call a friend,Personal,Normal,20,Monday,13:30,13:50,user1
 427,Attend a yoga retreat,Personal,Important,120,Friday,8:00,10:00,user1
-242,Attend a party,Social,Less Important,180,Saturday,18:30,21:30,user1
+242,Attend a party,Personal,Less Important,180,Saturday,18:30,21:30,user1
 640,Meeting with client,Work,Very Important,60,Friday,9:15,10:15,user1
