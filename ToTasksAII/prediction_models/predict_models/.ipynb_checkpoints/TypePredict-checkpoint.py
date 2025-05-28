@@ -1,5 +1,4 @@
 import joblib
-from utils.ToolsPreparation import le_type
 from scipy.sparse import hstack
 
 # def predict_task_type(task_name, user_id):

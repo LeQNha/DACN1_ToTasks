@@ -183,31 +183,31 @@ def task_optimize(task_list):
 #         # Không còn chỗ → giữ nguyên (hoặc có thể đánh dấu là không thể xếp)
 #         return task
 
-# move_to_free_slot 1 
-def move_to_free_slot(task, placed_tasks):
-    buffer = 240  # phút – khoảng thời gian cho phép tìm quanh thời gian mong muốn
-    preferred_start = task['StartTimeInMinute']
+# # move_to_free_slot 1 
+# def move_to_free_slot(task, placed_tasks):
+#     buffer = 240  # phút – khoảng thời gian cho phép tìm quanh thời gian mong muốn
+#     preferred_start = task['StartTimeInMinute']
     
-    search_start = max(0, preferred_start - buffer)
-    search_end = preferred_start + buffer
+#     search_start = max(0, preferred_start - buffer)
+#     search_end = preferred_start + buffer
 
-    occupied = sorted(placed_tasks, key=lambda x: x['StartTimeInMinute'])
+#     occupied = sorted(placed_tasks, key=lambda x: x['StartTimeInMinute'])
 
-    candidate_start = search_start
+#     candidate_start = search_start
 
-    for t in occupied:
-        if candidate_start + task['Duration'] <= t['StartTimeInMinute']:
-            # Có khoảng trống đủ
-            return set_task_time(task, candidate_start)
-        else:
-            candidate_start = max(candidate_start, t['EndTimeInMinute'])
-            if candidate_start > search_end:
-                break  # Vượt quá vùng tìm kiếm cho phép
+#     for t in occupied:
+#         if candidate_start + task['Duration'] <= t['StartTimeInMinute']:
+#             # Có khoảng trống đủ
+#             return set_task_time(task, candidate_start)
+#         else:
+#             candidate_start = max(candidate_start, t['EndTimeInMinute'])
+#             if candidate_start > search_end:
+#                 break  # Vượt quá vùng tìm kiếm cho phép
 
-    # Nếu không có chỗ → giữ nguyên
-    return task
+#     # Nếu không có chỗ → giữ nguyên
+#     return task
 
-# # move_to_free_slot 2 
+# move_to_free_slot 2 
 # def move_to_free_slot(task, placed_tasks):
 #     preferred_start = task['StartTimeInMinute']
 #     duration = task['Duration']
@@ -253,6 +253,47 @@ def move_to_free_slot(task, placed_tasks):
 #     # Nếu không tìm được slot nào (hiếm gặp)
 #     return task
 
+def move_to_free_slot(task, placed_tasks):
+    preferred_start = task['StartTimeInMinute']
+    duration = task['Duration']
+    
+    work_start = 6 * 60  # 07:00
+    work_end = 22 * 60   # 21:00
+
+    occupied = sorted(placed_tasks, key=lambda x: x['StartTimeInMinute'])
+    free_slots = []
+
+    if occupied:
+        if occupied[0]['StartTimeInMinute'] > work_start:
+            free_slots.append((work_start, occupied[0]['StartTimeInMinute']))
+
+        for i in range(len(occupied) - 1):
+            end_current = occupied[i]['EndTimeInMinute']
+            start_next = occupied[i + 1]['StartTimeInMinute']
+            if start_next > end_current:
+                free_slots.append((end_current, start_next))
+
+        if occupied[-1]['EndTimeInMinute'] < work_end:
+            free_slots.append((occupied[-1]['EndTimeInMinute'], work_end))
+    else:
+        free_slots.append((work_start, work_end))
+
+    best_slot = None
+    min_distance = float('inf')
+
+    for start, end in free_slots:
+        if end - start >= duration:
+            dist = abs(start - preferred_start)
+            if dist < min_distance:
+                min_distance = dist
+                best_slot = start
+
+    if best_slot is not None:
+        return set_task_time(task, best_slot)
+
+    # Không tìm được slot phù hợp → giữ nguyên
+    return task
+    
 def set_task_time(task, start_minute):
     task['StartTimeInMinute'] = start_minute
     task['StartTime'] = format_time(start_minute)

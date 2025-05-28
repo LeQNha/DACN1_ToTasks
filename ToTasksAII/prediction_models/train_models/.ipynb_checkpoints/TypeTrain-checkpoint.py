@@ -3,6 +3,7 @@ from scipy.sparse import hstack
 import joblib
 from utils.ModelEvaluation import accuracy_score_calculate
 from utils.ToolsPreparation import tfidf_vectorizer, le_type
+# from utils.ToolsPreparation import tfidf_vectorizer, ohe_type
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
