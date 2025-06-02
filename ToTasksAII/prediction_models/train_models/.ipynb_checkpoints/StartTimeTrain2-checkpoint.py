@@ -5,7 +5,7 @@ from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from utils.ToolsPreparation import scaler, tfidf_vectorizer
-from utils.ModelEvaluation import mean_r2_calculate
+from utils.ModelEvaluation import mean_r2_calculate, plot_predicted_vs_actual, plot_residuals
 from scipy.sparse import hstack
 
 def train_start_time_prediction_model_2(task_name_vectorized, required_columns, start_time_minutes):
@@ -37,3 +37,9 @@ def train_start_time_prediction_model_2(task_name_vectorized, required_columns, 
     mean_r2_calculate(y_test, y_pred)
 
     print("start_time_prediction_model.pkl have been saved successfully.")
+
+    # Vẽ scatter - thực tế vs dự đoán
+    plot_predicted_vs_actual(y_test, y_pred, title="StartTime Prediction - Actual vs Predicted")
+
+    # # Vẽ residuals plot
+    # plot_residuals(y_test, y_pred, title="StartTime Prediction - Residuals")
