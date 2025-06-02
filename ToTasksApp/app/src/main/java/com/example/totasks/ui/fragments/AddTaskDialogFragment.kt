@@ -19,6 +19,7 @@ import com.example.totasks.databinding.FragmentAddTaskDialogBinding
 import com.example.totasks.interfaces.TaskDialogListener
 import com.google.android.material.button.MaterialButton
 import nha.kc.kotlincode.models.Task
+import nha.tu.tup.firebase.FirebaseInstance
 
 class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
 
@@ -107,8 +108,11 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
 //            val startTimeInMinute = convertTimeToMinutes(startTime)
 //            val endTimeInMinute = convertTimeToMinutes(endTime)
 
+            val auth = FirebaseInstance.auth
+            var currentUserAuth = auth.currentUser
+            val currentUserId = currentUserAuth?.uid
 
-            if (name.isNotEmpty() && day.isNotEmpty()) {
+            if (name.isNotEmpty() && day.isNotEmpty() && currentUserId != null) {
                 val newTask = Task(
                     "",
                     name,
@@ -119,7 +123,9 @@ class AddTaskDialogFragment(val selectedDayOfWeek: String) : DialogFragment() {
                     startTimeInMinute,
                     startTime,
                     0,
-                    endTime
+                    endTime,
+                    false,
+                    currentUserId
                 )
                 listener?.onTaskAdded(newTask)
                 dismiss() // Đóng dialog sau khi thêm task
