@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import joblib
 
-from utils.ModelEvaluation import accuracy_score_calculate
+from utils.ModelEvaluation import accuracy_score_calculate, plot_confusion_matrix
 # from utils.ToolsPreparation import tfidf_vectorizer, le_importance, le_type
 from utils.ToolsPreparation import tfidf_vectorizer, le_importance, ohe_type
 
@@ -38,5 +38,7 @@ def train_importance_prediction_model(task_name_vectorized, used_data_type, used
     # Lưu mô hình đã huấn luyện
     joblib.dump(importance_random_forest_classifier_model, "importance_prediction_model.pkl")
     print("importance_prediction_model.pkl have been saved successfully.")
+
+    plot_confusion_matrix(y_test, y_pred, labels=[0, 1, 2, 3], title="Importance Prediction Confusion Matrix")
 
     return

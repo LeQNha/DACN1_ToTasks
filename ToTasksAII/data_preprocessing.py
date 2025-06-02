@@ -61,6 +61,23 @@ def time_to_minutes(start_time):
     except Exception:
         return None  # Nếu định dạng lỗi hoặc rỗng
 
+def remove_outliers_iqr(df, column):
+    Q1 = df[column].quantile(0.25)
+    Q3 = df[column].quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    return df[(df[column] >= lower_bound) & (df[column] <= upper_bound)]
+    # Tách dòng outlier
+    # outliers = df[(df[column] < lower_bound) | (df[column] > upper_bound)]
+    # cleaned_df = df[(df[column] >= lower_bound) & (df[column] <= upper_bound)]
+    
+    # # Ghi log nếu được yêu cầu
+    # if log_name:
+    #     outliers.to_csv(f"{log_name}_outliers.csv", index=False)
+    #     print(f"Đã log {len(outliers)} outliers của '{column}' vào '{log_name}_outliers.csv'")
+    
+    # return cleaned_df
 
 def preprocess_data(used_data):
     
@@ -74,11 +91,11 @@ def preprocess_data(used_data):
     important_columns = ['TaskName', 'Type', 'Importance', 'Duration', 'DayOfWeek', 'StartTime', 'EndTime', 'UserID']
     used_data = used_data.dropna(subset=important_columns)
 
-    used_data = used_data.dropna(subset=['TaskName'])
+    # used_data = used_data.dropna(subset=['TaskName'])
     used_data = used_data[used_data['TaskName'].str.strip() != ""]
 
     used_data['StartTime'] = used_data['StartTime'].apply(clean_time_format)
-    used_data['EndTime'] = used_data['EndTime'].apply(clean_time_format)
+    # used_data['EndTime'] = used_data['EndTime'].apply(clean_time_format)
     used_data = used_data.dropna(subset=['StartTime', 'EndTime'])
 
     # duplicates = used_data.duplicated(subset=["TaskName", "Type", "Importance", "StartTime", "UserID", "DayOfWeek"])
@@ -92,6 +109,18 @@ def preprocess_data(used_data):
     # 3. Tiền xử lý văn bản (TaskName)
     used_data["TaskName"] = used_data["TaskName"].apply(preprocess_text_with_spell_check)
 
+    # 6. Chuyển đổi StartTime thành số phút từ đầu ngày
+    used_data['StartTimeMinutes'] = used_data['StartTime'].apply(time_to_minutes)
+
+    # Loại bỏ outliers trong Duration và StartTimeMinutes
+    before_rows = used_data.shape[0]
+    used_data = remove_outliers_iqr(used_data, 'Duration')
+    used_data = remove_outliers_iqr(used_data, 'StartTimeMinutes')
+    # used_data = remove_outliers_iqr(used_data, 'Duration')
+    # used_data = remove_outliers_iqr(used_data, 'StartTimeMinutes')
+    after_rows = used_data.shape[0]
+    print(f"Đã loại bỏ {before_rows - after_rows} dòng outlier.")
+    
     # 4. Vector hóa TaskName
     task_name_vectorized = tfidf_vectorizer.fit_transform(used_data['TaskName'])
     joblib.dump(tfidf_vectorizer, "tfidf_vectorizer.pkl")
@@ -126,9 +155,6 @@ def preprocess_data(used_data):
     # used_data['UserID'] = le_userid.fit_transform(used_data['UserID'])
     # joblib.dump(le_userid, "le_userid.pkl")
 
-    # 6. Chuyển đổi StartTime thành số phút từ đầu ngày
-    used_data['StartTimeMinutes'] = used_data['StartTime'].apply(time_to_minutes)
-
     # # 7. Feature Engineering: thời gian tuần hoàn
     # used_data['StartTime_sin'] = np.sin(2 * np.pi * used_data['StartTimeMinutes'] / 1440)
     # used_data['StartTime_cos'] = np.cos(2 * np.pi * used_data['StartTimeMinutes'] / 1440)
@@ -136,6 +162,16 @@ def preprocess_data(used_data):
     # 8. DayOfWeek tuần hoàn (nếu cần)
     used_data['DayOfWeek_sin'] = np.sin(2 * np.pi * used_data['DayOfWeek'] / 7)
     used_data['DayOfWeek_cos'] = np.cos(2 * np.pi * used_data['DayOfWeek'] / 7)
+
+    
+    # Xóa các cột không cần thiết sau khi xử lý xong
+    used_data.drop(columns=['EndTime', 'UserID'], inplace=True)
+    
+    # # Lọc giữ lại giá trị hợp lý (không phải outlier)
+    # used_data = used_data[
+    #     (used_data['Duration'] >= Q1 - 1.5 * IQR) &
+    #     (used_data['Duration'] <= Q3 + 1.5 * IQR)
+    # ].reset_index(drop=True)
 
     # 10. Chuẩn hóa các cột số
     scaler_duration = StandardScaler()
@@ -147,7 +183,7 @@ def preprocess_data(used_data):
     joblib.dump(scaler_starttime, "starttime_scaler.pkl")
 
     
-    print("✅ Tiền xử lý hoàn tất với các đặc trưng nâng cao.")
+    print("Tiền xử lý hoàn tất với các đặc trưng nâng cao.")
 
-    print("✅ Tiền xử lý hoàn tất.")
+    print("Tiền xử lý hoàn tất.")
     return used_data, task_name_vectorized

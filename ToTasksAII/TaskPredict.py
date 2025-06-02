@@ -40,8 +40,6 @@ def task_predict(new_task):
 
     # PREDICT DURATION
     if new_task['Duration'] == 0:
-        # task_duration_predict = predict_duration(task_name=new_task['TaskName'], task_type=new_task['Type'],
-        #                                          task_importance=new_task['Importance'], day_of_week=new_task['DayOfWeek'], user_id=new_task['UserId'])
         task_duration_predict = predict_duration(task_name=new_task['TaskName'], task_type=new_task['Type'],
                                                  task_importance=new_task['Importance'], day_of_week=new_task['DayOfWeek'])
 
@@ -51,24 +49,10 @@ def task_predict(new_task):
         print(f"Final duration predicted: {new_task['Duration']}")
 
     # # PREDICT START TIME
-    # predicted_start_time = predict_start_time(task_name=new_task['TaskName'], task_type=new_task['Type'],
-    #                                           importance=new_task['Importance'], day_of_week=new_task['DayOfWeek'])
-    # print(f"Predicted Start Time (in minutes): {predicted_start_time}")
-    #
-    #
     def minutes_to_hours_minutes(minutes):
         hours = int(minutes // 60)  # Chia lấy số giờ
         minutes = int(minutes % 60)  # Lấy phần dư để tính phút
         return f"{hours:02}:{minutes:02}"
-
-    #
-    #
-    # # Chuyển đổi phút thành giờ:phút
-    # predicted_start_time_formatted = minutes_to_hours_minutes(predicted_start_time)
-    # new_task['StartTime'] = predicted_start_time_formatted
-    # print(f"Predicted Start Time: {new_task['StartTime']}")
-    # print(f"\n {new_task}")
-
 
 
     # PREDICT START TIME 2
@@ -257,8 +241,8 @@ def move_to_free_slot(task, placed_tasks):
     preferred_start = task['StartTimeInMinute']
     duration = task['Duration']
     
-    work_start = 6 * 60  # 07:00
-    work_end = 22 * 60   # 21:00
+    work_start = 6 * 60  # 06:00
+    work_end = 22 * 60   # 22:00
 
     occupied = sorted(placed_tasks, key=lambda x: x['StartTimeInMinute'])
     free_slots = []
@@ -291,7 +275,7 @@ def move_to_free_slot(task, placed_tasks):
     if best_slot is not None:
         return set_task_time(task, best_slot)
 
-    # Không tìm được slot phù hợp → giữ nguyên
+    # Không tìm được slot phù hợp giữ nguyên
     return task
     
 def set_task_time(task, start_minute):

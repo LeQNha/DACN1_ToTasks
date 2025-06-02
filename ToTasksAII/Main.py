@@ -51,40 +51,7 @@ async def predict_task(task: Task):
         "UserId": task.UserId
     }
 
-    # new_task = [
-    #     {
-    #         "TaskName": task_name,
-    #         "Type": task_type,
-    #         "Importance": importance,
-    #         "DayOfWeek": day_of_week,
-    #         "Duration": duration,  # Thời gian giả lập
-    #         "StartTime": start_time  # Thời gian giả lập
-    #     },
-    #     {
-    #         "TaskName": task_name,
-    #         "Type": "Personal",
-    #         "Importance": "Normal",
-    #         "DayOfWeek": "Monday",
-    #         "Duration": 45,  # Thời gian giả lập
-    #         "StartTime": "09:00 AM"  # Thời gian giả lập
-    #     },
-    # ]
-    #
-    # return new_task
-
     task_predicted = task_predict(new_task)
-
-    # new_task = [
-    #     {
-    #         "TaskName": task_predicted['TaskName'],
-    #         "Type": task_predicted['Type'],
-    #         "Importance": task_predicted['Importance'],
-    #         "DayOfWeek": task_predicted['DayOfWeek'],
-    #         "Duration": task_predicted['Duration'],
-    #         "StartTime": task_predicted['StartTime'],
-    #         "EndTime": task_predicted['EndTime']
-    #     }
-    # ]
 
     new_task = {
             "TaskId": task_predicted['TaskId'],

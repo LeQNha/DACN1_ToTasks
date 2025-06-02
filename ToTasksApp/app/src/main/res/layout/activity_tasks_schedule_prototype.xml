@@ -24,23 +24,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <ImageView
-                android:id="@+id/previousDayArrow"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:src="@drawable/ic_left_arrow"
-                app:tint="@color/white"
-                app:layout_constraintBottom_toBottomOf="@+id/dayConstraintLayout"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/dayConstraintLayout" />
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/dayConstraintLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="5dp"
-                app:layout_constraintEnd_toStartOf="@+id/nextDayArrow"
-                app:layout_constraintStart_toEndOf="@+id/previousDayArrow"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
@@ -66,16 +55,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <ImageView
-                android:id="@+id/nextDayArrow"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:src="@drawable/ic_right_arrow"
-                app:tint="@color/white"
-                app:layout_constraintBottom_toBottomOf="@+id/dayConstraintLayout"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/dayConstraintLayout" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
@@ -87,77 +66,84 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/taskFilterLayout"
+    <!-- Bọc LinearLayout filter trong HorizontalScrollView -->
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/scheduleConstraintLayout"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/scheduleConstraintLayout">
 
-        <TextView
-            android:id="@+id/filterAll"
+        <LinearLayout
+            android:id="@+id/taskFilterLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All"
-            android:textSize="16sp"
-            android:layout_marginHorizontal="5dp"
-            android:paddingVertical="5dp"
-            android:paddingHorizontal="15dp"
-            android:background="@drawable/filter_background"
-            android:textColor="@color/white"/>
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/filterWork"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Work"
-            android:textSize="16sp"
-            android:layout_marginHorizontal="5dp"
-            android:paddingVertical="5dp"
-            android:paddingHorizontal="15dp"
-            android:background="@drawable/filter_background"
-            android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/filterAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/filter_background"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:text="All"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/filterPersonal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Personal"
-            android:textSize="16sp"
-            android:layout_marginHorizontal="5dp"
-            android:paddingVertical="5dp"
-            android:paddingHorizontal="15dp"
-            android:background="@drawable/filter_background"
-            android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/filterWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/filter_background"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:text="Work"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/filterEducation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Education"
-            android:textSize="16sp"
-            android:layout_marginHorizontal="5dp"
-            android:paddingVertical="5dp"
-            android:paddingHorizontal="15dp"
-            android:background="@drawable/filter_background"
-            android:textColor="@color/white"/>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/filterPersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/filter_background"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:text="Personal"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/filterEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/filter_background"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:text="Education"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/taskScheduleRv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taskFilterLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addTaskFab"

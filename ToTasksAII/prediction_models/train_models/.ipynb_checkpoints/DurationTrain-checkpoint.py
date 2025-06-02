@@ -2,7 +2,7 @@ import joblib
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
-from utils.ModelEvaluation import mean_r2_calculate
+from utils.ModelEvaluation import mean_r2_calculate, plot_predicted_vs_actual, plot_residuals
 from scipy.sparse import hstack
 
 # def train_duration_prediction_model(task_name_vectorized, used_data_type, used_data_day_of_week, used_data_importance, used_data_userid, used_data_duration):
@@ -52,6 +52,14 @@ def train_duration_prediction_model(task_name_vectorized, used_data_type, used_d
 
     # Đánh giá mô hình
     y_pred = duration_random_forest_regressor_model.predict(X_test)
+    # RÀNG BUỘC: Không cho giá trị âm
+    # y_pred = np.maximum(y_pred, 0)
     mean_r2_calculate(y_test, y_pred)
 
     print("duration_prediction_model.pkl have been saved successfully.")
+
+    # Vẽ scatter - thực tế vs dự đoán
+    plot_predicted_vs_actual(y_test, y_pred, title="Duration Prediction - Actual vs Predicted")
+
+    # # Vẽ residuals plot
+    # plot_residuals(y_test, y_pred, title="Duration Prediction - Residuals")
